@@ -9,56 +9,36 @@ void add_ordered_list(SingleList<T> &list1,SingleList<T> &list2,SingleList<T> &o
 {
     ListNode<T> *l1=list1.get_head();
     ListNode<T> *l2=list2.get_head();
-    ListNode<T> *l3=out.get_head();
 
+    int i=0;
     while(l1!= nullptr){
-        cout<<l1->value_<<","<<l2->value_<<endl;
-
         if(l1->value_<l2->value_){
-            if(l3== nullptr){
-                l3=l1;
-            } else{
-                l3->next=l1;
-                l3=l3->next;
-            }
-
+            out.insert(0,l1->value_);
             l1=l1->next;
+            ++i;
         } else if(l1->value_>l2->value_){
-            if(l3== nullptr){
-                l3=l2;
-            } else{
-                l3->next=l2;
-                l3=l3->next;
-            }
+            out.insert(i,l2->value_);
             l2=l2->next;
+            ++i;
         } else{
-            if(l3== nullptr){
-                l3=l1;
-                l1=l1->next;
-                l3->next=l2;
-                l3=l3->next;
-                l2=l2->next;
-            } else{
-                l3->next=l1;
-                l3=l3->next;
-                l1=l1->next;
-                l3->next=l2;
-                l3=l3->next;
-                l2=l2->next;
-            }
+            out.insert(i,l1->value_);
+            ++i;
+            out.insert(i,l2->value_);
+            ++i;
+            l1=l1->next;
+            l2=l2->next;
         }
-        cout<<"l3:"<<l3->value_<<endl;
+
         if(l2== nullptr){
             break;
         }
 
-
     }
 
     if(l1){
-        l3->next=l1;
+        out.insert(i,l1->value_);
     } else{
-        l3->next=l2;
+        out.insert(i,l2->value_);
     }
 }
 
