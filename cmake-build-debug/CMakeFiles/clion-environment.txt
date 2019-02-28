@@ -1,0 +1,2 @@
+ToolSet: 5.0@D:\vim\mingw
+CMake: 3.6.3@D:\clion\CLion 2016.3.5\bin\cmake\bin\cmake.exe
