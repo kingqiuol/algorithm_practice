@@ -24,6 +24,8 @@ int main()
     cout<<"===>sort():";
     list1.sort();
     list1.print();
+    ListNode<int> *node=list1.get_mid_node();
+    cout<<node->value_<<endl;
 
 
     //

@@ -54,7 +54,8 @@ public:
     void reverse();
     //单向链表排序
     void sort();
-
+    //获取链表的中间节点
+    ListNode<T> *get_mid_node();
 private:
     void quick_sort(ListNode<T> *head,ListNode<T> *end);//快速排序
     void swap(ListNode<T> *p,ListNode<T> *q);//交换两个节点中的值
@@ -225,20 +226,17 @@ void SingleList<T>::swap(ListNode<T> *p,ListNode<T> *q)
 template <class T>
 void SingleList<T>::quick_sort(ListNode<T> *head, ListNode<T> *end)
 {
-    if(head->next==end){
+    if(head==end || head->next==end){
         return ;
     }
 
     T value=head->value_;
-    std::cout<<value<<std::endl;
     ListNode<T> *p=head;
     ListNode<T> *q=head->next;
-    while( q!= end){
+    while( q != end){
         if(value <= q->value_){
             q=q->next;
-            std::cout<<q->value_<<std::endl;
         }else {
-            std::cout<<q->value_<<std::endl;
             p=p->next;
             swap(p,q);
             q=q->next;
@@ -259,6 +257,19 @@ void SingleList<T>::sort()
     ListNode<T> *head=head_;
     ListNode<T> *end= nullptr;
     quick_sort(head,end);
+}
+
+template <class T>
+ListNode<T> *SingleList<T>::get_mid_node()
+{
+    ListNode<T> *fast=head_;
+    ListNode<T> *slow=head_;
+
+    while(fast&&fast->next){
+        fast=fast->next->next;
+        slow=slow->next;
+    }
+    return slow;
 }
 
 #endif //TESK_LIST_H
