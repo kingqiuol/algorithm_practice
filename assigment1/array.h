@@ -13,11 +13,7 @@
 using namespace std;
 
 /*******************************************
-<<<<<<< HEAD
 *                   数组                   *
-=======
-*                   数组                    *
->>>>>>> fed1632efd7c570103782503c87e8fe0d5912102
 /*******************************************/
 template <class T>
 class Array{
@@ -30,11 +26,11 @@ public:
             :capacity_(capacity),
              ptr_(new T[capacity_],[](T *p){delete[] p;}),
              size_(0){}
-<<<<<<< HEAD
+
     Array(const Array<T> &other);
-=======
+
     Array(const Array &other);
->>>>>>> fed1632efd7c570103782503c87e8fe0d5912102
+
     ~Array(){}
 
     //获取数组存储元素大小

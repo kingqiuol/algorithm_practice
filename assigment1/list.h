@@ -37,6 +37,8 @@ public:
     size_t size(){return size_;}
     //链表是否为空
     bool empty(){return size_==0;}
+    //获取头结点
+    ListNode<T> *get_head(){return head_;}
 
     //插入节点
     void insert(const int &index,const T &value);
@@ -271,5 +273,17 @@ ListNode<T> *SingleList<T>::get_mid_node()
     }
     return slow;
 }
+
+
+/*******************************************
+*                 双向链表                   *
+/*******************************************/
+template <class T>
+class DulList
+{
+private:
+    ListNode<T> *head_;
+    size_t size_;
+};
 
 #endif //TESK_LIST_H

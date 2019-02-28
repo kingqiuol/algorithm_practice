@@ -11,11 +11,10 @@ void add_sort_array(OrderedArray<T> &a1,OrderedArray<T> &a2,OrderedArray<T> &out
     out.expend_capacity();
     copy(a1.get(),a1.get()+a1.size(), out.get());
     copy(a2.get(),a2.get()+a2.size(), out.get()+a1.size());
-<<<<<<< HEAD
+
     sort(out.get(),out.get()+out.size(), [](const T &a,const T &b){return a<b;});
-=======
+
     sort(out.get(),out.get()+out.size(), [](T &a,T &b){return a<b;});
->>>>>>> fed1632efd7c570103782503c87e8fe0d5912102
 }
 
 int main()
