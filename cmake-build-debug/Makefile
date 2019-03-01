@@ -110,17 +110,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tesk_1
+# Target rules for targets named tesk1_1
 
 # Build rule for target.
-tesk_1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 tesk_1
-.PHONY : tesk_1
+tesk1_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 tesk1_1
+.PHONY : tesk1_1
 
 # fast build rule for target.
-tesk_1/fast:
-	$(MAKE) -f assigment1\CMakeFiles\tesk_1.dir\build.make assigment1/CMakeFiles/tesk_1.dir/build
-.PHONY : tesk_1/fast
+tesk1_1/fast:
+	$(MAKE) -f assigment1\CMakeFiles\tesk1_1.dir\build.make assigment1/CMakeFiles/tesk1_1.dir/build
+.PHONY : tesk1_1/fast
+
+#=============================================================================
+# Target rules for targets named tesk1_2
+
+# Build rule for target.
+tesk1_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 tesk1_2
+.PHONY : tesk1_2
+
+# fast build rule for target.
+tesk1_2/fast:
+	$(MAKE) -f assigment1\CMakeFiles\tesk1_2.dir\build.make assigment1/CMakeFiles/tesk1_2.dir/build
+.PHONY : tesk1_2/fast
 
 # Help Target
 help:
@@ -130,7 +143,8 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... tesk_1
+	@echo ... tesk1_1
+	@echo ... tesk1_2
 .PHONY : help
 
 

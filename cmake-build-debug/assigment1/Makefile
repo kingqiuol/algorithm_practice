@@ -110,19 +110,34 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-assigment1/CMakeFiles/tesk_1.dir/rule:
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 assigment1/CMakeFiles/tesk_1.dir/rule
-.PHONY : assigment1/CMakeFiles/tesk_1.dir/rule
+assigment1/CMakeFiles/tesk1_1.dir/rule:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 assigment1/CMakeFiles/tesk1_1.dir/rule
+.PHONY : assigment1/CMakeFiles/tesk1_1.dir/rule
 
 # Convenience name for target.
-tesk_1: assigment1/CMakeFiles/tesk_1.dir/rule
+tesk1_1: assigment1/CMakeFiles/tesk1_1.dir/rule
 
-.PHONY : tesk_1
+.PHONY : tesk1_1
 
 # fast build rule for target.
-tesk_1/fast:
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assigment1\CMakeFiles\tesk_1.dir\build.make assigment1/CMakeFiles/tesk_1.dir/build
-.PHONY : tesk_1/fast
+tesk1_1/fast:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assigment1\CMakeFiles\tesk1_1.dir\build.make assigment1/CMakeFiles/tesk1_1.dir/build
+.PHONY : tesk1_1/fast
+
+# Convenience name for target.
+assigment1/CMakeFiles/tesk1_2.dir/rule:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 assigment1/CMakeFiles/tesk1_2.dir/rule
+.PHONY : assigment1/CMakeFiles/tesk1_2.dir/rule
+
+# Convenience name for target.
+tesk1_2: assigment1/CMakeFiles/tesk1_2.dir/rule
+
+.PHONY : tesk1_2
+
+# fast build rule for target.
+tesk1_2/fast:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assigment1\CMakeFiles\tesk1_2.dir\build.make assigment1/CMakeFiles/tesk1_2.dir/build
+.PHONY : tesk1_2/fast
 
 array.obj: array.cpp.obj
 
@@ -130,7 +145,7 @@ array.obj: array.cpp.obj
 
 # target to build an object file
 array.cpp.obj:
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assigment1\CMakeFiles\tesk_1.dir\build.make assigment1/CMakeFiles/tesk_1.dir/array.cpp.obj
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assigment1\CMakeFiles\tesk1_1.dir\build.make assigment1/CMakeFiles/tesk1_1.dir/array.cpp.obj
 .PHONY : array.cpp.obj
 
 array.i: array.cpp.i
@@ -139,7 +154,7 @@ array.i: array.cpp.i
 
 # target to preprocess a source file
 array.cpp.i:
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assigment1\CMakeFiles\tesk_1.dir\build.make assigment1/CMakeFiles/tesk_1.dir/array.cpp.i
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assigment1\CMakeFiles\tesk1_1.dir\build.make assigment1/CMakeFiles/tesk1_1.dir/array.cpp.i
 .PHONY : array.cpp.i
 
 array.s: array.cpp.s
@@ -148,8 +163,35 @@ array.s: array.cpp.s
 
 # target to generate assembly for a file
 array.cpp.s:
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assigment1\CMakeFiles\tesk_1.dir\build.make assigment1/CMakeFiles/tesk_1.dir/array.cpp.s
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assigment1\CMakeFiles\tesk1_1.dir\build.make assigment1/CMakeFiles/tesk1_1.dir/array.cpp.s
 .PHONY : array.cpp.s
+
+list.obj: list.cpp.obj
+
+.PHONY : list.obj
+
+# target to build an object file
+list.cpp.obj:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assigment1\CMakeFiles\tesk1_2.dir\build.make assigment1/CMakeFiles/tesk1_2.dir/list.cpp.obj
+.PHONY : list.cpp.obj
+
+list.i: list.cpp.i
+
+.PHONY : list.i
+
+# target to preprocess a source file
+list.cpp.i:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assigment1\CMakeFiles\tesk1_2.dir\build.make assigment1/CMakeFiles/tesk1_2.dir/list.cpp.i
+.PHONY : list.cpp.i
+
+list.s: list.cpp.s
+
+.PHONY : list.s
+
+# target to generate assembly for a file
+list.cpp.s:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assigment1\CMakeFiles\tesk1_2.dir\build.make assigment1/CMakeFiles/tesk1_2.dir/list.cpp.s
+.PHONY : list.cpp.s
 
 # Help Target
 help:
@@ -157,12 +199,16 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... tesk_1
+	@echo ... tesk1_1
+	@echo ... tesk1_2
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... array.obj
 	@echo ... array.i
 	@echo ... array.s
+	@echo ... list.obj
+	@echo ... list.i
+	@echo ... list.s
 .PHONY : help
 
 

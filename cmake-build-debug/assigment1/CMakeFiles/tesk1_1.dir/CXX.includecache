@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/jinqiu/Desktop/tesk/assigment1/array.cpp
+array.h
+C:/Users/jinqiu/Desktop/tesk/assigment1/array.h
+
+C:/Users/jinqiu/Desktop/tesk/assigment1/array.h
+iostream
+-
+memory
+-
+math.h
+-
+algorithm
+-
+

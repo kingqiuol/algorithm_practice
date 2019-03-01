@@ -51,5 +51,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "assigment1/CMakeFiles/tesk_1.dir/DependInfo.cmake"
+  "assigment1/CMakeFiles/tesk1_1.dir/DependInfo.cmake"
+  "assigment1/CMakeFiles/tesk1_2.dir/DependInfo.cmake"
   )
