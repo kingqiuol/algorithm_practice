@@ -78,6 +78,24 @@ int main()
     add_ordered_list(list1,list2,list3);
     list3.print();
 
+    cout<<"================>双向链表："<<endl;
+    DulList<int> dlist;
+    dlist.dul_insert(0,1);
+    dlist.push_back(3);
+    dlist.push_front(2);
+    dlist.push_back(11);
+    dlist.dul_insert(1,9);
+    dlist.print();
+
+    dlist.pop_back();
+    dlist.pop_front();
+    dlist.dul_erase(0);
+    dlist.print();
+
+    dlist.dul_set(0,12);
+    dlist.print();
+
+    cout<<dlist.front()<<","<<dlist.back()<<","<<dlist.dul_get(0)<<endl;
 
     return 0;
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" assignedExecutableTargets="true" buildAllGenerated="true">
     <generated>
       <config projectName="tesk" targetName="tesk1_1" />
       <config projectName="tesk" targetName="tesk1_2" />
@@ -9,38 +9,16 @@
       <config projectName="tesk" targetName="tesk_1" />
     </generated>
   </component>
-  <component name="CMakeSettings">
-    <configurations>
-      <configuration CONFIG_NAME="Debug" />
-    </configurations>
+  <component name="CMakeSettings" AUTO_RELOAD="false" GENERATION_PASS_SYSTEM_ENVIRONMENT="true">
+    <ADDITIONAL_GENERATION_ENVIRONMENT>
+      <envs />
+    </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67db7df6-6ab5-45b0-b65a-8b664659b6e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/tesk.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/assigment1/CMakeFiles/tesk1_2.dir/list.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/assigment1/CMakeFiles/tesk1_2.dir/list.cpp.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/assigment1/CMakeFiles/tesk1_2.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/assigment1/CMakeFiles/tesk1_2.dir/objects.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/assigment1/tesk1_2.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/assigment1/tesk1_2.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assigment1/CMakeLists.txt" afterPath="$PROJECT_DIR$/assigment1/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assigment1/array.cpp" afterPath="$PROJECT_DIR$/assigment1/array.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assigment1/array.h" afterPath="$PROJECT_DIR$/assigment1/array.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assigment1/list.cpp" afterPath="$PROJECT_DIR$/assigment1/list.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assigment1/list.h" afterPath="$PROJECT_DIR$/assigment1/list.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/assigment1/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/assigment1/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/assigment1/CMakeFiles/tesk_1.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/assigment1/CMakeFiles/tesk_1.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/assigment1/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/assigment1/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/assigment1/tesk1.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/assigment1/tesk1.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tesk.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/tesk.cbp" />
     </list>
     <ignored path="tesk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,36 +39,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="list.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assigment1/list.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1800">
-              <caret line="75" column="27" lean-forward="false" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
+            <state relative-caret-position="189">
+              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="list.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assigment1/list.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="473" column="0" lean-forward="false" selection-start-line="473" selection-start-column="0" selection-end-line="473" selection-end-column="0" />
+            <state relative-caret-position="-4997">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
               <folding>
-                <element signature="e#5387#5396#0" expanded="true" />
-                <element signature="e#6244#6253#0" expanded="true" />
-                <element signature="e#6613#6622#0" expanded="true" />
-                <element signature="e#6998#7007#0" expanded="true" />
-                <element signature="e#7635#7644#0" expanded="true" />
-                <element signature="e#8142#8151#0" expanded="true" />
-                <element signature="e#8534#8543#0" expanded="true" />
-                <element signature="e#9163#9172#0" expanded="true" />
-                <element signature="e#9247#9256#0" expanded="true" />
-                <element signature="e#9294#9303#0" expanded="true" />
-                <element signature="e#9340#9349#0" expanded="true" />
-                <element signature="e#9405#9414#0" expanded="true" />
-                <element signature="e#9452#9461#0" expanded="true" />
-                <element signature="e#9505#9514#0" expanded="true" />
+                <element signature="e#5384#5393#0" expanded="true" />
+                <element signature="e#6174#6183#0" expanded="true" />
+                <element signature="e#6451#6460#0" expanded="true" />
+                <element signature="e#6820#6829#0" expanded="true" />
+                <element signature="e#7205#7214#0" expanded="true" />
+                <element signature="e#7842#7851#0" expanded="true" />
+                <element signature="e#8346#8355#0" expanded="true" />
+                <element signature="e#8735#8744#0" expanded="true" />
+                <element signature="e#9364#9373#0" expanded="true" />
+                <element signature="e#9703#9712#0" expanded="true" />
+                <element signature="e#9844#9853#0" expanded="true" />
+                <element signature="e#9989#9998#0" expanded="true" />
+                <element signature="e#10450#10459#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,8 +91,8 @@
         <option value="$PROJECT_DIR$/assigment1/array.cpp" />
         <option value="$PROJECT_DIR$/assigment1/array.h" />
         <option value="$PROJECT_DIR$/assigment1/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/assigment1/list.cpp" />
         <option value="$PROJECT_DIR$/assigment1/list.h" />
+        <option value="$PROJECT_DIR$/assigment1/list.cpp" />
       </list>
     </option>
   </component>
@@ -126,10 +103,20 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-302" />
-    <option name="y" value="477" />
-    <option name="width" value="1938" />
-    <option name="height" value="1017" />
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1301" />
+    <option name="height" value="772" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -148,6 +135,12 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tesk" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="tesk" />
@@ -237,7 +230,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
+      <command value="run-script" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -405,23 +398,25 @@
       <workItem from="1551353341671" duration="12877000" />
       <workItem from="1551406636433" duration="121000" />
       <workItem from="1551417436652" duration="6569000" />
+      <workItem from="1551451168920" duration="1056000" />
+      <workItem from="1551454976461" duration="2751000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55977000" />
+    <option name="totallyTimeSpent" value="59784000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-302" y="477" width="1938" height="1017" extended-state="0" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.032291666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22674866" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2941822" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2929746" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39770868" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08295455" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4200299" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -456,8 +451,68 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/assigment1/list.cpp">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1554">
+          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment1/list.h">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#5384#5393#0" expanded="true" />
+            <element signature="e#6174#6183#0" expanded="true" />
+            <element signature="e#6451#6460#0" expanded="true" />
+            <element signature="e#6820#6829#0" expanded="true" />
+            <element signature="e#7205#7214#0" expanded="true" />
+            <element signature="e#7842#7851#0" expanded="true" />
+            <element signature="e#8346#8355#0" expanded="true" />
+            <element signature="e#8735#8744#0" expanded="true" />
+            <element signature="e#9364#9373#0" expanded="true" />
+            <element signature="e#9703#9712#0" expanded="true" />
+            <element signature="e#9844#9853#0" expanded="true" />
+            <element signature="e#9989#9998#0" expanded="true" />
+            <element signature="e#10450#10459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment1/list.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment1/list.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#5384#5393#0" expanded="true" />
+            <element signature="e#6174#6183#0" expanded="true" />
+            <element signature="e#6451#6460#0" expanded="true" />
+            <element signature="e#6820#6829#0" expanded="true" />
+            <element signature="e#7205#7214#0" expanded="true" />
+            <element signature="e#7842#7851#0" expanded="true" />
+            <element signature="e#8346#8355#0" expanded="true" />
+            <element signature="e#8735#8744#0" expanded="true" />
+            <element signature="e#9364#9373#0" expanded="true" />
+            <element signature="e#9703#9712#0" expanded="true" />
+            <element signature="e#9844#9853#0" expanded="true" />
+            <element signature="e#9989#9998#0" expanded="true" />
+            <element signature="e#10450#10459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment1/list.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -465,22 +520,21 @@
     <entry file="file://$PROJECT_DIR$/assigment1/list.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1000">
-          <caret line="40" column="34" lean-forward="true" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
           <folding>
-            <element signature="e#5387#5396#0" expanded="true" />
-            <element signature="e#6244#6253#0" expanded="true" />
-            <element signature="e#6613#6622#0" expanded="true" />
-            <element signature="e#6998#7007#0" expanded="true" />
-            <element signature="e#7635#7644#0" expanded="true" />
-            <element signature="e#8142#8151#0" expanded="true" />
-            <element signature="e#8534#8543#0" expanded="true" />
-            <element signature="e#9163#9172#0" expanded="true" />
-            <element signature="e#9247#9256#0" expanded="true" />
-            <element signature="e#9294#9303#0" expanded="true" />
-            <element signature="e#9340#9349#0" expanded="true" />
-            <element signature="e#9405#9414#0" expanded="true" />
-            <element signature="e#9452#9461#0" expanded="true" />
-            <element signature="e#9505#9514#0" expanded="true" />
+            <element signature="e#5384#5393#0" expanded="true" />
+            <element signature="e#6174#6183#0" expanded="true" />
+            <element signature="e#6451#6460#0" expanded="true" />
+            <element signature="e#6820#6829#0" expanded="true" />
+            <element signature="e#7205#7214#0" expanded="true" />
+            <element signature="e#7842#7851#0" expanded="true" />
+            <element signature="e#8346#8355#0" expanded="true" />
+            <element signature="e#8735#8744#0" expanded="true" />
+            <element signature="e#9364#9373#0" expanded="true" />
+            <element signature="e#9703#9712#0" expanded="true" />
+            <element signature="e#9844#9853#0" expanded="true" />
+            <element signature="e#9989#9998#0" expanded="true" />
+            <element signature="e#10450#10459#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -488,7 +542,7 @@
     <entry file="file://$PROJECT_DIR$/assigment1/list.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -496,22 +550,21 @@
     <entry file="file://$PROJECT_DIR$/assigment1/list.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5387#5396#0" expanded="true" />
-            <element signature="e#6244#6253#0" expanded="true" />
-            <element signature="e#6613#6622#0" expanded="true" />
-            <element signature="e#6998#7007#0" expanded="true" />
-            <element signature="e#7635#7644#0" expanded="true" />
-            <element signature="e#8142#8151#0" expanded="true" />
-            <element signature="e#8534#8543#0" expanded="true" />
-            <element signature="e#9163#9172#0" expanded="true" />
-            <element signature="e#9247#9256#0" expanded="true" />
-            <element signature="e#9294#9303#0" expanded="true" />
-            <element signature="e#9340#9349#0" expanded="true" />
-            <element signature="e#9405#9414#0" expanded="true" />
-            <element signature="e#9452#9461#0" expanded="true" />
-            <element signature="e#9505#9514#0" expanded="true" />
+            <element signature="e#5384#5393#0" expanded="true" />
+            <element signature="e#6174#6183#0" expanded="true" />
+            <element signature="e#6451#6460#0" expanded="true" />
+            <element signature="e#6820#6829#0" expanded="true" />
+            <element signature="e#7205#7214#0" expanded="true" />
+            <element signature="e#7842#7851#0" expanded="true" />
+            <element signature="e#8346#8355#0" expanded="true" />
+            <element signature="e#8735#8744#0" expanded="true" />
+            <element signature="e#9364#9373#0" expanded="true" />
+            <element signature="e#9703#9712#0" expanded="true" />
+            <element signature="e#9844#9853#0" expanded="true" />
+            <element signature="e#9989#9998#0" expanded="true" />
+            <element signature="e#10450#10459#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -519,7 +572,7 @@
     <entry file="file://$PROJECT_DIR$/assigment1/list.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -527,22 +580,21 @@
     <entry file="file://$PROJECT_DIR$/assigment1/list.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5387#5396#0" expanded="true" />
-            <element signature="e#6244#6253#0" expanded="true" />
-            <element signature="e#6613#6622#0" expanded="true" />
-            <element signature="e#6998#7007#0" expanded="true" />
-            <element signature="e#7635#7644#0" expanded="true" />
-            <element signature="e#8142#8151#0" expanded="true" />
-            <element signature="e#8534#8543#0" expanded="true" />
-            <element signature="e#9163#9172#0" expanded="true" />
-            <element signature="e#9247#9256#0" expanded="true" />
-            <element signature="e#9294#9303#0" expanded="true" />
-            <element signature="e#9340#9349#0" expanded="true" />
-            <element signature="e#9405#9414#0" expanded="true" />
-            <element signature="e#9452#9461#0" expanded="true" />
-            <element signature="e#9505#9514#0" expanded="true" />
+            <element signature="e#5384#5393#0" expanded="true" />
+            <element signature="e#6174#6183#0" expanded="true" />
+            <element signature="e#6451#6460#0" expanded="true" />
+            <element signature="e#6820#6829#0" expanded="true" />
+            <element signature="e#7205#7214#0" expanded="true" />
+            <element signature="e#7842#7851#0" expanded="true" />
+            <element signature="e#8346#8355#0" expanded="true" />
+            <element signature="e#8735#8744#0" expanded="true" />
+            <element signature="e#9364#9373#0" expanded="true" />
+            <element signature="e#9703#9712#0" expanded="true" />
+            <element signature="e#9844#9853#0" expanded="true" />
+            <element signature="e#9989#9998#0" expanded="true" />
+            <element signature="e#10450#10459#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -550,7 +602,7 @@
     <entry file="file://$PROJECT_DIR$/assigment1/array.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -558,7 +610,7 @@
     <entry file="file://$PROJECT_DIR$/assigment1/array.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4809">
-          <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+          <caret line="229" column="0" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -566,7 +618,7 @@
     <entry file="file://$PROJECT_DIR$/assigment1/array.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -574,7 +626,7 @@
     <entry file="file://$PROJECT_DIR$/assigment1/array.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -582,7 +634,7 @@
     <entry file="file://$PROJECT_DIR$/assigment1/array.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -590,7 +642,7 @@
     <entry file="file://$PROJECT_DIR$/assigment1/array.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -598,7 +650,7 @@
     <entry file="file://$PROJECT_DIR$/assigment1/array.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -606,7 +658,7 @@
     <entry file="file://$PROJECT_DIR$/assigment1/array.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -614,7 +666,7 @@
     <entry file="file://$PROJECT_DIR$/assigment1/array.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -622,7 +674,7 @@
     <entry file="file://$PROJECT_DIR$/assigment1/array.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -630,14 +682,14 @@
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assigment1/array.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -645,7 +697,7 @@
     <entry file="file://$PROJECT_DIR$/assigment1/array.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -653,7 +705,7 @@
     <entry file="file://$PROJECT_DIR$/assigment1/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -663,22 +715,21 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assigment1/array.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-148">
-          <caret line="16" column="69" lean-forward="false" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
+          <caret line="16" column="69" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
           <folding />
         </state>
       </provider>
@@ -686,7 +737,7 @@
     <entry file="file://$PROJECT_DIR$/assigment1/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -694,47 +745,39 @@
     <entry file="file://$PROJECT_DIR$/assigment1/array.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
-          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/vim/mingw/lib/gcc/mingw32/6.3.0/include/c++/iosfwd">
+    <entry file="file://D:/vim/mingw/lib/gcc/mingw32/6.3.0/include/c++/iosfwd" />
+    <entry file="file://$PROJECT_DIR$/assigment1/list.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-4997">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="e#5384#5393#0" expanded="true" />
+            <element signature="e#6174#6183#0" expanded="true" />
+            <element signature="e#6451#6460#0" expanded="true" />
+            <element signature="e#6820#6829#0" expanded="true" />
+            <element signature="e#7205#7214#0" expanded="true" />
+            <element signature="e#7842#7851#0" expanded="true" />
+            <element signature="e#8346#8355#0" expanded="true" />
+            <element signature="e#8735#8744#0" expanded="true" />
+            <element signature="e#9364#9373#0" expanded="true" />
+            <element signature="e#9703#9712#0" expanded="true" />
+            <element signature="e#9844#9853#0" expanded="true" />
+            <element signature="e#9989#9998#0" expanded="true" />
+            <element signature="e#10450#10459#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assigment1/list.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="75" column="27" lean-forward="false" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
+        <state relative-caret-position="189">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assigment1/list.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="473" column="0" lean-forward="false" selection-start-line="473" selection-start-column="0" selection-end-line="473" selection-end-column="0" />
-          <folding>
-            <element signature="e#5387#5396#0" expanded="true" />
-            <element signature="e#6244#6253#0" expanded="true" />
-            <element signature="e#6613#6622#0" expanded="true" />
-            <element signature="e#6998#7007#0" expanded="true" />
-            <element signature="e#7635#7644#0" expanded="true" />
-            <element signature="e#8142#8151#0" expanded="true" />
-            <element signature="e#8534#8543#0" expanded="true" />
-            <element signature="e#9163#9172#0" expanded="true" />
-            <element signature="e#9247#9256#0" expanded="true" />
-            <element signature="e#9294#9303#0" expanded="true" />
-            <element signature="e#9340#9349#0" expanded="true" />
-            <element signature="e#9405#9414#0" expanded="true" />
-            <element signature="e#9452#9461#0" expanded="true" />
-            <element signature="e#9505#9514#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

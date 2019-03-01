@@ -15,7 +15,7 @@ template <class T>
 class ListNode
 {
 public:
-    ListNode():value_(nullptr),front(nullptr),next(nullptr){}
+    ListNode():value_(NULL),front(nullptr),next(nullptr){}
     ListNode(const T &value):value_(value),front(nullptr),next(nullptr){}
 public:
     T value_;
@@ -312,14 +312,24 @@ public:
 
     //打印链表
     void print();
-    //翻转链表
-    void dul_reverse();
-    //链表排序
-    void dul_sort();
 private:
     ListNode<T> *head_;
     size_t size_;
 };
+
+template <class T>
+DulList<T>::~DulList()
+{
+    if(head_!= nullptr){
+        head_->front->next= nullptr;
+        while(head_!= nullptr){
+            ListNode<T> *temp=head_;
+            head_=head_->next;
+            delete temp;
+            temp= nullptr;
+        }
+    }
+}
 
 template <class T>
 void DulList<T>::push_back(const T &value)
@@ -393,7 +403,7 @@ template <class T>
 T DulList<T>::pop_front()
 {
     if(size_==0){
-        return nullptr;
+        return NULL;
     }else if(size_==1){
         T value=head_->value_;
 
@@ -420,7 +430,7 @@ template <class T>
 T DulList<T>::pop_back()
 {
     if(size_==0){
-        return nullptr;
+        return NULL;
     } else if(size_==1){
         return pop_front();
     } else{
@@ -471,43 +481,80 @@ T DulList<T>::dul_erase(const int &index)
 template <class T>
 void DulList<T>::dul_set(const int &index, const T &value)
 {
+    if(index<0 || index >= size_){
+        cout<<"index out of range,index < 0 or index >= size_"<<endl;
+        exit(0);
+    }
 
+    int i=0;
+    ListNode<T> *cur=head_;
+    while(i<index){
+        cur=cur->next;
+        ++i;
+    }
+
+    cur->value_=value;
 }
 
 template <class T>
 T DulList<T>::front()
 {
+    if(head_== nullptr){
+        return NULL;
+    } else{
+        return head_->value_;
+    }
 
 }
 
 template <class T>
 T DulList<T>::back()
 {
-
+    if(head_== nullptr){
+        return NULL;
+    }else{
+        return head_->front->value_;
+    }
 }
 
 template <class T>
 T DulList<T>::dul_get(const int &index)
 {
+    if(index<0 || index >= size_){
+        cout<<"index out of range,index < 0 or index >= size_"<<endl;
+        exit(0);
+    }
 
+    if(index==0){
+        return front();
+    }else if(index==size_-1){
+        return back();
+    }else{
+        int i=0;
+        ListNode<T> *cur=head_;
+        while(i<index){
+            cur=cur->next;
+            ++i;
+        }
+
+        return cur->value_;
+    }
 }
 
 template <class T>
-T DulList<T>::print()
+void DulList<T>::print()
 {
-
+    if(head_== nullptr){
+        return;
+    } else{
+        ListNode<T> *cur=head_;
+        while(cur->next!=head_){
+            cout<<cur->value_<<" ";
+            cur=cur->next;
+        }
+        cout<<cur->value_<<endl;
+    }
 }
 
-template <class T>
-T DulList<T>::dul_reverse()
-{
-
-}
-
-template <class T>
-T DulList<T>::dul_sort()
-{
-
-}
 
 #endif //TESK_LIST_H
