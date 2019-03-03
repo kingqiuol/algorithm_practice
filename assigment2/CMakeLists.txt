@@ -10,5 +10,8 @@ set(HEADER_FILES_2 queue.h
 set(SOURCE_FILES_2 queue.cpp)
 add_executable(tesk2_2 ${SOURCE_FILES_2} ${HEADER_FILES_2})
 
+set(SOURCE_FILES_3 recursion.cpp)
+add_executable(tesk2_3 ${SOURCE_FILES_3})
+
 
 
