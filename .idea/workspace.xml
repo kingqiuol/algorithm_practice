@@ -20,29 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67db7df6-6ab5-45b0-b65a-8b664659b6e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignment3/CMakeLists.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignment3/RADEME.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignment3/sort.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignment3/sort.h" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment1/CMakeLists.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment1/array.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment1/array.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment1/list.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment1/list.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment2/CMakeLists.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment2/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment2/list.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment2/queue.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment2/queue.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment2/recursion.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment2/source_image/20181122224416891.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment2/source_image/20181122224456618.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment2/source_image/20181122224550417.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment2/source_image/20181122224634842.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment2/stack.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assigment2/stack.h" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="tesk.iws" />
@@ -111,11 +88,11 @@
         <option value="$PROJECT_DIR$/assigment2/queue.h" />
         <option value="$PROJECT_DIR$/assigment2/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/assigment2/recursion.cpp" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/assignment3/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/assignment3/sort.cpp" />
         <option value="$PROJECT_DIR$/assignment2/stack.h" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -448,12 +425,12 @@
       <workItem from="1551458064108" duration="314000" />
       <workItem from="1551502764477" duration="10125000" />
       <workItem from="1551584256336" duration="18791000" />
-      <workItem from="1551624817349" duration="720000" />
+      <workItem from="1551624817349" duration="971000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89734000" />
+    <option name="totallyTimeSpent" value="89985000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -833,24 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="473">
-            <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assignment3/sort.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -872,6 +831,24 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="81">
+            <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
             <folding />
           </first_editor>
           <second_editor>
