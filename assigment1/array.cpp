@@ -14,7 +14,7 @@ void add_sort_array(OrderedArray<T> &a1,OrderedArray<T> &a2,OrderedArray<T> &out
 
     sort(out.get(),out.get()+out.size(), [](const T &a,const T &b){return a<b;});
 
-    sort(out.get(),out.get()+out.size(), [](T &a,T &b){return a<b;});
+    sort(out.get(),out.get()+out.size(), [](const T &a,const T &b){return a<b;});
 }
 
 int main()
