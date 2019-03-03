@@ -5,6 +5,7 @@
       <config projectName="tesk" targetName="tesk1_1" />
       <config projectName="tesk" targetName="tesk2_1" />
       <config projectName="tesk" targetName="tesk1_2" />
+      <config projectName="tesk" targetName="tesk2_2" />
       <config projectName="tesk" targetName="tesk" />
       <config projectName="tesk" targetName="tesk_2" />
       <config projectName="tesk" targetName="tesk_1" />
@@ -17,15 +18,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67db7df6-6ab5-45b0-b65a-8b664659b6e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assigment2/CMakeLists.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assigment2/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assigment2/stack.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assigment2/stack.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assigment2/queue.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assigment2/queue.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assigment1/array.cpp" afterPath="$PROJECT_DIR$/assigment1/array.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assigment2/CMakeLists.txt" afterPath="$PROJECT_DIR$/assigment2/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assigment2/README.md" afterPath="$PROJECT_DIR$/assigment2/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assigment2/stack.cpp" afterPath="$PROJECT_DIR$/assigment2/stack.cpp" />
     </list>
     <ignored path="tesk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,67 +44,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="stack.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assigment2/stack.h">
+      <file leaf-file-name="queue.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assigment2/queue.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
+            <state relative-caret-position="149">
+              <caret line="207" column="4" selection-start-line="207" selection-start-column="4" selection-end-line="207" selection-end-column="4" />
               <folding>
                 <element signature="e#82#101#0" expanded="true" />
-                <element signature="e#210#219#0" expanded="true" />
-                <element signature="e#624#633#0" expanded="true" />
-                <element signature="e#1104#1113#0" expanded="true" />
-                <element signature="e#1360#1369#0" expanded="true" />
-                <element signature="e#1439#1448#0" expanded="true" />
-                <element signature="e#1529#1538#0" expanded="true" />
-                <element signature="e#1773#1782#0" expanded="true" />
-                <element signature="e#1990#1999#0" expanded="true" />
-                <element signature="e#2259#2268#0" expanded="true" />
-                <element signature="e#2683#2692#0" expanded="true" />
-                <element signature="e#2833#2842#0" expanded="true" />
-                <element signature="e#2905#2914#0" expanded="true" />
-                <element signature="e#2996#3005#0" expanded="true" />
+                <element signature="e#179#188#0" expanded="true" />
+                <element signature="e#638#647#0" expanded="true" />
+                <element signature="e#1346#1355#0" expanded="true" />
+                <element signature="e#1613#1622#0" expanded="true" />
+                <element signature="e#1686#1695#0" expanded="true" />
+                <element signature="e#1768#1777#0" expanded="true" />
+                <element signature="e#1924#1933#0" expanded="true" />
+                <element signature="e#2168#2177#0" expanded="true" />
+                <element signature="e#2369#2378#0" expanded="true" />
+                <element signature="e#2640#2649#0" expanded="true" />
+                <element signature="e#3102#3111#0" expanded="true" />
+                <element signature="e#3175#3184#0" expanded="true" />
+                <element signature="e#3254#3263#0" expanded="true" />
+                <element signature="e#3327#3336#0" expanded="true" />
+                <element signature="e#3423#3432#0" expanded="true" />
+                <element signature="e#3627#3636#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stack.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assigment2/stack.cpp">
+      <file leaf-file-name="queue.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assigment2/queue.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="86">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assigment2/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="105">
-                <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="21">
-                <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
             </state>
           </provider>
         </entry>
@@ -133,10 +104,12 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/assigment1/array.cpp" />
         <option value="$PROJECT_DIR$/assigment2/RADEME.md" />
-        <option value="$PROJECT_DIR$/assigment2/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/assigment2/stack.cpp" />
         <option value="$PROJECT_DIR$/assigment2/stack.h" />
         <option value="$PROJECT_DIR$/assigment2/README.md" />
+        <option value="$PROJECT_DIR$/assigment2/stack.cpp" />
+        <option value="$PROJECT_DIR$/assigment2/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/assigment2/queue.cpp" />
+        <option value="$PROJECT_DIR$/assigment2/queue.h" />
       </list>
     </option>
   </component>
@@ -209,38 +182,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tesk" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tesk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assigment2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source_image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tesk" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tesk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assigment1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -256,7 +197,7 @@
       <recent name="$PROJECT_DIR$/assigment1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.tesk2_1">
+  <component name="RunManager" selected="Application.tesk2_2">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tesk" TARGET_NAME="tesk" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -446,7 +387,11 @@
       <envs />
       <method />
     </configuration>
-    <list size="7">
+    <configuration default="false" name="tesk2_2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tesk" TARGET_NAME="tesk2_2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tesk" RUN_TARGET_NAME="tesk2_2">
+      <envs />
+      <method />
+    </configuration>
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.tesk" />
       <item index="2" class="java.lang.String" itemvalue="Application.tesk_1" />
@@ -454,6 +399,7 @@
       <item index="4" class="java.lang.String" itemvalue="Application.tesk1_1" />
       <item index="5" class="java.lang.String" itemvalue="Application.tesk1_2" />
       <item index="6" class="java.lang.String" itemvalue="Application.tesk2_1" />
+      <item index="7" class="java.lang.String" itemvalue="Application.tesk2_2" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -484,12 +430,12 @@
       <workItem from="1551454976461" duration="2751000" />
       <workItem from="1551458064108" duration="314000" />
       <workItem from="1551502764477" duration="10125000" />
-      <workItem from="1551584256336" duration="4527000" />
+      <workItem from="1551584256336" duration="10810000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74750000" />
+    <option name="totallyTimeSpent" value="81033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -560,22 +506,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#82#101#0" expanded="true" />
-            <element signature="e#210#219#0" expanded="true" />
-            <element signature="e#624#633#0" expanded="true" />
-            <element signature="e#1104#1113#0" expanded="true" />
-            <element signature="e#1360#1369#0" expanded="true" />
-            <element signature="e#1439#1448#0" expanded="true" />
-            <element signature="e#1529#1538#0" expanded="true" />
-            <element signature="e#1773#1782#0" expanded="true" />
-            <element signature="e#1990#1999#0" expanded="true" />
-            <element signature="e#2259#2268#0" expanded="true" />
-            <element signature="e#2683#2692#0" expanded="true" />
-            <element signature="e#2833#2842#0" expanded="true" />
-            <element signature="e#2905#2914#0" expanded="true" />
-            <element signature="e#2996#3005#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -616,19 +547,19 @@
         <state relative-caret-position="294">
           <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding>
-            <element signature="e#5384#5393#0" expanded="true" />
-            <element signature="e#6174#6183#0" expanded="true" />
-            <element signature="e#6451#6460#0" expanded="true" />
-            <element signature="e#6820#6829#0" expanded="true" />
-            <element signature="e#7205#7214#0" expanded="true" />
-            <element signature="e#7842#7851#0" expanded="true" />
-            <element signature="e#8346#8355#0" expanded="true" />
-            <element signature="e#8735#8744#0" expanded="true" />
-            <element signature="e#9364#9373#0" expanded="true" />
-            <element signature="e#9703#9712#0" expanded="true" />
-            <element signature="e#9844#9853#0" expanded="true" />
-            <element signature="e#9989#9998#0" expanded="true" />
-            <element signature="e#10450#10459#0" expanded="true" />
+            <element signature="e#5384#5393#0" expanded="false" />
+            <element signature="e#6174#6183#0" expanded="false" />
+            <element signature="e#6451#6460#0" expanded="false" />
+            <element signature="e#6820#6829#0" expanded="false" />
+            <element signature="e#7205#7214#0" expanded="false" />
+            <element signature="e#7842#7851#0" expanded="false" />
+            <element signature="e#8346#8355#0" expanded="false" />
+            <element signature="e#8735#8744#0" expanded="false" />
+            <element signature="e#9364#9373#0" expanded="false" />
+            <element signature="e#9703#9712#0" expanded="false" />
+            <element signature="e#9844#9853#0" expanded="false" />
+            <element signature="e#9989#9998#0" expanded="false" />
+            <element signature="e#10450#10459#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -646,19 +577,19 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5384#5393#0" expanded="true" />
-            <element signature="e#6174#6183#0" expanded="true" />
-            <element signature="e#6451#6460#0" expanded="true" />
-            <element signature="e#6820#6829#0" expanded="true" />
-            <element signature="e#7205#7214#0" expanded="true" />
-            <element signature="e#7842#7851#0" expanded="true" />
-            <element signature="e#8346#8355#0" expanded="true" />
-            <element signature="e#8735#8744#0" expanded="true" />
-            <element signature="e#9364#9373#0" expanded="true" />
-            <element signature="e#9703#9712#0" expanded="true" />
-            <element signature="e#9844#9853#0" expanded="true" />
-            <element signature="e#9989#9998#0" expanded="true" />
-            <element signature="e#10450#10459#0" expanded="true" />
+            <element signature="e#5384#5393#0" expanded="false" />
+            <element signature="e#6174#6183#0" expanded="false" />
+            <element signature="e#6451#6460#0" expanded="false" />
+            <element signature="e#6820#6829#0" expanded="false" />
+            <element signature="e#7205#7214#0" expanded="false" />
+            <element signature="e#7842#7851#0" expanded="false" />
+            <element signature="e#8346#8355#0" expanded="false" />
+            <element signature="e#8735#8744#0" expanded="false" />
+            <element signature="e#9364#9373#0" expanded="false" />
+            <element signature="e#9703#9712#0" expanded="false" />
+            <element signature="e#9844#9853#0" expanded="false" />
+            <element signature="e#9989#9998#0" expanded="false" />
+            <element signature="e#10450#10459#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -676,19 +607,19 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5384#5393#0" expanded="true" />
-            <element signature="e#6174#6183#0" expanded="true" />
-            <element signature="e#6451#6460#0" expanded="true" />
-            <element signature="e#6820#6829#0" expanded="true" />
-            <element signature="e#7205#7214#0" expanded="true" />
-            <element signature="e#7842#7851#0" expanded="true" />
-            <element signature="e#8346#8355#0" expanded="true" />
-            <element signature="e#8735#8744#0" expanded="true" />
-            <element signature="e#9364#9373#0" expanded="true" />
-            <element signature="e#9703#9712#0" expanded="true" />
-            <element signature="e#9844#9853#0" expanded="true" />
-            <element signature="e#9989#9998#0" expanded="true" />
-            <element signature="e#10450#10459#0" expanded="true" />
+            <element signature="e#5384#5393#0" expanded="false" />
+            <element signature="e#6174#6183#0" expanded="false" />
+            <element signature="e#6451#6460#0" expanded="false" />
+            <element signature="e#6820#6829#0" expanded="false" />
+            <element signature="e#7205#7214#0" expanded="false" />
+            <element signature="e#7842#7851#0" expanded="false" />
+            <element signature="e#8346#8355#0" expanded="false" />
+            <element signature="e#8735#8744#0" expanded="false" />
+            <element signature="e#9364#9373#0" expanded="false" />
+            <element signature="e#9703#9712#0" expanded="false" />
+            <element signature="e#9844#9853#0" expanded="false" />
+            <element signature="e#9989#9998#0" expanded="false" />
+            <element signature="e#10450#10459#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -706,19 +637,19 @@
         <state relative-caret-position="1000">
           <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
           <folding>
-            <element signature="e#5384#5393#0" expanded="true" />
-            <element signature="e#6174#6183#0" expanded="true" />
-            <element signature="e#6451#6460#0" expanded="true" />
-            <element signature="e#6820#6829#0" expanded="true" />
-            <element signature="e#7205#7214#0" expanded="true" />
-            <element signature="e#7842#7851#0" expanded="true" />
-            <element signature="e#8346#8355#0" expanded="true" />
-            <element signature="e#8735#8744#0" expanded="true" />
-            <element signature="e#9364#9373#0" expanded="true" />
-            <element signature="e#9703#9712#0" expanded="true" />
-            <element signature="e#9844#9853#0" expanded="true" />
-            <element signature="e#9989#9998#0" expanded="true" />
-            <element signature="e#10450#10459#0" expanded="true" />
+            <element signature="e#5384#5393#0" expanded="false" />
+            <element signature="e#6174#6183#0" expanded="false" />
+            <element signature="e#6451#6460#0" expanded="false" />
+            <element signature="e#6820#6829#0" expanded="false" />
+            <element signature="e#7205#7214#0" expanded="false" />
+            <element signature="e#7842#7851#0" expanded="false" />
+            <element signature="e#8346#8355#0" expanded="false" />
+            <element signature="e#8735#8744#0" expanded="false" />
+            <element signature="e#9364#9373#0" expanded="false" />
+            <element signature="e#9703#9712#0" expanded="false" />
+            <element signature="e#9844#9853#0" expanded="false" />
+            <element signature="e#9989#9998#0" expanded="false" />
+            <element signature="e#10450#10459#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -736,19 +667,19 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5384#5393#0" expanded="true" />
-            <element signature="e#6174#6183#0" expanded="true" />
-            <element signature="e#6451#6460#0" expanded="true" />
-            <element signature="e#6820#6829#0" expanded="true" />
-            <element signature="e#7205#7214#0" expanded="true" />
-            <element signature="e#7842#7851#0" expanded="true" />
-            <element signature="e#8346#8355#0" expanded="true" />
-            <element signature="e#8735#8744#0" expanded="true" />
-            <element signature="e#9364#9373#0" expanded="true" />
-            <element signature="e#9703#9712#0" expanded="true" />
-            <element signature="e#9844#9853#0" expanded="true" />
-            <element signature="e#9989#9998#0" expanded="true" />
-            <element signature="e#10450#10459#0" expanded="true" />
+            <element signature="e#5384#5393#0" expanded="false" />
+            <element signature="e#6174#6183#0" expanded="false" />
+            <element signature="e#6451#6460#0" expanded="false" />
+            <element signature="e#6820#6829#0" expanded="false" />
+            <element signature="e#7205#7214#0" expanded="false" />
+            <element signature="e#7842#7851#0" expanded="false" />
+            <element signature="e#8346#8355#0" expanded="false" />
+            <element signature="e#8735#8744#0" expanded="false" />
+            <element signature="e#9364#9373#0" expanded="false" />
+            <element signature="e#9703#9712#0" expanded="false" />
+            <element signature="e#9844#9853#0" expanded="false" />
+            <element signature="e#9989#9998#0" expanded="false" />
+            <element signature="e#10450#10459#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -766,19 +697,19 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5384#5393#0" expanded="true" />
-            <element signature="e#6174#6183#0" expanded="true" />
-            <element signature="e#6451#6460#0" expanded="true" />
-            <element signature="e#6820#6829#0" expanded="true" />
-            <element signature="e#7205#7214#0" expanded="true" />
-            <element signature="e#7842#7851#0" expanded="true" />
-            <element signature="e#8346#8355#0" expanded="true" />
-            <element signature="e#8735#8744#0" expanded="true" />
-            <element signature="e#9364#9373#0" expanded="true" />
-            <element signature="e#9703#9712#0" expanded="true" />
-            <element signature="e#9844#9853#0" expanded="true" />
-            <element signature="e#9989#9998#0" expanded="true" />
-            <element signature="e#10450#10459#0" expanded="true" />
+            <element signature="e#5384#5393#0" expanded="false" />
+            <element signature="e#6174#6183#0" expanded="false" />
+            <element signature="e#6451#6460#0" expanded="false" />
+            <element signature="e#6820#6829#0" expanded="false" />
+            <element signature="e#7205#7214#0" expanded="false" />
+            <element signature="e#7842#7851#0" expanded="false" />
+            <element signature="e#8346#8355#0" expanded="false" />
+            <element signature="e#8735#8744#0" expanded="false" />
+            <element signature="e#9364#9373#0" expanded="false" />
+            <element signature="e#9703#9712#0" expanded="false" />
+            <element signature="e#9844#9853#0" expanded="false" />
+            <element signature="e#9989#9998#0" expanded="false" />
+            <element signature="e#10450#10459#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -925,31 +856,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assigment2/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assigment1/list.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="49" column="26" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="26" />
           <folding>
-            <element signature="e#5384#5393#0" expanded="true" />
-            <element signature="e#6174#6183#0" expanded="true" />
-            <element signature="e#6451#6460#0" expanded="true" />
-            <element signature="e#6820#6829#0" expanded="true" />
-            <element signature="e#7205#7214#0" expanded="true" />
-            <element signature="e#7842#7851#0" expanded="true" />
-            <element signature="e#8346#8355#0" expanded="true" />
-            <element signature="e#8735#8744#0" expanded="true" />
-            <element signature="e#9364#9373#0" expanded="true" />
-            <element signature="e#9703#9712#0" expanded="true" />
-            <element signature="e#9844#9853#0" expanded="true" />
-            <element signature="e#9989#9998#0" expanded="true" />
-            <element signature="e#10450#10459#0" expanded="true" />
+            <element signature="e#5384#5393#0" expanded="false" />
+            <element signature="e#6174#6183#0" expanded="false" />
+            <element signature="e#6451#6460#0" expanded="false" />
+            <element signature="e#6820#6829#0" expanded="false" />
+            <element signature="e#7205#7214#0" expanded="false" />
+            <element signature="e#7842#7851#0" expanded="false" />
+            <element signature="e#8346#8355#0" expanded="false" />
+            <element signature="e#8735#8744#0" expanded="false" />
+            <element signature="e#9364#9373#0" expanded="false" />
+            <element signature="e#9703#9712#0" expanded="false" />
+            <element signature="e#9844#9853#0" expanded="false" />
+            <element signature="e#9989#9998#0" expanded="false" />
+            <element signature="e#10450#10459#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -970,47 +894,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assigment2/stack.h">
+    <entry file="file://$PROJECT_DIR$/assigment2/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
-          <folding>
-            <element signature="e#82#101#0" expanded="true" />
-            <element signature="e#210#219#0" expanded="true" />
-            <element signature="e#624#633#0" expanded="true" />
-            <element signature="e#1104#1113#0" expanded="true" />
-            <element signature="e#1360#1369#0" expanded="true" />
-            <element signature="e#1439#1448#0" expanded="true" />
-            <element signature="e#1529#1538#0" expanded="true" />
-            <element signature="e#1773#1782#0" expanded="true" />
-            <element signature="e#1990#1999#0" expanded="true" />
-            <element signature="e#2259#2268#0" expanded="true" />
-            <element signature="e#2683#2692#0" expanded="true" />
-            <element signature="e#2833#2842#0" expanded="true" />
-            <element signature="e#2905#2914#0" expanded="true" />
-            <element signature="e#2996#3005#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assigment2/stack.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state relative-caret-position="168">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assigment2/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
+    <entry file="file://$PROJECT_DIR$/assigment2/stack.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="133" column="14" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1022,13 +926,60 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="21">
-            <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <first_editor relative-caret-position="25">
+            <caret line="25" column="12" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="12" />
             <folding />
           </first_editor>
           <second_editor>
             <js_state />
           </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment2/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-185">
+            <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment2/queue.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigment2/queue.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="207" column="4" selection-start-line="207" selection-start-column="4" selection-end-line="207" selection-end-column="4" />
+          <folding>
+            <element signature="e#82#101#0" expanded="true" />
+            <element signature="e#179#188#0" expanded="true" />
+            <element signature="e#638#647#0" expanded="true" />
+            <element signature="e#1346#1355#0" expanded="true" />
+            <element signature="e#1613#1622#0" expanded="true" />
+            <element signature="e#1686#1695#0" expanded="true" />
+            <element signature="e#1768#1777#0" expanded="true" />
+            <element signature="e#1924#1933#0" expanded="true" />
+            <element signature="e#2168#2177#0" expanded="true" />
+            <element signature="e#2369#2378#0" expanded="true" />
+            <element signature="e#2640#2649#0" expanded="true" />
+            <element signature="e#3102#3111#0" expanded="true" />
+            <element signature="e#3175#3184#0" expanded="true" />
+            <element signature="e#3254#3263#0" expanded="true" />
+            <element signature="e#3327#3336#0" expanded="true" />
+            <element signature="e#3423#3432#0" expanded="true" />
+            <element signature="e#3627#3636#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

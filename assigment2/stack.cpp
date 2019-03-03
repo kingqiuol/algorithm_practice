@@ -28,6 +28,39 @@ int main()
     cout<<list_stack.pop()<<endl;
     list_stack.print();
 
+    cout<<"=========>stack practice:"<<endl;
+    ArrayStack<char> X(10);
+    ArrayStack<char> Y(10);
+    cout<<"访问a|b|c页面:"<<endl;
+    X.push('a');
+    X.push('b');
+    X.push('c');
+    cout<<"X:";
+    X.print();
+    cout<<"Y:";
+    Y.print();
+    cout<<"返回访问a:"<<endl;
+    Y.push(X.pop());
+    Y.push(X.pop());
+    cout<<"X:";
+    X.print();
+    cout<<"Y:";
+    Y.print();
+    cout<<"返回访问b:"<<endl;
+    X.push(Y.pop());
+    cout<<"X:";
+    X.print();
+    cout<<"Y:";
+    Y.print();
+    cout<<"访问d:"<<endl;
+    while(!Y.empty()){
+        Y.pop();
+    }
+    X.push('d');
+    cout<<"X:";
+    X.print();
+    cout<<"Y:";
+    Y.print();
 
     return 0;
 }
