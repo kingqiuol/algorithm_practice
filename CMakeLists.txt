@@ -3,5 +3,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 project(tesk)
 
-add_subdirectory(assigment1)
-add_subdirectory(assigment2)
+add_subdirectory(assignment1)
+add_subdirectory(assignment2)
+add_subdirectory(assignment3)

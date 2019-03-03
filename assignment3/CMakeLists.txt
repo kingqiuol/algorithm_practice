@@ -1,0 +1,9 @@
+project(tesk3)
+
+set(HEADER_FILES_1 sort.h)
+set(SOURCE_FILES_1 sort.cpp)
+add_executable(tesk3_1 ${SOURCE_FILES_1} ${HEADER_FILES_1})
+
+
+
+

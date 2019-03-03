@@ -9,7 +9,6 @@
 #include <memory>
 
 #include "list.h"
-#include "../assigment1/list.h"
 
 using namespace std;
 
