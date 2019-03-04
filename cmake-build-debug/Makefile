@@ -119,7 +119,7 @@ tesk1_1: cmake_check_build_system
 
 # fast build rule for target.
 tesk1_1/fast:
-	$(MAKE) -f assigment1\CMakeFiles\tesk1_1.dir\build.make assigment1/CMakeFiles/tesk1_1.dir/build
+	$(MAKE) -f assignment1\CMakeFiles\tesk1_1.dir\build.make assignment1/CMakeFiles/tesk1_1.dir/build
 .PHONY : tesk1_1/fast
 
 #=============================================================================
@@ -132,8 +132,60 @@ tesk1_2: cmake_check_build_system
 
 # fast build rule for target.
 tesk1_2/fast:
-	$(MAKE) -f assigment1\CMakeFiles\tesk1_2.dir\build.make assigment1/CMakeFiles/tesk1_2.dir/build
+	$(MAKE) -f assignment1\CMakeFiles\tesk1_2.dir\build.make assignment1/CMakeFiles/tesk1_2.dir/build
 .PHONY : tesk1_2/fast
+
+#=============================================================================
+# Target rules for targets named tesk2_1
+
+# Build rule for target.
+tesk2_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 tesk2_1
+.PHONY : tesk2_1
+
+# fast build rule for target.
+tesk2_1/fast:
+	$(MAKE) -f assignment2\CMakeFiles\tesk2_1.dir\build.make assignment2/CMakeFiles/tesk2_1.dir/build
+.PHONY : tesk2_1/fast
+
+#=============================================================================
+# Target rules for targets named tesk2_2
+
+# Build rule for target.
+tesk2_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 tesk2_2
+.PHONY : tesk2_2
+
+# fast build rule for target.
+tesk2_2/fast:
+	$(MAKE) -f assignment2\CMakeFiles\tesk2_2.dir\build.make assignment2/CMakeFiles/tesk2_2.dir/build
+.PHONY : tesk2_2/fast
+
+#=============================================================================
+# Target rules for targets named tesk2_3
+
+# Build rule for target.
+tesk2_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 tesk2_3
+.PHONY : tesk2_3
+
+# fast build rule for target.
+tesk2_3/fast:
+	$(MAKE) -f assignment2\CMakeFiles\tesk2_3.dir\build.make assignment2/CMakeFiles/tesk2_3.dir/build
+.PHONY : tesk2_3/fast
+
+#=============================================================================
+# Target rules for targets named tesk3_1
+
+# Build rule for target.
+tesk3_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 tesk3_1
+.PHONY : tesk3_1
+
+# fast build rule for target.
+tesk3_1/fast:
+	$(MAKE) -f assignment3\CMakeFiles\tesk3_1.dir\build.make assignment3/CMakeFiles/tesk3_1.dir/build
+.PHONY : tesk3_1/fast
 
 # Help Target
 help:
@@ -145,6 +197,10 @@ help:
 	@echo ... rebuild_cache
 	@echo ... tesk1_1
 	@echo ... tesk1_2
+	@echo ... tesk2_1
+	@echo ... tesk2_2
+	@echo ... tesk2_3
+	@echo ... tesk3_1
 .PHONY : help
 
 
