@@ -64,7 +64,15 @@ void QuickSort(T arr[],int left,int right)
 template <class T>
 void InsertSort(T arr[],int len)
 {
-
+    for(int i=1;i<len;++i){
+        int j=i-1;
+        int temp=arr[i];
+        while(j>=0 && arr[j]>temp){
+            arr[j+1]=arr[j];
+            --j;
+        }
+        arr[j+1]=temp;
+    }
 }
 
 //2¡¢Ï£¶ûÅÅÐò
