@@ -59,96 +59,284 @@ CMAKE_SOURCE_DIR = C:\Users\jinqiu\Desktop\tesk
 CMAKE_BINARY_DIR = C:\Users\jinqiu\Desktop\tesk\cmake-build-debug
 
 #=============================================================================
-# Directory level rules for directory assigment1
+# Directory level rules for directory assignment1
 
 # Convenience name for "all" pass in the directory.
-assigment1/all: assigment1/CMakeFiles/tesk1_1.dir/all
-assigment1/all: assigment1/CMakeFiles/tesk1_2.dir/all
+assignment1/all: assignment1/CMakeFiles/tesk1_1.dir/all
+assignment1/all: assignment1/CMakeFiles/tesk1_2.dir/all
 
-.PHONY : assigment1/all
+.PHONY : assignment1/all
 
 # Convenience name for "clean" pass in the directory.
-assigment1/clean: assigment1/CMakeFiles/tesk1_1.dir/clean
-assigment1/clean: assigment1/CMakeFiles/tesk1_2.dir/clean
+assignment1/clean: assignment1/CMakeFiles/tesk1_1.dir/clean
+assignment1/clean: assignment1/CMakeFiles/tesk1_2.dir/clean
 
-.PHONY : assigment1/clean
+.PHONY : assignment1/clean
 
 # Convenience name for "preinstall" pass in the directory.
-assigment1/preinstall:
+assignment1/preinstall:
 
-.PHONY : assigment1/preinstall
+.PHONY : assignment1/preinstall
 
 #=============================================================================
-# Target rules for target assigment1/CMakeFiles/tesk1_1.dir
+# Target rules for target assignment1/CMakeFiles/tesk1_1.dir
 
 # All Build rule for target.
-assigment1/CMakeFiles/tesk1_1.dir/all:
-	$(MAKE) -f assigment1\CMakeFiles\tesk1_1.dir\build.make assigment1/CMakeFiles/tesk1_1.dir/depend
-	$(MAKE) -f assigment1\CMakeFiles\tesk1_1.dir\build.make assigment1/CMakeFiles/tesk1_1.dir/build
+assignment1/CMakeFiles/tesk1_1.dir/all:
+	$(MAKE) -f assignment1\CMakeFiles\tesk1_1.dir\build.make assignment1/CMakeFiles/tesk1_1.dir/depend
+	$(MAKE) -f assignment1\CMakeFiles\tesk1_1.dir\build.make assignment1/CMakeFiles/tesk1_1.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target tesk1_1"
-.PHONY : assigment1/CMakeFiles/tesk1_1.dir/all
+.PHONY : assignment1/CMakeFiles/tesk1_1.dir/all
 
 # Include target in all.
-all: assigment1/CMakeFiles/tesk1_1.dir/all
+all: assignment1/CMakeFiles/tesk1_1.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-assigment1/CMakeFiles/tesk1_1.dir/rule: cmake_check_build_system
+assignment1/CMakeFiles/tesk1_1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 assigment1/CMakeFiles/tesk1_1.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 assignment1/CMakeFiles/tesk1_1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 0
-.PHONY : assigment1/CMakeFiles/tesk1_1.dir/rule
+.PHONY : assignment1/CMakeFiles/tesk1_1.dir/rule
 
 # Convenience name for target.
-tesk1_1: assigment1/CMakeFiles/tesk1_1.dir/rule
+tesk1_1: assignment1/CMakeFiles/tesk1_1.dir/rule
 
 .PHONY : tesk1_1
 
 # clean rule for target.
-assigment1/CMakeFiles/tesk1_1.dir/clean:
-	$(MAKE) -f assigment1\CMakeFiles\tesk1_1.dir\build.make assigment1/CMakeFiles/tesk1_1.dir/clean
-.PHONY : assigment1/CMakeFiles/tesk1_1.dir/clean
+assignment1/CMakeFiles/tesk1_1.dir/clean:
+	$(MAKE) -f assignment1\CMakeFiles\tesk1_1.dir\build.make assignment1/CMakeFiles/tesk1_1.dir/clean
+.PHONY : assignment1/CMakeFiles/tesk1_1.dir/clean
 
 # clean rule for target.
-clean: assigment1/CMakeFiles/tesk1_1.dir/clean
+clean: assignment1/CMakeFiles/tesk1_1.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target assigment1/CMakeFiles/tesk1_2.dir
+# Target rules for target assignment1/CMakeFiles/tesk1_2.dir
 
 # All Build rule for target.
-assigment1/CMakeFiles/tesk1_2.dir/all:
-	$(MAKE) -f assigment1\CMakeFiles\tesk1_2.dir\build.make assigment1/CMakeFiles/tesk1_2.dir/depend
-	$(MAKE) -f assigment1\CMakeFiles\tesk1_2.dir\build.make assigment1/CMakeFiles/tesk1_2.dir/build
+assignment1/CMakeFiles/tesk1_2.dir/all:
+	$(MAKE) -f assignment1\CMakeFiles\tesk1_2.dir\build.make assignment1/CMakeFiles/tesk1_2.dir/depend
+	$(MAKE) -f assignment1\CMakeFiles\tesk1_2.dir\build.make assignment1/CMakeFiles/tesk1_2.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target tesk1_2"
-.PHONY : assigment1/CMakeFiles/tesk1_2.dir/all
+.PHONY : assignment1/CMakeFiles/tesk1_2.dir/all
 
 # Include target in all.
-all: assigment1/CMakeFiles/tesk1_2.dir/all
+all: assignment1/CMakeFiles/tesk1_2.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-assigment1/CMakeFiles/tesk1_2.dir/rule: cmake_check_build_system
+assignment1/CMakeFiles/tesk1_2.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 assigment1/CMakeFiles/tesk1_2.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 assignment1/CMakeFiles/tesk1_2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 0
-.PHONY : assigment1/CMakeFiles/tesk1_2.dir/rule
+.PHONY : assignment1/CMakeFiles/tesk1_2.dir/rule
 
 # Convenience name for target.
-tesk1_2: assigment1/CMakeFiles/tesk1_2.dir/rule
+tesk1_2: assignment1/CMakeFiles/tesk1_2.dir/rule
 
 .PHONY : tesk1_2
 
 # clean rule for target.
-assigment1/CMakeFiles/tesk1_2.dir/clean:
-	$(MAKE) -f assigment1\CMakeFiles\tesk1_2.dir\build.make assigment1/CMakeFiles/tesk1_2.dir/clean
-.PHONY : assigment1/CMakeFiles/tesk1_2.dir/clean
+assignment1/CMakeFiles/tesk1_2.dir/clean:
+	$(MAKE) -f assignment1\CMakeFiles\tesk1_2.dir\build.make assignment1/CMakeFiles/tesk1_2.dir/clean
+.PHONY : assignment1/CMakeFiles/tesk1_2.dir/clean
 
 # clean rule for target.
-clean: assigment1/CMakeFiles/tesk1_2.dir/clean
+clean: assignment1/CMakeFiles/tesk1_2.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory assignment2
+
+# Convenience name for "all" pass in the directory.
+assignment2/all: assignment2/CMakeFiles/tesk2_1.dir/all
+assignment2/all: assignment2/CMakeFiles/tesk2_2.dir/all
+assignment2/all: assignment2/CMakeFiles/tesk2_3.dir/all
+
+.PHONY : assignment2/all
+
+# Convenience name for "clean" pass in the directory.
+assignment2/clean: assignment2/CMakeFiles/tesk2_1.dir/clean
+assignment2/clean: assignment2/CMakeFiles/tesk2_2.dir/clean
+assignment2/clean: assignment2/CMakeFiles/tesk2_3.dir/clean
+
+.PHONY : assignment2/clean
+
+# Convenience name for "preinstall" pass in the directory.
+assignment2/preinstall:
+
+.PHONY : assignment2/preinstall
+
+#=============================================================================
+# Target rules for target assignment2/CMakeFiles/tesk2_1.dir
+
+# All Build rule for target.
+assignment2/CMakeFiles/tesk2_1.dir/all:
+	$(MAKE) -f assignment2\CMakeFiles\tesk2_1.dir\build.make assignment2/CMakeFiles/tesk2_1.dir/depend
+	$(MAKE) -f assignment2\CMakeFiles\tesk2_1.dir\build.make assignment2/CMakeFiles/tesk2_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target tesk2_1"
+.PHONY : assignment2/CMakeFiles/tesk2_1.dir/all
+
+# Include target in all.
+all: assignment2/CMakeFiles/tesk2_1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+assignment2/CMakeFiles/tesk2_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 assignment2/CMakeFiles/tesk2_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 0
+.PHONY : assignment2/CMakeFiles/tesk2_1.dir/rule
+
+# Convenience name for target.
+tesk2_1: assignment2/CMakeFiles/tesk2_1.dir/rule
+
+.PHONY : tesk2_1
+
+# clean rule for target.
+assignment2/CMakeFiles/tesk2_1.dir/clean:
+	$(MAKE) -f assignment2\CMakeFiles\tesk2_1.dir\build.make assignment2/CMakeFiles/tesk2_1.dir/clean
+.PHONY : assignment2/CMakeFiles/tesk2_1.dir/clean
+
+# clean rule for target.
+clean: assignment2/CMakeFiles/tesk2_1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target assignment2/CMakeFiles/tesk2_2.dir
+
+# All Build rule for target.
+assignment2/CMakeFiles/tesk2_2.dir/all:
+	$(MAKE) -f assignment2\CMakeFiles\tesk2_2.dir\build.make assignment2/CMakeFiles/tesk2_2.dir/depend
+	$(MAKE) -f assignment2\CMakeFiles\tesk2_2.dir\build.make assignment2/CMakeFiles/tesk2_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target tesk2_2"
+.PHONY : assignment2/CMakeFiles/tesk2_2.dir/all
+
+# Include target in all.
+all: assignment2/CMakeFiles/tesk2_2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+assignment2/CMakeFiles/tesk2_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 assignment2/CMakeFiles/tesk2_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 0
+.PHONY : assignment2/CMakeFiles/tesk2_2.dir/rule
+
+# Convenience name for target.
+tesk2_2: assignment2/CMakeFiles/tesk2_2.dir/rule
+
+.PHONY : tesk2_2
+
+# clean rule for target.
+assignment2/CMakeFiles/tesk2_2.dir/clean:
+	$(MAKE) -f assignment2\CMakeFiles\tesk2_2.dir\build.make assignment2/CMakeFiles/tesk2_2.dir/clean
+.PHONY : assignment2/CMakeFiles/tesk2_2.dir/clean
+
+# clean rule for target.
+clean: assignment2/CMakeFiles/tesk2_2.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target assignment2/CMakeFiles/tesk2_3.dir
+
+# All Build rule for target.
+assignment2/CMakeFiles/tesk2_3.dir/all:
+	$(MAKE) -f assignment2\CMakeFiles\tesk2_3.dir\build.make assignment2/CMakeFiles/tesk2_3.dir/depend
+	$(MAKE) -f assignment2\CMakeFiles\tesk2_3.dir\build.make assignment2/CMakeFiles/tesk2_3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target tesk2_3"
+.PHONY : assignment2/CMakeFiles/tesk2_3.dir/all
+
+# Include target in all.
+all: assignment2/CMakeFiles/tesk2_3.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+assignment2/CMakeFiles/tesk2_3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 assignment2/CMakeFiles/tesk2_3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 0
+.PHONY : assignment2/CMakeFiles/tesk2_3.dir/rule
+
+# Convenience name for target.
+tesk2_3: assignment2/CMakeFiles/tesk2_3.dir/rule
+
+.PHONY : tesk2_3
+
+# clean rule for target.
+assignment2/CMakeFiles/tesk2_3.dir/clean:
+	$(MAKE) -f assignment2\CMakeFiles\tesk2_3.dir\build.make assignment2/CMakeFiles/tesk2_3.dir/clean
+.PHONY : assignment2/CMakeFiles/tesk2_3.dir/clean
+
+# clean rule for target.
+clean: assignment2/CMakeFiles/tesk2_3.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory assignment3
+
+# Convenience name for "all" pass in the directory.
+assignment3/all: assignment3/CMakeFiles/tesk3_1.dir/all
+
+.PHONY : assignment3/all
+
+# Convenience name for "clean" pass in the directory.
+assignment3/clean: assignment3/CMakeFiles/tesk3_1.dir/clean
+
+.PHONY : assignment3/clean
+
+# Convenience name for "preinstall" pass in the directory.
+assignment3/preinstall:
+
+.PHONY : assignment3/preinstall
+
+#=============================================================================
+# Target rules for target assignment3/CMakeFiles/tesk3_1.dir
+
+# All Build rule for target.
+assignment3/CMakeFiles/tesk3_1.dir/all:
+	$(MAKE) -f assignment3\CMakeFiles\tesk3_1.dir\build.make assignment3/CMakeFiles/tesk3_1.dir/depend
+	$(MAKE) -f assignment3\CMakeFiles\tesk3_1.dir\build.make assignment3/CMakeFiles/tesk3_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target tesk3_1"
+.PHONY : assignment3/CMakeFiles/tesk3_1.dir/all
+
+# Include target in all.
+all: assignment3/CMakeFiles/tesk3_1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+assignment3/CMakeFiles/tesk3_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 assignment3/CMakeFiles/tesk3_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 0
+.PHONY : assignment3/CMakeFiles/tesk3_1.dir/rule
+
+# Convenience name for target.
+tesk3_1: assignment3/CMakeFiles/tesk3_1.dir/rule
+
+.PHONY : tesk3_1
+
+# clean rule for target.
+assignment3/CMakeFiles/tesk3_1.dir/clean:
+	$(MAKE) -f assignment3\CMakeFiles\tesk3_1.dir\build.make assignment3/CMakeFiles/tesk3_1.dir/clean
+.PHONY : assignment3/CMakeFiles/tesk3_1.dir/clean
+
+# clean rule for target.
+clean: assignment3/CMakeFiles/tesk3_1.dir/clean
 
 .PHONY : clean
 

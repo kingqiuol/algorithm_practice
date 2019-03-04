@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/jinqiu/Desktop/tesk/assignment2/list.h
+iostream
+-
+memory
+-
+
+C:/Users/jinqiu/Desktop/tesk/assignment2/queue.cpp
+queue.h
+C:/Users/jinqiu/Desktop/tesk/assignment2/queue.h
+
+C:/Users/jinqiu/Desktop/tesk/assignment2/queue.h
+iostream
+-
+memory
+-
+list.h
+C:/Users/jinqiu/Desktop/tesk/assignment2/list.h
+
