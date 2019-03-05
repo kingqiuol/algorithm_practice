@@ -116,10 +116,21 @@ void SelectSort(T arr[],int len)
 }
 
 //2、堆排序
-template <class T>
-void HeapSort(T arr[],int len)
+//调整大顶堆（仅是调整过程，建立在大顶堆已构建的基础上）
+void adjust_heap(int arr[], int i, int len)
 {
 
+}
+
+//http://www.cnblogs.com/chengxiao/p/6129630.html
+template <class T>
+void HeapSort(T arr[], int len)
+{
+    //1、构建最大堆
+    for (int i = len/2 - 1; i >= 0; i--){
+        //从第一个非叶子节点从上往下，从右至左调整
+        adjust_heap(arr, i, len);
+    }
 }
 
 /*******************************************
