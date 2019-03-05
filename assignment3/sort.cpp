@@ -56,9 +56,44 @@ vector<int> maxSlidingWindow(vector<int>& nums, int k) {
  * 编程实现 O(n) 时间复杂度内找到一组数据的第 K 大元素
  *
  * */
-int find_k_max(int arr[],int len)
+int quick_sort(int arr[],int start,int end,int K)
 {
-    
+    int temp=arr[end];
+    int i=start;
+    int j=end;
+    while(i<j){
+        while(i<j&&arr[i]<temp){
+            ++i;
+        }
+        if(i<j){
+            arr[j]=arr[i];
+            ++j;
+        }
+        while(i<j&&arr[j]>temp){
+            ++j;
+        }
+        if(i<j){
+            arr[i]=arr[j];
+            ++i;
+        }
+    }
+    arr[i]=temp;
+
+    if(i==K){
+        return i;
+    } else if(i<K){
+        return quick_sort(arr,i+1,end,K);
+    } else{
+        return quick_sort(arr,start,i-1,K);
+    }
+
+}
+
+int find_k_max(int arr[],int len,int k)
+{
+    int start=0;
+    int end=len-1;
+    return quick_sort(arr,start,end,len-k);
 }
 
 
@@ -111,12 +146,15 @@ int main()
 //    c_end=clock();
 //    cout<<c_end-c_start<<" ms"<<endl;
 
-    vector<int> num={1,3,-1,-3,5,3,6,7};
-    vector<int> result=maxSlidingWindow(num,3);
-    for(auto &c:result){
-        cout<<c<<" ";
-    }
-    cout<<endl;
+//    vector<int> num={1,3,-1,-3,5,3,6,7};
+//    vector<int> result=maxSlidingWindow(num,3);
+//    for(auto &c:result){
+//        cout<<c<<" ";
+//    }
+//    cout<<endl;
+
+    int arr1[5]={2,5,1,4,3};
+    cout<<find_k_max(arr1,5,2)<<endl;
 
     return 0;
 }
