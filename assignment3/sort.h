@@ -117,7 +117,8 @@ void SelectSort(T arr[],int len)
 
 //2、堆排序
 //调整大顶堆（仅是调整过程，建立在大顶堆已构建的基础上）
-void adjust_heap(int arr[], int i, int len)
+template <class T>
+void adjust_heap(T arr[], int i, int len)
 {
     int temp = arr[i];//取出当前元素
     for (int k = i * 2 + 1; k < len; k = k * 2 + 1){//从i结点的左子结点开始，也就是2i+1处开始
@@ -135,6 +136,14 @@ void adjust_heap(int arr[], int i, int len)
     arr[i] = temp;//将temp值放到最终的位置
 }
 
+template <class T>
+void swap(T arr[],int a,int b)
+{
+    int temp=arr[a];
+    arr[a]=arr[b];
+    arr[b]=temp;
+}
+
 //http://www.cnblogs.com/chengxiao/p/6129630.html
 template <class T>
 void HeapSort(T arr[], int len)
@@ -143,6 +152,12 @@ void HeapSort(T arr[], int len)
     for (int i = len/2 - 1; i >= 0; i--){
         //从第一个非叶子节点从上往下，从右至左调整
         adjust_heap(arr, i, len);
+    }
+
+    //2、调整堆结构+交换堆顶元素与末尾元素
+    for(int j=len-1;j>0;--j){
+        swap(arr,0,j);
+        adjust_heap(arr,0,j);
     }
 }
 

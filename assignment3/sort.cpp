@@ -4,6 +4,8 @@
 #include "sort.h"
 
 #include <time.h>
+#include <vector>
+#include <deque>
 
 void produceRandomNumbers(int arr[],int len,int start,int end)
 {
@@ -20,6 +22,45 @@ void print(int arr[],int len){
     cout<<endl;
 
 }
+
+/**
+*给定一个数组 nums，有一个大小为 k 的滑动窗口从数组的最左侧移动到数组的最右侧。
+*你只可以看到在滑动窗口 k 内的数字。滑动窗口每次只向右移动一位。返回滑动窗口最大值。
+*示例:
+*输入: nums = [1,3,-1,-3,5,3,6,7], 和 k = 3
+*输出: [3,3,5,5,6,7]
+**/
+vector<int> maxSlidingWindow(vector<int>& nums, int k) {
+    vector<int> ans;
+    int n = nums.size();
+    if(n == 0 || k > n)
+        return ans;
+    deque<int> que;
+    for(int i = 0; i < n; i ++)
+    {
+        if(!que.empty())
+        {
+            if(i >= que.front()+k)
+                que.pop_front();
+            while(!que.empty() && nums[i] >= nums[que.back()])
+                que.pop_back();
+        }
+        que.push_back(i);
+        if(i + 1 >= k)
+            ans.push_back(nums[que.front()]);
+    }
+    return ans;
+}
+
+/*
+ * 编程实现 O(n) 时间复杂度内找到一组数据的第 K 大元素
+ *
+ * */
+int find_k_max(int arr[],int len)
+{
+    
+}
+
 
 int main()
 {
@@ -56,12 +97,26 @@ int main()
 //    c_end=clock();
 //    cout<<c_end-c_start<<" ms"<<endl;
 
-    c_start=clock();
-    cout<<"SelectSort:";
-    ShellSort<int>(arr,100000);
-    print(arr,100);
-    c_end=clock();
-    cout<<c_end-c_start<<" ms"<<endl;
+//    c_start=clock();
+//    cout<<"SelectSort:";
+//    ShellSort<int>(arr,100000);
+//    print(arr,100);
+//    c_end=clock();
+//    cout<<c_end-c_start<<" ms"<<endl;
+
+//    c_start=clock();
+//    cout<<"HeapSort:";
+//    ShellSort<int>(arr,100000);
+//    print(arr,100);
+//    c_end=clock();
+//    cout<<c_end-c_start<<" ms"<<endl;
+
+    vector<int> num={1,3,-1,-3,5,3,6,7};
+    vector<int> result=maxSlidingWindow(num,3);
+    for(auto &c:result){
+        cout<<c<<" ";
+    }
+    cout<<endl;
 
     return 0;
 }
