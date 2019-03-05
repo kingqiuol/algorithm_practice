@@ -79,7 +79,17 @@ void InsertSort(T arr[],int len)
 template <class T>
 void ShellSort(T arr[],int len)
 {
-
+    for (int gap = len / 3; gap > 0; gap /= 2){
+        for (int i = gap; i < len; ++i){
+            int temp = arr[i];
+            int j = i - gap;
+            while (j >= 0 && arr[j]>temp){
+                arr[j + gap] = arr[j];
+                j -= gap;
+            }
+            arr[j + gap] = temp;
+        }
+    }
 }
 
 /*******************************************
@@ -89,7 +99,20 @@ void ShellSort(T arr[],int len)
 template <class T>
 void SelectSort(T arr[],int len)
 {
+    for (int i = 0; i < len - 1; ++i){
+        int min = i;
+        for (int j = i + 1; j < len; ++j){
+            if (arr[j] < arr[min]){
+                min = j;
+            }
+        }
 
+        if (min != i){
+            int temp = arr[i];
+            arr[i] = arr[min];
+            arr[min] = temp;
+        }
+    }
 }
 
 //2¡¢¶ÑÅÅÐò
