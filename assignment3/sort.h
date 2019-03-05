@@ -119,7 +119,20 @@ void SelectSort(T arr[],int len)
 //调整大顶堆（仅是调整过程，建立在大顶堆已构建的基础上）
 void adjust_heap(int arr[], int i, int len)
 {
-
+    int temp = arr[i];//取出当前元素
+    for (int k = i * 2 + 1; k < len; k = k * 2 + 1){//从i结点的左子结点开始，也就是2i+1处开始
+        if (k + 1 < len && arr[k] < arr[k + 1]){//如果左子结点小于右子结点，k指向右子结点
+            ++k;
+        }
+        if (arr[k] > temp){//如果子节点大于父节点，将子节点值赋给父节点（不用进行交换)
+            arr[i] = arr[k];
+            i = k;
+        }
+        else{
+            break;
+        }
+    }
+    arr[i] = temp;//将temp值放到最终的位置
 }
 
 //http://www.cnblogs.com/chengxiao/p/6129630.html
