@@ -67,10 +67,10 @@ int quick_sort(int arr[],int start,int end,int K)
         }
         if(i<j){
             arr[j]=arr[i];
-            ++j;
+            --j;
         }
         while(i<j&&arr[j]>temp){
-            ++j;
+            --j;
         }
         if(i<j){
             arr[i]=arr[j];
@@ -153,8 +153,8 @@ int main()
 //    }
 //    cout<<endl;
 
-    int arr1[5]={2,5,1,4,3};
-    cout<<find_k_max(arr1,5,2)<<endl;
+    int arr1[10]={9,26,11,13,8,15,5,21,10,14};
+    cout<<arr1[find_k_max(arr1,10,3)]<<endl;
 
     return 0;
 }
