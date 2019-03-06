@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../assignment1/CMakeLists.txt"
   "../assignment2/CMakeLists.txt"
   "../assignment3/CMakeLists.txt"
+  "../assignment4/CMakeLists.txt"
   "CMakeFiles/3.6.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.6.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.6.3/CMakeRCCompiler.cmake"
@@ -51,6 +52,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "assignment1/CMakeFiles/CMakeDirectoryInformation.cmake"
   "assignment2/CMakeFiles/CMakeDirectoryInformation.cmake"
   "assignment3/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "assignment4/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -61,4 +63,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "assignment2/CMakeFiles/tesk2_2.dir/DependInfo.cmake"
   "assignment2/CMakeFiles/tesk2_3.dir/DependInfo.cmake"
   "assignment3/CMakeFiles/tesk3_1.dir/DependInfo.cmake"
+  "assignment3/CMakeFiles/tesk3_2.dir/DependInfo.cmake"
   )

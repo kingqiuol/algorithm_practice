@@ -100,9 +100,9 @@ int find_k_max(int arr[],int len,int k)
 int main()
 {
     time_t c_start,c_end;
-    //int arr[10]={2,33,44,66,7,1,0,34,45,23};
-    int arr[100000];
-    produceRandomNumbers(arr,100000,100,10000);
+    int arr[10]={2,33,44,66,7,1,0,34,45,23};
+    //int arr[100000];
+    //produceRandomNumbers(arr,100000,100,10000);
 
 //    c_start=clock();
 //    cout<<"BubbleSort:";
@@ -146,6 +146,34 @@ int main()
 //    c_end=clock();
 //    cout<<c_end-c_start<<" ms"<<endl;
 
+//    c_start=clock();
+//    cout<<"MergeSort:";
+//    ShellSort<int>(arr,100000);
+//    print(arr,100);
+//    c_end=clock();
+//    cout<<c_end-c_start<<" ms"<<endl;
+
+//    c_start=clock();
+//    cout<<"CountingSort:";
+//    CountingSort<int>(arr,10);
+//    print(arr,10);
+//    c_end=clock();
+//    cout<<c_end-c_start<<" ms"<<endl;
+
+    c_start=clock();
+    cout<<"BucketSort:";
+    BucketSort<int>(arr,10);
+    print(arr,10);
+    c_end=clock();
+    cout<<c_end-c_start<<" ms"<<endl;
+
+//    c_start=clock();
+//    cout<<"RadixSort:";
+//    RadixSort<int>(arr,10);
+//    print(arr,10);
+//    c_end=clock();
+//    cout<<c_end-c_start<<" ms"<<endl;
+
 //    vector<int> num={1,3,-1,-3,5,3,6,7};
 //    vector<int> result=maxSlidingWindow(num,3);
 //    for(auto &c:result){
@@ -153,8 +181,8 @@ int main()
 //    }
 //    cout<<endl;
 
-    int arr1[10]={9,26,11,13,8,15,5,21,10,14};
-    cout<<arr1[find_k_max(arr1,10,3)]<<endl;
+//    int arr1[10]={9,26,11,13,8,15,5,21,10,14};
+//    cout<<arr1[find_k_max(arr1,10,3)]<<endl;
 
     return 0;
 }

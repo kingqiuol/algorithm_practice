@@ -7,6 +7,10 @@
 
 #include <iostream>
 #include <math.h>
+#include <algorithm>
+
+#include "list.h"
+
 
 using namespace std;
 
@@ -166,21 +170,58 @@ void HeapSort(T arr[], int len)
 *                  归并排序                 *
 *******************************************/
 template <class T>
-void merge_sort(T arr[],int start,int end){
-    if(end-start==0){
-        return ;
-    }
-    int mid=floor((end-start)/2);
+void merge(T arr[], int start, int mid, int end)
+{
+    int *tmp = new T[end - start + 1];// tmp是汇总2个有序区的临时区域
+    int i = start;// 第1个有序区的索引
+    int j = mid + 1;// 第2个有序区的索引
+    int k = 0; // 临时区域的索引
 
+    while (i <= mid && j <= end){
+        if (arr[i] <= arr[j]){
+            tmp[k++] = arr[i++];
+        }
+        else{
+            tmp[k++] = arr[j++];
+        }
+    }
+
+    while (i <= mid){
+        tmp[k++] = arr[i++];
+    }
+
+    while (j <= end){
+        tmp[k++] = arr[j++];
+    }
+
+    // 将排序后的元素，全部都整合到数组a中。
+    for (i = 0; i < k; i++)
+        arr[start + i] = tmp[i];
+
+    delete[] tmp;
+}
+
+template <class T>
+void merge_sort(T arr[], int start, int end)
+{
+    if (arr == NULL || start >= end){
+        return;
+    }
+
+    int mid = (start + end) / 2;
+    merge_sort(arr, start, mid);
+    merge_sort(arr, mid, end);
+
+    merge(arr, start, mid, end);
 }
 
 //1、归并排序
 template <class T>
-void MergeSort(T arr[],int len)
+void MergeSort(T arr[], int len)
 {
-    int start=0;
-    int end=len-1;
-    merge_sort(arr,start,end);
+    int start = 0;
+    int end = len - 1;
+    merge_sort(arr, start, end);
 }
 
 /*******************************************
@@ -188,23 +229,126 @@ void MergeSort(T arr[],int len)
 *******************************************/
 //1、计数排序
 template <class T>
-void CountingSort(T arr[],int len)
+void CountingSort(T arr[], int len)
 {
+    // 计算最大最小值
+    auto it = minmax_element(arr, arr + len);
+    T min = *it.first;
+    T max = *it.second;
+    int R = max - min + 1;
 
+    // 1. 计算频率，在需要的数组长度上额外加1
+    T *count = new T[R]();
+    for (int i = 0; i < len; ++i){
+        // 使用加1后的索引，有重复的该位置就自增
+        count[arr[i] - min + 1] += 1;
+    }
+
+    // 2. 频率 -> 元素的开始索引
+    for (int i = 0; i < R; ++i){
+        count[i + 1] += count[i];
+    }
+
+    // 3. 元素按照开始索引分类，用到一个和待排数组一样大临时数组存放数据
+    T *tmp = new T[len];
+    for (int i = 0; i < len; ++i){
+        tmp[count[arr[i] - min]++] = arr[i];
+    }
+
+    // 4. 数据回写
+    copy(tmp, tmp + len, arr);
+
+    delete[] count;
+    delete[] tmp;
+}
+
+// 映射函数，将值转换为应存放到的桶数组的索引
+template <class T>
+int toBucketIndex(T value,int maxValue,int len)
+{
+    return (value*len)/(maxValue+1);
 }
 
 //2、桶排序
 template <class T>
 void BucketSort(T arr[],int len)
 {
+    // 建立桶，个数和待排序数组长度一样
+    SingleList<T> *bucket=new SingleList<T>[len]();
 
+    // 待排序数组中的最大值
+    int maxValue=*max_element(arr,arr+len);
+    // 根据每个元素的值，分配到对应范围的桶中
+    for (int i=0;i<len;++i){
+        int index=toBucketIndex(arr[i],maxValue,len);
+        bucket[index].insert(0,arr[i]);
+    }
+
+    // 对每个非空的桶排序，排序后顺便存入临时的List，则list中已经有序
+    T tmp[len];
+    int j=0;
+    for(int i=0;i<len;++i){
+        if(!bucket[i].empty()){
+            bucket[i].sort();
+
+            for(int k=0;k<bucket->size();++k){
+                tmp[j++]=bucket[i].get(k);
+            }
+        }
+    }
+    //将temp中的数据写入原数组
+    copy(tmp,tmp+len,arr);
+
+    delete[] bucket;
+}
+
+// 找到num的从低到高的第pos位的数据
+template <class T>
+T GetDigitInPos(T num, int pos)
+{
+    int temp = 1;
+    for (int i = 0; i < pos - 1; i++)
+        temp *= 10;
+    return (num / temp) % 10;
+}
+
+//获取最大数得位数
+template <class T>
+int get_max_bit(T arr[],int len)
+{
+    T max=*max_element(arr,arr+len);
+    int bit=0;
+    while(max/=10){
+        ++bit;
+    }
+
+    return bit+1;
 }
 
 //3、基数排序
 template <class T>
-void RadixSort(T arr[],int len)
+void RadixSort(T arr[], int len)
 {
+    SingleList<T> *bucket=new SingleList<T>[10]();
+    int K=get_max_bit(arr,len);
+    T tmp[len]={};
 
+    for(int k=0;k<K;++k){
+        for(int i=0;i<len;++i){
+            bucket[GetDigitInPos(arr[i],k)].insert(0,arr[i]);
+        }
+
+        int j=0;
+        for(int i=0;i<10;++i){
+            for(int k=0;k<bucket->size();++k){
+                tmp[j++]=bucket[i].get(k);
+            }
+        }
+    }
+
+    copy(tmp,tmp+len,arr);
+
+    delete[] bucket;
 }
 
 
