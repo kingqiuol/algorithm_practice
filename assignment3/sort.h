@@ -6,6 +6,7 @@
 #define TESK_SORT_H
 
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -224,9 +225,37 @@ void MergeSort(T arr[], int len)
 *******************************************/
 //1、计数排序
 template <class T>
-void CountingSort(T arr[],int len)
+void CountingSort(T arr[], int len)
 {
+    // 计算最大最小值
+    auto it = minmax_element(arr, arr + len);
+    T min = it.first;
+    T max = it.second;
+    int R = max - min + 1;
 
+    // 1. 计算频率，在需要的数组长度上额外加1
+    T *count = new T[R];
+    for (int i = 0; i < len; ++i){
+        // 使用加1后的索引，有重复的该位置就自增
+        count[arr[i] - min + 1] += 1;
+    }
+
+    // 2. 频率 -> 元素的开始索引
+    for (int i = 0; i < R; ++i){
+        count[i + 1] += count[i];
+    }
+
+    // 3. 元素按照开始索引分类，用到一个和待排数组一样大临时数组存放数据
+    T *tmp = new T[len];
+    for (int i = 0; i < len; ++i){
+        tmp[count[arr[i] - min]++] = arr[i];
+    }
+
+    // 4. 数据回写
+    copy(tmp, tmp + len, arr);
+
+    delete[] count;
+    delete[] tmp;
 }
 
 //2、桶排序
