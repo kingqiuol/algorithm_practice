@@ -124,6 +124,48 @@ tesk3_1/fast:
 	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment3\CMakeFiles\tesk3_1.dir\build.make assignment3/CMakeFiles/tesk3_1.dir/build
 .PHONY : tesk3_1/fast
 
+# Convenience name for target.
+assignment3/CMakeFiles/tesk3_2.dir/rule:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 assignment3/CMakeFiles/tesk3_2.dir/rule
+.PHONY : assignment3/CMakeFiles/tesk3_2.dir/rule
+
+# Convenience name for target.
+tesk3_2: assignment3/CMakeFiles/tesk3_2.dir/rule
+
+.PHONY : tesk3_2
+
+# fast build rule for target.
+tesk3_2/fast:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment3\CMakeFiles\tesk3_2.dir\build.make assignment3/CMakeFiles/tesk3_2.dir/build
+.PHONY : tesk3_2/fast
+
+binary_chop.obj: binary_chop.cpp.obj
+
+.PHONY : binary_chop.obj
+
+# target to build an object file
+binary_chop.cpp.obj:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment3\CMakeFiles\tesk3_2.dir\build.make assignment3/CMakeFiles/tesk3_2.dir/binary_chop.cpp.obj
+.PHONY : binary_chop.cpp.obj
+
+binary_chop.i: binary_chop.cpp.i
+
+.PHONY : binary_chop.i
+
+# target to preprocess a source file
+binary_chop.cpp.i:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment3\CMakeFiles\tesk3_2.dir\build.make assignment3/CMakeFiles/tesk3_2.dir/binary_chop.cpp.i
+.PHONY : binary_chop.cpp.i
+
+binary_chop.s: binary_chop.cpp.s
+
+.PHONY : binary_chop.s
+
+# target to generate assembly for a file
+binary_chop.cpp.s:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment3\CMakeFiles\tesk3_2.dir\build.make assignment3/CMakeFiles/tesk3_2.dir/binary_chop.cpp.s
+.PHONY : binary_chop.cpp.s
+
 sort.obj: sort.cpp.obj
 
 .PHONY : sort.obj
@@ -159,7 +201,11 @@ help:
 	@echo ... depend
 	@echo ... tesk3_1
 	@echo ... edit_cache
+	@echo ... tesk3_2
 	@echo ... rebuild_cache
+	@echo ... binary_chop.obj
+	@echo ... binary_chop.i
+	@echo ... binary_chop.s
 	@echo ... sort.obj
 	@echo ... sort.i
 	@echo ... sort.s

@@ -290,11 +290,13 @@ clean: assignment2/CMakeFiles/tesk2_3.dir/clean
 
 # Convenience name for "all" pass in the directory.
 assignment3/all: assignment3/CMakeFiles/tesk3_1.dir/all
+assignment3/all: assignment3/CMakeFiles/tesk3_2.dir/all
 
 .PHONY : assignment3/all
 
 # Convenience name for "clean" pass in the directory.
 assignment3/clean: assignment3/CMakeFiles/tesk3_1.dir/clean
+assignment3/clean: assignment3/CMakeFiles/tesk3_2.dir/clean
 
 .PHONY : assignment3/clean
 
@@ -339,6 +341,61 @@ assignment3/CMakeFiles/tesk3_1.dir/clean:
 clean: assignment3/CMakeFiles/tesk3_1.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target assignment3/CMakeFiles/tesk3_2.dir
+
+# All Build rule for target.
+assignment3/CMakeFiles/tesk3_2.dir/all:
+	$(MAKE) -f assignment3\CMakeFiles\tesk3_2.dir\build.make assignment3/CMakeFiles/tesk3_2.dir/depend
+	$(MAKE) -f assignment3\CMakeFiles\tesk3_2.dir\build.make assignment3/CMakeFiles/tesk3_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles --progress-num=13,14 "Built target tesk3_2"
+.PHONY : assignment3/CMakeFiles/tesk3_2.dir/all
+
+# Include target in all.
+all: assignment3/CMakeFiles/tesk3_2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+assignment3/CMakeFiles/tesk3_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 assignment3/CMakeFiles/tesk3_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 0
+.PHONY : assignment3/CMakeFiles/tesk3_2.dir/rule
+
+# Convenience name for target.
+tesk3_2: assignment3/CMakeFiles/tesk3_2.dir/rule
+
+.PHONY : tesk3_2
+
+# clean rule for target.
+assignment3/CMakeFiles/tesk3_2.dir/clean:
+	$(MAKE) -f assignment3\CMakeFiles\tesk3_2.dir\build.make assignment3/CMakeFiles/tesk3_2.dir/clean
+.PHONY : assignment3/CMakeFiles/tesk3_2.dir/clean
+
+# clean rule for target.
+clean: assignment3/CMakeFiles/tesk3_2.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory assignment4
+
+# Convenience name for "all" pass in the directory.
+assignment4/all:
+
+.PHONY : assignment4/all
+
+# Convenience name for "clean" pass in the directory.
+assignment4/clean:
+
+.PHONY : assignment4/clean
+
+# Convenience name for "preinstall" pass in the directory.
+assignment4/preinstall:
+
+.PHONY : assignment4/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.

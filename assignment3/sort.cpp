@@ -146,6 +146,13 @@ int main()
 //    c_end=clock();
 //    cout<<c_end-c_start<<" ms"<<endl;
 
+//    c_start=clock();
+//    cout<<"MergeSort:";
+//    ShellSort<int>(arr,100000);
+//    print(arr,100);
+//    c_end=clock();
+//    cout<<c_end-c_start<<" ms"<<endl;
+
 //    vector<int> num={1,3,-1,-3,5,3,6,7};
 //    vector<int> result=maxSlidingWindow(num,3);
 //    for(auto &c:result){
@@ -153,8 +160,8 @@ int main()
 //    }
 //    cout<<endl;
 
-    int arr1[10]={9,26,11,13,8,15,5,21,10,14};
-    cout<<arr1[find_k_max(arr1,10,3)]<<endl;
+//    int arr1[10]={9,26,11,13,8,15,5,21,10,14};
+//    cout<<arr1[find_k_max(arr1,10,3)]<<endl;
 
     return 0;
 }

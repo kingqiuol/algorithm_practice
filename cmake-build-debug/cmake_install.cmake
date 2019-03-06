@@ -32,6 +32,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment1/cmake_install.cmake")
   include("C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment2/cmake_install.cmake")
   include("C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment3/cmake_install.cmake")
+  include("C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/cmake_install.cmake")
 
 endif()
 

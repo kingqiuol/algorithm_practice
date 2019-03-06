@@ -164,11 +164,59 @@ void HeapSort(T arr[], int len)
 /*******************************************
 *                  归并排序                 *
 *******************************************/
+template <class T>
+void merge(T arr[], int start, int mid, int end)
+{
+    int *tmp = new T[end - start + 1];// tmp是汇总2个有序区的临时区域
+    int i = start;// 第1个有序区的索引
+    int j = mid + 1;// 第2个有序区的索引
+    int k = 0; // 临时区域的索引
+
+    while (i <= mid && j <= end){
+        if (arr[i] <= arr[j]){
+            tmp[k++] = arr[i++];
+        }
+        else{
+            tmp[k++] = arr[j++];
+        }
+    }
+
+    while (i <= mid){
+        tmp[k++] = arr[i++];
+    }
+
+    while (j <= end){
+        tmp[k++] = arr[j++];
+    }
+
+    // 将排序后的元素，全部都整合到数组a中。
+    for (i = 0; i < k; i++)
+        arr[start + i] = tmp[i];
+
+    delete[] tmp;
+}
+
+template <class T>
+void merge_sort(T arr[], int start, int end)
+{
+    if (arr == NULL || start >= end){
+        return;
+    }
+
+    int mid = (start + end) / 2;
+    merge_sort(arr, start, mid);
+    merge_sort(arr, mid, end);
+
+    merge(arr, start, mid, end);
+}
+
 //1、归并排序
 template <class T>
-void MergeSort(T arr[],int len)
+void MergeSort(T arr[], int len)
 {
-
+    int start = 0;
+    int end = len - 1;
+    merge_sort(arr, start, end);
 }
 
 /*******************************************
