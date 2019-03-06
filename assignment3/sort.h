@@ -6,6 +6,7 @@
 #define TESK_SORT_H
 
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -164,11 +165,22 @@ void HeapSort(T arr[], int len)
 /*******************************************
 *                  πÈ≤¢≈≈–Ú                 *
 *******************************************/
+template <class T>
+void merge_sort(T arr[],int start,int end){
+    if(end-start==0){
+        return ;
+    }
+    int mid=floor((end-start)/2);
+
+}
+
 //1°¢πÈ≤¢≈≈–Ú
 template <class T>
 void MergeSort(T arr[],int len)
 {
-
+    int start=0;
+    int end=len-1;
+    merge_sort(arr,start,end);
 }
 
 /*******************************************
