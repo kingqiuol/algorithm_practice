@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <algorithm>
+#include "list.h"
 
 using namespace std;
 
@@ -229,12 +230,12 @@ void CountingSort(T arr[], int len)
 {
     // 计算最大最小值
     auto it = minmax_element(arr, arr + len);
-    T min = it.first;
-    T max = it.second;
+    T min = *it.first;
+    T max = *it.second;
     int R = max - min + 1;
 
     // 1. 计算频率，在需要的数组长度上额外加1
-    T *count = new T[R];
+    T *count = new T[R]();
     for (int i = 0; i < len; ++i){
         // 使用加1后的索引，有重复的该位置就自增
         count[arr[i] - min + 1] += 1;
@@ -258,18 +259,93 @@ void CountingSort(T arr[], int len)
     delete[] tmp;
 }
 
+// 映射函数，将值转换为应存放到的桶数组的索引
+template <class T>
+int toBucketIndex(T value,int maxValue,int len)
+{
+    return (value*len)/(maxValue+1);
+}
+
 //2、桶排序
 template <class T>
 void BucketSort(T arr[],int len)
 {
+    // 建立桶，个数和待排序数组长度一样
+    SingleList<T> *bucket=new SingleList<T>[len]();
 
+    // 待排序数组中的最大值
+    int maxValue=*max_element(arr,arr+len);
+    // 根据每个元素的值，分配到对应范围的桶中
+    for (int i=0;i<len;++i){
+        int index=toBucketIndex(arr[i],maxValue,len);
+        bucket[index].insert(0,arr[i]);
+    }
+
+    // 对每个非空的桶排序，排序后顺便存入临时的List，则list中已经有序
+    T tmp[len];
+    int j=0;
+    for(int i=0;i<len;++i){
+        if(!bucket[i].empty()){
+            bucket[i].sort();
+
+            for(int k=0;k<bucket->size();++k){
+                tmp[j++]=bucket[i].get(k);
+            }
+        }
+    }
+    //将temp中的数据写入原数组
+    copy(tmp,tmp+len,arr);
+
+    delete[] bucket;
+}
+
+// 找到num的从低到高的第pos位的数据
+template <class T>
+T GetDigitInPos(T num, int pos)
+{
+    int temp = 1;
+    for (int i = 0; i < pos - 1; i++)
+        temp *= 10;
+    return (num / temp) % 10;
+}
+
+//获取最大数得位数
+template <class T>
+int get_max_bit(T arr[],int len)
+{
+    T max=*max_element(arr,arr+len);
+    int bit=0;
+    while(max/=10){
+        ++bit;
+    }
+
+    return bit+1;
 }
 
 //3、基数排序
 template <class T>
-void RadixSort(T arr[],int len)
+void RadixSort(T arr[], int len)
 {
+    SingleList<T> *bucket=new SingleList<T>[10]();
+    int K=get_max_bit(arr,len);
+    T tmp[len]={};
 
+    for(int k=0;k<K;++k){
+        for(int i=0;i<len;++i){
+            bucket[GetDigitInPos(arr[i],k)].insert(0,arr[i]);
+        }
+
+        int j=0;
+        for(int i=0;i<10;++i){
+            for(int k=0;k<bucket->size();++k){
+                tmp[j++]=bucket[i].get(k);
+            }
+        }
+    }
+
+    copy(tmp,tmp+len,arr);
+
+    delete[] bucket;
 }
 
 

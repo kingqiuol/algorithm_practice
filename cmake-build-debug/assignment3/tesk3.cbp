@@ -105,6 +105,9 @@
 		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment3/binary_chop.cpp">
 			<Option target="tesk3_2"/>
 		</Unit>
+		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment3/list.h">
+			<Option target="tesk3_1"/>
+		</Unit>
 		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment3/sort.cpp">
 			<Option target="tesk3_1"/>
 		</Unit>

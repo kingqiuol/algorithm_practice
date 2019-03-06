@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/jinqiu/Desktop/tesk/assignment3/list.h
+iostream
+-
+memory
+-
+list.h
+C:/Users/jinqiu/Desktop/tesk/assignment3/list.h
+
 C:/Users/jinqiu/Desktop/tesk/assignment3/sort.cpp
 sort.h
 C:/Users/jinqiu/Desktop/tesk/assignment3/sort.h
@@ -19,4 +27,8 @@ deque
 C:/Users/jinqiu/Desktop/tesk/assignment3/sort.h
 iostream
 -
+algorithm
+-
+list.h
+C:/Users/jinqiu/Desktop/tesk/assignment3/list.h
 
