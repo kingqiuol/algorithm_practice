@@ -17,62 +17,110 @@ using namespace std;
 /*******************************************
 *                哈希表的数组实现              *
 /*******************************************/
-template <>
-class hash<string>
-{
-public:
-    size_t operator()(const string &key) const
-    {
-        unsigned long hash_value=0;
-        int len=(int)key.length();
-        for(int i=0;i<len;++i){
-            hash_value=5*hash_value+key.at(i);
-        }
-    }
-};
-
 template <class K,class E>
 class ArrayHash
 {
 public:
     ArrayHash(int divisions);
+    ~ArrayHash();
 
     //判断是否为空
     bool empty(){return size_==0;}
     //获取哈希表存储数据的大小
     size_t size(){return size_;}
-	
-    //根据关键字key搜索哈希表中的位置
-    int search(const K &key)const;
-
-    //更具关键字key查找数对
-    pair<K,E> find(const K &key)const;
 
     //插入数对
     void insert(const pair<K,E> &thePair);
 
+    //删除数对
+    pair<K,E> erase(const K &key);
+
+    //修改关键字key的键值
+    void set(const K &key,const E &value);
+
+    //根据关键字key搜索哈希表中的位置
+    int search(const K &key)const;
+    //更具关键字key查找数对
+    pair<K,E> *find(const K &key)const;
+
+    //打印哈希表
+    void print();
+
 private:
-    vector<pair<K,E>> table_;       //哈希表
-    hash<K> hash_;                  //将类型K映射为整数
-    size_t size_;                   //哈希表中的数对个数
-    int divisions_;                 //哈希函数的除数
+    pair<K,E> **table_; //哈希表
+    hash<K> hash_;      //将类型K映射为整数
+    size_t size_;       //哈希表中的数对个数
+    int bucket_size_;   //哈希函数的除数
 };
 
 template <class K,class E>
-ArrayHash<K,E>::ArrayHash(int divisions):divisions_(divisions)
+ArrayHash<K,E>::ArrayHash(int bucket_size):bucket_size_(bucket_size)
 {
     size_=0;
     //初始化哈希表
-    table_.resize(divisions_);
+    table_=new pair<K,E>*[bucket_size_];
+    for(int i=0;i<bucket_size_;++i){
+        table_[i]=NULL;
+    }
 }
+
+template <class K,class E>
+ArrayHash<K,E>::~ArrayHash()
+{
+    for(int i=0;i<bucket_size_;++i){
+        if(table_[i]!=NULL){
+            delete table_[i];
+        }
+    }
+
+    delete[] table_;
+}
+
+template <class K,class E>
+void ArrayHash<K,E>::insert(const pair<K, E> &thePair)
+{
+    size_t index=search(thePair.first);
+
+    if(table_[index]==NULL){
+        table_[index]=new pair<K,E>(thePair);
+        ++size_;
+    }else if(table_[index]->first==thePair.first){
+        table_[index]->second=thePair.second;
+    }else{
+        cerr<<"array hush is full!"<<endl;
+        exit(0);
+    }
+}
+
+template <class K,class E>
+
 
 template <class K,class E>
 int ArrayHash<K,E>::search(const K &key) const
 {
-    size_t index=hash_(key);
-    index=index%divisions_;
+    size_t index=hash_(key)%bucket_size_;
 
-    return 0;
+    int j=index;
+    do{
+        if(table_[j]==NULL || table_[j]->first==key){
+            return j;
+        }
+        j=(j+1)%bucket_size_;
+    }while(j!=index);
+
+    return j;
+}
+
+template <class K,class E>
+pair<K,E> *ArrayHash<K,E>::find(const K &key) const
+{
+    size_t index=search(key);
+
+    if(table_[index]==NULL){
+        return NULL;
+    }else{
+        return table_[index];
+    }
 }
 
 /*******************************************
@@ -97,7 +145,7 @@ public:
     pair<K,E> erase(const K &key);
 
     //修改关键字key的键值
-    void set(const K &key,E &value);
+    void set(const K &key,const E &value);
 
     //根据关键字key搜索哈希表中的位置
     int search(const K &key)const;
@@ -115,8 +163,7 @@ private:
 };
 
 template <class K,class E>
-ListHash<K,E>::ListHash(size_t bucket_size):bucket_size_(bucket_size),
-                                            size_(0),hash_()
+ListHash<K,E>::ListHash(size_t bucket_size):bucket_size_(bucket_size), size_(0)
 {
     ptr_=shared_ptr<List>(new List[bucket_size_](),
                           [](List *p){delete[] p;});
@@ -143,11 +190,11 @@ pair<K,E> ListHash<K,E>::erase(const K &key)
     }
 
     cerr<<"未找到键值为 key = "<<key<<" 的数对..."<<endl;
-    return nullptr;
+    return make_pair("",0);
 }
 
 template <class K,class E>
-void ListHash<K,E>::set(const K &key, E &value)
+void ListHash<K,E>::set(const K &key,const E &value)
 {
     pair<K,E> tmp(key,value);
     size_t index=hash_(key)%bucket_size_;
@@ -189,14 +236,23 @@ pair<K,E> ListHash<K,E>::find(const K &key) const
     }
 
     cerr<<"未找到键值为 key = "<<key<<" 的数对..."<<endl;
-    return nullptr;
+    return make_pair("",0);
 }
 
 template <class K,class E>
 void ListHash<K,E>::print() 
 {
     for(int i=0;i<bucket_size_;++i){
-        (ptr_.get()+i)->print();
+        List *cur=ptr_.get()+i;
+        if(cur->size()==0){
+            continue;
+        }
+        cout<<i<<":";
+        for(int j=0;j<cur->size();++j){
+            pair<K,E> tmp=cur->get(j);
+            cout<<tmp.first<<"->"<<tmp.second<<",";
+        }
+        cout<<endl;
     }
 }
 
