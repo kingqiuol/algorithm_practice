@@ -200,6 +200,19 @@ tesk3_2/fast:
 	$(MAKE) -f assignment3\CMakeFiles\tesk3_2.dir\build.make assignment3/CMakeFiles/tesk3_2.dir/build
 .PHONY : tesk3_2/fast
 
+#=============================================================================
+# Target rules for targets named tesk4_1
+
+# Build rule for target.
+tesk4_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 tesk4_1
+.PHONY : tesk4_1
+
+# fast build rule for target.
+tesk4_1/fast:
+	$(MAKE) -f assignment4\CMakeFiles\tesk4_1.dir\build.make assignment4/CMakeFiles/tesk4_1.dir/build
+.PHONY : tesk4_1/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -215,6 +228,7 @@ help:
 	@echo ... tesk2_3
 	@echo ... tesk3_1
 	@echo ... tesk3_2
+	@echo ... tesk4_1
 .PHONY : help
 
 

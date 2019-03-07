@@ -6,5 +6,8 @@
 
 int main()
 {
+    ListHash<string,int> lhash(10);
+    lhash.insert(make_pair("jin",100));
+    lhash.print();
     return 0;
 }

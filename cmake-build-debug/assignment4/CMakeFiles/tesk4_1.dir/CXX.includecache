@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/jinqiu/Desktop/tesk/assignment4/hashing.cpp
+hashing.h
+C:/Users/jinqiu/Desktop/tesk/assignment4/hashing.h
+
+C:/Users/jinqiu/Desktop/tesk/assignment4/hashing.h
+iostream
+-
+string
+-
+vector
+-
+memory
+-
+list.h
+C:/Users/jinqiu/Desktop/tesk/assignment4/list.h
+
+C:/Users/jinqiu/Desktop/tesk/assignment4/list.h
+iostream
+-
+memory
+-
+list.h
+C:/Users/jinqiu/Desktop/tesk/assignment4/list.h
+

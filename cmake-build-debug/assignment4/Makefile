@@ -109,6 +109,48 @@ depend:
 	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+assignment4/CMakeFiles/tesk4_1.dir/rule:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 assignment4/CMakeFiles/tesk4_1.dir/rule
+.PHONY : assignment4/CMakeFiles/tesk4_1.dir/rule
+
+# Convenience name for target.
+tesk4_1: assignment4/CMakeFiles/tesk4_1.dir/rule
+
+.PHONY : tesk4_1
+
+# fast build rule for target.
+tesk4_1/fast:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment4\CMakeFiles\tesk4_1.dir\build.make assignment4/CMakeFiles/tesk4_1.dir/build
+.PHONY : tesk4_1/fast
+
+hashing.obj: hashing.cpp.obj
+
+.PHONY : hashing.obj
+
+# target to build an object file
+hashing.cpp.obj:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment4\CMakeFiles\tesk4_1.dir\build.make assignment4/CMakeFiles/tesk4_1.dir/hashing.cpp.obj
+.PHONY : hashing.cpp.obj
+
+hashing.i: hashing.cpp.i
+
+.PHONY : hashing.i
+
+# target to preprocess a source file
+hashing.cpp.i:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment4\CMakeFiles\tesk4_1.dir\build.make assignment4/CMakeFiles/tesk4_1.dir/hashing.cpp.i
+.PHONY : hashing.cpp.i
+
+hashing.s: hashing.cpp.s
+
+.PHONY : hashing.s
+
+# target to generate assembly for a file
+hashing.cpp.s:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment4\CMakeFiles\tesk4_1.dir\build.make assignment4/CMakeFiles/tesk4_1.dir/hashing.cpp.s
+.PHONY : hashing.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -116,7 +158,11 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... tesk4_1
 	@echo ... rebuild_cache
+	@echo ... hashing.obj
+	@echo ... hashing.i
+	@echo ... hashing.s
 .PHONY : help
 
 
