@@ -3,7 +3,7 @@
 //
 
 #include "hashing.h"
-
+#include "lru.h"
 
 
 int main()
@@ -49,8 +49,28 @@ int main()
     lhash.set("jin",250);
     lhash.print();
     cout<<"========"<<endl;
-    pair<string,int> l1=lhash.find("jin");
-    cout<<"pair:"<<l1.first<<"->"<<l1.second<<endl;
+    pair<string,int> *l1=lhash.find("jin");
+    cout<<"pair:"<<l1->first<<"->"<<l1->second<<endl;
     cout<<"qiu index:"<<lhash.search("qiu")<<endl;
+
+    cout<<"=========>ListHash:"<<endl;
+    LRUcache lru(10);
+    lru.put_cache(make_pair("jin",100));
+    lru.put_cache(make_pair("jin1",100));
+    lru.put_cache(make_pair("jin2",100));
+    lru.put_cache(make_pair("jin3",100));
+    lru.put_cache(make_pair("jin4",100));
+    lru.put_cache(make_pair("jin",200));
+    lru.put_cache(make_pair("jin1",300));
+    lru.put_cache(make_pair("jin2",400));
+    lru.put_cache(make_pair("jin3",150));
+    lru.put_cache(make_pair("jin4",20));
+    lru.put_cache(make_pair("jin",100));
+    lru.put_cache(make_pair("qiu",200));
+    lru.put_cache(make_pair("kin",300));
+    lru.put_cache(make_pair("ol",400));
+    lru.print();
+    cout<<"size:"<<lru.size()<<endl;
+
     return 0;
 }

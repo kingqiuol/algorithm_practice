@@ -192,7 +192,7 @@ public:
     //根据关键字key搜索哈希表中的位置
     int search(const K &key)const;
     //更具关键字key查找数对
-    pair<K,E> find(const K &key)const;
+    pair<K,E> *find(const K &key)const;
     
     //打印哈希表
     void print();
@@ -215,7 +215,15 @@ template <class K,class E>
 void ListHash<K,E>::insert(const pair<K, E> &thePair)
 {
     size_t index=hash_(thePair.first)%bucket_size_;
+
     List *slist=ptr_.get()+index;
+
+    for(int i=0;i<slist->size();++i){
+        if(slist->get(i).first==thePair.first){
+            slist->set(i,thePair);
+            return;
+        }
+    }
     slist->insert(0,thePair);
     ++size_;
 }
@@ -232,7 +240,7 @@ void ListHash<K,E>::erase(const K &key)
         }
     }
 
-    cerr<<"未找到键值为 key = "<<key<<" 的数对..."<<endl;
+    cerr<<"Don't find key = "<<key<<" pair..."<<endl;
     return ;
 }
 
@@ -249,7 +257,7 @@ void ListHash<K,E>::set(const K &key,const E &value)
         }
     }
 
-    cerr<<"未找到键值为 key = "<<key<<" 的数对,更改数对的键值失败！！！"<<endl;
+    cerr<<"Don't find key = "<<key<<" pair,failed to change key values of pairs ！！！"<<endl;
 }
 
 template <class K,class E>
@@ -263,23 +271,22 @@ int ListHash<K,E>::search(const K &key) const
         }
     }
 
-    cerr<<"未找到键值为 key = "<<key<<" 的数对..."<<endl;
     return -1;
 }
 
 template <class K,class E>
-pair<K,E> ListHash<K,E>::find(const K &key) const
+pair<K,E> *ListHash<K,E>::find(const K &key) const
 {
     size_t index=hash_(key)%bucket_size_;
     List *slist=ptr_.get()+index;
     for(int i=0;i<slist->size();++i){
         if(key==slist->get(i).first){
-            return slist->get(i);
+            return &slist->get(i);
         }
     }
 
     cerr<<"未找到键值为 key = "<<key<<" 的数对..."<<endl;
-    return make_pair("",0);
+    return NULL;
 }
 
 template <class K,class E>

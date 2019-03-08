@@ -7,8 +7,8 @@
 
 #include <iostream>
 #include <memory>
-
-#include "list.h"
+#include "../assignment2/list.h"
+#include "../assignment1/list.h"
 
 using namespace std;
 
@@ -49,7 +49,7 @@ public:
     //修改节点
     void set(const int &index,const T &value);
     //查询节点
-    T get(const int &index);
+    T &get(const int &index);
 
     //打印链表
     void print();
@@ -164,7 +164,7 @@ void SingleList<T>::set(const int &index, const T &value)
 }
 
 template <class T>
-T SingleList<T>::get(const int &index)
+T &SingleList<T>::get(const int &index)
 {
     if(index<0 || index >= size_){
         cout<<"index out of range,index < 0 or index > size_"<<endl;
@@ -173,7 +173,7 @@ T SingleList<T>::get(const int &index)
 
     T value;
     if(index==0){
-        value=head_->value_;
+        return head_->value_;
     } else{
         ListNode<T> *cur=head_;
         int i=0;
@@ -181,10 +181,8 @@ T SingleList<T>::get(const int &index)
             cur=cur->next;
             ++i;
         }
-        value=cur->value_;
+        return cur->value_;
     }
-
-    return value;
 }
 
 template <class T>
@@ -293,6 +291,10 @@ public:
     bool empty(){ return size_==0;}
     //获取头节点
     ListNode<T> *get_head(){return head_;}
+    //获取任意位置节点
+    ListNode<T> *get_node(const int &index);
+    //根据节点获取该节点的下标
+    int get_index(const T &value);
 
     //双向链表插入元素
     void push_back(const T &value);//在尾部插入元素
@@ -331,6 +333,44 @@ DulList<T>::~DulList()
             temp= nullptr;
         }
     }
+}
+
+template <class T>
+ListNode<T> *DulList<T>::get_node(const int &index)
+{
+    if(index < 0 || index >=size_){
+        cout<<"index out of range,index < 0 or index > size_"<<endl;
+        exit(0);
+    }
+
+    int i=0;
+    ListNode<T> *cur=head_;
+    while(i<index){
+        cur=cur->next;
+        ++i;
+    }
+
+    return cur;
+}
+
+template <class T>
+int DulList<T>::get_index(const T &value)
+{
+    if(head_== nullptr){
+        return -1;
+    }
+
+    int i=0;
+    ListNode<T> *cur=head_;
+    while(cur!=NULL){
+        if(cur->value_==value){
+            return i;
+        }
+        cur=cur->next;
+        ++i;
+    }
+
+    return -1;
 }
 
 template <class T>

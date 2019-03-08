@@ -6,11 +6,25 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
+iostream
+-
+memory
+-
+../assignment2/list.h
+C:/Users/jinqiu/Desktop/tesk/assignment2/list.h
+../assignment1/list.h
+C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
+
 C:/Users/jinqiu/Desktop/tesk/assignment2/list.h
 iostream
 -
 memory
 -
+../assignment2/list.h
+C:/Users/jinqiu/Desktop/tesk/assignment2/list.h
+../assignment1/list.h
+C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
 
 C:/Users/jinqiu/Desktop/tesk/assignment2/stack.cpp
 stack.h
