@@ -285,7 +285,6 @@ pair<K,E> *ListHash<K,E>::find(const K &key) const
         }
     }
 
-    cerr<<"未找到键值为 key = "<<key<<" 的数对..."<<endl;
     return NULL;
 }
 
@@ -299,7 +298,7 @@ void ListHash<K,E>::print()
         }
         cout<<i<<":";
         for(int j=0;j<cur->size();++j){
-            pair<K,E> tmp=cur->get(j);
+            pair<K,E> &tmp=cur->get(j);
             cout<<tmp.first<<"->"<<tmp.second<<",";
         }
         cout<<endl;

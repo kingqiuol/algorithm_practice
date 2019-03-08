@@ -52,3 +52,18 @@ LRU（Least recently used，最近最少使用）缓存算法根据数据最近�
 * [LRU缓存淘汰算法分析与实现](https://blog.csdn.net/qq1332479771/article/details/69370779)
 * [常见缓存算法和LRU的c++实现](https://www.cnblogs.com/cpselvis/p/6272096.html)
 * [使用散列表和链表实现LRU缓存淘汰算法](https://blog.csdn.net/liushengxi_root/article/details/86500200)
+
+## 编程实践2：Trie树
+Trie，字典树，又称单词查找树、前缀树，是一种哈希树的变种。应用于字符串的统计与排序，经常被搜索引擎系统用于文本词频统计。
+
+### 1、性质：
+1. 根节点不包含字符，除根节点外的每一个节点都只包含一个字符。
+2. 从根节点到某一节点，路径上经过的字符连接起来，为该节点对应的字符串。
+3. 每个节点的所有子节点包含的字符都不相同。
+
+
+
+**【参考链接】**
+* [Trie树（c++实现）](http://www.cnblogs.com/kaituorensheng/p/3602155.html)
+* [字典树的C++实现 Implement of trie tree](https://blog.csdn.net/pyang1989/article/details/22834653)
+
