@@ -33,7 +33,7 @@ public:
     void insert(const pair<K,E> &thePair);
 
     //删除数对
-    pair<K,E> erase(const K &key);
+    void erase(const K &key);
 
     //修改关键字key的键值
     void set(const K &key,const E &value);
@@ -93,7 +93,37 @@ void ArrayHash<K,E>::insert(const pair<K, E> &thePair)
 }
 
 template <class K,class E>
+void ArrayHash<K,E>::erase(const K &key)
+{
+    size_t src_index=hash_(key)%bucket_size_;
+    int index=search(key);
 
+    if(table_[index]==NULL || table_[index]->first!=key){
+        return ;
+    }else{
+        pair<K,E> tmp(*table_[index]);
+
+        delete table_[index];
+        table_[index]=NULL;
+
+
+    }
+}
+
+template <class K,class E>
+void ArrayHash<K,E>::set(const K &key, const E &value)
+{
+    size_t index=search(key);
+
+    if(table_[index]==NULL){
+        insert(make_pair(key,value));
+    }else if(table_[index]->first==key){
+        table_[index]->second=value;
+    } else{
+        cerr<<"array hush don't has this pair..."<<endl;
+        exit(0);
+    }
+}
 
 template <class K,class E>
 int ArrayHash<K,E>::search(const K &key) const
@@ -123,6 +153,18 @@ pair<K,E> *ArrayHash<K,E>::find(const K &key) const
     }
 }
 
+template <class K,class E>
+void ArrayHash<K,E>::print()
+{
+    for(int i=0;i<bucket_size_;++i){
+        cout<<i<<":";
+        if(table_[i]!=NULL){
+            cout<<table_[i]->first<<"->"<<table_[i]->second;
+        }
+        cout<<endl;
+    }
+}
+
 /*******************************************
 *                哈希表的链表实现              *
 /*******************************************/
@@ -142,7 +184,7 @@ public:
     void insert(const pair<K,E> &thePair);
 
     //删除数对
-    pair<K,E> erase(const K &key);
+    void erase(const K &key);
 
     //修改关键字key的键值
     void set(const K &key,const E &value);
@@ -179,18 +221,19 @@ void ListHash<K,E>::insert(const pair<K, E> &thePair)
 }
 
 template <class K,class E>
-pair<K,E> ListHash<K,E>::erase(const K &key)
+void ListHash<K,E>::erase(const K &key)
 {
     size_t index=search(key);
     List *slist=ptr_.get()+index;
     for(int i=0;i<slist->size();++i){
         if(slist->get(i).first==key){
-            return slist->erase(i);
+            slist->erase(i);
+            return ;
         }
     }
 
     cerr<<"未找到键值为 key = "<<key<<" 的数对..."<<endl;
-    return make_pair("",0);
+    return ;
 }
 
 template <class K,class E>
