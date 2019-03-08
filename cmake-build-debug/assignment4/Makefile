@@ -124,6 +124,21 @@ tesk4_1/fast:
 	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment4\CMakeFiles\tesk4_1.dir\build.make assignment4/CMakeFiles/tesk4_1.dir/build
 .PHONY : tesk4_1/fast
 
+# Convenience name for target.
+assignment4/CMakeFiles/tesk4_2.dir/rule:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 assignment4/CMakeFiles/tesk4_2.dir/rule
+.PHONY : assignment4/CMakeFiles/tesk4_2.dir/rule
+
+# Convenience name for target.
+tesk4_2: assignment4/CMakeFiles/tesk4_2.dir/rule
+
+.PHONY : tesk4_2
+
+# fast build rule for target.
+tesk4_2/fast:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment4\CMakeFiles\tesk4_2.dir\build.make assignment4/CMakeFiles/tesk4_2.dir/build
+.PHONY : tesk4_2/fast
+
 hashing.obj: hashing.cpp.obj
 
 .PHONY : hashing.obj
@@ -151,6 +166,33 @@ hashing.cpp.s:
 	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment4\CMakeFiles\tesk4_1.dir\build.make assignment4/CMakeFiles/tesk4_1.dir/hashing.cpp.s
 .PHONY : hashing.cpp.s
 
+string.obj: string.cpp.obj
+
+.PHONY : string.obj
+
+# target to build an object file
+string.cpp.obj:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment4\CMakeFiles\tesk4_2.dir\build.make assignment4/CMakeFiles/tesk4_2.dir/string.cpp.obj
+.PHONY : string.cpp.obj
+
+string.i: string.cpp.i
+
+.PHONY : string.i
+
+# target to preprocess a source file
+string.cpp.i:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment4\CMakeFiles\tesk4_2.dir\build.make assignment4/CMakeFiles/tesk4_2.dir/string.cpp.i
+.PHONY : string.cpp.i
+
+string.s: string.cpp.s
+
+.PHONY : string.s
+
+# target to generate assembly for a file
+string.cpp.s:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment4\CMakeFiles\tesk4_2.dir\build.make assignment4/CMakeFiles/tesk4_2.dir/string.cpp.s
+.PHONY : string.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -159,10 +201,14 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... tesk4_1
+	@echo ... tesk4_2
 	@echo ... rebuild_cache
 	@echo ... hashing.obj
 	@echo ... hashing.i
 	@echo ... hashing.s
+	@echo ... string.obj
+	@echo ... string.i
+	@echo ... string.s
 .PHONY : help
 
 

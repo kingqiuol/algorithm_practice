@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/jinqiu/Desktop/tesk/assignment4/string.cpp
+string.h
+C:/Users/jinqiu/Desktop/tesk/assignment4/string.h
+iostream
+-
+string
+-
+
+C:/Users/jinqiu/Desktop/tesk/assignment4/string.h
+

@@ -59,6 +59,48 @@
 					<DistClean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="tesk4_2">
+				<Option output="C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/tesk4_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_2"/>
+					<CompileFile command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tesk4_2/fast">
+				<Option output="C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/tesk4_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_2/fast"/>
+					<CompileFile command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment4/hashing.cpp">
 			<Option target="tesk4_1"/>
@@ -71,6 +113,12 @@
 		</Unit>
 		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment4/lru.h">
 			<Option target="tesk4_1"/>
+		</Unit>
+		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment4/string.cpp">
+			<Option target="tesk4_2"/>
+		</Unit>
+		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment4/string.h">
+			<Option target="tesk4_2"/>
 		</Unit>
 		<Unit filename="C:/Users/jinqiu/Desktop/tesk/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
