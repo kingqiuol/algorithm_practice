@@ -101,12 +101,9 @@ void ArrayHash<K,E>::erase(const K &key)
     if(table_[index]==NULL || table_[index]->first!=key){
         return ;
     }else{
-        pair<K,E> tmp(*table_[index]);
-
         delete table_[index];
         table_[index]=NULL;
-
-
+        --size_;
     }
 }
 
@@ -146,7 +143,7 @@ pair<K,E> *ArrayHash<K,E>::find(const K &key) const
 {
     size_t index=search(key);
 
-    if(table_[index]==NULL){
+    if(table_[index]==NULL || table_[index]->first!=key){
         return NULL;
     }else{
         return table_[index];
