@@ -19,6 +19,9 @@ class ListNode
 public:
     ListNode():value_(NULL),front(nullptr),next(nullptr){}
     ListNode(const T &value):value_(value),front(nullptr),next(nullptr){}
+    ListNode(const T &value,
+             ListNode<T> *left,
+             ListNode<T> *right):value_(value),front(left),next(right){}
 public:
     T value_;
     ListNode<T> *front;

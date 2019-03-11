@@ -50,7 +50,7 @@ void max_top_stack(vector<int> &ivec)
 void min_top_stack(vector<int> &ivec)
 {
     int len=ivec.size();
-    for(int i=len/2-2;i>=0;--i){
+    for(int i=len/2-1;i>=0;--i){
         adjust_heap(ivec,i,MIN);
     }
 }
