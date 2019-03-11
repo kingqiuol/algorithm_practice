@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <memory>
+#include "list.h"
 
 
 using namespace std;
