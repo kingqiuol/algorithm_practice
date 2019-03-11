@@ -474,6 +474,100 @@ clean: assignment4/CMakeFiles/tesk4_2.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory assignment5
+
+# Convenience name for "all" pass in the directory.
+assignment5/all: assignment5/CMakeFiles/tesk5_1.dir/all
+assignment5/all: assignment5/CMakeFiles/tesk5_2.dir/all
+
+.PHONY : assignment5/all
+
+# Convenience name for "clean" pass in the directory.
+assignment5/clean: assignment5/CMakeFiles/tesk5_1.dir/clean
+assignment5/clean: assignment5/CMakeFiles/tesk5_2.dir/clean
+
+.PHONY : assignment5/clean
+
+# Convenience name for "preinstall" pass in the directory.
+assignment5/preinstall:
+
+.PHONY : assignment5/preinstall
+
+#=============================================================================
+# Target rules for target assignment5/CMakeFiles/tesk5_1.dir
+
+# All Build rule for target.
+assignment5/CMakeFiles/tesk5_1.dir/all:
+	$(MAKE) -f assignment5\CMakeFiles\tesk5_1.dir\build.make assignment5/CMakeFiles/tesk5_1.dir/depend
+	$(MAKE) -f assignment5\CMakeFiles\tesk5_1.dir\build.make assignment5/CMakeFiles/tesk5_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles --progress-num=19,20 "Built target tesk5_1"
+.PHONY : assignment5/CMakeFiles/tesk5_1.dir/all
+
+# Include target in all.
+all: assignment5/CMakeFiles/tesk5_1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+assignment5/CMakeFiles/tesk5_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 assignment5/CMakeFiles/tesk5_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 0
+.PHONY : assignment5/CMakeFiles/tesk5_1.dir/rule
+
+# Convenience name for target.
+tesk5_1: assignment5/CMakeFiles/tesk5_1.dir/rule
+
+.PHONY : tesk5_1
+
+# clean rule for target.
+assignment5/CMakeFiles/tesk5_1.dir/clean:
+	$(MAKE) -f assignment5\CMakeFiles\tesk5_1.dir\build.make assignment5/CMakeFiles/tesk5_1.dir/clean
+.PHONY : assignment5/CMakeFiles/tesk5_1.dir/clean
+
+# clean rule for target.
+clean: assignment5/CMakeFiles/tesk5_1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target assignment5/CMakeFiles/tesk5_2.dir
+
+# All Build rule for target.
+assignment5/CMakeFiles/tesk5_2.dir/all:
+	$(MAKE) -f assignment5\CMakeFiles\tesk5_2.dir\build.make assignment5/CMakeFiles/tesk5_2.dir/depend
+	$(MAKE) -f assignment5\CMakeFiles\tesk5_2.dir\build.make assignment5/CMakeFiles/tesk5_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles --progress-num=21,22 "Built target tesk5_2"
+.PHONY : assignment5/CMakeFiles/tesk5_2.dir/all
+
+# Include target in all.
+all: assignment5/CMakeFiles/tesk5_2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+assignment5/CMakeFiles/tesk5_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 assignment5/CMakeFiles/tesk5_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 0
+.PHONY : assignment5/CMakeFiles/tesk5_2.dir/rule
+
+# Convenience name for target.
+tesk5_2: assignment5/CMakeFiles/tesk5_2.dir/rule
+
+.PHONY : tesk5_2
+
+# clean rule for target.
+assignment5/CMakeFiles/tesk5_2.dir/clean:
+	$(MAKE) -f assignment5\CMakeFiles\tesk5_2.dir\build.make assignment5/CMakeFiles/tesk5_2.dir/clean
+.PHONY : assignment5/CMakeFiles/tesk5_2.dir/clean
+
+# clean rule for target.
+clean: assignment5/CMakeFiles/tesk5_2.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

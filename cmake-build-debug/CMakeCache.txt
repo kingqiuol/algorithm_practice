@@ -212,6 +212,12 @@ tesk4_BINARY_DIR:STATIC=C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignmen
 tesk4_SOURCE_DIR:STATIC=C:/Users/jinqiu/Desktop/tesk/assignment4
 
 //Value Computed by CMake
+tesk5_BINARY_DIR:STATIC=C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment5
+
+//Value Computed by CMake
+tesk5_SOURCE_DIR:STATIC=C:/Users/jinqiu/Desktop/tesk/assignment5
+
+//Value Computed by CMake
 tesk_BINARY_DIR:STATIC=C:/Users/jinqiu/Desktop/tesk/cmake-build-debug
 
 //Value Computed by CMake
@@ -314,7 +320,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
