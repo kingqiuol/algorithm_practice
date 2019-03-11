@@ -400,5 +400,29 @@ void ArrayBTree<T>::levelOrder()
 /*******************************************
 *                二叉树的链表实现              *
 /*******************************************/
+template <class T>
+class ListBTree:public BTree<T>
+{
+public:
+    ListBTree():dul_listBTree_(),size_(0){}
+    ~ListBTree(){}
+
+    //判断二叉树是否为空
+    bool empty() const{return size_==0;}
+    //返回二叉树元素的个数
+    size_t size() const{return size_;}
+
+    //前序遍历
+    void preOrder(void(*) (T*));
+    //中序遍历
+    void inOrder(void(*) (T*));
+    //后序遍历
+    void postOrder(void(*) (T*));
+    //层次遍历
+    void levelOrder(void(*) (T*));
+private:
+    DulList<T> dul_listBTree_;
+    size_t size_;
+};
 
 #endif //TESK_BINARY_TREE_H
