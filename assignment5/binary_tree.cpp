@@ -43,5 +43,35 @@ int main()
     cout<<"levelOrder:"<<endl;;
     atree.levelOrder();
 
+    cout<<"=========>ListBTree:"<<endl;
+    ListBTree<int> ltree;
+    ltree.insert(1);
+    ltree.insert(3);
+    ltree.insert(9);
+    ltree.insert(2);
+    ltree.insert(5);
+    cout<<"size:"<<ltree.size()<<endl;
+    ltree.levelOrder();
+    cout<<endl;
+    cout<<"9:"<<ltree.find(9)->value_<<endl;
+    cout<<"=========>"<<endl;
+//    ltree.erase(9);
+//    ltree.levelOrder();
+//    cout<<endl;
+    cout<<"=========>"<<endl;
+    cout<<"preOrder:";
+    ltree.preOrder() ;
+    cout<<endl;
+    cout<<"inOrder:";
+    ltree.inOrder() ;
+    cout<<endl;
+    cout<<"postOrder:";
+    ltree.postOrder() ;
+    cout<<endl;
+    cout<<"=========>"<<endl;
+    ListNode<int> *pred=ltree.predecessor(9);
+    ListNode<int> *next1=ltree.successor(9);
+    cout<<pred->value_<<"->"<<9 <<"->"<<next1->value_<<endl;
+
     return 0;
 }

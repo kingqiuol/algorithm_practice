@@ -323,8 +323,8 @@ void ArrayBTree<T>::preOrder_(const int &index)
         return;
     }
 
-    preOrder_(index*2+1);
     cout<<ptr_.get()[index]<<" ";
+    preOrder_(index*2+1);
     preOrder_(index*2+2);
 }
 
@@ -341,8 +341,8 @@ void ArrayBTree<T>::inOrder_(const int &index)
         return;
     }
 
-    cout<<ptr_.get()[index]<<" ";
     inOrder_(index*2+1);
+    cout<<ptr_.get()[index]<<" ";
     inOrder_(index*2+2);
 }
 
@@ -359,10 +359,11 @@ void ArrayBTree<T>::postOrder_(const int &index)
         return;
     }
 
+
+
+    postOrder_(index*2+1);
     postOrder_(index*2+2);
     cout<<ptr_.get()[index]<<" ";
-    postOrder_(index*2+1);
-
 }
 
 template <class T>
@@ -444,14 +445,16 @@ public:
     //层次遍历
     void levelOrder();
 private:
-    void insert_(ListNode<T> *node,ListNode<T> *cur);   //插入节点
-    void erase_(T &value,ListNode<T> *node);            //删除节点
+    void insert_(ListNode<T> *node,ListNode<T> *&cur);  //插入节点
+    void erase_(const T &value,ListNode<T> *&node);     //删除节点
     void delete_(ListNode<T> *node);                    //删除整个二叉树
     ListNode<T> *clone_(ListNode<T> *node) const;       //拷贝二叉树
 
     void preOrder_(ListNode<T> *node);                  //前序遍历
     void inOrder_(ListNode<T> *node);                   //中序遍历
     void postOrder_(ListNode<T> *node);                 //后序遍历
+
+    ListNode<T> *get_parents(ListNode<T> *node);        //获取当前节点的父节点
 private:
     ListNode<T> *phead_;
     size_t size_;
@@ -488,11 +491,14 @@ ListBTree<T>::~ListBTree()
 }
 
 template <class T>
-void ListBTree<T>::insert_(ListNode<T> *node,ListNode<T> *cur)
+void ListBTree<T>::insert_(ListNode<T> *node,ListNode<T> *&cur)
 {
-    if(cur== nullptr){
-        cur=node;
-    } else if(cur->value_<node->value_){
+    if(cur== nullptr) {
+        cur = new ListNode<T>(node->value_);
+        return ;
+    }
+
+    if(cur->value_<=node->value_){
         insert_(node,cur->next);
     } else{
         insert_(node,cur->front);
@@ -516,7 +522,7 @@ void ListBTree<T>::insert(const T &value)
 template <class T>
 void ListBTree<T>::insert(const ListNode<T> &theNode)
 {
-    ListNode *node=new ListNode<T>(theNode);
+    ListNode<T> *node=new ListNode<T>(theNode);
 
     if(phead_== nullptr){
         phead_=node;
@@ -528,7 +534,7 @@ void ListBTree<T>::insert(const ListNode<T> &theNode)
 }
 
 template <class T>
-void ListBTree<T>::erase_(T &value, ListNode<T> *node)
+void ListBTree<T>::erase_(const T &value, ListNode<T> *&node)
 {
     if(node== nullptr){
         return ;
@@ -586,7 +592,7 @@ ListNode<T> *ListBTree<T>::find(const T &value)
 }
 
 template <class T>
-ListNode *ListBTree<T>::clone_(ListNode<T> *node) const
+ListNode<T> *ListBTree<T>::clone_(ListNode<T> *node) const
 {
     if(node== nullptr){
         return nullptr;
@@ -598,7 +604,7 @@ ListNode *ListBTree<T>::clone_(ListNode<T> *node) const
 }
 
 template <class T>
-ListNode *ListBTree<T>::clone() const
+ListNode<T> *ListBTree<T>::clone() const
 {
     if(phead_== nullptr){
         return nullptr;
@@ -608,14 +614,91 @@ ListNode *ListBTree<T>::clone() const
 }
 
 template <class T>
+ListNode<T> *ListBTree<T>::get_parents(ListNode<T> *node)
+{
+    if(phead_== nullptr){
+        return nullptr;
+    }
+
+    ListNode<T> *cur=phead_;
+    ListNode<T> *pre=cur;
+    while(cur!= nullptr){
+        if(cur->value_<node->value_){
+            pre=cur;
+            cur=cur->next;
+        } else if(cur->value_>node->value_){
+            pre=cur;
+            cur=cur->front;
+        }else{
+            return pre;
+        }
+    }
+    return nullptr;
+}
+
+template <class T>
+ListNode<T> *ListBTree<T>::predecessor(const T &value)
+{
+    ListNode<T> *node=find(value);
+
+    if(node== nullptr){
+        return node;
+    }
+
+    if(node->front != nullptr){
+        ListNode<T> *cur=node->front;
+        while(cur->next!= nullptr){
+            cur=cur->next;
+        }
+        return cur;
+    }else{
+        ListNode<T> *pre=node;
+        while(node!=phead_){
+            pre=get_parents(pre);
+            if(pre->next==node){
+                return pre;
+            }
+        }
+        return nullptr;
+    }
+}
+
+template <class T>
+ListNode<T> *ListBTree<T>::successor(const T &value)
+{
+    ListNode<T> *node=find(value);
+
+    if(node== nullptr){
+        return node;
+    }
+
+    if(node->next != nullptr){
+        ListNode<T> *cur=node->next;
+        while(cur->front!= nullptr){
+            cur=cur->front;
+        }
+        return cur;
+    }else{
+        ListNode<T> *pre=node;
+        while(node!=phead_){
+            pre=get_parents(pre);
+            if(pre->front==node){
+                return pre;
+            }
+        }
+        return nullptr;
+    }
+}
+
+template <class T>
 void ListBTree<T>::preOrder_(ListNode<T> *node)
 {
     if(node== nullptr){
         return ;
     }
-
     cout<<node->value_<<" ";
     preOrder_(node->front);
+
     preOrder_(node->next);
 }
 
@@ -685,10 +768,10 @@ void ListBTree<T>::levelOrder()
     while(!queue.empty()){
         ListNode<T> *cur=queue.pop();
         cout<<cur->value_<<" ";
-        if(cur->front){
+        if(cur->front!= nullptr){
             queue.push(cur->front);
         }
-        if(cur->next){
+        if(cur->next!= nullptr){
             queue.push(cur->next);
         }
     }

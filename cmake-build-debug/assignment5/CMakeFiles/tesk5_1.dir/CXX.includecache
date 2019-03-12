@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
+iostream
+-
+memory
+-
+list.h
+C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
+../assignment1/list.h
+C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
+
+C:/Users/jinqiu/Desktop/tesk/assignment3/list.h
+iostream
+-
+memory
+-
+list.h
+C:/Users/jinqiu/Desktop/tesk/assignment3/list.h
+../assignment1/list.h
+C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
+
 C:/Users/jinqiu/Desktop/tesk/assignment5/binary_tree.cpp
 binary_tree.h
 C:/Users/jinqiu/Desktop/tesk/assignment5/binary_tree.h
@@ -15,4 +35,28 @@ iostream
 -
 memory
 -
+list.h
+C:/Users/jinqiu/Desktop/tesk/assignment5/list.h
+queue.h
+C:/Users/jinqiu/Desktop/tesk/assignment5/queue.h
+../assignment3/list.h
+C:/Users/jinqiu/Desktop/tesk/assignment3/list.h
+
+C:/Users/jinqiu/Desktop/tesk/assignment5/list.h
+iostream
+-
+memory
+-
+list.h
+C:/Users/jinqiu/Desktop/tesk/assignment5/list.h
+../assignment1/list.h
+C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
+
+C:/Users/jinqiu/Desktop/tesk/assignment5/queue.h
+iostream
+-
+memory
+-
+list.h
+C:/Users/jinqiu/Desktop/tesk/assignment5/list.h
 
