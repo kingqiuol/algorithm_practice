@@ -1,0 +1,2 @@
+project(tesk6)
+

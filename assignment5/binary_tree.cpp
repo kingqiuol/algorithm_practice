@@ -69,9 +69,14 @@ int main()
     ltree.postOrder() ;
     cout<<endl;
     cout<<"=========>"<<endl;
-    ListNode<int> *pred=ltree.predecessor(9);
-    ListNode<int> *next1=ltree.successor(9);
-    cout<<pred->value_<<"->"<<9 <<"->"<<next1->value_<<endl;
+    ListNode<int> *pred=ltree.predecessor(3);
+    ListNode<int> *next1=ltree.successor(3);
+    if(pred!= nullptr){
+        cout<<pred->value_<<"->"<<3 <<"->";
+    }if(next1!= nullptr){
+        cout<<next1->value_<<endl;
+    }
+
 
     return 0;
 }

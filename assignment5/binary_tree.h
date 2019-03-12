@@ -10,7 +10,7 @@
 
 #include "list.h"
 #include "queue.h"
-#include "../assignment3/list.h"
+
 
 using namespace std;
 
@@ -619,7 +619,6 @@ ListNode<T> *ListBTree<T>::get_parents(ListNode<T> *node)
     if(phead_== nullptr){
         return nullptr;
     }
-
     ListNode<T> *cur=phead_;
     ListNode<T> *pre=cur;
     while(cur!= nullptr){
@@ -650,6 +649,7 @@ ListNode<T> *ListBTree<T>::predecessor(const T &value)
         while(cur->next!= nullptr){
             cur=cur->next;
         }
+
         return cur;
     }else{
         ListNode<T> *pre=node;
@@ -680,7 +680,8 @@ ListNode<T> *ListBTree<T>::successor(const T &value)
         return cur;
     }else{
         ListNode<T> *pre=node;
-        while(node!=phead_){
+
+        while(pre!=phead_){
             pre=get_parents(pre);
             if(pre->front==node){
                 return pre;
