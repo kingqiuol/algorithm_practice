@@ -567,6 +567,12 @@
 		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment5/binary_tree.h">
 			<Option target="tesk5_1"/>
 		</Unit>
+		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment5/list.h">
+			<Option target="tesk5_1"/>
+		</Unit>
+		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment5/queue.h">
+			<Option target="tesk5_1"/>
+		</Unit>
 		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment5/stack.cpp">
 			<Option target="tesk5_2"/>
 		</Unit>

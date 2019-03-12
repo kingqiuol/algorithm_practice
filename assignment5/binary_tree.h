@@ -9,6 +9,8 @@
 #include <memory>
 
 #include "list.h"
+#include "queue.h"
+#include "../assignment3/list.h"
 
 using namespace std;
 
@@ -20,13 +22,13 @@ public:
     virtual bool empty() const =0;
     virtual size_t size() const=0;
     //前序遍历
-    virtual void preOrder(void(*) (T*))=0;
+    virtual void preOrder()=0;
     //中序遍历
-    virtual void inOrder(void(*) (T*))=0;
+    virtual void inOrder()=0;
     //后序遍历
-    virtual void postOrder(void(*) (T*))=0;
+    virtual void postOrder()=0;
     //层次遍历
-    virtual void levelOrder(void(*) (T*))=0;
+    virtual void levelOrder()=0;
 };
 
 /*******************************************
@@ -404,25 +406,292 @@ template <class T>
 class ListBTree:public BTree<T>
 {
 public:
-    ListBTree():dul_listBTree_(),size_(0){}
-    ~ListBTree(){}
+    ListBTree():phead_(nullptr),size_(0){}
+    ListBTree(const ListBTree<T> &other); //拷贝构造函数，复制整棵树
+    ~ListBTree();
 
+    //获取二叉树的根
+    ListNode<T> *get_root(){return phead_;}
     //判断二叉树是否为空
     bool empty() const{return size_==0;}
     //返回二叉树元素的个数
     size_t size() const{return size_;}
 
+    //插入节点
+    void insert(const T &value);
+    void insert(const ListNode<T> &theNode);
+
+    //删除节点
+    void erase(const T &value);
+
+    //二叉树中搜索对应值位置
+    ListNode<T> *find(const T &value);
+
+    //拷贝二叉树
+    ListNode<T> *clone() const;
+
+    //找节点的前驱
+    ListNode<T> *predecessor(const T &value);
+    //找节点的后继
+    ListNode<T> *successor(const T &value);
+
     //前序遍历
-    void preOrder(void(*) (T*));
+    void preOrder();
     //中序遍历
-    void inOrder(void(*) (T*));
+    void inOrder();
     //后序遍历
-    void postOrder(void(*) (T*));
+    void postOrder();
     //层次遍历
-    void levelOrder(void(*) (T*));
+    void levelOrder();
 private:
-    DulList<T> dul_listBTree_;
+    void insert_(ListNode<T> *node,ListNode<T> *cur);   //插入节点
+    void erase_(T &value,ListNode<T> *node);            //删除节点
+    void delete_(ListNode<T> *node);                    //删除整个二叉树
+    ListNode<T> *clone_(ListNode<T> *node) const;       //拷贝二叉树
+
+    void preOrder_(ListNode<T> *node);                  //前序遍历
+    void inOrder_(ListNode<T> *node);                   //中序遍历
+    void postOrder_(ListNode<T> *node);                 //后序遍历
+private:
+    ListNode<T> *phead_;
     size_t size_;
 };
+
+template <class T>
+ListBTree<T>::ListBTree(const ListBTree<T> &other)
+{
+    if(other.empty()){
+        phead_= nullptr;
+    }else{
+        phead_=other.clone();
+    }
+}
+
+template <class T>
+void ListBTree<T>::delete_(ListNode<T> *node)
+{
+    if(node!= nullptr){
+        ListNode<T> *cur=node;
+        delete_(node->front);
+        delete_(node->next);
+        delete cur;
+        cur= nullptr;
+    }
+}
+
+template <class T>
+ListBTree<T>::~ListBTree()
+{
+    if(phead_!= nullptr){
+        delete_(phead_);
+    }
+}
+
+template <class T>
+void ListBTree<T>::insert_(ListNode<T> *node,ListNode<T> *cur)
+{
+    if(cur== nullptr){
+        cur=node;
+    } else if(cur->value_<node->value_){
+        insert_(node,cur->next);
+    } else{
+        insert_(node,cur->front);
+    }
+}
+
+template <class T>
+void ListBTree<T>::insert(const T &value)
+{
+    ListNode<T> *node=new ListNode<T>(value);
+
+    if(phead_== nullptr){
+        phead_=node;
+    }else{
+        insert_(node,phead_);
+    }
+
+    ++size_;
+}
+
+template <class T>
+void ListBTree<T>::insert(const ListNode<T> &theNode)
+{
+    ListNode *node=new ListNode<T>(theNode);
+
+    if(phead_== nullptr){
+        phead_=node;
+    }else{
+        insert_(node,phead_);
+    }
+
+    ++size_;
+}
+
+template <class T>
+void ListBTree<T>::erase_(T &value, ListNode<T> *node)
+{
+    if(node== nullptr){
+        return ;
+    }
+
+    if(value<node->value_){
+        erase_(value,node->front);
+    } else if(value>node->value_){
+        erase_(value,node->next);
+    }else if(node->front!= nullptr && node->next!= nullptr){
+        ListNode<T> *tmp=node->next;
+        while(tmp->front!= nullptr){
+            tmp=tmp->front;
+        }
+
+        node->value_=tmp->value_;
+        erase_(node->value_,node->next);
+    }else{
+        ListNode<T> *tmp=node;
+        node=(node->front!= nullptr)?node->front:node->next;
+        delete tmp;
+        tmp= nullptr;
+    }
+}
+
+template <class T>
+void ListBTree<T>::erase(const T &value)
+{
+    if(phead_== nullptr){
+        return ;
+    }
+
+    erase_(value,phead_);
+    --size_;
+}
+
+template <class T>
+ListNode<T> *ListBTree<T>::find(const T &value)
+{
+    if(phead_== nullptr){
+        return nullptr;
+    }
+
+    ListNode<T> *cur=phead_;
+    while(cur != nullptr){
+        if(cur->value_<value){
+            cur=cur->next;
+        } else if(cur->value_>value){
+            cur=cur->front;
+        }else{
+            return cur;
+        }
+    }
+    return nullptr;
+}
+
+template <class T>
+ListNode *ListBTree<T>::clone_(ListNode<T> *node) const
+{
+    if(node== nullptr){
+        return nullptr;
+    }
+
+    return new ListNode<T>(node->value_,
+                           clone_(node->front),
+                           clone_(node->next));
+}
+
+template <class T>
+ListNode *ListBTree<T>::clone() const
+{
+    if(phead_== nullptr){
+        return nullptr;
+    }
+
+    return clone_(phead_);
+}
+
+template <class T>
+void ListBTree<T>::preOrder_(ListNode<T> *node)
+{
+    if(node== nullptr){
+        return ;
+    }
+
+    cout<<node->value_<<" ";
+    preOrder_(node->front);
+    preOrder_(node->next);
+}
+
+template <class T>
+void ListBTree<T>::preOrder()
+{
+    if(phead_== nullptr){
+        return ;
+    }
+
+    preOrder_(phead_);
+}
+
+template <class T>
+void ListBTree<T>::inOrder_(ListNode<T> *node)
+{
+    if(node== nullptr){
+        return ;
+    }
+
+    inOrder_(node->front);
+    cout<<node->value_<<" ";
+    inOrder_(node->next);
+}
+
+template <class T>
+void ListBTree<T>::inOrder()
+{
+    if(phead_== nullptr){
+        return ;
+    }
+
+    inOrder_(phead_);
+}
+
+template <class T>
+void ListBTree<T>::postOrder_(ListNode<T> *node)
+{
+    if(node== nullptr){
+        return ;
+    }
+
+    postOrder_(node->front);
+    postOrder_(node->next);
+    cout<<node->value_<<" ";
+}
+
+template <class T>
+void ListBTree<T>::postOrder()
+{
+    if(phead_== nullptr){
+        return ;
+    }
+
+    postOrder_(phead_);
+}
+
+template <class T>
+void ListBTree<T>::levelOrder()
+{
+    if(phead_== nullptr){
+        return ;
+    }
+
+    ListQueue<ListNode<T>* > queue;
+    queue.push(phead_);
+    while(!queue.empty()){
+        ListNode<T> *cur=queue.pop();
+        cout<<cur->value_<<" ";
+        if(cur->front){
+            queue.push(cur->front);
+        }
+        if(cur->next){
+            queue.push(cur->next);
+        }
+    }
+}
 
 #endif //TESK_BINARY_TREE_H

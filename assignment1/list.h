@@ -8,6 +8,7 @@
 #include <iostream>
 #include <memory>
 #include "list.h"
+#include "../assignment1/list.h"
 
 
 using namespace std;
@@ -19,9 +20,12 @@ class ListNode
 public:
     ListNode():value_(NULL),front(nullptr),next(nullptr){}
     ListNode(const T &value):value_(value),front(nullptr),next(nullptr){}
-    ListNode(const T &value,
-             ListNode<T> *left,
-             ListNode<T> *right):value_(value),front(left),next(right){}
+    ListNode(const T &value, ListNode<T> *left, ListNode<T> *right): value_(value),
+                                                                     front(left),
+                                                                     next(right){}
+    ListNode(const ListNode<T> &theNode): value_(theNode.value_),
+                                          front(nullptr),
+                                          next(nullptr){}
 public:
     T value_;
     ListNode<T> *front;
