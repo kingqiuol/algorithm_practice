@@ -40,6 +40,8 @@ struct MinHeapNode{
 
     void operator=(MinHeapNode theNode){
         this->value_=theNode.value_;
+        this->index_=theNode.index_;
+        this->number_=theNode.number_;
     }
 };
 
@@ -60,11 +62,14 @@ int *merge_K_array(int len,initializer_list<int *> arr)
         MinHeapNode tmp1=min_heap.pop();
         result[j]=tmp1.value_;
 
+        int index=tmp1.index_+1;
+        int number=tmp1.number_;
         if(tmp1.index_+1<len){
             MinHeapNode tmp2(*(*(it1+tmp1.number_)+tmp1.index_+1),
-                             tmp1.index_+1,tmp1.number_);
+                             index,number);
             min_heap.push(tmp2);
         }
+
     }
 
     return result;

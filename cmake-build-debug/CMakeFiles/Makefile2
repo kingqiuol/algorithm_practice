@@ -571,12 +571,12 @@ clean: assignment5/CMakeFiles/tesk5_2.dir/clean
 # Directory level rules for directory assignment6
 
 # Convenience name for "all" pass in the directory.
-assignment6/all:
+assignment6/all: assignment6/CMakeFiles/tesk6_1.dir/all
 
 .PHONY : assignment6/all
 
 # Convenience name for "clean" pass in the directory.
-assignment6/clean:
+assignment6/clean: assignment6/CMakeFiles/tesk6_1.dir/clean
 
 .PHONY : assignment6/clean
 
@@ -584,6 +584,43 @@ assignment6/clean:
 assignment6/preinstall:
 
 .PHONY : assignment6/preinstall
+
+#=============================================================================
+# Target rules for target assignment6/CMakeFiles/tesk6_1.dir
+
+# All Build rule for target.
+assignment6/CMakeFiles/tesk6_1.dir/all:
+	$(MAKE) -f assignment6\CMakeFiles\tesk6_1.dir\build.make assignment6/CMakeFiles/tesk6_1.dir/depend
+	$(MAKE) -f assignment6\CMakeFiles\tesk6_1.dir\build.make assignment6/CMakeFiles/tesk6_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles --progress-num=23,24 "Built target tesk6_1"
+.PHONY : assignment6/CMakeFiles/tesk6_1.dir/all
+
+# Include target in all.
+all: assignment6/CMakeFiles/tesk6_1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+assignment6/CMakeFiles/tesk6_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 assignment6/CMakeFiles/tesk6_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles 0
+.PHONY : assignment6/CMakeFiles/tesk6_1.dir/rule
+
+# Convenience name for target.
+tesk6_1: assignment6/CMakeFiles/tesk6_1.dir/rule
+
+.PHONY : tesk6_1
+
+# clean rule for target.
+assignment6/CMakeFiles/tesk6_1.dir/clean:
+	$(MAKE) -f assignment6\CMakeFiles\tesk6_1.dir\build.make assignment6/CMakeFiles/tesk6_1.dir/clean
+.PHONY : assignment6/CMakeFiles/tesk6_1.dir/clean
+
+# clean rule for target.
+clean: assignment6/CMakeFiles/tesk6_1.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

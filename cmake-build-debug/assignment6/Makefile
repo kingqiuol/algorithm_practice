@@ -109,14 +109,60 @@ depend:
 	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+assignment6/CMakeFiles/tesk6_1.dir/rule:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 assignment6/CMakeFiles/tesk6_1.dir/rule
+.PHONY : assignment6/CMakeFiles/tesk6_1.dir/rule
+
+# Convenience name for target.
+tesk6_1: assignment6/CMakeFiles/tesk6_1.dir/rule
+
+.PHONY : tesk6_1
+
+# fast build rule for target.
+tesk6_1/fast:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_1.dir\build.make assignment6/CMakeFiles/tesk6_1.dir/build
+.PHONY : tesk6_1/fast
+
+graph.obj: graph.cpp.obj
+
+.PHONY : graph.obj
+
+# target to build an object file
+graph.cpp.obj:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_1.dir\build.make assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj
+.PHONY : graph.cpp.obj
+
+graph.i: graph.cpp.i
+
+.PHONY : graph.i
+
+# target to preprocess a source file
+graph.cpp.i:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_1.dir\build.make assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.i
+.PHONY : graph.cpp.i
+
+graph.s: graph.cpp.s
+
+.PHONY : graph.s
+
+# target to generate assembly for a file
+graph.cpp.s:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_1.dir\build.make assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.s
+.PHONY : graph.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... tesk6_1
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... graph.obj
+	@echo ... graph.i
+	@echo ... graph.s
 .PHONY : help
 
 
