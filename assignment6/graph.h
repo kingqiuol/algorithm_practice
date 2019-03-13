@@ -5,6 +5,8 @@
 #ifndef TESK_GRAPH_H
 #define TESK_GRAPH_H
 
+#include "utils.h"
+
 template <class T>
 class Graph
 {
@@ -16,7 +18,7 @@ public:
     //返回图的边数
     virtual int number_of_Edge()=0;
     //判断边（i,j）是否存在
-    virtual bool exits_edge(edge<T> *)=0;
+    virtual bool exits_edge(Edge<T> *)=0;
     //插入边（i,j）
     virtual void insert_edge(int,int)=0;
     //删除边
@@ -33,7 +35,7 @@ public:
     //加权图时返回true
     virtual bool weighted()=0;
     //访问指定顶点的相邻顶点
-    virtual vertex_iterator<T> *iterator(int)=0;
+    virtual VertexIterator<T> *iterator(int)=0;
 };
 
 #endif //TESK_GRAPH_H
