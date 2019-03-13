@@ -9,7 +9,6 @@
 #include <memory>
 
 #include "array.h"
-#include "../assignment1/array.h"
 
 using namespace std;
 
