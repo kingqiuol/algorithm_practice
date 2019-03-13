@@ -166,32 +166,32 @@ binary_tree.cpp.s:
 	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment5\CMakeFiles\tesk5_1.dir\build.make assignment5/CMakeFiles/tesk5_1.dir/binary_tree.cpp.s
 .PHONY : binary_tree.cpp.s
 
-stack.obj: stack.cpp.obj
+priority_queue.obj: priority_queue.cpp.obj
 
-.PHONY : stack.obj
+.PHONY : priority_queue.obj
 
 # target to build an object file
-stack.cpp.obj:
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment5\CMakeFiles\tesk5_2.dir\build.make assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.obj
-.PHONY : stack.cpp.obj
+priority_queue.cpp.obj:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment5\CMakeFiles\tesk5_2.dir\build.make assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj
+.PHONY : priority_queue.cpp.obj
 
-stack.i: stack.cpp.i
+priority_queue.i: priority_queue.cpp.i
 
-.PHONY : stack.i
+.PHONY : priority_queue.i
 
 # target to preprocess a source file
-stack.cpp.i:
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment5\CMakeFiles\tesk5_2.dir\build.make assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.i
-.PHONY : stack.cpp.i
+priority_queue.cpp.i:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment5\CMakeFiles\tesk5_2.dir\build.make assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.i
+.PHONY : priority_queue.cpp.i
 
-stack.s: stack.cpp.s
+priority_queue.s: priority_queue.cpp.s
 
-.PHONY : stack.s
+.PHONY : priority_queue.s
 
 # target to generate assembly for a file
-stack.cpp.s:
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment5\CMakeFiles\tesk5_2.dir\build.make assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.s
-.PHONY : stack.cpp.s
+priority_queue.cpp.s:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment5\CMakeFiles\tesk5_2.dir\build.make assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.s
+.PHONY : priority_queue.cpp.s
 
 # Help Target
 help:
@@ -206,9 +206,9 @@ help:
 	@echo ... binary_tree.obj
 	@echo ... binary_tree.i
 	@echo ... binary_tree.s
-	@echo ... stack.obj
-	@echo ... stack.i
-	@echo ... stack.s
+	@echo ... priority_queue.obj
+	@echo ... priority_queue.i
+	@echo ... priority_queue.s
 .PHONY : help
 
 

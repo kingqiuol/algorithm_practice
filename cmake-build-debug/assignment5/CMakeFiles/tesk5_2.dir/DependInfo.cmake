@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/jinqiu/Desktop/tesk/assignment5/stack.cpp" "C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.obj"
+  "C:/Users/jinqiu/Desktop/tesk/assignment5/priority_queue.cpp" "C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

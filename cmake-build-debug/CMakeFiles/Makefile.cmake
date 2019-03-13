@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../assignment3/CMakeLists.txt"
   "../assignment4/CMakeLists.txt"
   "../assignment5/CMakeLists.txt"
+  "../assignment6/CMakeLists.txt"
   "CMakeFiles/3.6.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.6.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.6.3/CMakeRCCompiler.cmake"
@@ -55,6 +56,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "assignment3/CMakeFiles/CMakeDirectoryInformation.cmake"
   "assignment4/CMakeFiles/CMakeDirectoryInformation.cmake"
   "assignment5/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "assignment6/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

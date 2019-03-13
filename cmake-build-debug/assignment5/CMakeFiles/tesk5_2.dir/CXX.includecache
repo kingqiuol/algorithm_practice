@@ -6,5 +6,39 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/jinqiu/Desktop/tesk/assignment5/stack.cpp
+C:/Users/jinqiu/Desktop/tesk/assignment1/array.h
+iostream
+-
+memory
+-
+math.h
+-
+algorithm
+-
+
+C:/Users/jinqiu/Desktop/tesk/assignment5/array.h
+iostream
+-
+memory
+-
+math.h
+-
+algorithm
+-
+
+C:/Users/jinqiu/Desktop/tesk/assignment5/priority_queue.cpp
+initializer_list
+-
+priority_queue.h
+C:/Users/jinqiu/Desktop/tesk/assignment5/priority_queue.h
+
+C:/Users/jinqiu/Desktop/tesk/assignment5/priority_queue.h
+iostream
+-
+memory
+-
+array.h
+C:/Users/jinqiu/Desktop/tesk/assignment5/array.h
+../assignment1/array.h
+C:/Users/jinqiu/Desktop/tesk/assignment1/array.h
 

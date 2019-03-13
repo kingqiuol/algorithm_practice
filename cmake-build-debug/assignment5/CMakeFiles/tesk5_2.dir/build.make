@@ -56,38 +56,38 @@ include assignment5/CMakeFiles/tesk5_2.dir/progress.make
 # Include the compile flags for this target's objects.
 include assignment5/CMakeFiles/tesk5_2.dir/flags.make
 
-assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.obj: assignment5/CMakeFiles/tesk5_2.dir/flags.make
-assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.obj: ../assignment5/stack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.obj"
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\assignment5 && D:\vim\mingw\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tesk5_2.dir\stack.cpp.obj -c C:\Users\jinqiu\Desktop\tesk\assignment5\stack.cpp
+assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj: assignment5/CMakeFiles/tesk5_2.dir/flags.make
+assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj: ../assignment5/priority_queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj"
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\assignment5 && D:\vim\mingw\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tesk5_2.dir\priority_queue.cpp.obj -c C:\Users\jinqiu\Desktop\tesk\assignment5\priority_queue.cpp
 
-assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tesk5_2.dir/stack.cpp.i"
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\assignment5 && D:\vim\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jinqiu\Desktop\tesk\assignment5\stack.cpp > CMakeFiles\tesk5_2.dir\stack.cpp.i
+assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tesk5_2.dir/priority_queue.cpp.i"
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\assignment5 && D:\vim\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jinqiu\Desktop\tesk\assignment5\priority_queue.cpp > CMakeFiles\tesk5_2.dir\priority_queue.cpp.i
 
-assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tesk5_2.dir/stack.cpp.s"
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\assignment5 && D:\vim\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jinqiu\Desktop\tesk\assignment5\stack.cpp -o CMakeFiles\tesk5_2.dir\stack.cpp.s
+assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tesk5_2.dir/priority_queue.cpp.s"
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\assignment5 && D:\vim\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jinqiu\Desktop\tesk\assignment5\priority_queue.cpp -o CMakeFiles\tesk5_2.dir\priority_queue.cpp.s
 
-assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.obj.requires:
+assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj.requires:
 
-.PHONY : assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.obj.requires
+.PHONY : assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj.requires
 
-assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.obj.provides: assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.obj.requires
-	$(MAKE) -f assignment5\CMakeFiles\tesk5_2.dir\build.make assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.obj.provides.build
-.PHONY : assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.obj.provides
+assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj.provides: assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj.requires
+	$(MAKE) -f assignment5\CMakeFiles\tesk5_2.dir\build.make assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj.provides.build
+.PHONY : assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj.provides
 
-assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.obj.provides.build: assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.obj
+assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj.provides.build: assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj
 
 
 # Object files for target tesk5_2
 tesk5_2_OBJECTS = \
-"CMakeFiles/tesk5_2.dir/stack.cpp.obj"
+"CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj"
 
 # External object files for target tesk5_2
 tesk5_2_EXTERNAL_OBJECTS =
 
-assignment5/tesk5_2.exe: assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.obj
+assignment5/tesk5_2.exe: assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj
 assignment5/tesk5_2.exe: assignment5/CMakeFiles/tesk5_2.dir/build.make
 assignment5/tesk5_2.exe: assignment5/CMakeFiles/tesk5_2.dir/linklibs.rsp
 assignment5/tesk5_2.exe: assignment5/CMakeFiles/tesk5_2.dir/objects1.rsp
@@ -100,7 +100,7 @@ assignment5/CMakeFiles/tesk5_2.dir/build: assignment5/tesk5_2.exe
 
 .PHONY : assignment5/CMakeFiles/tesk5_2.dir/build
 
-assignment5/CMakeFiles/tesk5_2.dir/requires: assignment5/CMakeFiles/tesk5_2.dir/stack.cpp.obj.requires
+assignment5/CMakeFiles/tesk5_2.dir/requires: assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj.requires
 
 .PHONY : assignment5/CMakeFiles/tesk5_2.dir/requires
 
