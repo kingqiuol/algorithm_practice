@@ -76,45 +76,45 @@ int *merge_K_array(int len,initializer_list<int *> arr)
 }
 int main()
 {
-//    cout<<"=========>MaxHeap:"<<endl;
-//    MaxHeap<int> max_heap(5);
-//    max_heap.push(1);
-//    max_heap.push(10);
-//    max_heap.push(6);
-//    max_heap.push(3);
-//    max_heap.push(8);
-//    max_heap.push(12);
-//    max_heap.push(55);
-//    max_heap.print();
-//    cout<<"=========>"<<endl;
-//    cout<<"size:"<<max_heap.size()<<endl;
-//    cout<<"capacity:"<<max_heap.max_size()<<endl;
-//    cout<<"front:"<<max_heap.front()<<endl;
-//    cout<<"pop:"<<max_heap.pop()<<endl;
-//    max_heap.print();
-//
-//    cout<<"=========>MinHeap:"<<endl;
-//    MinHeap<int> min_heap(5);
-//    min_heap.push(1);
-//    min_heap.push(10);
-//    min_heap.push(6);
-//    min_heap.push(3);
-//    min_heap.push(8);
-//    min_heap.push(12);
-//    min_heap.push(55);
-//    min_heap.print();
-//    cout<<"=========>"<<endl;
-//    cout<<"size:"<<min_heap.size()<<endl;
-//    cout<<"capacity:"<<min_heap.max_size()<<endl;
-//    cout<<"front:"<<min_heap.front()<<endl;
-//    cout<<"pop:"<<min_heap.pop()<<endl;
-//    min_heap.print();
+    cout<<"=========>MaxHeap:"<<endl;
+    MaxHeap<int> max_heap(5);
+    max_heap.push(1);
+    max_heap.push(10);
+    max_heap.push(6);
+    max_heap.push(3);
+    max_heap.push(8);
+    max_heap.push(12);
+    max_heap.push(55);
+    max_heap.print();
+    cout<<"=========>"<<endl;
+    cout<<"size:"<<max_heap.size()<<endl;
+    cout<<"capacity:"<<max_heap.max_size()<<endl;
+    cout<<"front:"<<max_heap.front()<<endl;
+    cout<<"pop:"<<max_heap.pop()<<endl;
+    max_heap.print();
+
+    cout<<"=========>MinHeap:"<<endl;
+    MinHeap<int> min_heap(5);
+    min_heap.push(1);
+    min_heap.push(10);
+    min_heap.push(6);
+    min_heap.push(3);
+    min_heap.push(8);
+    min_heap.push(12);
+    min_heap.push(55);
+    min_heap.print();
+    cout<<"=========>"<<endl;
+    cout<<"size:"<<min_heap.size()<<endl;
+    cout<<"capacity:"<<min_heap.max_size()<<endl;
+    cout<<"front:"<<min_heap.front()<<endl;
+    cout<<"pop:"<<min_heap.pop()<<endl;
+    min_heap.print();
 
     cout<<"=========>merge_K_array:"<<endl;
     int len=5;
     int size=2;
     int arr1[5]={1,3,6,8,9};
-    int arr2[5]={11,14,17,18,19};
+    int arr2[5]={5,7,17,18,19};
     int * p=merge_K_array(5,{ arr1, arr2 });
     for(int i=0;i<len*size;++i){
         cout<<*(p+i)<<" ";
