@@ -24,3 +24,5 @@ C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment5/CMakeFiles/rebuild_ca
 C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment6/CMakeFiles/tesk6_1.dir
 C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment6/CMakeFiles/edit_cache.dir
 C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment6/CMakeFiles/rebuild_cache.dir
+C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment7/CMakeFiles/edit_cache.dir
+C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment7/CMakeFiles/rebuild_cache.dir

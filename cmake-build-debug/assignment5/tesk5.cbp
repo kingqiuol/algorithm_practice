@@ -5,7 +5,7 @@
 		<Option title="tesk5"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\assignment1\;CMake Files\assignment2\;CMake Files\assignment3\;CMake Files\assignment4\;CMake Files\assignment5\;CMake Files\assignment6\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\assignment1\;CMake Files\assignment2\;CMake Files\assignment3\;CMake Files\assignment4\;CMake Files\assignment5\;CMake Files\assignment6\;CMake Files\assignment7\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment5"/>
@@ -120,6 +120,9 @@
 		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment5/priority_queue.h">
 			<Option target="tesk5_2"/>
 		</Unit>
+		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment5/queue.h">
+			<Option target="tesk5_1"/>
+		</Unit>
 		<Unit filename="C:/Users/jinqiu/Desktop/tesk/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
@@ -158,6 +161,12 @@
 		</Unit>
 		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment6/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment6\"/>
+		</Unit>
+		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment7/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\assignment7\"/>
+		</Unit>
+		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment7/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\assignment7\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

@@ -3,6 +3,8 @@
 //
 
 #include "graph.h"
+#include "undirected_graph .h"
+#include "unweighted_graph.h"
 
 int main()
 {

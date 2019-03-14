@@ -3,4 +3,7 @@
 
 assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj: ../assignment6/graph.cpp
 assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj: ../assignment6/graph.h
+assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj: ../assignment6/undirected_graph\ .h
+assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj: ../assignment6/unweighted_graph.h
+assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj: ../assignment6/utils.h
 

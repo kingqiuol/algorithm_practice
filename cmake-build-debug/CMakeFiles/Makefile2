@@ -623,6 +623,24 @@ clean: assignment6/CMakeFiles/tesk6_1.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory assignment7
+
+# Convenience name for "all" pass in the directory.
+assignment7/all:
+
+.PHONY : assignment7/all
+
+# Convenience name for "clean" pass in the directory.
+assignment7/clean:
+
+.PHONY : assignment7/clean
+
+# Convenience name for "preinstall" pass in the directory.
+assignment7/preinstall:
+
+.PHONY : assignment7/preinstall
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

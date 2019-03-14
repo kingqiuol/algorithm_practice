@@ -6,9 +6,15 @@
 #define TESK_UNWEIGHTED_GRAPH_H
 
 #include "graph.h"
+/*******************************************
+*                无权无向图                  *
+/*******************************************/
 
+/*******************************************
+*                无权无向图---邻接矩阵的shi'xian                  *
+/*******************************************/
 template <class T>
-class UnweightedGraph:public Graph
+class UnweightedGraph
 {
 public:
 private:
