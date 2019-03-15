@@ -124,32 +124,116 @@ tesk6_1/fast:
 	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_1.dir\build.make assignment6/CMakeFiles/tesk6_1.dir/build
 .PHONY : tesk6_1/fast
 
-graph.obj: graph.cpp.obj
+# Convenience name for target.
+assignment6/CMakeFiles/tesk6_2.dir/rule:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 assignment6/CMakeFiles/tesk6_2.dir/rule
+.PHONY : assignment6/CMakeFiles/tesk6_2.dir/rule
 
-.PHONY : graph.obj
+# Convenience name for target.
+tesk6_2: assignment6/CMakeFiles/tesk6_2.dir/rule
+
+.PHONY : tesk6_2
+
+# fast build rule for target.
+tesk6_2/fast:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_2.dir\build.make assignment6/CMakeFiles/tesk6_2.dir/build
+.PHONY : tesk6_2/fast
+
+# Convenience name for target.
+assignment6/CMakeFiles/tesk6_3.dir/rule:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 assignment6/CMakeFiles/tesk6_3.dir/rule
+.PHONY : assignment6/CMakeFiles/tesk6_3.dir/rule
+
+# Convenience name for target.
+tesk6_3: assignment6/CMakeFiles/tesk6_3.dir/rule
+
+.PHONY : tesk6_3
+
+# fast build rule for target.
+tesk6_3/fast:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_3.dir\build.make assignment6/CMakeFiles/tesk6_3.dir/build
+.PHONY : tesk6_3/fast
+
+adjacencyWDigraph.obj: adjacencyWDigraph.cpp.obj
+
+.PHONY : adjacencyWDigraph.obj
 
 # target to build an object file
-graph.cpp.obj:
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_1.dir\build.make assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj
-.PHONY : graph.cpp.obj
+adjacencyWDigraph.cpp.obj:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_1.dir\build.make assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.obj
+.PHONY : adjacencyWDigraph.cpp.obj
 
-graph.i: graph.cpp.i
+adjacencyWDigraph.i: adjacencyWDigraph.cpp.i
 
-.PHONY : graph.i
+.PHONY : adjacencyWDigraph.i
 
 # target to preprocess a source file
-graph.cpp.i:
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_1.dir\build.make assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.i
-.PHONY : graph.cpp.i
+adjacencyWDigraph.cpp.i:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_1.dir\build.make assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.i
+.PHONY : adjacencyWDigraph.cpp.i
 
-graph.s: graph.cpp.s
+adjacencyWDigraph.s: adjacencyWDigraph.cpp.s
 
-.PHONY : graph.s
+.PHONY : adjacencyWDigraph.s
 
 # target to generate assembly for a file
-graph.cpp.s:
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_1.dir\build.make assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.s
-.PHONY : graph.cpp.s
+adjacencyWDigraph.cpp.s:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_1.dir\build.make assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.s
+.PHONY : adjacencyWDigraph.cpp.s
+
+listedDigraph.obj: listedDigraph.cpp.obj
+
+.PHONY : listedDigraph.obj
+
+# target to build an object file
+listedDigraph.cpp.obj:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_3.dir\build.make assignment6/CMakeFiles/tesk6_3.dir/listedDigraph.cpp.obj
+.PHONY : listedDigraph.cpp.obj
+
+listedDigraph.i: listedDigraph.cpp.i
+
+.PHONY : listedDigraph.i
+
+# target to preprocess a source file
+listedDigraph.cpp.i:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_3.dir\build.make assignment6/CMakeFiles/tesk6_3.dir/listedDigraph.cpp.i
+.PHONY : listedDigraph.cpp.i
+
+listedDigraph.s: listedDigraph.cpp.s
+
+.PHONY : listedDigraph.s
+
+# target to generate assembly for a file
+listedDigraph.cpp.s:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_3.dir\build.make assignment6/CMakeFiles/tesk6_3.dir/listedDigraph.cpp.s
+.PHONY : listedDigraph.cpp.s
+
+listedWDigraph.obj: listedWDigraph.cpp.obj
+
+.PHONY : listedWDigraph.obj
+
+# target to build an object file
+listedWDigraph.cpp.obj:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_2.dir\build.make assignment6/CMakeFiles/tesk6_2.dir/listedWDigraph.cpp.obj
+.PHONY : listedWDigraph.cpp.obj
+
+listedWDigraph.i: listedWDigraph.cpp.i
+
+.PHONY : listedWDigraph.i
+
+# target to preprocess a source file
+listedWDigraph.cpp.i:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_2.dir\build.make assignment6/CMakeFiles/tesk6_2.dir/listedWDigraph.cpp.i
+.PHONY : listedWDigraph.cpp.i
+
+listedWDigraph.s: listedWDigraph.cpp.s
+
+.PHONY : listedWDigraph.s
+
+# target to generate assembly for a file
+listedWDigraph.cpp.s:
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug && $(MAKE) -f assignment6\CMakeFiles\tesk6_2.dir\build.make assignment6/CMakeFiles/tesk6_2.dir/listedWDigraph.cpp.s
+.PHONY : listedWDigraph.cpp.s
 
 # Help Target
 help:
@@ -158,11 +242,19 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... tesk6_1
+	@echo ... tesk6_2
+	@echo ... tesk6_3
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... graph.obj
-	@echo ... graph.i
-	@echo ... graph.s
+	@echo ... adjacencyWDigraph.obj
+	@echo ... adjacencyWDigraph.i
+	@echo ... adjacencyWDigraph.s
+	@echo ... listedDigraph.obj
+	@echo ... listedDigraph.i
+	@echo ... listedDigraph.s
+	@echo ... listedWDigraph.obj
+	@echo ... listedWDigraph.i
+	@echo ... listedWDigraph.s
 .PHONY : help
 
 

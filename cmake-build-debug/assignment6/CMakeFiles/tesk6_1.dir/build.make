@@ -56,38 +56,38 @@ include assignment6/CMakeFiles/tesk6_1.dir/progress.make
 # Include the compile flags for this target's objects.
 include assignment6/CMakeFiles/tesk6_1.dir/flags.make
 
-assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj: assignment6/CMakeFiles/tesk6_1.dir/flags.make
-assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj: ../assignment6/graph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj"
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\assignment6 && D:\vim\mingw\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tesk6_1.dir\graph.cpp.obj -c C:\Users\jinqiu\Desktop\tesk\assignment6\graph.cpp
+assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.obj: assignment6/CMakeFiles/tesk6_1.dir/flags.make
+assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.obj: ../assignment6/adjacencyWDigraph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.obj"
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\assignment6 && D:\vim\mingw\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\tesk6_1.dir\adjacencyWDigraph.cpp.obj -c C:\Users\jinqiu\Desktop\tesk\assignment6\adjacencyWDigraph.cpp
 
-assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tesk6_1.dir/graph.cpp.i"
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\assignment6 && D:\vim\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jinqiu\Desktop\tesk\assignment6\graph.cpp > CMakeFiles\tesk6_1.dir\graph.cpp.i
+assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.i"
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\assignment6 && D:\vim\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jinqiu\Desktop\tesk\assignment6\adjacencyWDigraph.cpp > CMakeFiles\tesk6_1.dir\adjacencyWDigraph.cpp.i
 
-assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tesk6_1.dir/graph.cpp.s"
-	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\assignment6 && D:\vim\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jinqiu\Desktop\tesk\assignment6\graph.cpp -o CMakeFiles\tesk6_1.dir\graph.cpp.s
+assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.s"
+	cd /d C:\Users\jinqiu\Desktop\tesk\cmake-build-debug\assignment6 && D:\vim\mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jinqiu\Desktop\tesk\assignment6\adjacencyWDigraph.cpp -o CMakeFiles\tesk6_1.dir\adjacencyWDigraph.cpp.s
 
-assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj.requires:
+assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.obj.requires:
 
-.PHONY : assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj.requires
+.PHONY : assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.obj.requires
 
-assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj.provides: assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj.requires
-	$(MAKE) -f assignment6\CMakeFiles\tesk6_1.dir\build.make assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj.provides.build
-.PHONY : assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj.provides
+assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.obj.provides: assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.obj.requires
+	$(MAKE) -f assignment6\CMakeFiles\tesk6_1.dir\build.make assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.obj.provides.build
+.PHONY : assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.obj.provides
 
-assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj.provides.build: assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj
+assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.obj.provides.build: assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.obj
 
 
 # Object files for target tesk6_1
 tesk6_1_OBJECTS = \
-"CMakeFiles/tesk6_1.dir/graph.cpp.obj"
+"CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.obj"
 
 # External object files for target tesk6_1
 tesk6_1_EXTERNAL_OBJECTS =
 
-assignment6/tesk6_1.exe: assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj
+assignment6/tesk6_1.exe: assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.obj
 assignment6/tesk6_1.exe: assignment6/CMakeFiles/tesk6_1.dir/build.make
 assignment6/tesk6_1.exe: assignment6/CMakeFiles/tesk6_1.dir/linklibs.rsp
 assignment6/tesk6_1.exe: assignment6/CMakeFiles/tesk6_1.dir/objects1.rsp
@@ -100,7 +100,7 @@ assignment6/CMakeFiles/tesk6_1.dir/build: assignment6/tesk6_1.exe
 
 .PHONY : assignment6/CMakeFiles/tesk6_1.dir/build
 
-assignment6/CMakeFiles/tesk6_1.dir/requires: assignment6/CMakeFiles/tesk6_1.dir/graph.cpp.obj.requires
+assignment6/CMakeFiles/tesk6_1.dir/requires: assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.obj.requires
 
 .PHONY : assignment6/CMakeFiles/tesk6_1.dir/requires
 
