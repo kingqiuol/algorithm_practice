@@ -9,7 +9,7 @@
 
 #include <iostream>
 #include <vector>
-#include <exception>
+#include <stdexcept>
 #include <sstream>
 
 using namespace std;
@@ -22,11 +22,11 @@ using namespace std;
 *                  有权有向图                *
 /*******************************************/
 template <class T>
-class adjaceencyWDigraph:public Graph<T>
+class adjacencyWDigraph:public Graph<T>
 {
 public:
-    adjaceencyWDigraph(int top_size,int noEdge);
-    ~adjaceencyWDigraph(){}
+    adjacencyWDigraph(int top_size,int noEdge);
+    ~adjacencyWDigraph(){}
 
 
     //返回图的顶点数
@@ -51,7 +51,7 @@ public:
     //加权图时返回true
     bool weighted(){return true;}
     //访问指定顶点的相邻顶点
-    VertexIterator<T> *iterator(int);
+//    VertexIterator<T> *iterator(int);
 private:
     vector<T> adj_mat_;//邻接矩阵
     int top_size_;//顶点的个数
@@ -60,7 +60,7 @@ private:
 };
 
 template <class T>
-adjaceencyWDigraph<T>::adjaceencyWDigraph(int top_size, int noEdge)
+adjacencyWDigraph<T>::adjacencyWDigraph(int top_size, int noEdge)
         :top_size_(top_size),noEdge_(noEdge),edge_size_(0)
 {
     if(top_size_<=0){
@@ -72,7 +72,7 @@ adjaceencyWDigraph<T>::adjaceencyWDigraph(int top_size, int noEdge)
 }
 
 template <class T>
-bool adjaceencyWDigraph<T>::exits_edge(int i,int j)
+bool adjacencyWDigraph<T>::exits_edge(int i,int j)
 {
     if(i<0||j<0|| i>=top_size_||j>=top_size_||
             adj_mat_[i*top_size_+j]==noEdge_){
@@ -83,7 +83,7 @@ bool adjaceencyWDigraph<T>::exits_edge(int i,int j)
 }
 
 template <class T>
-void adjaceencyWDigraph<T>::insert_edge(Edge<T> &edge)
+void adjacencyWDigraph<T>::insert_edge(Edge<T> &edge)
 {
     int i=edge.index1_;
     int j=edge.index2_;
@@ -105,14 +105,13 @@ void adjaceencyWDigraph<T>::insert_edge(Edge<T> &edge)
     }else{
         if(edge.weight_==noEdge_){
             --edge_size_;
-            return ;
         }
     }
     adj_mat_[pos]=edge.weight_;
 }
 
 template <class T>
-void adjaceencyWDigraph<T>::erase_edge(int i, int j)
+void adjacencyWDigraph<T>::erase_edge(int i, int j)
 {
     if(i<0||j<0||j>=top_size_||i>=top_size_){
         ostringstream s;
@@ -130,14 +129,14 @@ void adjaceencyWDigraph<T>::erase_edge(int i, int j)
 }
 
 template <class T>
-int adjaceencyWDigraph<T>::degree(const int &top)
+int adjacencyWDigraph<T>::degree(const int &top)
 {
     cerr<<"Directed Graph without Degree..."<<endl;
     exit(0);
 }
 
 template <class T>
-int adjaceencyWDigraph<T>::in_degree(const int &top)
+int adjacencyWDigraph<T>::in_degree(const int &top)
 {
     if(top<0||top>=top_size_){
         throw invalid_argument("Don't exit this vertices");
@@ -154,7 +153,7 @@ int adjaceencyWDigraph<T>::in_degree(const int &top)
 }
 
 template <class T>
-int adjaceencyWDigraph<T>::out_degree(const int &top)
+int adjacencyWDigraph<T>::out_degree(const int &top)
 {
     if(top<0||top>=top_size_){
         throw invalid_argument("Don't exit this vertices");
@@ -169,5 +168,109 @@ int adjaceencyWDigraph<T>::out_degree(const int &top)
 
     return sum;
 }
+
+
+/*******************************************
+*                  有权无向向图               *
+/*******************************************/
+template <class T>
+class adjacencyWGraph:public Graph<T>
+{
+public:
+    adjacencyWGraph(int top_size,int noEdge);
+    ~adjacencyWGraph(){delete adj_mat_;}
+
+
+    //返回图的顶点数
+    int number_of_vertices(){return adj_mat_->number_of_vertices();}
+    //返回图的边数
+    int number_of_Edge(){return adj_mat_->number_of_Edge();}
+    //判断边（i,j）是否存在
+    bool exits_edge(int i,int j);
+    //插入边（i,j）
+    void insert_edge(Edge<T> &edge);
+    //删除边
+    void erase_edge(int i, int j);
+    //返回顶点的度（只适用于无向图）
+    int degree(const int &top);
+    //返回顶点的入度
+    int in_degree(const int &top);
+    //返回顶点的出度
+    int out_degree(const int &top);
+
+    //有向图时返回true
+    bool directed(){return false;}
+    //加权图时返回true
+    bool weighted(){return true;}
+    //访问指定顶点的相邻顶点
+    VertexIterator<T> *iterator(int);
+private:
+    adjacencyWDigraph<T> *adj_mat_;
+};
+
+template <class T>
+adjacencyWGraph<T>::adjacencyWGraph(int top_size, int noEdge)
+{
+    adj_mat_=new adjacencyWDigraph(top_size,noEdge);
+}
+
+template <class T>
+bool adjacencyWGraph<T>::exits_edge(int i, int j)
+{
+    return adj_mat_->exits_edge(i,j) || adj_mat_->exits_edge(j,i);
+}
+
+template <class T>
+void adjacencyWGraph<T>::insert_edge(Edge<T> &edge)
+{
+    adj_mat_->insert_edge(edge);
+    int temp=edge.index1_;
+    edge.index1_=edge.index2_;
+    edge.index2_=temp;
+    adj_mat_->insert_edge(edge);
+}
+
+template <class T>
+void adjacencyWGraph<T>::erase_edge(int i, int j)
+{
+    adj_mat_->erase_edge(i,j);
+    adj_mat_->erase_edge(j,i);
+}
+
+template <class T>
+int adjacencyWGraph<T>::degree(const int &top)
+{
+    int size=number_of_vertices();
+
+    if(top<0 || top>=size){
+        throw invalid_argument("top must be >0 0r <size(top<0 || top>=size)");
+    }
+
+    int sum=0;
+    for(int i=0;i<size;++i){
+        if(exits_edge(top,i)){
+            ++sum;
+        }
+    }
+
+    return sum;
+}
+
+template <class T>
+int adjacencyWGraph<T>::in_degree(const int &top)
+{
+    return degree(top);
+}
+
+template <class T>
+int adjacencyWGraph<T>::out_degree(const int &top)
+{
+    return degree(top);
+}
+
+/*******************************************
+*                  无权有向向图               *
+/*******************************************/
+
 
 #endif //TESK_ADJACENCYWDIGRAPH_H
