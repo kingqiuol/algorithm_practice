@@ -6,6 +6,7 @@
 #define TESK_GRAPH_H
 
 #include "utils.h"
+#include "queue.h"
 
 template <class T>
 class Graph
@@ -35,7 +36,32 @@ public:
     //加权图时返回true
     virtual bool weighted()=0;
     //访问指定顶点的相邻顶点
-    //virtual VertexIterator<T> *iterator(int)=0;
+    virtual VertexIterator<T> *iterator(int)=0;
+
+    //广度优先遍历
+    virtual void bfs(int v,int reach[],int label)
+    {
+        ArrayQueue<T> q(10);
+        reach[v]=label;
+
+        q.push(v);
+        while(!q.empty()){
+            //从队列中删除一个顶点
+            int w=q.front();
+            q.pop();
+
+            //标记所有没有到达的邻接于顶点w的顶点
+            VertexIterator<T> *iw=iterator(w);
+            int u;
+            while ((u=iw->next())!=0){//访问顶点w相邻顶点
+                if(reach[u]==0){//u为没有到达过的顶点
+                    q.push(u);
+                    reach[u]=label;//到达进行标记
+                }
+            }
+            delete iw;
+        }
+    }
 };
 
 #endif //TESK_GRAPH_H
