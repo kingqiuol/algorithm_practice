@@ -8,59 +8,59 @@
 		<Option virtualFolders="CMake Files\;CMake Files\assignment1\;CMake Files\assignment2\;CMake Files\assignment3\;CMake Files\assignment4\;CMake Files\assignment5\;CMake Files\assignment6\;CMake Files\assignment7\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment7"/>
+				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment7"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment1/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment1\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment1/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment1\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment2/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment2\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment2/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment2\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment3/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment3\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment3/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment3\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment4/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment4\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment4/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment4\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment5/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment5\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment5/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment5\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment6/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment6/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment6\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment6/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment6/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment6\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment7/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment7/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment7\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment7/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment7/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment7\"/>
 		</Unit>
 	</Project>

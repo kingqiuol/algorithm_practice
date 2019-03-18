@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.obj"
+  "CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.o"
   "tesk6_1.pdb"
   "tesk6_1.exe"
-  "tesk6_1.exe.manifest"
   "libtesk6_1.dll.a"
 )
 

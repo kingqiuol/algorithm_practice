@@ -6,39 +6,29 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
 iostream
 -
 memory
 -
-../assignment2/list.h
-C:/Users/jinqiu/Desktop/tesk/assignment2/list.h
+list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
 ../assignment1/list.h
-C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
 
-C:/Users/jinqiu/Desktop/tesk/assignment2/list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment3/list.h
 iostream
 -
 memory
 -
-../assignment2/list.h
-C:/Users/jinqiu/Desktop/tesk/assignment2/list.h
+list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment3/list.h
 ../assignment1/list.h
-C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
 
-C:/Users/jinqiu/Desktop/tesk/assignment3/list.h
-iostream
--
-memory
--
-../assignment2/list.h
-C:/Users/jinqiu/Desktop/tesk/assignment2/list.h
-../assignment1/list.h
-C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
-
-C:/Users/jinqiu/Desktop/tesk/assignment3/sort.cpp
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment3/sort.cpp
 sort.h
-C:/Users/jinqiu/Desktop/tesk/assignment3/sort.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment3/sort.h
 time.h
 -
 vector
@@ -46,7 +36,7 @@ vector
 deque
 -
 
-C:/Users/jinqiu/Desktop/tesk/assignment3/sort.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment3/sort.h
 iostream
 -
 math.h
@@ -54,5 +44,5 @@ math.h
 algorithm
 -
 list.h
-C:/Users/jinqiu/Desktop/tesk/assignment3/list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment3/list.h
 

@@ -20,7 +20,7 @@ public:
     //判断边（i,j）是否存在
     virtual bool exits_edge(int i,int j)=0;
     //插入边（i,j）
-    virtual void insert_edge(Edge<T> &edge)=0;
+    virtual void insert_edge(const Edge<T> &edge)=0;
     //删除边
     virtual void erase_edge(int i, int j)=0;
     //返回顶点的度（只适用于无向图）
@@ -35,7 +35,7 @@ public:
     //加权图时返回true
     virtual bool weighted()=0;
     //访问指定顶点的相邻顶点
-    virtual VertexIterator<T> *iterator(int)=0;
+    //virtual VertexIterator<T> *iterator(int)=0;
 };
 
 #endif //TESK_GRAPH_H

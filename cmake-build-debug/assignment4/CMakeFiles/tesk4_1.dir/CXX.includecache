@@ -6,29 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
 iostream
 -
 memory
 -
-../assignment2/list.h
-C:/Users/jinqiu/Desktop/tesk/assignment2/list.h
+list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
+../assignment1/list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
 
-C:/Users/jinqiu/Desktop/tesk/assignment2/list.h
-iostream
--
-memory
--
-../assignment2/list.h
-C:/Users/jinqiu/Desktop/tesk/assignment2/list.h
-
-C:/Users/jinqiu/Desktop/tesk/assignment4/hashing.cpp
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/hashing.cpp
 hashing.h
-C:/Users/jinqiu/Desktop/tesk/assignment4/hashing.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/hashing.h
 lru.h
-C:/Users/jinqiu/Desktop/tesk/assignment4/lru.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/lru.h
 
-C:/Users/jinqiu/Desktop/tesk/assignment4/hashing.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/hashing.h
 iostream
 -
 string
@@ -38,23 +32,23 @@ vector
 memory
 -
 list.h
-C:/Users/jinqiu/Desktop/tesk/assignment4/list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/list.h
 
-C:/Users/jinqiu/Desktop/tesk/assignment4/list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/list.h
 iostream
 -
 memory
 -
-../assignment2/list.h
-C:/Users/jinqiu/Desktop/tesk/assignment2/list.h
-../assignment1/list.h
-C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
-
-C:/Users/jinqiu/Desktop/tesk/assignment4/lru.h
-hashing.h
-C:/Users/jinqiu/Desktop/tesk/assignment4/hashing.h
 list.h
-C:/Users/jinqiu/Desktop/tesk/assignment4/list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/list.h
+../assignment1/list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
+
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/lru.h
+hashing.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/hashing.h
+list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/list.h
 iostream
 -
 

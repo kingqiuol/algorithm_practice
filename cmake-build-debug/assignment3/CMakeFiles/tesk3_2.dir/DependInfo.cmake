@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/jinqiu/Desktop/tesk/assignment3/binary_chop.cpp" "C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment3/CMakeFiles/tesk3_2.dir/binary_chop.cpp.obj"
+  "/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment3/binary_chop.cpp" "/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment3/CMakeFiles/tesk3_2.dir/binary_chop.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

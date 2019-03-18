@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tesk5_2.dir/priority_queue.cpp.obj"
+  "CMakeFiles/tesk5_2.dir/priority_queue.cpp.o"
   "tesk5_2.pdb"
   "tesk5_2.exe"
-  "tesk5_2.exe.manifest"
   "libtesk5_2.dll.a"
 )
 

@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tesk3_2.dir/binary_chop.cpp.obj"
+  "CMakeFiles/tesk3_2.dir/binary_chop.cpp.o"
   "tesk3_2.pdb"
   "tesk3_2.exe"
-  "tesk3_2.exe.manifest"
   "libtesk3_2.dll.a"
 )
 

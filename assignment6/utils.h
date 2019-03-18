@@ -9,8 +9,8 @@ template <class T>
 class Edge
 {
 public:
-    Edge(){}
-    Edge(int index1,int index2,T weight): index1_(index1),
+    Edge():index1_(0),index2_(0),weight_(0){}
+    Edge(int index1,int index2,T weight=1): index1_(index1),
                                           index2_(index2),
                                           weight_(weight){}
     Edge(Edge<T> &other):index1_(other.index1_),index2_(other.index2_),

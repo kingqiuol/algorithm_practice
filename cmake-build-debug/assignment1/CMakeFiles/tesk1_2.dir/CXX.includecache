@@ -6,27 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/jinqiu/Desktop/tesk/assignment1/list.cpp
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.cpp
 list.h
-C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
 
-C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
 iostream
 -
 memory
 -
-../assignment2/list.h
-C:/Users/jinqiu/Desktop/tesk/assignment2/list.h
+list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
 ../assignment1/list.h
-C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
-
-C:/Users/jinqiu/Desktop/tesk/assignment2/list.h
-iostream
--
-memory
--
-../assignment2/list.h
-C:/Users/jinqiu/Desktop/tesk/assignment2/list.h
-../assignment1/list.h
-C:/Users/jinqiu/Desktop/tesk/assignment1/list.h
+/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
 

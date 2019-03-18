@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tesk1_1.dir/array.cpp.obj"
+  "CMakeFiles/tesk1_1.dir/array.cpp.o"
   "tesk1_1.pdb"
   "tesk1_1.exe"
-  "tesk1_1.exe.manifest"
   "libtesk1_1.dll.a"
 )
 

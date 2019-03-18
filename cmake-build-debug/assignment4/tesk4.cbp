@@ -8,161 +8,161 @@
 		<Option virtualFolders="CMake Files\;CMake Files\assignment1\;CMake Files\assignment2\;CMake Files\assignment3\;CMake Files\assignment4\;CMake Files\assignment5\;CMake Files\assignment6\;CMake Files\assignment7\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4"/>
+				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tesk4_1">
-				<Option output="C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/tesk4_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_1"/>
-					<CompileFile command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tesk4_1/fast">
-				<Option output="C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/tesk4_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_1/fast"/>
-					<CompileFile command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk4_2">
-				<Option output="C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/tesk4_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4"/>
+				<Option output="/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/tesk4_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_2"/>
-					<CompileFile command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_2"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk4_2/fast">
-				<Option output="C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/tesk4_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4"/>
+				<Option output="/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/tesk4_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="d:\vim\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_2/fast"/>
-					<CompileFile command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/vim/mingw/bin/mingw32-make.exe -f &quot;C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_2/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tesk4_1">
+				<Option output="/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/tesk4_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_1"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tesk4_1/fast">
+				<Option output="/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/tesk4_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_1/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment4/hashing.cpp">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/hashing.cpp">
 			<Option target="tesk4_1"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment4/hashing.h">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/hashing.h">
 			<Option target="tesk4_1"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment4/list.h">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/list.h">
 			<Option target="tesk4_1"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment4/lru.h">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/lru.h">
 			<Option target="tesk4_1"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment4/string.cpp">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/string.cpp">
 			<Option target="tesk4_2"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment4/string.h">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/string.h">
 			<Option target="tesk4_2"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment1/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment1\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment1/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment1\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment2/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment2\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment2/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment2\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment3/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment3\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment3/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment3\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment4/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment4\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment4/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment4\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment5/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment5\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment5/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment5\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment6/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment6/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment6\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment6/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment6/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment6\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment7/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment7/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment7\"/>
 		</Unit>
-		<Unit filename="C:/Users/jinqiu/Desktop/tesk/assignment7/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment7/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment7\"/>
 		</Unit>
 	</Project>

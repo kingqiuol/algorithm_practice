@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/jinqiu/Desktop/tesk/assignment2/recursion.cpp" "C:/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment2/CMakeFiles/tesk2_3.dir/recursion.cpp.obj"
+  "/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment2/recursion.cpp" "/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment2/CMakeFiles/tesk2_3.dir/recursion.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

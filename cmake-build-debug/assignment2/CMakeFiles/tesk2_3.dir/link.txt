@@ -1,3 +1,1 @@
-"D:\clion\CLion 2016.3.5\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\tesk2_3.dir/objects.a
-D:\vim\mingw\bin\ar.exe cr CMakeFiles\tesk2_3.dir/objects.a @CMakeFiles\tesk2_3.dir\objects1.rsp
-D:\vim\mingw\bin\g++.exe   -std=c++11 -g   -Wl,--whole-archive CMakeFiles\tesk2_3.dir/objects.a -Wl,--no-whole-archive  -o tesk2_3.exe -Wl,--out-implib,libtesk2_3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\tesk2_3.dir\linklibs.rsp
+/usr/bin/c++.exe  -g  -Wl,--enable-auto-import CMakeFiles/tesk2_3.dir/recursion.cpp.o  -o tesk2_3.exe -Wl,--out-implib,libtesk2_3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
