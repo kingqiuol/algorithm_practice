@@ -1,1 +1,1 @@
-/usr/bin/c++.exe  -g  -Wl,--enable-auto-import CMakeFiles/tesk3_2.dir/binary_chop.cpp.o  -o tesk3_2.exe -Wl,--out-implib,libtesk3_2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+/usr/bin/c++.exe   -std=c++11 -g  -Wl,--enable-auto-import CMakeFiles/tesk3_2.dir/binary_chop.cpp.o  -o tesk3_2.exe -Wl,--out-implib,libtesk3_2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
