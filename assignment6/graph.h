@@ -5,6 +5,9 @@
 #ifndef TESK_GRAPH_H
 #define TESK_GRAPH_H
 
+#include <vector>
+#include <algorithm>
+
 #include "utils.h"
 #include "queue.h"
 
@@ -38,11 +41,13 @@ public:
     //访问指定顶点的相邻顶点
     virtual VertexIterator<T> *iterator(int)=0;
 
+public:
     //广度优先遍历
-    virtual void bfs(int v,int reach[],int label)
+    virtual vector<T> bfs(int v)
     {
-        ArrayQueue<T> q(10);
-        reach[v]=label;
+        vector<T> reach;
+        ArrayQueue<int> q(10);
+        reach.push_back(v);
 
         q.push(v);
         while(!q.empty()){
@@ -53,14 +58,18 @@ public:
             //标记所有没有到达的邻接于顶点w的顶点
             VertexIterator<T> *iw=iterator(w);
             int u;
-            while ((u=iw->next())!=0){//访问顶点w相邻顶点
-                if(reach[u]==0){//u为没有到达过的顶点
+            //访问顶点w相邻顶点
+            while ((u=iw->next())!=0){
+                //u为没有到达过的顶点
+                if(find(reach.begin(),reach.end(),u)==reach.end()){
                     q.push(u);
-                    reach[u]=label;//到达进行标记
+                    reach.push_back(u);
                 }
             }
             delete iw;
         }
+
+        return reach;
     }
 };
 

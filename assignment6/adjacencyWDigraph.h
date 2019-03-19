@@ -30,6 +30,8 @@ public:
 
     //获取邻接矩阵
     vector<T> &get(){return adj_mat_;}
+    //获取不存在边的填充值
+    T get_noEdge(){return noEdge_;}
     //返回图的顶点数
     int number_of_vertices(){return top_size_;}
     //返回图的边数
@@ -54,15 +56,15 @@ public:
     bool weighted(){return true;}
 
     //访问指定顶点的相邻顶点
-    //VertexIterator<T> *iterator(int);
+    VertexIterator<T> *iterator(int vertex);
 
     //打印邻接矩阵
     void print();
 private:
-    vector<T> adj_mat_;//邻接矩阵
-    int top_size_;//顶点的个数
-    int edge_size_;//边的个数
-    T noEdge_;//不存在边的填充值
+    vector<T> adj_mat_;     //邻接矩阵
+    int top_size_;          //顶点的个数
+    int edge_size_;         //边的个数
+    T noEdge_;              //不存在边的填充值
 };
 
 template <class T>
@@ -174,6 +176,22 @@ int adjacencyWDigraph<T>::out_degree(const int &top)
 
     return sum;
 }
+
+template <class T>
+VertexIterator<T> *adjacencyWDigraph<T>::iterator(int vertex)
+{
+    if(vertex<0||vertex>=top_size_){
+        throw invalid_argument("Don't exit this vertices");
+    }
+
+    vector<T> theRow;
+    theRow.resize(top_size_);
+    copy(adj_mat_.begin()+vertex*top_size_,adj_mat_.begin()+(vertex+1)*top_size_,
+         theRow.begin());
+
+    return new VertexIterator<T>(theRow,noEdge_,top_size_);
+}
+
 template <class T>
 void adjacencyWDigraph<T>::print()
 {
@@ -220,7 +238,7 @@ public:
     //加权图时返回true
     bool weighted(){return true;}
     //访问指定顶点的相邻顶点
-    //VertexIterator<T> *iterator(int);
+    VertexIterator<T> *iterator(int);
 
     //打印邻接矩阵
     void print();
@@ -290,6 +308,13 @@ int adjacencyWGraph<T>::out_degree(const int &top)
 }
 
 template <class T>
+VertexIterator<T>* adjacencyWGraph<T>::iterator(int top)
+{
+
+    return adj_mat_->iterator(top);
+}
+
+template <class T>
 void adjacencyWGraph<T>::print()
 {
     int size=number_of_vertices();
@@ -338,7 +363,7 @@ public:
     bool weighted(){return false;}
 
     //访问指定顶点的相邻顶点
-    //VertexIterator<T> *iterator(int);
+    VertexIterator<T> *iterator(int top);
 
     //打印邻接矩阵
     void print();
@@ -390,6 +415,12 @@ int adjacencyDigraph<T>::out_degree(const int &top)
 }
 
 template <class T>
+VertexIterator<T>* adjacencyDigraph<T>::iterator(int top)
+{
+    return adj_mat_->iterator(top);
+}
+
+template <class T>
 void adjacencyDigraph<T>::print()
 {
     int size=number_of_vertices();
@@ -438,7 +469,7 @@ public:
     bool weighted(){return false;}
 
     //访问指定顶点的相邻顶点
-    //VertexIterator<T> *iterator(int);
+    VertexIterator<T> *iterator(int top);
 
     //打印邻接矩阵
     void print();
@@ -486,6 +517,12 @@ template <class T>
 int adjacencyGraph<T>::out_degree(const int &top)
 {
     return adj_mat_->out_degree(top);
+}
+
+template <class T>
+VertexIterator<T>* adjacencyGraph<T>::iterator(int top)
+{
+    return adj_mat_->iterator(top);
 }
 
 template <class T>
