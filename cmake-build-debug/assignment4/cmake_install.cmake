@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/c/Users/jinqiu/Desktop/tesk/assignment4
+# Install script for directory: /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

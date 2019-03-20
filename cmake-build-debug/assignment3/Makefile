@@ -48,10 +48,10 @@ RM = /cygdrive/c/Users/jinqiu/.CLion2016.3/system/cygwin_cmake/bin/cmake.exe -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/jinqiu/Desktop/tesk
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/CMakeFiles /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment3/CMakeFiles/progress.marks
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment3/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/CMakeFiles 0
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/CMakeFiles /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/CMakeFiles/progress.marks
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment3/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment3/clean
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment3/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment3/preinstall
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment3/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment3/preinstall
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment3/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 assignment3/CMakeFiles/tesk3_2.dir/rule:
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment3/CMakeFiles/tesk3_2.dir/rule
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment3/CMakeFiles/tesk3_2.dir/rule
 .PHONY : assignment3/CMakeFiles/tesk3_2.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ tesk3_2: assignment3/CMakeFiles/tesk3_2.dir/rule
 
 # fast build rule for target.
 tesk3_2/fast:
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(MAKE) -f assignment3/CMakeFiles/tesk3_2.dir/build.make assignment3/CMakeFiles/tesk3_2.dir/build
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment3/CMakeFiles/tesk3_2.dir/build.make assignment3/CMakeFiles/tesk3_2.dir/build
 .PHONY : tesk3_2/fast
 
 # Convenience name for target.
 assignment3/CMakeFiles/tesk3_1.dir/rule:
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment3/CMakeFiles/tesk3_1.dir/rule
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment3/CMakeFiles/tesk3_1.dir/rule
 .PHONY : assignment3/CMakeFiles/tesk3_1.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ tesk3_1: assignment3/CMakeFiles/tesk3_1.dir/rule
 
 # fast build rule for target.
 tesk3_1/fast:
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(MAKE) -f assignment3/CMakeFiles/tesk3_1.dir/build.make assignment3/CMakeFiles/tesk3_1.dir/build
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment3/CMakeFiles/tesk3_1.dir/build.make assignment3/CMakeFiles/tesk3_1.dir/build
 .PHONY : tesk3_1/fast
 
 binary_chop.o: binary_chop.cpp.o
@@ -146,7 +146,7 @@ binary_chop.o: binary_chop.cpp.o
 
 # target to build an object file
 binary_chop.cpp.o:
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(MAKE) -f assignment3/CMakeFiles/tesk3_2.dir/build.make assignment3/CMakeFiles/tesk3_2.dir/binary_chop.cpp.o
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment3/CMakeFiles/tesk3_2.dir/build.make assignment3/CMakeFiles/tesk3_2.dir/binary_chop.cpp.o
 .PHONY : binary_chop.cpp.o
 
 binary_chop.i: binary_chop.cpp.i
@@ -155,7 +155,7 @@ binary_chop.i: binary_chop.cpp.i
 
 # target to preprocess a source file
 binary_chop.cpp.i:
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(MAKE) -f assignment3/CMakeFiles/tesk3_2.dir/build.make assignment3/CMakeFiles/tesk3_2.dir/binary_chop.cpp.i
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment3/CMakeFiles/tesk3_2.dir/build.make assignment3/CMakeFiles/tesk3_2.dir/binary_chop.cpp.i
 .PHONY : binary_chop.cpp.i
 
 binary_chop.s: binary_chop.cpp.s
@@ -164,7 +164,7 @@ binary_chop.s: binary_chop.cpp.s
 
 # target to generate assembly for a file
 binary_chop.cpp.s:
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(MAKE) -f assignment3/CMakeFiles/tesk3_2.dir/build.make assignment3/CMakeFiles/tesk3_2.dir/binary_chop.cpp.s
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment3/CMakeFiles/tesk3_2.dir/build.make assignment3/CMakeFiles/tesk3_2.dir/binary_chop.cpp.s
 .PHONY : binary_chop.cpp.s
 
 sort.o: sort.cpp.o
@@ -173,7 +173,7 @@ sort.o: sort.cpp.o
 
 # target to build an object file
 sort.cpp.o:
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(MAKE) -f assignment3/CMakeFiles/tesk3_1.dir/build.make assignment3/CMakeFiles/tesk3_1.dir/sort.cpp.o
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment3/CMakeFiles/tesk3_1.dir/build.make assignment3/CMakeFiles/tesk3_1.dir/sort.cpp.o
 .PHONY : sort.cpp.o
 
 sort.i: sort.cpp.i
@@ -182,7 +182,7 @@ sort.i: sort.cpp.i
 
 # target to preprocess a source file
 sort.cpp.i:
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(MAKE) -f assignment3/CMakeFiles/tesk3_1.dir/build.make assignment3/CMakeFiles/tesk3_1.dir/sort.cpp.i
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment3/CMakeFiles/tesk3_1.dir/build.make assignment3/CMakeFiles/tesk3_1.dir/sort.cpp.i
 .PHONY : sort.cpp.i
 
 sort.s: sort.cpp.s
@@ -191,7 +191,7 @@ sort.s: sort.cpp.s
 
 # target to generate assembly for a file
 sort.cpp.s:
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(MAKE) -f assignment3/CMakeFiles/tesk3_1.dir/build.make assignment3/CMakeFiles/tesk3_1.dir/sort.cpp.s
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment3/CMakeFiles/tesk3_1.dir/build.make assignment3/CMakeFiles/tesk3_1.dir/sort.cpp.s
 .PHONY : sort.cpp.s
 
 # Help Target
@@ -221,6 +221,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

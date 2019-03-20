@@ -1,1 +1,1 @@
-/usr/bin/c++.exe   -std=c++11 -g  -Wl,--enable-auto-import CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.o  -o tesk6_1.exe -Wl,--out-implib,libtesk6_1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+/usr/bin/c++.exe  -g  -Wl,--enable-auto-import CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.o  -o tesk6_1.exe -Wl,--out-implib,libtesk6_1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

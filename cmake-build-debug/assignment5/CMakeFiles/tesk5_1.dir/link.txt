@@ -1,1 +1,1 @@
-/usr/bin/c++.exe   -std=c++11 -g  -Wl,--enable-auto-import CMakeFiles/tesk5_1.dir/binary_tree.cpp.o  -o tesk5_1.exe -Wl,--out-implib,libtesk5_1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+/usr/bin/c++.exe  -g  -Wl,--enable-auto-import CMakeFiles/tesk5_1.dir/binary_tree.cpp.o  -o tesk5_1.exe -Wl,--out-implib,libtesk5_1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

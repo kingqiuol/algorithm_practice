@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/c/Users/jinqiu/Desktop/tesk
+# Install script for directory: /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,13 +29,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment1/cmake_install.cmake")
-  include("/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment2/cmake_install.cmake")
-  include("/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment3/cmake_install.cmake")
-  include("/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment4/cmake_install.cmake")
-  include("/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment5/cmake_install.cmake")
-  include("/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment6/cmake_install.cmake")
-  include("/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment7/cmake_install.cmake")
+  include("/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/cmake_install.cmake")
+  include("/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/cmake_install.cmake")
+  include("/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/cmake_install.cmake")
+  include("/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/cmake_install.cmake")
+  include("/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/cmake_install.cmake")
+  include("/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/cmake_install.cmake")
+  include("/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +47,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -6,13 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment6/adjacencyWDigraph.cpp
-adjacencyWDigraph.h
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment6/adjacencyWDigraph.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.h
+iostream
+-
+memory
+-
+list.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.h
+../assignment1/list.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.h
 
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment6/adjacencyWDigraph.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/adjacencyWDigraph.cpp
+adjacencyWDigraph.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/adjacencyWDigraph.h
+
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/adjacencyWDigraph.h
 graph.h
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment6/graph.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/graph.h
 iostream
 -
 vector
@@ -22,9 +32,37 @@ stdexcept
 sstream
 -
 
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment6/graph.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/graph.h
+vector
+-
+algorithm
+-
 utils.h
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment6/utils.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/utils.h
+queue.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/queue.h
 
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment6/utils.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/list.h
+iostream
+-
+memory
+-
+list.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/list.h
+../assignment1/list.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.h
+
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/queue.h
+iostream
+-
+memory
+-
+list.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/list.h
+
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/utils.h
+iostream
+-
+vector
+-
 

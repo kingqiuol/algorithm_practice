@@ -1,1 +1,1 @@
-/usr/bin/c++.exe   -std=c++11 -g  -Wl,--enable-auto-import CMakeFiles/tesk2_1.dir/stack.cpp.o  -o tesk2_1.exe -Wl,--out-implib,libtesk2_1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+/usr/bin/c++.exe  -g  -Wl,--enable-auto-import CMakeFiles/tesk2_1.dir/stack.cpp.o  -o tesk2_1.exe -Wl,--out-implib,libtesk2_1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

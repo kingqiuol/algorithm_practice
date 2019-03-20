@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment5/binary_tree.cpp" "/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment5/CMakeFiles/tesk5_1.dir/binary_tree.cpp.o"
+  "/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/binary_tree.cpp" "/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/CMakeFiles/tesk5_1.dir/binary_tree.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

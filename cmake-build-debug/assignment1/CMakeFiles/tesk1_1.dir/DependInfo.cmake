@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/array.cpp" "/cygdrive/c/Users/jinqiu/Desktop/tesk/cmake-build-debug/assignment1/CMakeFiles/tesk1_1.dir/array.cpp.o"
+  "/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment1/array.cpp" "/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/CMakeFiles/tesk1_1.dir/array.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
