@@ -11,7 +11,7 @@ template <class T>
 class listedWDigraph:public Graph
 {
 public:
-    
+
 private:
 
 };
