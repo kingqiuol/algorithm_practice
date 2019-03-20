@@ -71,6 +71,31 @@ public:
 
         return reach;
     }
+    
+    //深度优先遍历
+    virtual vector<T> dfs(int v)
+    {
+        vector<T> reach;
+        rdfs(v,reach);
+
+        return reach;
+    }
+
+    //递归深度优先遍历
+    void rdfs(int v,vector<T> &reach)
+    {
+        reach.push_back(v);
+        VertexIterator<T> *iw=iterator(v);
+        int u=0;
+        //访问v的相邻顶点
+        while((u=iw->next())!=0){
+            //如果U是一个未遍历的顶点
+            if(find(reach.begin(),reach.end(),u)==reach.end()){
+                rdfs(u,reach);
+            }
+        }
+        delete iw;
+    }
 };
 
 #endif //TESK_GRAPH_H

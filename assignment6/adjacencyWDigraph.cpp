@@ -27,6 +27,11 @@ int main()
         cout<<c<<" ";
     }
     cout<<endl;
+    vector<float > dfs=wdg.dfs(0);
+    for(auto &c:dfs){
+        cout<<c<<" ";
+    }
+    cout<<endl;
 
     cout<<"========>有权无向图："<<endl;
     adjacencyWGraph<float> wg(4,0);
