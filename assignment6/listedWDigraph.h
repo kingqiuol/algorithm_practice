@@ -46,7 +46,7 @@ public:
 *                  有权有向图                *
 /*******************************************/
 template <class T>
-class listedWDigraph:public Graph
+class listedWDigraph:public Graph<T>
 {
 public:
     listedWDigraph(int numberOfVertices=0);
@@ -133,7 +133,7 @@ void listedWDigraph<T>::insert_edge(const Edge<T> &edge)
 
     //不存在边（i,j）
     int index=0;
-    if(index=adj_list_[i].get_index(j)==-1){
+    if(index=adj_list_[i].get_index(ElementRegion<T>(j))==-1){
         ElementRegion<T> value(edge.index2_,edge.weight_);
         adj_list_[i].insert(0,value);
         ++edge_size_;
@@ -141,6 +141,110 @@ void listedWDigraph<T>::insert_edge(const Edge<T> &edge)
         adj_list_[i].get(index).weight_=edge.weight_;
     }
 }
+
+template <class T>
+void listedWDigraph<T>::erase_edge(int i, int j)
+{
+    if(i<0||j<0||i>=top_size_||j>=top_size_||i==j){
+        ostringstream s;
+        s << "(" << i << "," << j
+          << ") is not a permissible edge";
+        throw invalid_argument(s.str());
+    }
+
+    int index=adj_list_[i].get_index(ElementRegion<T>(j));
+    if(-1!=index){
+        adj_list_[i].erase(index);
+        --edge_size_;
+    }
+}
+
+template <class T>
+int listedWDigraph<T>::degree(const int &top)
+{
+    cout<<"Directed Graph without Degree..."<<endl;
+    exit(0);
+}
+
+template <class T>
+int listedWDigraph<T>::in_degree(const int &top)
+{
+    if(top<0||top>=top_size_){
+        throw invalid_argument("Vertex is't exit in graph!");
+    }
+
+    return adj_list_[top].size();
+}
+
+template <class T>
+int listedWDigraph<T>::out_degree(const int &top)
+{
+    if(top<0||top>=top_size_){
+        throw invalid_argument("Don't exit this vertices");
+    }
+
+    int sum=0;
+    for(int i=0;i<top_size_;++i){
+        if(-1!=adj_list_[i].get_index(ElementRegion<T>(top))){
+            ++sum;
+        }
+    }
+
+    return sum;
+}
+
+template <class T>
+VertexIterator<T>* listedWDigraph<T>::iterator(int vertex)
+{
+    if(vertex<0||vertex>=top_size_){
+        throw invalid_argument("Don't exit this vertices");
+    }
+
+    vector<T> theRow;
+}
+
+/*******************************************
+*                  有权无向图                *
+/*******************************************/
+template <class T>
+class listedWGraph:public Graph<T>
+{
+public:
+    listedWGraph();
+    ~listedWGraph();
+
+    //返回图的顶点数
+    int number_of_vertices(){return adj_list_.number_of_vertices();}
+    //返回图的边数
+    int number_of_Edge(){return adj_list_.number_of_Edge();}
+    //判断边（i,j）是否存在
+    bool exits_edge(int i,int j);
+
+    //插入边（i,j）
+    void insert_edge(const Edge<T> &edge);
+    //删除边
+    void erase_edge(int i, int j);
+    //返回顶点的度（只适用于无向图）
+    int degree(const int &top);
+    //返回顶点的入度
+    int in_degree(const int &top);
+    //返回顶点的出度
+    int out_degree(const int &top);
+
+    //有向图时返回true
+    bool directed(){return false;}
+    //加权图时返回true
+    bool weighted(){return true;}
+
+    //访问指定顶点的相邻顶点
+    VertexIterator<T> *iterator(int vertex);
+
+    //打印邻接矩阵
+    void print();
+private:
+    listedWDigraph<T> adj_list_;
+};
+
 
 #endif //TESK_LISTEDWDIGRAPH_H
 
