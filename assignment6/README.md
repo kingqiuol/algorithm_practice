@@ -157,3 +157,13 @@ C在"D和F"的前面，因此，先访问C。
 的距离值的顶点k的距离加上边上的权。
 
 **d.** 重复步骤b和c直到所有顶点都包含在S中。
+
+> **参考链接：** 
+
+[最短路径—Dijkstra算法和Floyd算法](https://www.cnblogs.com/kex1n/p/4178782.html)
+
+[数据结构--Dijkstra算法最清楚的讲解](https://blog.csdn.net/heroacool/article/details/51014824)
+
+[Dijkstra算法图文详解](https://blog.csdn.net/lbperfect123/article/details/84281300)
+
+
