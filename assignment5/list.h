@@ -8,7 +8,6 @@
 #include <iostream>
 #include <memory>
 #include "list.h"
-#include "../assignment1/list.h"
 
 
 using namespace std;
@@ -57,6 +56,8 @@ public:
     void set(const int &index,const T &value);
     //查询节点
     T &get(const int &index);
+    //获取链表值对应下标
+    int get_index(const T &value);
 
     //打印链表
     void print();
@@ -190,6 +191,18 @@ T &SingleList<T>::get(const int &index)
         }
         return cur->value_;
     }
+}
+
+template <class T>
+int SingleList<T>::get_index(const T &value)
+{
+    for(int i=0;i<size_;++i){
+        if(get(i)==value){
+            return i;
+        }
+    }
+
+    return -1;
 }
 
 template <class T>

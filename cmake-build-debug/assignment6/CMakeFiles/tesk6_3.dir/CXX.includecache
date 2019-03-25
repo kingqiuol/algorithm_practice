@@ -24,15 +24,19 @@ memory
 list.h
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/list.h
 
-/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/listedWDigraph.cpp
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/listedDigraph.cpp
+listedDigraph.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/listedDigraph.h
+
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/listedDigraph.h
+graph.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/graph.h
 listedWDigraph.h
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/listedWDigraph.h
 
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/listedWDigraph.h
 graph.h
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/graph.h
-listedWDigraph.h
-/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/listedWDigraph.h
 iostream
 -
 vector
