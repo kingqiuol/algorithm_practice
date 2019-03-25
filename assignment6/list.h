@@ -197,7 +197,7 @@ template <class T>
 int SingleList<T>::get_index(const T &value)
 {
     for(int i=0;i<size_;++i){
-        if(find(i)==value){
+        if(get(i)==value){
             return i;
         }
     }
