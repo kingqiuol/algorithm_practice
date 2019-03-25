@@ -46,6 +46,11 @@ public:
 
     ~VertexIterator() {}
 
+    //获取顶点的个数
+    int get_vertex_size(){return top_size_;}
+
+    vector<T> get_adjacent_vertex(){return theRow_;}
+
     //返回该顶点的下一个顶点
     int next()
     {

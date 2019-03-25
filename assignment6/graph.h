@@ -11,6 +11,8 @@
 #include "utils.h"
 #include "queue.h"
 
+#define INF (~(0x1<<31))
+
 template <class T>
 class Graph
 {
@@ -104,9 +106,67 @@ public:
     *                  最优路径                  *
     /*******************************************/
     //Dijkstra算法
-    void dijkstra(int v)
+    virtual vector<T> dijkstra(int v)
     {
+        VertexIterator<T> *iw=iterator(v);
+        int top_size=iw->get_vertex_size();//获取图中顶点的个数
 
+        bool *flag=new bool[top_size];//定义当前顶点的访问状态
+        T *dist=new T[top_size];//定义存储最小距离
+
+        //初始化状态数组
+        fill(flag,flag+top_size, false);
+        flag[v]= true;
+        //初始化距离数组
+        vector<T> theRow=iw->get_adjacent_vertex();
+        for(int i=0;i<top_size;++i){
+            if(theRow[i]!=0){
+                dist[i]=theRow[i];
+            } else{
+                dist[i]=INF;
+            }
+        }
+        dist[v]=0;
+
+        for(int i=0;i<top_size;++i){
+            //寻找当前节点最小的边
+            T min=INF;
+            int index=0;
+            for(int j=0;j<top_size;++j){
+                if(!flag[j] && dist[j]<min){
+                    min=dist[j];
+                    index=j;
+                }
+            }
+
+            //标记最小边对应的顶点
+            flag[index]= true;
+
+            //更新dist中各个顶点到起点s的距离
+            for(int k=0;k<top_size;++k){
+                //获取与当前最小顶点相连接边
+                iw=iterator(index);
+                theRow=iw->get_adjacent_vertex();
+
+                //更新起始点到各个顶点的距离
+                if(!flag[k] && theRow[k]!=0 && theRow[k]+min<dist[k]){
+                    dist[k]=min+theRow[k];
+                }
+            }
+        }
+
+        vector<T> distance(dist,dist+top_size);
+
+        if(flag){
+            delete []flag;
+            flag= nullptr;
+        }
+        if(dist){
+            delete []dist;
+            dist= nullptr;
+        }
+
+        return distance;
     }
 };
 
