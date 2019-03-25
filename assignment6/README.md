@@ -166,4 +166,8 @@ C在"D和F"的前面，因此，先访问C。
 
 [Dijkstra算法图文详解](https://blog.csdn.net/lbperfect123/article/details/84281300)
 
+### 4.2、A*算法
 
+> **参考链接：**
+
+[堪称最好的A*算法](https://blog.csdn.net/b2b160/article/details/4057781)
