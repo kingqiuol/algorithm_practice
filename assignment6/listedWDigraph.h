@@ -218,7 +218,7 @@ void listedWDigraph<T>::print()
     for(int i=0;i<top_size_;++i){
         cout<<i<<":";
         for(int j=0;j<adj_list_[i].size();++j){
-            cout<<adj_list_[i].get(j).vertex_<<"<"<<adj_list_[i].get(j).weight_<<") -> ";
+            cout<<adj_list_[i].get(j).vertex_<<"<"<<adj_list_[i].get(j).weight_<<"> -> ";
         }
         cout<<"NULL"<<endl;
     }

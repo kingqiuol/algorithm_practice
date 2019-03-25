@@ -66,7 +66,7 @@ int main()
 //    cout<<endl;
 
 
-    listedWGraph<int> lwdg(6);
+    listedWDigraph<int> lwdg(6);
     lwdg.insert_edge(Edge<int >(0,1,7));
     lwdg.insert_edge(Edge<int >(0,2,9));
     lwdg.insert_edge(Edge<int >(0,5,11));

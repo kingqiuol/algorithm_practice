@@ -109,19 +109,25 @@ public:
     virtual vector<T> dijkstra(int v)
     {
         VertexIterator<T> *iw=iterator(v);
-        int top_size=iw->get_vertex_size();//获取图中顶点的个数
+        int top_size=iw->get_vertex_size(); //获取图中顶点的个数
 
-        bool *flag=new bool[top_size];//定义当前顶点的访问状态
-        T *dist=new T[top_size];//定义存储最小距离
+        bool *flag=new bool[top_size];      //定义当前顶点的访问状态
+        T *dist=new T[top_size];            //定义存储最小距离
+        vector<vector<int>> path;           //定义存储最小路径
 
         //初始化状态数组
         fill(flag,flag+top_size, false);
         flag[v]= true;
+        //初始化最小路径
+        path.resize(top_size);
         //初始化距离数组
         vector<T> theRow=iw->get_adjacent_vertex();
         for(int i=0;i<top_size;++i){
             if(theRow[i]!=0){
                 dist[i]=theRow[i];
+
+                path[i].push_back(v);
+                path[i].push_back(i);
             } else{
                 dist[i]=INF;
             }
@@ -151,6 +157,10 @@ public:
                 //更新起始点到各个顶点的距离
                 if(!flag[k] && theRow[k]!=0 && theRow[k]+min<dist[k]){
                     dist[k]=min+theRow[k];
+
+                    path[k].resize(path[index].size());
+                    copy(path[index].begin(),path[index].end(),path[k].begin());
+                    path[k].push_back(k);
                 }
             }
         }
@@ -164,6 +174,13 @@ public:
         if(dist){
             delete []dist;
             dist= nullptr;
+        }
+
+        for(auto it=path.begin();it!=path.end();++it){
+            for(auto &c:*it){
+                cout<<c<<"->"<<" ";
+            }
+            cout<<endl;
         }
 
         return distance;
