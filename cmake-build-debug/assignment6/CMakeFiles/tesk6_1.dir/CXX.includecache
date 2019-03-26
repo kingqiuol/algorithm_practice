@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.h
-iostream
--
-memory
--
-list.h
-/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.h
-../assignment1/list.h
-/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.h
-
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/adjacencyWDigraph.cpp
 adjacencyWDigraph.h
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/adjacencyWDigraph.h
@@ -49,8 +39,6 @@ memory
 -
 list.h
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/list.h
-../assignment1/list.h
-/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.h
 
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/queue.h
 iostream

@@ -167,6 +167,17 @@ C在"D和F"的前面，因此，先访问C。
 [Dijkstra算法图文详解](https://blog.csdn.net/lbperfect123/article/details/84281300)
 
 ### 4.2、A*算法
+<<<<<<< HEAD
+=======
+
+> **参考链接：** 
+
+[A* 寻路算法 ](http://www.cppblog.com/christanxw/archive/2006/04/07/5126.html)
+
+[A*算法（附c源码）](https://www.cnblogs.com/mingbujian/p/4915546.html)
+
+[A*寻路算法C++简单实现](https://blog.csdn.net/u012234115/article/details/47152137)
+>>>>>>> 1da98f65a484f6675834374000ae47cb2aca75fa
 
 > **参考链接：**
 
