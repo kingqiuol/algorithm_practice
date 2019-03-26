@@ -187,13 +187,9 @@ public:
         return distance;
     }
 
-    //A*算法
-    virtual vector<T> a_star(int start, int end)
+    //Bellman-Ford算法
+    virtual vector<T> bellman_ford(int v)
     {
-        if(weighted()){
-            throw invalid_argument("A* algorithm can't used in weighted graph...");
-        }
-
 
     }
 };
