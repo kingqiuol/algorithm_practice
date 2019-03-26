@@ -7,6 +7,7 @@
 
 #include <vector>
 #include <algorithm>
+#include <stdexcept>
 
 #include "utils.h"
 #include "queue.h"
@@ -184,6 +185,16 @@ public:
         }
 
         return distance;
+    }
+
+    //A*算法
+    virtual vector<T> a_star(int start, int end)
+    {
+        if(weighted()){
+            throw invalid_argument("A* algorithm can't used in weighted graph...");
+        }
+
+
     }
 };
 
