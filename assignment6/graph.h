@@ -176,6 +176,10 @@ public:
             delete []dist;
             dist= nullptr;
         }
+        if(iw){
+            delete iw;
+            iw= nullptr;
+        }
 
         for(auto it=path.begin();it!=path.end();++it){
             for(auto &c:*it){
@@ -189,6 +193,70 @@ public:
 
     //Bellman-Ford算法
     virtual vector<T> bellman_ford(int v)
+    {
+        VertexIterator<T> *iw=iterator(v);
+        int top_size=iw->get_vertex_size(); //获取图中顶点的个数
+
+        bool flag=true;                     //定义是否存在负环
+        T *dist=new T[top_size];            //定义存储最小距离
+        //初始化距离数组
+        for(int i=0;i<top_size;++i){
+            if(i==v) {
+                dist[i] = 0;
+            }else{
+                dist[i]=INF;
+            }
+        }
+
+        //遍历每一个顶点
+        for(int i=1;i<top_size-1;++i){
+            //遍历每一条边，并对每一条边进行松弛
+            for(int j=0;j<top_size;++j){
+                for(int k=0;k<top_size;++k){
+                    if(j!=k && exits_edge(j,k)){
+                        iw=iterator(j);
+                        vector<T> theRow=iw->get_adjacent_vertex();
+                        if(dist[j]+theRow[k]<dist[k]){
+                            dist[k]=dist[j]+theRow[k];
+                        }
+                    }
+                }
+            }
+        }
+
+        //检测图中是否有负权边形成了环
+        for(int j=0;j<top_size;++j){
+            for(int k=0;k<top_size;++k){
+                if(j!=k && exits_edge(j,k)){
+                    iw=iterator(j);
+                    vector<T> theRow=iw->get_adjacent_vertex();
+                    if(dist[j]+theRow[k]<dist[k]){
+                        flag= false;
+                    }
+                }
+            }
+        }
+
+        vector<T> distance;
+        if(flag){
+            distance.resize(top_size);
+            copy(dist,dist+top_size,distance.begin());
+        }
+
+        if(dist){
+            delete []dist;
+            dist= nullptr;
+        }
+        if(iw){
+            delete iw;
+            iw= nullptr;
+        }
+
+        return distance;
+    }
+
+    //SPFA算法
+    virtual  vector<T> spfa(int v)
     {
 
     }

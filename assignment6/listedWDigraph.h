@@ -209,7 +209,7 @@ VertexIterator<T>* listedWDigraph<T>::iterator(int vertex)
         theRow[index]=weight;
     }
 
-    return new VertexIterator<T>(theRow,0,top_size_);
+    return new VertexIterator<T>(theRow,0,top_size_,edge_size_);
 }
 
 template <class T>

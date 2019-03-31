@@ -189,7 +189,7 @@ VertexIterator<T> *adjacencyWDigraph<T>::iterator(int vertex)
     copy(adj_mat_.begin()+vertex*top_size_,adj_mat_.begin()+(vertex+1)*top_size_,
          theRow.begin());
 
-    return new VertexIterator<T>(theRow,noEdge_,top_size_);
+    return new VertexIterator<T>(theRow,noEdge_,top_size_,edge_size_);
 }
 
 template <class T>

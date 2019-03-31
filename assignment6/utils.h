@@ -38,16 +38,18 @@ template <class T>
 class VertexIterator
 {
 public:
-    VertexIterator(vector<T> &theRow,T theNoEdge,int numberOfVertices)
+    VertexIterator(vector<T> &theRow,T theNoEdge,int numberOfVertices,int numberOfEdge)
             :theRow_(theRow),
              noEdge_(theNoEdge),
              top_size_(numberOfVertices),
+             edge_size_(numberOfEdge),
              currentVertex_(0){}
 
     ~VertexIterator() {}
 
     //获取顶点的个数
     int get_vertex_size(){return top_size_;}
+    int get_Edge_size(){return edge_size_;}
 
     vector<T> get_adjacent_vertex(){return theRow_;}
 
@@ -88,6 +90,7 @@ private:
     vector<T> theRow_;      //邻接矩阵的行
     T noEdge_;              //不存在边的填充值
     int top_size_;          //顶点总数
+    int edge_size_;         //当前图边的个数
     int currentVertex_;     //当前顶点
 };
 

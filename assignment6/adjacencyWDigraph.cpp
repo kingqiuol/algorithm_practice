@@ -6,33 +6,44 @@
 
 int main()
 {
-//    cout<<"========>有权有向图："<<endl;
-//    adjacencyWDigraph<float> wdg(4,0);
-//    wdg.insert_edge(Edge<float >(0,1,2.5));
-//    wdg.insert_edge(Edge<float >(0,2,1.5));
-//    wdg.insert_edge(Edge<float>(1,2,1.15));
-//    wdg.insert_edge(Edge<float>(2,3,2.5));
-//    wdg.insert_edge(Edge<float>(3,0,2.5));
-//    wdg.insert_edge(Edge<float>(3,1,2.5));
-//    wdg.print();
-//    cout<<"edge size:"<<wdg.number_of_Edge()<<endl;
-//    cout<<"top size:"<<wdg.number_of_vertices()<<endl;
-//    //wdg.erase_edge(0,1);
-//    //wdg.print();
-//    //wdg.degree(1);
-//    cout<<"in_degree:"<<wdg.in_degree(1)<<endl;
-//    cout<<"out_degree:"<<wdg.out_degree(1)<<endl;
-//    vector<float > bfs=wdg.bfs(0);
-//    for(auto &c:bfs){
-//        cout<<c<<" ";
-//    }
-//    cout<<endl;
-//    vector<float > dfs=wdg.dfs(0);
-//    for(auto &c:dfs){
-//        cout<<c<<" ";
-//    }
-//    cout<<endl;
-//
+    cout<<"========>有权有向图："<<endl;
+    adjacencyWDigraph<float> wdg(4,0);
+    wdg.insert_edge(Edge<float >(0,1,2.5));
+    wdg.insert_edge(Edge<float >(0,2,1.5));
+    wdg.insert_edge(Edge<float>(1,2,1.15));
+    wdg.insert_edge(Edge<float>(2,3,2.5));
+    wdg.insert_edge(Edge<float>(3,0,2.5));
+    wdg.insert_edge(Edge<float>(3,1,2.5));
+    wdg.print();
+    cout<<"edge size:"<<wdg.number_of_Edge()<<endl;
+    cout<<"top size:"<<wdg.number_of_vertices()<<endl;
+    //wdg.erase_edge(0,1);
+    //wdg.print();
+    //wdg.degree(1);
+    cout<<"in_degree:"<<wdg.in_degree(1)<<endl;
+    cout<<"out_degree:"<<wdg.out_degree(1)<<endl;
+    vector<float > bfs=wdg.bfs(0);
+    for(auto &c:bfs){
+        cout<<c<<" ";
+    }
+    cout<<endl;
+    vector<float > dfs=wdg.dfs(0);
+    for(auto &c:dfs){
+        cout<<c<<" ";
+    }
+    cout<<endl;
+    vector<float > dij=wdg.dijkstra(0);
+    for(auto &c:dij){
+        cout<<c<<" ";
+    }
+    cout<<endl;
+    vector<float > bf=wdg.bellman_ford(0);
+    for(auto &c:bf){
+        cout<<c<<" ";
+    }
+    cout<<endl;
+
+
 //    cout<<"========>有权无向图："<<endl;
 //    adjacencyWGraph<float> wg(4,0);
 //    wg.insert_edge(Edge<float >(0,1,1.5));
@@ -76,33 +87,33 @@ int main()
 //        cout<<c<<" ";
 //    }
 //    cout<<endl;
-
-    cout<<"========>无权无向图："<<endl;
-    adjacencyGraph<float> g(4,0);
-    g.insert_edge(Edge<float >(0,1));
-    g.insert_edge(Edge<float >(0,2));
-    g.insert_edge(Edge<float>(1,2));
-    g.insert_edge(Edge<float>(2,3));
-    g.insert_edge(Edge<float>(3,0));
-    g.insert_edge(Edge<float>(3,1));
-    g.print();
-    cout<<"edge size:"<<g.number_of_Edge()<<endl;
-    cout<<"top size:"<<g.number_of_vertices()<<endl;
-    g.erase_edge(0,1);
-    g.print();
-    //wdg.degree(1);
-    cout<<"in_degree:"<<g.in_degree(1)<<endl;
-    cout<<"out_degree:"<<g.out_degree(1)<<endl;
-    vector<float > bfs3=g.bfs(0);
-    for(auto &c:bfs3){
-        cout<<c<<" ";
-    }
-    cout<<endl;
-    vector<float > distance=g.dijkstra(0);
-    for(auto &c:distance){
-        cout<<c<<" ";
-    }
-    cout<<endl;
+//
+//    cout<<"========>无权无向图："<<endl;
+//    adjacencyGraph<float> g(4,0);
+//    g.insert_edge(Edge<float >(0,1));
+//    g.insert_edge(Edge<float >(0,2));
+//    g.insert_edge(Edge<float>(1,2));
+//    g.insert_edge(Edge<float>(2,3));
+//    g.insert_edge(Edge<float>(3,0));
+//    g.insert_edge(Edge<float>(3,1));
+//    g.print();
+//    cout<<"edge size:"<<g.number_of_Edge()<<endl;
+//    cout<<"top size:"<<g.number_of_vertices()<<endl;
+//    g.erase_edge(0,1);
+//    g.print();
+//    //wdg.degree(1);
+//    cout<<"in_degree:"<<g.in_degree(1)<<endl;
+//    cout<<"out_degree:"<<g.out_degree(1)<<endl;
+//    vector<float > bfs3=g.bfs(0);
+//    for(auto &c:bfs3){
+//        cout<<c<<" ";
+//    }
+//    cout<<endl;
+//    vector<float > distance=g.dijkstra(0);
+//    for(auto &c:distance){
+//        cout<<c<<" ";
+//    }
+//    cout<<endl;
 
     return 0;
 }
