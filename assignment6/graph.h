@@ -258,7 +258,105 @@ public:
     //SPFA算法
     virtual  vector<T> spfa(int v)
     {
+        VertexIterator<T> *iw=iterator(v);
+        int top_size=iw->get_vertex_size();     //获取图中顶点的个数
 
+        bool *flag=new bool[top_size];          //定义当前顶点是否存在队列中
+        int *in_queue_times=new int[top_size];  //记录每个顶点进入队列的次数
+        T *dist=new T[top_size];                //定义存储最小距离
+        vector<vector<int>> path;               //定义存储最小路径
+        ListQueue<int> queue;                   //记录待松弛的顶点
+
+        //初始化
+        path.resize(top_size);
+        for(int i=0;i<top_size;++i){
+            flag[i]= false;
+            in_queue_times[i]=0;
+            if(i==v){
+                dist[i]=0;
+            } else{
+                dist[i]=INF;
+            }
+        }
+        int u;
+        while((u=iw->next())!=0){
+            path[u].push_back(v);
+            path[u].push_back(u);
+        }
+
+        //从起点开始入队
+        queue.push(v);
+        flag[v]= true;
+        ++in_queue_times[v];
+        //进入队列
+        while(!queue.empty()){
+            //获取当前顶点的下一个顶点
+            int cur=queue.pop();//将当前节点出队
+            flag[cur]= false;
+            iw=iterator(cur);
+
+            int next;
+            while((next=iw->next())!=0){
+                //松弛当前节点
+                T weight=iw->get_weight(next);
+                if(dist[cur]+weight<dist[next]) {
+                    dist[next] = dist[cur] + weight;
+
+                    //保存路径
+                    if(cur!=v){
+                        path[next].resize(path[cur].size());
+                        copy(path[cur].begin(),path[cur].end(),path[next].begin());
+                        path[next].push_back(next);
+                    }
+
+                    //如果下一个节点不在队列中,入队
+                    if(!flag[next]) {
+                        flag[next] = true;
+                        ++in_queue_times[next];
+                        queue.push(next);
+
+                        //如果某个入队列的次数大于顶点数，那么说明这个图有环，
+                        if (in_queue_times[next] > top_size) {
+                            return vector<T>();
+                        }
+                    }
+                }
+            }
+        }
+
+        vector<T> distance(dist,dist+top_size);
+
+        if(iw){
+            delete iw;
+            iw= nullptr;
+        }
+        if(flag){
+            delete[] flag;
+            flag = nullptr;
+        }
+        if(in_queue_times){
+            delete[] in_queue_times;
+            in_queue_times= nullptr;
+        }
+        if(dist){
+            delete[] dist;
+            dist= nullptr;
+        }
+
+        for(auto it=path.begin();it!=path.end();++it){
+            for(auto &c:*it){
+                cout<<c<<" -> ";
+            }
+            cout<<endl;
+        }
+
+        return distance;
+    }
+
+    //Floyd-Warshall算法
+    virtual vector<T> floyd(int v)
+    {
+        
     }
 };
 

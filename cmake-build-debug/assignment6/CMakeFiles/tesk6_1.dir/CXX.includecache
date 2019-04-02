@@ -27,6 +27,8 @@ vector
 -
 algorithm
 -
+stdexcept
+-
 utils.h
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/utils.h
 queue.h

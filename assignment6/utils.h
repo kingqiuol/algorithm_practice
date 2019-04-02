@@ -50,6 +50,7 @@ public:
     //获取顶点的个数
     int get_vertex_size(){return top_size_;}
     int get_Edge_size(){return edge_size_;}
+    T get_weight(int index){return theRow_[index];}
 
     vector<T> get_adjacent_vertex(){return theRow_;}
 
