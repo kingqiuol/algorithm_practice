@@ -43,6 +43,12 @@ int main()
     }
     cout<<endl;
 
+    vector<float > spf=wdg.spfa(0);
+    for(auto &c:spf){
+        cout<<c<<" ";
+    }
+    cout<<endl;
+
 
 //    cout<<"========>有权无向图："<<endl;
 //    adjacencyWGraph<float> wg(4,0);
