@@ -152,6 +152,8 @@ public:
             //更新dist中各个顶点到起点s的距离
             for(int k=0;k<top_size;++k){
                 //获取与当前最小顶点相连接边
+                delete iw;
+                iw= nullptr;
                 iw=iterator(index);
                 theRow=iw->get_adjacent_vertex();
 
@@ -214,6 +216,8 @@ public:
             for(int j=0;j<top_size;++j){
                 for(int k=0;k<top_size;++k){
                     if(j!=k && exits_edge(j,k)){
+                        delete iw;
+                        iw= nullptr;
                         iw=iterator(j);
                         vector<T> theRow=iw->get_adjacent_vertex();
                         if(dist[j]+theRow[k]<dist[k]){
@@ -228,6 +232,8 @@ public:
         for(int j=0;j<top_size;++j){
             for(int k=0;k<top_size;++k){
                 if(j!=k && exits_edge(j,k)){
+                    delete iw;
+                    iw= nullptr;
                     iw=iterator(j);
                     vector<T> theRow=iw->get_adjacent_vertex();
                     if(dist[j]+theRow[k]<dist[k]){
@@ -293,6 +299,8 @@ public:
             //获取当前顶点的下一个顶点
             int cur=queue.pop();//将当前节点出队
             flag[cur]= false;
+            delete iw;
+            iw= nullptr;
             iw=iterator(cur);
 
             int next;
@@ -354,10 +362,54 @@ public:
     }
 
     //Floyd-Warshall算法
-    virtual vector<T> floyd(int v)
+    virtual vector<T> floyd()
     {
-        
+        //创建初始邻接矩阵
+        int top_size=number_of_vertices();
+        vector<T> adj(top_size*top_size);
+
+        //初始化最短路径的矩阵
+        VertexIterator<T> *iw= nullptr;
+        vector<T> theRow;
+        for(int i=0;i<top_size;++i){
+            iw=iterator(i);
+            theRow=iw->get_adjacent_vertex();
+            copy(theRow.begin(),theRow.end(),adj.begin()+i*top_size);
+            delete iw;
+            iw= nullptr;
+        }
+        //将不存在的边置为INF
+        for(auto &c:adj){
+            if(c==0){
+                c=INF;
+            }
+        }
+
+        // 计算最短路径
+        for(int k=0;k<top_size;k++){
+            for(int i=0;i<top_size;++i){
+                for(int j=0;j<top_size;j++){
+                    // 如果经过下标为k顶点路径比原两点间路径更短，则更新dist[i][j]
+                    if(adj[i*top_size+k]+adj[k*top_size+j]<adj[i*top_size+j]){
+                        adj[i*top_size+j]=adj[i*top_size+k]+adj[k*top_size+j];
+                    }
+                }
+            }
+        }
+
+        return adj;
     }
+
+    /*******************************************
+    *                  最小生成树                *
+    /*******************************************/
+
+
+    /*******************************************
+    *                   拓扑排序                 *
+    /*******************************************/
+
+
 };
 
 #endif //TESK_GRAPH_H

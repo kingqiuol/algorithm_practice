@@ -49,6 +49,13 @@ int main()
     }
     cout<<endl;
 
+    vector<float > fl=wdg.floyd();
+    for(int i=0;i<wdg.number_of_vertices();++i){
+        for(int j=0;j<wdg.number_of_vertices();++j){
+            cout<<fl[i*wdg.number_of_vertices()+j]<<" ";
+        }
+        cout<<endl;
+    }
 
 //    cout<<"========>有权无向图："<<endl;
 //    adjacencyWGraph<float> wg(4,0);

@@ -206,7 +206,6 @@ O(V*E)，其中 V 为顶点数量，E 为边的数量。Dijkstra 算法采用贪
 
 [深入理解Bellman-Ford（SPFA）算法](https://blog.csdn.net/u011893609/article/details/81232124)
 
-
 ### 4.3、SPFA算法
 求单源最短路的SPFA算法的全称是：Shortest Path Faster Algorithm。 很多时候，给定的
 图存在负权边，这时类似Dijkstra等算法便没有了用武之地，而Bellman-Ford算法的复杂度又过
@@ -290,6 +289,8 @@ Dis(i,k) + Dis(k,j) < Dis(i,j)是否成立，如果成立，证明从i到k再到
 [最短路径Floyd算法【图文详解】](https://www.cnblogs.com/ECJTUACM-873284962/p/6995648.html)
 
 [Floyd算法(一)之 C语言详解](http://wangkuiwu.github.io/2013/04/15/floyd-c/)
+
+[Floyd-傻子也能看懂的弗洛伊德算法（转）](https://www.cnblogs.com/wangyuliang/p/9216365.html)
 
 ### 4.5、A*算法
 
