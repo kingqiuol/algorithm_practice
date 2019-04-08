@@ -403,6 +403,42 @@ public:
     /*******************************************
     *                  最小生成树                *
     /*******************************************/
+    //克鲁斯卡尔（Kruskal）算法
+    virtual void kruskal()
+    {
+        //构建边集数组
+        vector<Edge<T>> edges;//边的集合
+        VertexIterator<T> *iw;
+        int top_size=number_of_vertices();
+        for(int i=0;i<top_size;++i){
+            iw=iterator(i);
+            int next;
+            while((next=iw->next())!=0){
+                T weight=iw->get_weight(next);
+                Edge<T> tmp(i,next,weight);
+                edges.push_back(tmp);
+            }
+
+            delete iw;
+            iw= nullptr;
+        }
+        //对边集进行排序
+        sort(edges.begin(),edges.end(),
+             [](Edge<T> &a,Edge<T> &b){return a.weight()<b.weight();});
+
+        //创建并查集
+        vector<int> parents(top_size,-1);
+
+        //遍历边集
+        for(int i=0;i<edges.size();++i){
+            Edge<T> edge=edges[i];
+
+            //判断当前两个顶点是否在同一个树中
+            if()
+
+        }
+    }
+
 
 
     /*******************************************
