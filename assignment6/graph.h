@@ -460,9 +460,33 @@ public:
     }
 
     //普里姆(Prim)算法
-    virtual void prim()
+    virtual void prim(int v)
     {
+        int top_size=number_of_vertices();
+        vector<T> low_weight(top_size,INF); //定义以i为终点的最小权重
+        vector<int> parents(top_size,-1);   //定义以i为终点边的父节点（起点）
 
+        //初始化
+        VertexIterator<T> *iw=iterator(v);
+        int next;
+        while((next=iw->next())!=0){
+            low_weight[next]=iw->get_weight(next);//将v顶点与其他边的权值存入vector
+        }
+        parents[v]=0;//初始化起点的父节点为0
+
+        for(int i=1;i<top_size;++i){
+            T min_weight=0;
+            int min_index=0;
+            //获取当前节点最小值
+            auto it=min_element(low_weight.begin(),low_weight.end());
+            min_weight=*it;
+            min_index= static_cast<int>(it-low_weight.begin());
+
+            if(min_index!=INF){
+
+            }
+
+        }
     }
 
 private:
