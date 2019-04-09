@@ -22,12 +22,12 @@ int main()
     //lwdg.degree(1);
     cout<<"in_degree:"<<ldg.in_degree(1)<<endl;
     cout<<"out_degree:"<<ldg.out_degree(1)<<endl;
-    vector<float > bfs=ldg.bfs(0);
+    vector<int > bfs=ldg.bfs(0);
     for(auto &c:bfs){
         cout<<c<<" ";
     }
     cout<<endl;
-    vector<float > dfs=ldg.dfs(0);
+    vector<int > dfs=ldg.dfs(0);
     for(auto &c:dfs){
         cout<<c<<" ";
     }
@@ -49,16 +49,17 @@ int main()
     lg.degree(1);
     cout<<"in_degree:"<<lg.in_degree(1)<<endl;
     cout<<"out_degree:"<<lg.out_degree(1)<<endl;
-    vector<float > bfs1=lg.bfs(0);
+    vector<int > bfs1=lg.bfs(0);
     for(auto &c:bfs1){
         cout<<c<<" ";
     }
     cout<<endl;
-    vector<float > dfs1=lg.dfs(0);
+    vector<int > dfs1=lg.dfs(0);
     for(auto &c:dfs1){
         cout<<c<<" ";
     }
     cout<<endl;
+    lg.kruskal();
 
     return 0;
 }

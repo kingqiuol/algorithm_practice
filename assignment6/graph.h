@@ -49,9 +49,9 @@ public:
     *                  图的遍历                  *
     /*******************************************/
     //广度优先遍历
-    virtual vector<T> bfs(int v)
+    virtual vector<int> bfs(int v)
     {
-        vector<T> reach;
+        vector<int> reach;
         ArrayQueue<int> q(10);
         reach.push_back(v);
 
@@ -79,16 +79,17 @@ public:
     }
     
     //深度优先遍历
-    virtual vector<T> dfs(int v)
+    virtual vector<int> dfs(int v)
     {
-        vector<T> reach;
+        vector<int> reach;
         rdfs(v,reach);
 
         return reach;
     }
 
+private:
     //递归深度优先遍历
-    void rdfs(int v,vector<T> &reach)
+    void rdfs(int v,vector<int> &reach)
     {
         reach.push_back(v);
         VertexIterator<T> *iw=iterator(v);
@@ -103,6 +104,7 @@ public:
         delete iw;
     }
 
+public:
     /*******************************************
     *                  最优路径                  *
     /*******************************************/
@@ -400,6 +402,7 @@ public:
         return adj;
     }
 
+public:
     /*******************************************
     *                  最小生成树                *
     /*******************************************/
@@ -424,23 +427,66 @@ public:
         }
         //对边集进行排序
         sort(edges.begin(),edges.end(),
-             [](Edge<T> &a,Edge<T> &b){return a.weight()<b.weight();});
+             [](Edge<T> a,Edge<T> b){return a.weight()<b.weight();});
 
         //创建并查集
         vector<int> parents(top_size,-1);
 
         //遍历边集
+        T min_weight=0;
+        int cnt=0;
         for(int i=0;i<edges.size();++i){
             Edge<T> edge=edges[i];
 
             //判断当前两个顶点是否在同一个树中
-            if()
-
+            int u=edge.index1_;
+            int v=edge.index2_;
+            int father1=find_root(parents,u);
+            int father2=find_root(parents,v);
+            //不在同一棵树中
+            if( father1 != father2){
+                min_weight+=edge.weight_;
+                ++cnt;
+                //将两棵树进行合并（按秩合并）
+                //每次合并树时，总是将矮的树挂到高的树下，这种方式称为按秩合并
+                parents[father1]=father2;
+                cout<<edge.index1_<<"->"<<edge.index2_<<" ";
+            }
         }
+        cout<<endl;
+        if(cnt<top_size-1) min_weight=0;
+        cout<<"number of edges:"<<cnt<<endl;
+        cout<<"min weights:"<<min_weight<<endl;
     }
 
+    //普里姆(Prim)算法
+    virtual void prim()
+    {
 
+    }
 
+private:
+    //查找树的根节点,判断两个节点是否属于同一棵树
+    //优化：路径压缩,例：0->1->5 => 0->5;1->5
+    int find_root(vector<int> &parents,int v)
+    {
+        //查找根节点
+        int vTmp=v;
+        while(parents[v]>=0){
+            v=parents[v];
+        }
+
+        //路径压缩
+        while(v!=vTmp){
+            int tmp=parents[vTmp];
+            parents[vTmp]=v;
+            vTmp=tmp;
+        }
+
+        return v;
+    }
+
+public:
     /*******************************************
     *                   拓扑排序                 *
     /*******************************************/

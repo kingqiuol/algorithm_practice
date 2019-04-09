@@ -358,3 +358,14 @@ G 表示从起点 A 移动到网格上指定方格的移动耗费 (可沿斜方�
 
 [最小生成树（Kruskal算法）](https://blog.csdn.net/qq_36932169/article/details/81236147)
 
+[最小生成树 Prim算法 和 Kruskal算法，c++描述 ](https://www.cnblogs.com/meihao1203/p/9243103.html)
+
+### 5.2、普里姆(Prim)算法
+
+[最小生成树（Prim算法）](https://blog.csdn.net/qq_36932169/article/details/78807200)
+
+[最小生成树之prim算法 ](https://www.cnblogs.com/fzl194/p/8722989.html)
+
+## 6、拓扑排序
+
+

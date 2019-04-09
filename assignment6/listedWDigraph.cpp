@@ -22,12 +22,12 @@ int main()
 //    //lwdg.degree(1);
 //    cout<<"in_degree:"<<lwdg.in_degree(1)<<endl;
 //    cout<<"out_degree:"<<lwdg.out_degree(1)<<endl;
-//    vector<float > bfs=lwdg.bfs(0);
+//    vector<int > bfs=lwdg.bfs(0);
 //    for(auto &c:bfs){
 //        cout<<c<<" ";
 //    }
 //    cout<<endl;
-//    vector<float > dfs=lwdg.dfs(0);
+//    vector<int > dfs=lwdg.dfs(0);
 //    for(auto &c:dfs){
 //        cout<<c<<" ";
 //    }
@@ -37,7 +37,7 @@ int main()
 //        cout<<c<<" ";
 //    }
 //    cout<<endl;
-
+//
 //    cout<<"========>listedWGraph："<<endl;
 //    listedWGraph<float> lwg(4);
 //    lwg.insert_edge(Edge<float >(0,1,2.5));
@@ -54,12 +54,12 @@ int main()
 //    lwg.degree(1);
 //    cout<<"in_degree:"<<lwg.in_degree(1)<<endl;
 //    cout<<"out_degree:"<<lwg.out_degree(1)<<endl;
-//    vector<float > bfs1=lwg.bfs(0);
+//    vector<int > bfs1=lwg.bfs(0);
 //    for(auto &c:bfs1){
 //        cout<<c<<" ";
 //    }
 //    cout<<endl;
-//    vector<float > dfs1=lwg.dfs(0);
+//    vector<int > dfs1=lwg.dfs(0);
 //    for(auto &c:dfs1){
 //        cout<<c<<" ";
 //    }
@@ -86,6 +86,8 @@ int main()
         cout<<c<<" ";
     }
     cout<<endl;
+
+    lwdg.kruskal();
 
     return 0;
 }

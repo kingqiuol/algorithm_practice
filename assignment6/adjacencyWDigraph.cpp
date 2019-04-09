@@ -22,12 +22,12 @@ int main()
     //wdg.degree(1);
     cout<<"in_degree:"<<wdg.in_degree(1)<<endl;
     cout<<"out_degree:"<<wdg.out_degree(1)<<endl;
-    vector<float > bfs=wdg.bfs(0);
+    vector<int > bfs=wdg.bfs(0);
     for(auto &c:bfs){
         cout<<c<<" ";
     }
     cout<<endl;
-    vector<float > dfs=wdg.dfs(0);
+    vector<int > dfs=wdg.dfs(0);
     for(auto &c:dfs){
         cout<<c<<" ";
     }
@@ -56,6 +56,8 @@ int main()
         }
         cout<<endl;
     }
+
+    wdg.kruskal();
 
 //    cout<<"========>有权无向图："<<endl;
 //    adjacencyWGraph<float> wg(4,0);

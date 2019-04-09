@@ -18,7 +18,7 @@ public:
     Edge(int index1,int index2,T weight=1): index1_(index1),
                                           index2_(index2),
                                           weight_(weight){}
-    Edge(Edge<T> &other):index1_(other.index1_),index2_(other.index2_),
+    Edge(const Edge<T> &other):index1_(other.index1_),index2_(other.index2_),
                          weight_(other.weight_){}
 
     ~Edge(){}
