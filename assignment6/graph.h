@@ -483,9 +483,9 @@ public:
                                 [](T a){ return a!=0;});
             min_weight=*it;
             min_index= static_cast<int>(it-low_weight.begin());
+            low_weight[min_index]=0;//将最小权重顶点加入最小生成树
 
-            low_weight[min_index]=0;//将最小权重加入最小生成树
-            parents[min_index]=v;
+            //查找当前顶点边的下一个顶点，并更新权重和顶点数组
             for(int j=0;j<top_size;++j){
                 delete iw;
                 iw= nullptr;
