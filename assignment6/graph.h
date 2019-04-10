@@ -472,20 +472,29 @@ public:
         while((next=iw->next())!=0){
             low_weight[next]=iw->get_weight(next);//将v顶点与其他边的权值存入vector
         }
+        low_weight[v]=0;
         parents[v]=0;//初始化起点的父节点为0
 
-        for(int i=1;i<top_size;++i){
+        for(int i=0;i<top_size;++i){
             T min_weight=0;
             int min_index=0;
-            //获取当前节点最小值
-            auto it=min_element(low_weight.begin(),low_weight.end());
+            //获取当前节点最小边和指向的顶点
+            auto it=min_element(low_weight.begin(),low_weight.end(),
+                                [](T a){ return a!=0;});
             min_weight=*it;
             min_index= static_cast<int>(it-low_weight.begin());
 
-            if(min_index!=INF){
-
+            low_weight[min_index]=0;//将最小权重加入最小生成树
+            parents[min_index]=v;
+            for(int j=0;j<top_size;++j){
+                delete iw;
+                iw= nullptr;
+                iw=iterator(min_index);
+                if(low_weight[j]!=0 && iw->get_weight(j)<low_weight[j]){
+                    low_weight[j]=iw->get_weight(j);
+                    parents[j]=min_index;
+                }
             }
-
         }
     }
 
