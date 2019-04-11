@@ -464,7 +464,7 @@ public:
     {
         int top_size=number_of_vertices();
         vector<T> low_weight(top_size,INF); //定义以i为终点的最小权重
-        vector<int> parents(top_size,-1);   //定义以i为终点边的父节点（起点）
+        vector<int> parents(top_size,v);   //定义以i为终点边的父节点（起点）
 
         //初始化
         VertexIterator<T> *iw=iterator(v);
@@ -472,30 +472,47 @@ public:
         while((next=iw->next())!=0){
             low_weight[next]=iw->get_weight(next);//将v顶点与其他边的权值存入vector
         }
-        low_weight[v]=0;
-        parents[v]=0;//初始化起点的父节点为0
+        low_weight[v]=0;    //初始化起点为终点的权重
+        parents[v]=-1;       //初始化起点的父节点为-1
 
-        for(int i=0;i<top_size;++i){
-            T min_weight=0;
+        T min_weights=0;
+        int cnt=0;
+        for(int i=1;i<top_size;++i){
+
+            T min_weight=INF;
             int min_index=0;
             //获取当前节点最小边和指向的顶点
-            auto it=min_element(low_weight.begin(),low_weight.end(),
-                                [](T a){ return a!=0;});
-            min_weight=*it;
-            min_index= static_cast<int>(it-low_weight.begin());
-            low_weight[min_index]=0;//将最小权重顶点加入最小生成树
+            for(int k=0;k<top_size;k++){
+                if(low_weight[k]!=0 && low_weight[k]<min_weight){
+                    min_weight=low_weight[k];
+                    min_index=k;
+                }
+            }
+            //将最小权重顶点加入最小生成树
+            low_weight[min_index]=0;
+            min_weights+=min_weight;
+            ++cnt;
 
-            //查找当前顶点边的下一个顶点，并更新权重和顶点数组
+            //查找当前顶点边的下一个顶点，并更新权重
             for(int j=0;j<top_size;++j){
                 delete iw;
                 iw= nullptr;
                 iw=iterator(min_index);
-                if(low_weight[j]!=0 && iw->get_weight(j)<low_weight[j]){
+                T cur_weight=iw->get_weight(j);
+                if(low_weight[j]!=0 && cur_weight!=0 && cur_weight<low_weight[j]){
                     low_weight[j]=iw->get_weight(j);
                     parents[j]=min_index;
                 }
             }
         }
+
+        for(auto &c:parents){
+            cout<<c<<" ";
+        }
+        cout<<endl;
+        if(cnt<top_size-1) min_weights=0;
+        cout<<"number of edges:"<<cnt<<endl;
+        cout<<"min weights:"<<min_weights<<endl;
     }
 
 private:

@@ -59,6 +59,8 @@ int main()
 
     wdg.kruskal();
 
+    wdg.prim(1);
+
 //    cout<<"========>有权无向图："<<endl;
 //    adjacencyWGraph<float> wg(4,0);
 //    wg.insert_edge(Edge<float >(0,1,1.5));
