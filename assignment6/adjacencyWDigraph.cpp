@@ -13,7 +13,7 @@ int main()
     wdg.insert_edge(Edge<float>(1,2,1.15));
     wdg.insert_edge(Edge<float>(2,3,2.5));
     wdg.insert_edge(Edge<float>(3,0,2.5));
-    wdg.insert_edge(Edge<float>(3,1,2.5));
+    wdg.insert_edge(Edge<float>(1,3,2.5));
     wdg.print();
     cout<<"edge size:"<<wdg.number_of_Edge()<<endl;
     cout<<"top size:"<<wdg.number_of_vertices()<<endl;
@@ -60,6 +60,12 @@ int main()
     wdg.kruskal();
 
     wdg.prim(1);
+
+    vector<int> kahn=wdg.Kahn();
+    for(auto &c:kahn){
+        cout<<c<<" ";
+    }
+    cout<<endl;
 
 //    cout<<"========>有权无向图："<<endl;
 //    adjacencyWGraph<float> wg(4,0);

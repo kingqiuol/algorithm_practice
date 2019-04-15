@@ -540,8 +540,68 @@ public:
     /*******************************************
     *                   拓扑排序                 *
     /*******************************************/
+    //Kahn 算法
+    virtual vector<int> Kahn()
+    {
+        if(!directed()) {
+            cout<<"Topological Sort Graph must be directed graph(In function Kahn())!!! "<<endl;
+            exit(0);
+        }
 
+        int top_size=number_of_vertices();  //当前图中顶点的个数
+        int edge_size=number_of_Edge();     //当前图中边的个数
+        vector<int> indegrees(top_size,-1);  //定义存储每个顶点的入度
+        ListQueue<T> zeros_indegrees;       //定义存储入度为0顶点的队列
+        vector<int> result;                 //存储排序结果
 
+        //初始化变量
+        for(int i=0;i<top_size;++i){
+            int tmp=in_degree(i);
+            //将入度为0的顶点入队
+            //初始化所有顶点的入度
+            if(tmp==0){
+                zeros_indegrees.push(i);
+            }else{
+                indegrees[i]=in_degree(i);
+            }
+
+        }
+
+        while(!zeros_indegrees.empty()){
+            //从入度为0的队列中取出顶点
+            int top=zeros_indegrees.pop();
+            //存储到结果中
+            result.push_back(top);
+
+            //遍历所有与top相关的边并删除
+            for(int j=0;j<top_size;++j){
+                //将该边从图中移除
+                if(exits_edge(top,j)){
+                    --edge_size;
+                    --indegrees[j];
+                }
+                //如果入度为0，那么加入入度为0的队列
+                if(indegrees[j]==0){
+                    zeros_indegrees.push(j);
+                    indegrees[j]=-1;
+                }
+            }
+        }
+
+        //判断图中是否存在环
+        if(0!=edge_size){
+            cout<<"The Graph exit cycle!!!"<<endl;
+            exit(0);
+        }
+
+        return result;
+    }
+
+    //DFS算法
+    virtual void Dfs()
+    {
+
+    }
 };
 
 #endif //TESK_GRAPH_H
