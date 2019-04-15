@@ -33,6 +33,8 @@ utils.h
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/utils.h
 queue.h
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/queue.h
+stack.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/stack.h
 
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/list.h
 iostream
@@ -43,6 +45,14 @@ list.h
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/list.h
 
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/queue.h
+iostream
+-
+memory
+-
+list.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/list.h
+
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/stack.h
 iostream
 -
 memory

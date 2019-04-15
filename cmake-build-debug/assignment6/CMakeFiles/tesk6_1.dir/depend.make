@@ -6,5 +6,6 @@ assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.o: ../assignment6/adjac
 assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.o: ../assignment6/graph.h
 assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.o: ../assignment6/list.h
 assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.o: ../assignment6/queue.h
+assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.o: ../assignment6/stack.h
 assignment6/CMakeFiles/tesk6_1.dir/adjacencyWDigraph.cpp.o: ../assignment6/utils.h
 

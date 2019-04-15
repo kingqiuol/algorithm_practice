@@ -377,3 +377,9 @@ G 表示从起点 A 移动到网格上指定方格的移动耗费 (可沿斜方�
 [拓扑排序的两种实现：Kahn算法和dfs算法](https://blog.csdn.net/qinzhaokun/article/details/48541117)
 
 ### 6.2、DFS算法
+
+[基于DFS的拓扑排序](https://blog.csdn.net/u012148952/article/details/51385345)
+
+[利用DFS实现拓扑排序](https://www.jianshu.com/p/19ce9bc3d678)
+
+[拓扑排序dfs版+判环](https://blog.csdn.net/wjh2622075127/article/details/82712940)

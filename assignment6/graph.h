@@ -11,6 +11,7 @@
 
 #include "utils.h"
 #include "queue.h"
+#include "stack.h"
 
 #define INF (~(0x1<<31))
 
@@ -548,11 +549,11 @@ public:
             exit(0);
         }
 
-        int top_size=number_of_vertices();  //当前图中顶点的个数
-        int edge_size=number_of_Edge();     //当前图中边的个数
-        vector<int> indegrees(top_size,-1);  //定义存储每个顶点的入度
-        ListQueue<T> zeros_indegrees;       //定义存储入度为0顶点的队列
-        vector<int> result;                 //存储排序结果
+        int top_size=number_of_vertices();      //当前图中顶点的个数
+        int edge_size=number_of_Edge();         //当前图中边的个数
+        vector<int> indegrees(top_size,-1);     //定义存储每个顶点的入度
+        ListQueue<T> zeros_indegrees;           //定义存储入度为0顶点的队列
+        vector<int> result;                     //存储排序结果
 
         //初始化变量
         for(int i=0;i<top_size;++i){
@@ -600,7 +601,35 @@ public:
     //DFS算法
     virtual void Dfs()
     {
+        if(!directed()) {
+            cout<<"Topological Sort Graph must be directed graph(In function Kahn())!!! "<<endl;
+            exit(0);
+        }
 
+        int top_size=number_of_vertices();
+        vector<bool> visit(top_size, false); //定义当前顶点的访问状态
+        ListStack<int> stack;                //存储排序结果
+
+        for(int i=0;i<top_size;++i){
+            if(!visit[i]){
+                rDfs(i,visit,stack);
+            }
+        }
+    }
+
+private:
+    void rDfs(int i,vector<bool> &visit,ListStack<int> &stack)
+    {
+        visit[i]= true;
+        int top_size=number_of_vertices();
+
+        for(int j=0;j<top_size;++j){
+            if(exits_edge(i,j) && !visit[j]){
+                rDfs(j,visit,stack);
+            }
+        }
+
+        stack.push(i);
     }
 };
 
