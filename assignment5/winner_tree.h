@@ -5,7 +5,7 @@
 #ifndef TESK_WINNER_TREE_H
 #define TESK_WINNER_TREE_H
 
-#include<iostream>
+#include <iostream>
 #include <memory>
 #include <math.h>
 
@@ -61,14 +61,24 @@ CompeleteWinnerTree::CompeleteWinnerTree(vector<T> &players)
 template <class T>
 void CompeleteWinnerTree::initialize(T *thePlayer, int theNumberOfPlayers)
 {
-    //最底层内部节点的个数
-    
+    //最底层最左端内部节点的编号：2^(log2(n-1))-1
+    int bottom_inner_node=pow(2,floor(log2(theNumberOfPlayers-1)))-1;
     //最左侧第一个竞赛者的下标的偏移量
-    int offset=2*(theNumberOfPlayers-floor(log2(theNumberOfPlayers-1)))-1;
-    for(int i=0;i<theNumberOfPlayers;++i){
+    int offset=2*bottom_inner_node+1;
+    //最底层外部节点的个数：
+    int lowExt=2*(theNumberOfPlayers-bottom_inner_node-1);
 
-        ptr_.get[offset+i]=thePlayer[i];
+    //初始化竞赛树
+    for(int i=0;i<theNumberOfPlayers;++i){
+        if(i<lowExt){
+            ptr_.get[offset+i]=thePlayer[i];
+        } else{
+            ptr_.get[i-lowExt+theNumberOfPlayers-1]=thePlayer[i];
+        }
     }
+
+    //进行比赛
+    
 }
 
 /*******************************************
