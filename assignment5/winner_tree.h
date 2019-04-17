@@ -78,7 +78,7 @@ void CompeleteWinnerTree::initialize(T *thePlayer, int theNumberOfPlayers)
     }
 
     //进行比赛
-    
+
 }
 
 /*******************************************
