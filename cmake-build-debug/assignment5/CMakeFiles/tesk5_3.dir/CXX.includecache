@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/winner_tree.cpp
+winner_tree.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/winner_tree.h
+
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/winner_tree.h
+iostream
+-
+vector
+-
+memory
+-
+math.h
+-
+

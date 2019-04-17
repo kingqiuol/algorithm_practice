@@ -228,6 +228,19 @@ tesk4_1/fast:
 .PHONY : tesk4_1/fast
 
 #=============================================================================
+# Target rules for targets named tesk5_3
+
+# Build rule for target.
+tesk5_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tesk5_3
+.PHONY : tesk5_3
+
+# fast build rule for target.
+tesk5_3/fast:
+	$(MAKE) -f assignment5/CMakeFiles/tesk5_3.dir/build.make assignment5/CMakeFiles/tesk5_3.dir/build
+.PHONY : tesk5_3/fast
+
+#=============================================================================
 # Target rules for targets named tesk5_2
 
 # Build rule for target.
@@ -309,6 +322,7 @@ help:
 	@echo "... tesk3_1"
 	@echo "... tesk4_2"
 	@echo "... tesk4_1"
+	@echo "... tesk5_3"
 	@echo "... tesk5_2"
 	@echo "... tesk5_1"
 	@echo "... tesk6_2"

@@ -6,6 +6,7 @@
 #define TESK_WINNER_TREE_H
 
 #include <iostream>
+#include <vector>
 #include <memory>
 #include <math.h>
 
@@ -17,7 +18,7 @@ class WinnerTree
 public:
     virtual ~WinnerTree(){}
     //使用数组thePlayer初始化竞赛树
-    virtual void initialize(T *thePlayer,int theNumberOfPlayers)=0;
+    virtual void initialize(vector<T> &thePlayer)=0;
     //返回赢着的索引
     virtual int winner() const = 0;
     //在竞赛这改变后，重新进行竞赛
@@ -28,14 +29,14 @@ public:
 *                 赢者树的实现               *
 /*******************************************/
 template <class T>
-class CompeleteWinnerTree: public WinnerTree
+class CompeleteWinnerTree: public WinnerTree<T>
 {
 public:
     CompeleteWinnerTree(vector<T> &players);
     ~CompeleteWinnerTree(){}
 
     //使用数组thePlayer初始化竞赛树
-    void initialize(T *thePlayer,int theNumberOfPlayers);
+    void initialize(vector<T> &thePlayer);
 
     //返回赢着的索引
     int winner() const;
@@ -45,35 +46,40 @@ public:
 
 public:
     shared_ptr<T> ptr_;
-    int tree_size_;
+    size_t tree_size_;
+    size_t theNumberOfPlayers_;
 };
 
 template <class T>
-CompeleteWinnerTree::CompeleteWinnerTree(vector<T> &players)
+CompeleteWinnerTree<T>::CompeleteWinnerTree(vector<T> &players)
 {
-    int internal_node=players.size()-1;//内部节点的个数
-    tree_size_=internal_node+players.size();//总的节点个数
+    theNumberOfPlayers_=players.size();             //竞赛者的个数
+    size_t internal_node=theNumberOfPlayers_-1;     //内部节点的个数
+    tree_size_=internal_node+theNumberOfPlayers_;   //总的节点个数
+
     //创建竞赛树
     ptr_=shared_ptr<T>(new T[tree_size_],[](T *p){delete[] p;});
-    initialize(ptr_.get(),players.size());
+
+    //初始化竞赛树
+    initialize(players);
 }
 
 template <class T>
-void CompeleteWinnerTree::initialize(T *thePlayer, int theNumberOfPlayers)
+void CompeleteWinnerTree<T>::initialize(vector<T> &thePlayer)
 {
     //最底层最左端内部节点的编号：2^(log2(n-1))-1
-    int bottom_inner_node=pow(2,floor(log2(theNumberOfPlayers-1)))-1;
+    int bottom_inner_node = pow(2,floor(log2(theNumberOfPlayers_-1)))-1;
     //最左侧第一个竞赛者的下标的偏移量
     int offset=2*bottom_inner_node+1;
     //最底层外部节点的个数：
-    int lowExt=2*(theNumberOfPlayers-bottom_inner_node-1);
+    int lowExt=2*(theNumberOfPlayers_-bottom_inner_node-1);
 
     //初始化竞赛树
-    for(int i=0;i<theNumberOfPlayers;++i){
+    for(int i=0;i<theNumberOfPlayers_;++i){
         if(i<lowExt){
-            ptr_.get[offset+i]=thePlayer[i];
+            ptr_.get()[offset+i]=thePlayer[i];
         } else{
-            ptr_.get[i-lowExt+theNumberOfPlayers-1]=thePlayer[i];
+            ptr_.get()[i-lowExt+theNumberOfPlayers_-1]=thePlayer[i];
         }
     }
 
