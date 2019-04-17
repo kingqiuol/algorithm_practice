@@ -43,8 +43,9 @@ public:
 
     //在竞赛这改变后，重新进行竞赛
     void rePlay(int thePlayer);
-
-public:
+private:
+    void play(int parent,int left,int right);
+private:
     shared_ptr<T> ptr_;
     size_t tree_size_;
     size_t theNumberOfPlayers_;
@@ -62,6 +63,22 @@ CompeleteWinnerTree<T>::CompeleteWinnerTree(vector<T> &players)
 
     //初始化竞赛树
     initialize(players);
+}
+
+template <class T>
+void CompeleteWinnerTree<T>::play(int parent, int left, int right)
+{
+    //进行比赛
+    ptr_.get()[parent]=ptr_.get()[left]>ptr_.get()[right]?
+                       ptr_.get()[left]:ptr_.get()[right];
+
+    //如果父节点为当前树的右节点
+    while(parent/2==0 && parent > 0){
+        ptr_.get()[parent/2-1]=ptr_.get()[parent-1]>ptr_.get()[parent]?
+                               ptr_.get()[parent-1]:ptr_.get()[parent];
+
+        parent=parent/2-1;
+    }
 }
 
 template <class T>
@@ -84,7 +101,25 @@ void CompeleteWinnerTree<T>::initialize(vector<T> &thePlayer)
     }
 
     //进行比赛
+    int i;
+    //对最底层最外层竞赛者进行比赛
+    for(i=1;i<lowExt;++i){
+        play((i+offset)/2-1,i+offset-1,i+offset);
+    }
 
+    //处理剩余的外部节点
+    //如果外部节点为奇数
+    if(theNumberOfPlayers_%2==1){
+        play(theNumberOfPlayers_/2-1,theNumberOfPlayers_-2,theNumberOfPlayers_-1);
+        i=lowExt+2;
+    }else{
+        i=lowExt+1;
+    }
+    for(;i<theNumberOfPlayers_;i+=2){
+        play((i-lowExt+theNumberOfPlayers_-1)/2-1,
+             i-lowExt+theNumberOfPlayers_-2,
+             i-lowExt+theNumberOfPlayers_-1);
+    }
 }
 
 /*******************************************
