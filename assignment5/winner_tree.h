@@ -39,7 +39,7 @@ public:
     void initialize(vector<T> &thePlayer);
 
     //返回赢着的索引
-    int winner() const;
+    int winner() const{return *ptr_.get();}
 
     //在竞赛这改变后，重新进行竞赛
     void rePlay(int thePlayer);
@@ -120,6 +120,12 @@ void CompeleteWinnerTree<T>::initialize(vector<T> &thePlayer)
              i-lowExt+theNumberOfPlayers_-2,
              i-lowExt+theNumberOfPlayers_-1);
     }
+}
+
+template <class T>
+void CompeleteWinnerTree<T>::rePlay(int thePlayer)
+{
+
 }
 
 /*******************************************
