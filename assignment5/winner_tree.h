@@ -22,7 +22,7 @@ public:
     //返回赢着的索引
     virtual int winner() const = 0;
     //在竞赛这改变后，重新进行竞赛
-    virtual void rePlay(int thePlayer)=0;
+    virtual void rePlay(const int &thePlayer,const T &value)=0;
 };
 
 /*******************************************
@@ -39,10 +39,10 @@ public:
     void initialize(vector<T> &thePlayer);
 
     //返回赢着的索引
-    int winner() const;
+    int winner() const{return *ptr_.get();}
 
     //在竞赛这改变后，重新进行竞赛
-    void rePlay(int thePlayer);
+    void rePlay(const int &thePlayer,const T &value);
 private:
     void play(int parent,int left,int right);
 private:
@@ -120,6 +120,28 @@ void CompeleteWinnerTree<T>::initialize(vector<T> &thePlayer)
              i-lowExt+theNumberOfPlayers_-2,
              i-lowExt+theNumberOfPlayers_-1);
     }
+}
+
+template <class T>
+void CompeleteWinnerTree<T>::rePlay(const int &thePlayer,const T &value)
+{
+    if(thePlayer<0 || thePlayer>=theNumberOfPlayers_){
+        cout<<"player index is outof range"<<endl;
+        exit(0);
+    }
+
+    //最底层最左端内部节点的编号：2^(log2(n-1))-1
+    int bottom_inner_node = pow(2,floor(log2(theNumberOfPlayers_-1)))-1;
+    //最左侧第一个竞赛者的下标的偏移量
+    int offset=2*bottom_inner_node+1;
+    //最底层外部节点的个数：
+    int lowExt=2*(theNumberOfPlayers_-bottom_inner_node-1);
+    int parents,left,right;//定义父节点和左右孩子节点
+    if(thePlayer<lowExt){
+
+    }
+
+
 }
 
 /*******************************************
