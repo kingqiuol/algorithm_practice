@@ -12,3 +12,7 @@ add_executable(tesk5_2 ${SOURCE_FILES_2} ${HEADER_FILES_2})
 set(HEADER_FILES_3 winner_tree.h)
 set(SOURCE_FILES_3 winner_tree.cpp)
 add_executable(tesk5_3 ${SOURCE_FILES_3} ${HEADER_FILES_3})
+
+set(HEADER_FILES_4 search_tree.h utils.h)
+set(SOURCE_FILES_4 search_tree.cpp)
+add_executable(tesk5_4 ${SOURCE_FILES_4} ${HEADER_FILES_4})

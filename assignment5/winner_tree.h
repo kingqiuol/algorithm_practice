@@ -43,6 +43,9 @@ public:
 
     //在竞赛这改变后，重新进行竞赛
     void rePlay(const int &thePlayer,const T &value);
+
+    //输出
+    void print();
 private:
     void play(int parent,int left,int right);
 private:
@@ -73,7 +76,7 @@ void CompeleteWinnerTree<T>::play(int parent, int left, int right)
                        ptr_.get()[left]:ptr_.get()[right];
 
     //如果父节点为当前树的右节点
-    while(parent/2==0 && parent > 0){
+    while(parent%2==0 && parent > 0){
         ptr_.get()[parent/2-1]=ptr_.get()[parent-1]>ptr_.get()[parent]?
                                ptr_.get()[parent-1]:ptr_.get()[parent];
 
@@ -103,7 +106,7 @@ void CompeleteWinnerTree<T>::initialize(vector<T> &thePlayer)
     //进行比赛
     int i;
     //对最底层最外层竞赛者进行比赛
-    for(i=1;i<lowExt;++i){
+    for(i=1;i<lowExt;i+=2){
         play((i+offset)/2-1,i+offset-1,i+offset);
     }
 
@@ -123,25 +126,75 @@ void CompeleteWinnerTree<T>::initialize(vector<T> &thePlayer)
 }
 
 template <class T>
-void CompeleteWinnerTree<T>::rePlay(const int &thePlayer,const T &value)
-{
-    if(thePlayer<0 || thePlayer>=theNumberOfPlayers_){
-        cout<<"player index is outof range"<<endl;
+void CompeleteWinnerTree<T>::rePlay(const int &thePlayer,const T &value) {
+    if (thePlayer < 0 || thePlayer >= theNumberOfPlayers_) {
+        cout << "player index is outof range" << endl;
         exit(0);
     }
 
     //最底层最左端内部节点的编号：2^(log2(n-1))-1
-    int bottom_inner_node = pow(2,floor(log2(theNumberOfPlayers_-1)))-1;
+    int bottom_inner_node = pow(2, floor(log2(theNumberOfPlayers_ - 1))) - 1;
     //最左侧第一个竞赛者的下标的偏移量
-    int offset=2*bottom_inner_node+1;
+    int offset = 2 * bottom_inner_node + 1;
     //最底层外部节点的个数：
-    int lowExt=2*(theNumberOfPlayers_-bottom_inner_node-1);
-    int parents,left,right;//定义父节点和左右孩子节点
-    if(thePlayer<lowExt){
+    int lowExt = 2 * (theNumberOfPlayers_ - bottom_inner_node - 1);
+    int parents, left, right;//定义父节点和左右孩子节点
 
+    //找出第一个需要重赛的节点以及他的左右孩纸
+    //当前节点在竞赛树中的位置
+    int tmp;
+    if (thePlayer < lowExt) {
+        tmp=offset+thePlayer;
+    }else{
+        tmp=(thePlayer-lowExt+theNumberOfPlayers_-1);
     }
+    //重新给外节点赋值
+    ptr_.get()[tmp]=value;
+    //当前节点的位置父节点
+    parents=tmp%2==0?tmp/2-1:tmp/2;
+    //左右节点
+    left=2*parents+1;
+    right=left+1;
+    ptr_.get()[parents]=(ptr_.get()[left]<ptr_.get()[right])?
+                        ptr_.get()[right]:ptr_.get()[left];
 
+    //第二个需要重赛的节点中的特殊情况，即包含内部和外部节点
+    if(theNumberOfPlayers_%2==1 && parents==theNumberOfPlayers_-2){
+        parents=parents/2;
+        left=theNumberOfPlayers_-2;
+        right=left-1;
+        ptr_.get()[parents]=(ptr_.get()[left]<ptr_.get()[right])?
+                            ptr_.get()[right]:ptr_.get()[left];
+    }
+    //处理剩余的节点
+    parents=parents%2==0?parents/2-1:parents/2;
+    for(;parents>=0;parents=parents%2==0?parents/2-1:parents/2){
+        //左右节点
+        left=2*parents+1;
+        right=left+1;
+        ptr_.get()[parents]=(ptr_.get()[left]<ptr_.get()[right])?
+                            ptr_.get()[right]:ptr_.get()[left];
+    }
+}
 
+template<class T>
+void CompeleteWinnerTree<T>::print()
+{
+    //最底层最左端内部节点的编号：2^(log2(n-1))-1
+    int bottom_inner_node = pow(2, floor(log2(theNumberOfPlayers_ - 1))) - 1;
+    //最左侧第一个竞赛者的下标的偏移量
+    int offset = 2 * bottom_inner_node + 1;
+    //最底层外部节点的个数：
+    int lowExt = 2 * (theNumberOfPlayers_ - bottom_inner_node - 1);
+
+    cout << "number of players  = " << theNumberOfPlayers_
+         << " lowExt = " << lowExt
+         << " offset = " << offset
+         << " tree_size= "<<tree_size_<<endl;
+    cout << "complete winner tree pointers are" << endl;
+    for (int i = 0; i < tree_size_; i++)
+        cout << ptr_.get()[i] << ' ';
+    cout << endl;
 }
 
 /*******************************************
