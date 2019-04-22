@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+assignment5/CMakeFiles/tesk5_4.dir/rule:
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment5/CMakeFiles/tesk5_4.dir/rule
+.PHONY : assignment5/CMakeFiles/tesk5_4.dir/rule
+
+# Convenience name for target.
+tesk5_4: assignment5/CMakeFiles/tesk5_4.dir/rule
+
+.PHONY : tesk5_4
+
+# fast build rule for target.
+tesk5_4/fast:
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_4.dir/build.make assignment5/CMakeFiles/tesk5_4.dir/build
+.PHONY : tesk5_4/fast
+
+# Convenience name for target.
 assignment5/CMakeFiles/tesk5_3.dir/rule:
 	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment5/CMakeFiles/tesk5_3.dir/rule
 .PHONY : assignment5/CMakeFiles/tesk5_3.dir/rule
@@ -209,6 +224,33 @@ priority_queue.cpp.s:
 	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_2.dir/build.make assignment5/CMakeFiles/tesk5_2.dir/priority_queue.cpp.s
 .PHONY : priority_queue.cpp.s
 
+search_tree.o: search_tree.cpp.o
+
+.PHONY : search_tree.o
+
+# target to build an object file
+search_tree.cpp.o:
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_4.dir/build.make assignment5/CMakeFiles/tesk5_4.dir/search_tree.cpp.o
+.PHONY : search_tree.cpp.o
+
+search_tree.i: search_tree.cpp.i
+
+.PHONY : search_tree.i
+
+# target to preprocess a source file
+search_tree.cpp.i:
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_4.dir/build.make assignment5/CMakeFiles/tesk5_4.dir/search_tree.cpp.i
+.PHONY : search_tree.cpp.i
+
+search_tree.s: search_tree.cpp.s
+
+.PHONY : search_tree.s
+
+# target to generate assembly for a file
+search_tree.cpp.s:
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_4.dir/build.make assignment5/CMakeFiles/tesk5_4.dir/search_tree.cpp.s
+.PHONY : search_tree.cpp.s
+
 winner_tree.o: winner_tree.cpp.o
 
 .PHONY : winner_tree.o
@@ -244,6 +286,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... tesk5_4"
 	@echo "... tesk5_3"
 	@echo "... tesk5_2"
 	@echo "... tesk5_1"
@@ -253,6 +296,9 @@ help:
 	@echo "... priority_queue.o"
 	@echo "... priority_queue.i"
 	@echo "... priority_queue.s"
+	@echo "... search_tree.o"
+	@echo "... search_tree.i"
+	@echo "... search_tree.s"
 	@echo "... winner_tree.o"
 	@echo "... winner_tree.i"
 	@echo "... winner_tree.s"

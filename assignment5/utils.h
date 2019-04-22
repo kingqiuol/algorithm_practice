@@ -18,7 +18,7 @@ public:
     BTreeNode<T> *right_;   //指向右子树
     BTreeNode<T> *parent_;  //指向父节点
 public:
-    BTreeNode(){left_=right_=parent_=NULL;}
+    BTreeNode(){left_=right_=parent_= nullptr;}
 
     BTreeNode(const BTreeNode<T> &theClass)
             :element_(theClass.element_),
@@ -27,10 +27,10 @@ public:
              parent_(theClass.parent_){}
 
     BTreeNode(const T &theElement):element_(theElement),
-                                   left_(NULL),right_(NULL),parent_(NULL){}
+                                   left_(nullptr),right_(nullptr),parent_(nullptr){}
 
     BTreeNode(const T &theElement,BTreeNode<T> *left,BTreeNode<T> *right)
-            :element_(theElement),left_(left),right_(right),parent_(NULL){}
+            :element_(theElement),left_(left),right_(right),parent_(nullptr){}
 
     BTreeNode(const T &theElement,BTreeNode<T> *left,BTreeNode<T> *right,BTreeNode<T> *parent)
             :element_(theElement),left_(left),right_(right),parent_(parent){}
@@ -46,7 +46,7 @@ public:
     virtual bool empty() const = 0;
     //返回字典的大小
     virtual int size() const = 0;
-    // 搜索字典
+    //搜索字典
     virtual pair<const K, E>* find(const K&) = 0;
     //删除字典
     virtual void erase(const K&) = 0;

@@ -52,13 +52,20 @@ private:
 };
 
 template <class K,class E>
-pair<const K, E>* BinarySearchTree<K,E>::find(const K &)
+pair<const K, E>* BinarySearchTree<K,E>::find(const K &theKey)
 {
     ListNode<pair<const K,E>> *p=bs_tree_.get_root();
 
     if(p== nullptr){
-        
+        exit(0);
     }
+
+    if(p->value_.first==theKey){
+        return &(p->value_);
+    }
+
+
+
 }
 
 #endif //TESK_SEARCH_TREE_H
