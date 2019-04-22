@@ -56,16 +56,62 @@ pair<const K, E>* BinarySearchTree<K,E>::find(const K &theKey)
 {
     ListNode<pair<const K,E>> *p=bs_tree_.get_root();
 
-    if(p== nullptr){
-        exit(0);
+    while(p!= nullptr){
+        if(theKey<p->value_.first){
+            p=p->front;
+        }else if(theKey > p->value_.first){
+            p=p->next;
+        }else{
+            return &p->value_;
+        }
     }
 
-    if(p->value_.first==theKey){
-        return &(p->value_);
+    return nullptr;
+}
+
+template <class K,class E>
+void BinarySearchTree<K,E>::insert(const pair<const K, E> &theValue)
+{
+    //获取根节点
+    ListNode<pair<const K,E>> *p=bs_tree_.get_root(),*pp= nullptr;
+
+    //在搜索树中搜索吧该节点
+    while(p!= nullptr){
+        //保存当前节点父节点
+        pp=p;
+        if(theValue.first < p->value_.first){
+            p=p->front;
+        }else if(theValue.first > p->value_.first){
+            p=p->next;
+        }else{//如果存在搜索树种，直接替换
+            p->value_.second=theValue.second;
+            return ;
+        }
     }
 
+    //创建节点
+    ListNode<pair<const K,E>> *newNode=
+            new ListNode<pair<const K,E>>(theValue);
 
+    //插入节点
+    ListNode<pair<const K,E>> *root;
+    if((root=bs_tree_.get_root())!= nullptr){//获取当前节点的子节点，并插入节点
+        if(theValue.first<pp->value_.first){
+            pp->front=newNode;
+        }else{
+            pp->next=newNode;
+        }
+    }else{//如果根节点为空，直接在根节点插入节点
+        root=newNode;
+    }
 
+    ++bs_tree_.set_size();
+}
+
+template <class K,class E>
+void BinarySearchTree<K,E>::erase(const K &theKey)
+{
+    
 }
 
 #endif //TESK_SEARCH_TREE_H

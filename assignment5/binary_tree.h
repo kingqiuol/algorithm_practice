@@ -417,6 +417,7 @@ public:
     bool empty() const{return size_==0;}
     //返回二叉树元素的个数
     size_t size() const{return size_;}
+    size_t &set_size(){return size_;}
 
     //插入节点
     void insert(const T &value);
