@@ -3,6 +3,7 @@
 //
 #include <iostream>
 #include <vector>
+#include <algorithm>
 #include "search.h"
 
 using namespace std;
@@ -17,6 +18,9 @@ int main()
     for(auto c:b){
         cout<<c.first<<" "<<c.second<<endl;
     }
+
+    vector<pair<int,int>> c(a.begin(),a.end());
+    sort(c.begin(),c.end(),[](pair<int,int> a,pair<int,int> b){return a.first<b.first;});
 
     return 0;
 }
