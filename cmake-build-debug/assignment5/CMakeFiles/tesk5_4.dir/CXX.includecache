@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/search_tree.cpp
+iostream
+-
+vector
+-
+search.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/search.h
+
