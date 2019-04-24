@@ -134,7 +134,7 @@ void BinarySearchTree<K,E>::erase(const K &theKey)
         //搜索p的走左子树最大节点
         BTreeNode<pair<const K,E>> *max_child=p->left_,
                 *p_max= p;
-        while(max_child!= nullptr){
+        while(max_child->right_!= nullptr){
             p_max=max_child;
             max_child=max_child->right_;
         }
@@ -150,7 +150,6 @@ void BinarySearchTree<K,E>::erase(const K &theKey)
         }else{
             pp->right_=q;
         }
-
         if(p_max==p) pp=q;
         else pp=p_max;
 
