@@ -28,7 +28,7 @@ class BinarySearchTree:public BSTree<K,E>
 {
 public:
     BinarySearchTree():phead_(nullptr),size_(0){}
-    ~BinarySearchTree(){}
+    ~BinarySearchTree();
 
     //判断字典是否为空
     bool empty() const{return size_==0;}
@@ -49,9 +49,33 @@ public:
     //关键字按升序输出
     void ascend();
 private:
+    void delete_(BTreeNode<pair<const K,E>> *node);//删除搜索二叉树
+    void inorder_(BTreeNode<pair<const K,E>> *node);//中序遍历
+private:
     BTreeNode<pair<const K,E>> *phead_;
     size_t  size_;
 };
+
+template <class K,class E>
+void BinarySearchTree<K,E>::delete_(BTreeNode<pair<const K, E>> *node)
+{
+    if(node!= nullptr){
+        BTreeNode<pair<const K,E>> *cur=node;
+        delete_(node->left_);
+        delete_(node->right_);
+        delete cur;
+        cur= nullptr;
+    }
+}
+
+template <class K,class E>
+BinarySearchTree<K,E>::~BinarySearchTree()
+{
+    if(phead_!= nullptr){
+        delete_(phead_);
+        size_=0;
+    }
+}
 
 template <class K,class E>
 pair<const K, E>* BinarySearchTree<K,E>::find(const K &theKey)
@@ -179,5 +203,60 @@ void BinarySearchTree<K,E>::erase(const K &theKey)
     --size_;
     delete p;
 }
+
+template<class K,class E>
+void BinarySearchTree<K,E>::inorder_(BTreeNode<pair<const K, E>> *node)
+{
+    if(node== nullptr) {
+        return;
+    }
+
+    inorder_(node->left_);
+    cout<<node->element_.first<<"->"<<node->element_.second<<endl;
+    inorder_(node->right_);
+}
+
+template<class K,class E>
+void BinarySearchTree<K,E>::ascend()
+{
+    if(phead_== nullptr) {
+        return;
+    }
+
+    inorder_(phead_);
+}
+
+/*******************************************
+*              索引二叉搜索树的实现           *
+/*******************************************/
+template <class K,class E>
+class IndexBinarySearchTree:public BTree
+{
+public:
+    IndexBinarySearchTree():phead_(nullptr),size_(0){}
+    ~IndexBinarySearchTree();
+
+    //判断字典是否为空
+    bool empty() const{return size_==0;}
+    //返回字典的大小
+    int size() const{return size_;}
+    //返回根节点
+    BTreeNode<pair<const K,E>> *get_root(){return phead_;}
+
+    // 搜索字典
+    pair<const K, E>* find(const K&);
+
+    //删除字典
+    void erase(const K&);
+
+    //插入字典
+    void insert(const pair<const K, E>&);
+
+    //关键字按升序输出
+    void ascend();
+private:
+    BTreeNode<pair<const K,E>> *phead_;
+    size_t size_;
+};
 
 #endif //TESK_SEARCH_TREE_H

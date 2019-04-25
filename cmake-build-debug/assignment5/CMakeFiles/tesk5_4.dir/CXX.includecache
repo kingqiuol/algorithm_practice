@@ -6,6 +6,32 @@
 
 #IncludeRegexTransform: 
 
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/binary_tree.h
+iostream
+-
+memory
+-
+list.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/list.h
+queue.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/queue.h
+
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/list.h
+iostream
+-
+memory
+-
+list.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/list.h
+
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/queue.h
+iostream
+-
+memory
+-
+list.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/list.h
+
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/search_tree.cpp
 iostream
 -
@@ -15,4 +41,18 @@ algorithm
 -
 search.h
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/search.h
+search_tree.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/search_tree.h
+
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/search_tree.h
+iostream
+-
+utils.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/utils.h
+binary_tree.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/binary_tree.h
+
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/utils.h
+iostream
+-
 

@@ -41,7 +41,7 @@ template<class K, class E>
 class Dictionary
 {
 public:
-    virtual ~dictionary() {}
+    virtual ~Dictionary() {}
     //判断字典是否为空
     virtual bool empty() const = 0;
     //返回字典的大小
