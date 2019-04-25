@@ -133,6 +133,122 @@ s=4，最底层最左端的内部节点是 tree[4]，这一层的内部节点个
 
 ## 4、平衡搜索树
 
+各种字典结构的渐近时间性能：
+<table>
+    <tr>
+        <th rowspan="2">方法</th>
+        <th colspan="3">最坏情况</th>
+        <th colspan="3">平均情况</th>
+    </tr>
+    <tr>
+        <td>搜索</td>
+        <td>插入</td>
+        <td>删除</td>
+        <td>搜索</td>
+        <td>插入</td>
+        <td>删除</td>
+    </tr>
+    <tr>
+        <td>有序数组</td>
+        <td>logn</td>
+        <td>n</td>
+        <td>n</td>
+        <td>logn</td>
+        <td>n</td>
+        <td>n</td>
+    </tr>
+    <tr>
+        <td>有序链表</td>
+        <td>n</td>
+        <td>n</td>
+        <td>n</td>
+        <td>n</td>
+        <td>n</td>
+        <td>n</td>
+    </tr>
+    <tr>
+        <td>跳表</td>
+        <td>n</td>
+        <td>n</td>
+        <td>n</td>
+        <td>logn</td>
+        <td>logn</td>
+        <td>logn</td>
+    </tr>
+    <tr>
+        <td>哈希表</td>
+        <td>n</td>
+        <td>n</td>
+        <td>n</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>二叉搜索树</td>
+        <td>n</td>
+        <td>n</td>
+        <td>n</td>
+        <td>logn</td>
+        <td>logn</td>
+        <td>logn</td>
+    </tr>
+    <tr>
+        <td>AVL树</td>
+        <td>logn</td>
+        <td>logn</td>
+        <td>logn</td>
+        <td>logn</td>
+        <td>logn</td>
+        <td>logn</td>
+    </tr>
+    <tr>
+        <td>红黑树</td>
+        <td>logn</td>
+        <td>logn</td>
+        <td>logn</td>
+        <td>logn</td>
+        <td>logn</td>
+        <td>logn</td>
+    </tr>
+    <tr>
+        <td>分裂树</td>
+        <td>n</td>
+        <td>n</td>
+        <td>n</td>
+        <td>logn</td>
+        <td>logn</td>
+        <td>logn</td>
+    </tr>
+    <tr>
+        <td>B-树</td>
+        <td>logn</td>
+        <td>logn</td>
+        <td>logn</td>
+        <td>logn</td>
+        <td>logn</td>
+        <td>logn</td>
+    </tr>
+</table>
+
+AVL和红-黑树适用于内部存储的运用，B-树适用于外部存储的应用。
+
+在实际运用中，当我们需要实施的操作为按关键字查找、插入和删除操作，这时散列的性能超过平衡
+搜索树，此时，优先选择散列。如果关键字按照字典操作，且时间不能超过指定的范围，此时提倡使用
+平衡搜索树。对于那些按名次实施查找删除的操作，以及那些不按精确关键字匹配的进行字典操作
+（如寻找关键字大于k的最小元素），建议使用平衡搜索树。
+
+对于较小可以在内存中处理的字典，AVL和红-黑树都能提供很好的性能；对于大型字典，必须存储于
+磁盘中时则需要度数更大，高度更低的树，如：B-树。
+
+### 4.1、AVL树
+
+### 4.2、红-黑树
+
+### 4.3、分裂树
+
+### 4.4、B-树
+
 ## 5、优先级队列
 元素出队列的顺序由元素的优先级来确定
 
