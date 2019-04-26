@@ -8,7 +8,7 @@
 #include <iostream>
 
 #include "utils.h"
-#include "binary_tree.h"
+
 
 using namespace std;
 
@@ -24,7 +24,7 @@ public:
 *                二叉搜索树的实现              *
 /*******************************************/
 template <class K,class E>
-class BinarySearchTree:public BSTree<K,E>
+class BinarySearchTree
 {
 public:
     BinarySearchTree():phead_(nullptr),size_(0){}
@@ -230,7 +230,7 @@ void BinarySearchTree<K,E>::ascend()
 *              索引二叉搜索树的实现           *
 /*******************************************/
 template <class K,class E>
-class IndexBinarySearchTree:public BTree
+class IndexBinarySearchTree
 {
 public:
     IndexBinarySearchTree():phead_(nullptr),size_(0){}
@@ -241,7 +241,7 @@ public:
     //返回字典的大小
     int size() const{return size_;}
     //返回根节点
-    BTreeNode<pair<const K,E>> *get_root(){return phead_;}
+    IndexBTreeNode<pair<const K,E>> *get_root(){return phead_;}
 
     // 搜索字典
     pair<const K, E>* find(const K&);
@@ -255,8 +255,71 @@ public:
     //关键字按升序输出
     void ascend();
 private:
-    BTreeNode<pair<const K,E>> *phead_;
+    void update_leftSize(IndexBTreeNode<pair<const K,E>> *);
+private:
+    IndexBTreeNode<pair<const K,E>> *phead_;
     size_t size_;
 };
+
+template <class K,class E>
+pair<const K, E>* IndexBinarySearchTree<K,E>::find(const K &theKey)
+{
+    IndexBTreeNode<pair<const K,E>> *p=phead_;
+    while(p!=nullptr){
+        if(theKey< p->element_.first){
+            p=p->left_;
+        }else if(theKey>p->element_.second){
+            p=p->right_;
+        }else{
+            return &p->element_;
+        }
+    }
+
+    return nullptr;
+}
+
+template <class K,class E>
+void IndexBinarySearchTree<K,E>::update_leftSize(IndexBTreeNode<pair<const K, E>> *p)
+{
+    IndexBTreeNode<pair<const K, E>> *cur=p;
+    while(cur != nullptr){
+        ++cur->left_size_;
+        cur=cur->parent_;
+    }
+}
+
+template<class K,class E>
+void IndexBinarySearchTree<K,E>::insert(const pair<const K, E> &thePair)
+{
+    IndexBTreeNode<pair<const K,E>> *p=phead_, *pp= nullptr;
+    while(p!= nullptr){
+        pp=p;
+        if(thePair.first<p->element_.first){
+            p=p->left_;
+        }else if(thePair.first>p->element_.first){
+            p=p->right_;
+        }else{
+            p->element_.second=thePair.second;
+            return;
+        }
+    }
+
+    IndexBTreeNode<pair<const K,E>> *node=new IndexBTreeNode<pair<const K,E>>(thePair);
+    if(phead_!= nullptr){
+        if(thePair.first<pp->element_.first){
+            pp->left_=node;
+            node->parent_=pp;
+        }else{
+            pp->right_=node;
+            node->parent_=pp;
+        }
+
+        update_leftSize(pp);
+    }else{
+        phead_=node;
+    }
+
+    ++size_;
+}
 
 #endif //TESK_SEARCH_TREE_H

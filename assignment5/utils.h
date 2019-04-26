@@ -36,6 +36,42 @@ public:
             :element_(theElement),left_(left),right_(right),parent_(parent){}
 };
 
+//索引二叉搜索树节点
+template <class T>
+class IndexBTreeNode
+{
+public:
+    T element_;                     //存储的元素
+    IndexBTreeNode<T> *left_;       //指向左子树
+    IndexBTreeNode<T> *right_;      //指向右子树
+    IndexBTreeNode<T> *parent_;     //指向父节点
+    int left_size_;                 //当前节点左子树节点得个数
+
+    IndexBTreeNode():left_size_(0){ left_=right_=parent_= nullptr;}
+    IndexBTreeNode(const IndexBTreeNode<T> &theClass):element_(theClass.element_),
+                                                      left_(theClass.left_),
+                                                      right_(theClass.right_),
+                                                      parent_(theClass.parent_) ,
+                                                      left_size_(theClass.left_size_){}
+
+    IndexBTreeNode(const T &theElement):element_(theElement),
+                                        left_(nullptr),right_(nullptr),parent_(nullptr),
+                                        left_size_(0){}
+
+    IndexBTreeNode(const T &theElement,IndexBTreeNode<T> *left,IndexBTreeNode<T> *right,int left_size)
+            :element_(theElement),
+             left_(left),right_(right),parent_(nullptr),
+             left_size_(left_size_){}
+
+    IndexBTreeNode(const T &theElement,
+                   IndexBTreeNode<T> *left,
+                   IndexBTreeNode<T> *right,
+                   IndexBTreeNode<T> *parent,
+                   int left_size):element_(theElement),
+                                  left_(left),right_(right),parent_(parent),
+                                  left_size_(left_size_){}
+};
+
 //二叉搜索树字典的基类
 template<class K, class E>
 class Dictionary
