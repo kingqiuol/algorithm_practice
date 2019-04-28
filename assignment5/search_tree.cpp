@@ -24,5 +24,19 @@ int main()
     cout<<"find 11:"<<tmp->first<<"->"<<tmp->second<<endl;
     bstree.ascend();
 
+    IndexBinarySearchTree<int,int> ibstree;
+    ibstree.insert(make_pair(9,4));
+    ibstree.insert(make_pair(1,4));
+    ibstree.insert(make_pair(11,5));
+    ibstree.insert(make_pair(4,4));
+    ibstree.insert(make_pair(10,4));
+    ibstree.insert(make_pair(90,4));
+    cout<<"size:"<<ibstree.size()<<endl;
+    ibstree.erase(1);
+    cout<<"size:"<<ibstree.size()<<endl;
+    pair<const int,int> *tmp1=ibstree.find(11);
+    cout<<"find 11:"<<tmp1->first<<"->"<<tmp1->second<<endl;
+    ibstree.ascend();
+
     return 0;
 }

@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+assignment5/CMakeFiles/tesk5_5.dir/rule:
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment5/CMakeFiles/tesk5_5.dir/rule
+.PHONY : assignment5/CMakeFiles/tesk5_5.dir/rule
+
+# Convenience name for target.
+tesk5_5: assignment5/CMakeFiles/tesk5_5.dir/rule
+
+.PHONY : tesk5_5
+
+# fast build rule for target.
+tesk5_5/fast:
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_5.dir/build.make assignment5/CMakeFiles/tesk5_5.dir/build
+.PHONY : tesk5_5/fast
+
+# Convenience name for target.
 assignment5/CMakeFiles/tesk5_4.dir/rule:
 	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment5/CMakeFiles/tesk5_4.dir/rule
 .PHONY : assignment5/CMakeFiles/tesk5_4.dir/rule
@@ -169,6 +184,36 @@ tesk5_1: assignment5/CMakeFiles/tesk5_1.dir/rule
 tesk5_1/fast:
 	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_1.dir/build.make assignment5/CMakeFiles/tesk5_1.dir/build
 .PHONY : tesk5_1/fast
+
+balanced_search_tree.o: balanced_search_tree.cpp.o
+
+.PHONY : balanced_search_tree.o
+
+# target to build an object file
+balanced_search_tree.cpp.o:
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_5.dir/build.make assignment5/CMakeFiles/tesk5_5.dir/balanced_search_tree.cpp.o
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_1.dir/build.make assignment5/CMakeFiles/tesk5_1.dir/balanced_search_tree.cpp.o
+.PHONY : balanced_search_tree.cpp.o
+
+balanced_search_tree.i: balanced_search_tree.cpp.i
+
+.PHONY : balanced_search_tree.i
+
+# target to preprocess a source file
+balanced_search_tree.cpp.i:
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_5.dir/build.make assignment5/CMakeFiles/tesk5_5.dir/balanced_search_tree.cpp.i
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_1.dir/build.make assignment5/CMakeFiles/tesk5_1.dir/balanced_search_tree.cpp.i
+.PHONY : balanced_search_tree.cpp.i
+
+balanced_search_tree.s: balanced_search_tree.cpp.s
+
+.PHONY : balanced_search_tree.s
+
+# target to generate assembly for a file
+balanced_search_tree.cpp.s:
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_5.dir/build.make assignment5/CMakeFiles/tesk5_5.dir/balanced_search_tree.cpp.s
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_1.dir/build.make assignment5/CMakeFiles/tesk5_1.dir/balanced_search_tree.cpp.s
+.PHONY : balanced_search_tree.cpp.s
 
 binary_tree.o: binary_tree.cpp.o
 
@@ -286,10 +331,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... tesk5_5"
 	@echo "... tesk5_4"
 	@echo "... tesk5_3"
 	@echo "... tesk5_2"
 	@echo "... tesk5_1"
+	@echo "... balanced_search_tree.o"
+	@echo "... balanced_search_tree.i"
+	@echo "... balanced_search_tree.s"
 	@echo "... binary_tree.o"
 	@echo "... binary_tree.i"
 	@echo "... binary_tree.s"

@@ -45,7 +45,7 @@ public:
     IndexBTreeNode<T> *left_;       //指向左子树
     IndexBTreeNode<T> *right_;      //指向右子树
     IndexBTreeNode<T> *parent_;     //指向父节点
-    int left_size_;                 //当前节点左子树节点得个数
+    int left_size_;                 //当前节点左子树节点的个数
 
     IndexBTreeNode():left_size_(0){ left_=right_=parent_= nullptr;}
     IndexBTreeNode(const IndexBTreeNode<T> &theClass):element_(theClass.element_),

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/balanced_search_tree.cpp
+iostream
+-
+balanced_search_tree.h
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/balanced_search_tree.h
+
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/balanced_search_tree.h
+

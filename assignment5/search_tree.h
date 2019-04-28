@@ -255,11 +255,35 @@ public:
     //关键字按升序输出
     void ascend();
 private:
-    void update_leftSize(IndexBTreeNode<pair<const K,E>> *);
+    void delete_(IndexBTreeNode<pair<const K,E>> *);//删除树
+    void inorder_(IndexBTreeNode<pair<const K,E>> *);//中序遍历
 private:
     IndexBTreeNode<pair<const K,E>> *phead_;
     size_t size_;
 };
+
+template <class K,class E>
+void IndexBinarySearchTree<K,E>::delete_(IndexBTreeNode<pair<const K, E>> *p)
+{
+    if(p!= nullptr){
+        IndexBTreeNode<pair<const K,E>> *cur=p;
+        delete(p->left_);
+        delete(p->right_);
+        delete cur;
+        cur= nullptr;
+    }
+}
+
+template <class K,class E>
+IndexBinarySearchTree<K,E>::~IndexBinarySearchTree()
+{
+    if(phead_!= nullptr){
+        if(phead_!= nullptr){
+            delete_(phead_);
+            size_=0;
+        }
+    }
+}
 
 template <class K,class E>
 pair<const K, E>* IndexBinarySearchTree<K,E>::find(const K &theKey)
@@ -268,7 +292,7 @@ pair<const K, E>* IndexBinarySearchTree<K,E>::find(const K &theKey)
     while(p!=nullptr){
         if(theKey< p->element_.first){
             p=p->left_;
-        }else if(theKey>p->element_.second){
+        }else if(theKey>p->element_.first){
             p=p->right_;
         }else{
             return &p->element_;
@@ -278,16 +302,6 @@ pair<const K, E>* IndexBinarySearchTree<K,E>::find(const K &theKey)
     return nullptr;
 }
 
-template <class K,class E>
-void IndexBinarySearchTree<K,E>::update_leftSize(IndexBTreeNode<pair<const K, E>> *p)
-{
-    IndexBTreeNode<pair<const K, E>> *cur=p;
-    while(cur != nullptr){
-        ++cur->left_size_;
-        cur=cur->parent_;
-    }
-}
-
 template<class K,class E>
 void IndexBinarySearchTree<K,E>::insert(const pair<const K, E> &thePair)
 {
@@ -295,6 +309,7 @@ void IndexBinarySearchTree<K,E>::insert(const pair<const K, E> &thePair)
     while(p!= nullptr){
         pp=p;
         if(thePair.first<p->element_.first){
+            ++p->left_size_;
             p=p->left_;
         }else if(thePair.first>p->element_.first){
             p=p->right_;
@@ -313,13 +328,102 @@ void IndexBinarySearchTree<K,E>::insert(const pair<const K, E> &thePair)
             pp->right_=node;
             node->parent_=pp;
         }
-
-        update_leftSize(pp);
     }else{
         phead_=node;
     }
 
     ++size_;
+}
+
+template <class K,class E>
+void IndexBinarySearchTree<K,E>::erase(const K &theKey)
+{
+    IndexBTreeNode<pair<const K,E>> *p=phead_,
+            *pp= nullptr;
+
+    while(p!= nullptr && p->element_.first!=theKey){
+        pp=p;
+        if(theKey<p->element_.first){
+            --p->left_size_;
+            p=p->left_;
+        }else if(theKey>p->element_.first){
+            p=p->right_;
+        }
+    }
+
+    if(p== nullptr){
+        return ;
+    }
+
+    //对树进行重构
+    //处理p只有两个孩子的情况
+    if(p->left_!= nullptr && p->right_!= nullptr){
+        //寻找左子树中的最大元素
+        IndexBTreeNode<pair<const K,E>> *s=p->left_,*ps= nullptr;
+        while(s->right_!= nullptr){
+            ps=s;
+            s=s->right_;
+        }
+
+        int left_size=p->left_size_-1;//获取修改后所删除元素位置的索引值
+        //将最大元素移到p位置
+        IndexBTreeNode<pair<const K,E>> *q=new IndexBTreeNode<pair<const K,E>>
+                (s->element_,p->left_,p->right_,p->parent_,left_size);
+
+        if(pp== nullptr){
+            phead_=q;
+        } else if(pp->left_==p) {
+            pp->left_ = q;
+        }else{
+            pp->right_=q;
+        }
+
+        delete p;
+        p=s;
+    }
+
+    //如果p最多只有一个孩子
+    IndexBTreeNode<pair<const K,E>> *c;
+    if(p->left_!= nullptr){
+        c=p->left_;
+    }else{
+        c=p->right_;
+    }
+
+    if(phead_==p){
+        phead_=c;
+    }else{
+        if(p==pp->left_){
+            pp->left_=c;
+        }else{
+            pp->right_=c;
+        }
+    }
+
+    --size_;
+    delete p;
+}
+
+template<class K,class E>
+void IndexBinarySearchTree<K,E>::inorder_(IndexBTreeNode<pair<const K, E>> *p)
+{
+    if(p == nullptr){
+        return ;
+    }
+
+    inorder_(p->left_);
+    cout<<p->element_.first<<"->"<<p->element_.second<<"<"<<p->left_size_<<">"<<endl;
+    inorder_(p->right_);
+}
+
+template <class K,class E>
+void IndexBinarySearchTree<K,E>::ascend()
+{
+    if(phead_== nullptr) {
+        return;
+    }
+
+    inorder_(phead_);
 }
 
 #endif //TESK_SEARCH_TREE_H
