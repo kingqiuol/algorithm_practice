@@ -17,23 +17,25 @@ public:
     BTreeNode<T> *left_;    //指向左子树
     BTreeNode<T> *right_;   //指向右子树
     BTreeNode<T> *parent_;  //指向父节点
+    int height_;            //以当前节点为根树的高度
 public:
-    BTreeNode(){left_=right_=parent_= nullptr;}
+    BTreeNode():height_(0){left_=right_=parent_= nullptr;}
 
     BTreeNode(const BTreeNode<T> &theClass)
             :element_(theClass.element_),
              left_(theClass.left_),
              right_(theClass.right_),
-             parent_(theClass.parent_){}
+             parent_(theClass.parent_),
+             height_(0){}
 
     BTreeNode(const T &theElement):element_(theElement),
-                                   left_(nullptr),right_(nullptr),parent_(nullptr){}
+                                   left_(nullptr),right_(nullptr),parent_(nullptr),height_(0){}
 
     BTreeNode(const T &theElement,BTreeNode<T> *left,BTreeNode<T> *right)
-            :element_(theElement),left_(left),right_(right),parent_(nullptr){}
+            :element_(theElement),left_(left),right_(right),parent_(nullptr),height_(0){}
 
     BTreeNode(const T &theElement,BTreeNode<T> *left,BTreeNode<T> *right,BTreeNode<T> *parent)
-            :element_(theElement),left_(left),right_(right),parent_(parent){}
+            :element_(theElement),left_(left),right_(right),parent_(parent),height_(0){}
 };
 
 //索引二叉搜索树节点

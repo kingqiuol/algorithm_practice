@@ -31,7 +31,7 @@ public:
     //返回字典的大小
     int size() const{return size_;}
     //返回树的高度
-    int get_height(){return height_;}
+    int get_height(BTreeNode<pair<const K,E>> *node){return node->height_;}
     //返回根节点
     BTreeNode<pair<const K,E>> *get_root(){return phead_;}
 
@@ -44,25 +44,47 @@ public:
     //插入字典
     void insert(const pair<const K, E>&);
 private:
+    inline int max(int a,int b){return a>b?a:b;}
+private:
     BTreeNode<pair<const K,E>> *phead_;
     size_t size_;
-    size_t height_;//树高
 };
 
-//template<class K,class E>
-//pair<const K, E>* AVLSearchTree<K,E>::find(const K &theKey)
-//{
-//
-//}
+template<class K,class E>
+pair<const K, E>* AVLSearchTree<K,E>::find(const K &theKey)
+{
+    if(phead_== nullptr){
+        return nullptr;
+    }
+
+    BTreeNode<pair<const K,E>> *p=phead_,*pp= nullptr;
+    while(p!= nullptr){
+        pp=p;
+        if(theKey<p->element_.first){
+            p=p->left_;
+        }else if(theKey>p->element_.first){
+            p=p->right_;
+        }else{
+            return &p->element_;
+        }
+    }
+
+    return nullptr;
+}
 
 template <class K,class E>
 void AVLSearchTree<K,E>::insert(const pair<const K, E> &theValue)
 {
-    if(phead_== nullptr){
-        BTreeNode<pair<const K,E>> *node=new BTreeNode<pair<const K,E>>(theValue);
-        phead_=node;
-        height_=0;
-    }
+    BTreeNode<pair<const K,E>> *newNode=new BTreeNode<pair<const K,E>>(theValue);
+
+
+
+}
+
+template <class K,class E>
+void AVLSearchTree<K,E>::erase(const K &theKey)
+{
+
 }
 
 #endif //TESK_BALANCED_SEARCH_TREE_H
