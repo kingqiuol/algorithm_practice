@@ -44,10 +44,14 @@ public:
     //插入字典
     void insert(const pair<const K, E>&);
 private:
-    void leftLeftRotation(BTreeNode<pair<const K,E>> *);//坐坐旋转
-    void rightRightRoration(BTreeNode<pair<const K,E>> *);//
+    BTreeNode<pair<const K,E>> *leftLeftRotation_(BTreeNode<pair<const K,E>> *);    //左左单旋转
+    BTreeNode<pair<const K,E>> *rightRightRotation_(BTreeNode<pair<const K,E>> *);  //右右单旋转
+    BTreeNode<pair<const K,E>> *leftRightRotation_(BTreeNode<pair<const K,E>> *);   //左右旋转
+    BTreeNode<pair<const K,E>> *rightLeftRotation_(BTreeNode<pair<const K,E>> *);   //右左旋转
 
-    inline int max(int a,int b){return a>b?a:b;}
+    BTreeNode<pair<const K,E>> *insert_(BTreeNode<pair<const K,E>> *,
+                                        const pair<const K,E>&);                    //插入字典
+    inline int max(int a,int b){return a>b?a:b;}                                    //比较两个数的大小
 private:
     BTreeNode<pair<const K,E>> *phead_;
     size_t size_;
@@ -76,8 +80,12 @@ pair<const K, E>* AVLSearchTree<K,E>::find(const K &theKey)
 }
 
 template<class K,class E>
-void AVLSearchTree<K,E>::leftLeftRotation(BTreeNode<pair<const K, E>> *p)
+BTreeNode<pair<const K,E>> *AVLSearchTree<K,E>::leftLeftRotation_(BTreeNode<pair<const K, E>> *p)
 {
+    if(p== nullptr){
+        return nullptr;
+    }
+
     BTreeNode<pair<const K,E>> *k=p->left_;
     p->left_=k->right_;
     k->right_=p;
@@ -85,16 +93,77 @@ void AVLSearchTree<K,E>::leftLeftRotation(BTreeNode<pair<const K, E>> *p)
     p->height_=max(get_height(k->left_),get_height(k->right_))+1;
     k->height_=max(get_height(k->right_),p->height_)+1;
 
-    p=k;
+    return k;
+}
+
+template <class K,class E>
+BTreeNode<pair<const K,E>> *AVLSearchTree<K,E>::rightRightRotation_(BTreeNode<pair<const K, E>> *p)
+{
+    if(p== nullptr){
+        return nullptr;
+    }
+
+    BTreeNode<pair<const K,E>> *k=p->right_;
+    p->right_=k->left_;
+    k->left_=p;
+
+    p->height_=max(get_height(p->left_),get_height(p->right_))+1;
+    k->height_=max(get_height(p),get_height(k->right_))+1;
+
+    return k;
+}
+
+template<class K,class E>
+BTreeNode<pair<const K,E>> *AVLSearchTree<K,E>::leftRightRotation_(BTreeNode<pair<const K, E>> *p)
+{
+    if(p== nullptr){
+        return nullptr;
+    }
+
+    p->left_=rightRightRotation_(p->left_);
+
+    return leftLeftRotation_(p);
+}
+
+template <class K,class E>
+BTreeNode<pair<const K,E>>* AVLSearchTree<K,E>::rightLeftRotation_(BTreeNode<pair<const K, E>> *p)
+{
+    if(p== nullptr){
+        return nullptr;
+    }
+
+    p->right_=leftLeftRotation_(p->right_);
+
+    return rightRightRotation_(p);
+}
+
+template <class K,class E>
+BTreeNode<pair<const K, E>> *AVLSearchTree<K,E>::insert_(BTreeNode<pair<const K, E>> *p,
+                                                         const pair<const K, E> &theValue)
+{
+    if(p== nullptr){
+        p=new BTreeNode<pair<const K,E>>(theValue);
+        if(p == nullptr){
+            cout << "ERROR: create avltree node failed!" << endl;
+            return nullptr;
+        }
+        ++size_;
+    }else if(theValue.first<p->element_.first){
+        p->left_=insert_(p->left_,theValue);
+    }else if(theValue.first>p->element_.first){
+        insert_(p->right_,theValue);
+    }else{
+        p->element_.second=theValue.second;
+    }
+
+    p->height_=max(get_height(p->left_),get_height(p->right_))+1;
+    return p;
 }
 
 template <class K,class E>
 void AVLSearchTree<K,E>::insert(const pair<const K, E> &theValue)
 {
-    BTreeNode<pair<const K,E>> *newNode=new BTreeNode<pair<const K,E>>(theValue);
-
-
-
+    insert_(phead_,theValue);
 }
 
 template <class K,class E>
