@@ -44,6 +44,9 @@ public:
     //插入字典
     void insert(const pair<const K, E>&);
 private:
+    void leftLeftRotation(BTreeNode<pair<const K,E>> *);//坐坐旋转
+    void rightRightRoration(BTreeNode<pair<const K,E>> *);//
+
     inline int max(int a,int b){return a>b?a:b;}
 private:
     BTreeNode<pair<const K,E>> *phead_;
@@ -70,6 +73,19 @@ pair<const K, E>* AVLSearchTree<K,E>::find(const K &theKey)
     }
 
     return nullptr;
+}
+
+template<class K,class E>
+void AVLSearchTree<K,E>::leftLeftRotation(BTreeNode<pair<const K, E>> *p)
+{
+    BTreeNode<pair<const K,E>> *k=p->left_;
+    p->left_=k->right_;
+    k->right_=p;
+
+    p->height_=max(get_height(k->left_),get_height(k->right_))+1;
+    k->height_=max(get_height(k->right_),p->height_)+1;
+
+    p=k;
 }
 
 template <class K,class E>
