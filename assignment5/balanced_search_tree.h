@@ -51,6 +51,7 @@ private:
 
     BTreeNode<pair<const K,E>> *insert_(BTreeNode<pair<const K,E>> *,
                                         const pair<const K,E>&);                    //插入字典
+    BTreeNode<pair<const K,E>> *erase_(BTreeNode<pair<const K,E>> *,const K&);      //删除字典
     inline int max(int a,int b){return a>b?a:b;}                                    //比较两个数的大小
 private:
     BTreeNode<pair<const K,E>> *phead_;
@@ -150,8 +151,24 @@ BTreeNode<pair<const K, E>> *AVLSearchTree<K,E>::insert_(BTreeNode<pair<const K,
         ++size_;
     }else if(theValue.first<p->element_.first){
         p->left_=insert_(p->left_,theValue);
+        //插入节点后AVL树失去平衡，需要重新调整平衡
+        if(get_height(p->left_)-get_height(p->right_)==2){
+           if(theValue.first<p->left_->element_.first){
+               p=leftLeftRotation_(p);
+           } else{
+               p=leftRightRotation_(p);
+           }
+        }
     }else if(theValue.first>p->element_.first){
         insert_(p->right_,theValue);
+        // 插入节点后，若AVL树失去平衡，则进行相应的调节
+        if(get_height(p->right_)-get_height(p->left_)==2){
+            if(theValue.first<p->right_->element_.first){
+                p=rightLeftRotation_(p);
+            }else{
+                p=rightRightRotation_(p);
+            }
+        }
     }else{
         p->element_.second=theValue.second;
     }
@@ -167,9 +184,25 @@ void AVLSearchTree<K,E>::insert(const pair<const K, E> &theValue)
 }
 
 template <class K,class E>
+BTreeNode<pair<const K,E>> * AVLSearchTree<K,E>::erase_(BTreeNode<pair<const K, E>> *p, const K &theKey)
+{
+    if(p== nullptr){
+        return nullptr;
+    }
+
+    if()
+}
+
+template <class K,class E>
 void AVLSearchTree<K,E>::erase(const K &theKey)
 {
+    if(phead_== nullptr || theKey== nullptr){
+        return ;
+    }
 
+    if(find(theKey)){
+        erase_(phead_,theKey);
+    }
 }
 
 #endif //TESK_BALANCED_SEARCH_TREE_H
