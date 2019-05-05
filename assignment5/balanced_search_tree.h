@@ -190,7 +190,65 @@ BTreeNode<pair<const K,E>> * AVLSearchTree<K,E>::erase_(BTreeNode<pair<const K, 
         return nullptr;
     }
 
-    if()
+    if(theKey<p->element_.first){
+        p->left_=erase_(p->left_,theKey);
+    }else if(theKey>p->element_.first){
+        p->right_=erase_(p->right_,theKey);
+    }else{
+        BTreeNode<pair<const K,E>> *tmp=p;
+
+        //如果左右孩子都不为空
+        if(p->left_!=nullptr && p->right_!= nullptr){
+            // 如果tree的左子树比右子树高；
+            // 则(01)找出tree的左子树中的最大节点
+            //   (02)将该最大节点的值赋值给tree。
+            //   (03)删除该最大节点。
+            // 这类似于用"tree的左子树中最大节点"做"tree"的替身；
+            // 采用这种方式的好处是：删除"tree的左子树中最大节点"之后，AVL树仍然是平衡的。
+            if(get_height(p->left_)>get_height(p->right_)){
+                //搜索左子树最大节点
+                BTreeNode<pair<const K,E>> *cur=p->left_, *pre= p;
+                while(cur!= nullptr){
+                    pre=cur;
+                    cur=cur->right_;
+                }
+
+                BTreeNode<pair<const K,E>> *newNode=new BTreeNode<pair<const K,E>>
+                        (pre->element_,p->left_,p->right_);
+                BTreeNode<pair<const K,E>> *tmp=p;
+                p=newNode;
+                erase_(p->left_,pre->element_.first);
+                delete tmp;
+            }else{
+                // 如果tree的左子树不比右子树高(即它们相等，或右子树比左子树高1)
+                // 则(01)找出tree的右子树中的最小节点
+                //   (02)将该最小节点的值赋值给tree。
+                //   (03)删除该最小节点。
+                // 这类似于用"tree的右子树中最小节点"做"tree"的替身；
+                // 采用这种方式的好处是：删除"tree的右子树中最小节点"之后，AVL树仍然是平衡的。
+                BTreeNode<pair<const K,E>> *cur=p->right_,*pre=p;
+                while(cur!=nullptr){
+                    pre=cur;
+                    cur=cur->left_;
+                }
+
+                BTreeNode<pair<const K,E>> *newNode=new BTreeNode<pair<const K,E>>
+                        (pre->element_,p->left_,p->right_);
+                BTreeNode<pair<const K,E>> *tmp=p;
+                p=newNode;
+                erase_(p->right_,pre->element_.first);
+                delete tmp;
+            }
+        }else{
+            p=p->left_== nullptr?p->right_:p->left_;
+
+        }
+
+        delete tmp;
+    }
+
+
+    return p;
 }
 
 template <class K,class E>
