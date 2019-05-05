@@ -13,7 +13,9 @@
 template <class K,class E>
 class BalancedBSTree:public Dictionary<K,E>
 {
-
+public:
+    //关键字按升序输出
+    virtual void ascend()=0;
 };
 
 /*******************************************
@@ -31,7 +33,9 @@ public:
     //返回字典的大小
     int size() const{return size_;}
     //返回树的高度
-    int get_height(BTreeNode<pair<const K,E>> *node){return node->height_;}
+    int get_height(BTreeNode<pair<const K,E>> *node)
+    { if(node== nullptr) return 0; else return node->height_;}
+
     //返回根节点
     BTreeNode<pair<const K,E>> *get_root(){return phead_;}
 
@@ -43,7 +47,12 @@ public:
 
     //插入字典
     void insert(const pair<const K, E>&);
+
+    //关键字按升序输出
+    void ascend();
 private:
+    void delete_(BTreeNode<pair<const K,E>> *p);                                    //AVL平衡树的销毁
+
     BTreeNode<pair<const K,E>> *leftLeftRotation_(BTreeNode<pair<const K,E>> *);    //左左单旋转
     BTreeNode<pair<const K,E>> *rightRightRotation_(BTreeNode<pair<const K,E>> *);  //右右单旋转
     BTreeNode<pair<const K,E>> *leftRightRotation_(BTreeNode<pair<const K,E>> *);   //左右旋转
@@ -52,11 +61,34 @@ private:
     BTreeNode<pair<const K,E>> *insert_(BTreeNode<pair<const K,E>> *,
                                         const pair<const K,E>&);                    //插入字典
     BTreeNode<pair<const K,E>> *erase_(BTreeNode<pair<const K,E>> *,const K&);      //删除字典
+    void inorder_(BTreeNode<pair<const K,E>> *p);                                   //中序遍历
     inline int max(int a,int b){return a>b?a:b;}                                    //比较两个数的大小
 private:
     BTreeNode<pair<const K,E>> *phead_;
     size_t size_;
 };
+
+template <class K,class E>
+void AVLSearchTree<K,E>::delete_(BTreeNode<pair<const K, E>> *p)
+{
+    if(p== nullptr){
+        return ;
+    }
+
+    delete_(p->left_);
+    delete_(p->right_);
+
+    delete p;
+    p= nullptr;
+}
+
+template <class K,class E>
+AVLSearchTree<K,E>::~AVLSearchTree()
+{
+    if(phead_!= nullptr){
+        delete_(phead_);
+    }
+}
 
 template<class K,class E>
 pair<const K, E>* AVLSearchTree<K,E>::find(const K &theKey)
@@ -148,6 +180,7 @@ BTreeNode<pair<const K, E>> *AVLSearchTree<K,E>::insert_(BTreeNode<pair<const K,
             cout << "ERROR: create avltree node failed!" << endl;
             return nullptr;
         }
+        cout<<p->element_.first<<endl;
         ++size_;
     }else if(theValue.first<p->element_.first){
         p->left_=insert_(p->left_,theValue);
@@ -172,8 +205,8 @@ BTreeNode<pair<const K, E>> *AVLSearchTree<K,E>::insert_(BTreeNode<pair<const K,
     }else{
         p->element_.second=theValue.second;
     }
-
     p->height_=max(get_height(p->left_),get_height(p->right_))+1;
+
     return p;
 }
 
@@ -192,8 +225,28 @@ BTreeNode<pair<const K,E>> * AVLSearchTree<K,E>::erase_(BTreeNode<pair<const K, 
 
     if(theKey<p->element_.first){
         p->left_=erase_(p->left_,theKey);
+
+        // 删除节点后，若AVL树失去平衡，则进行相应的调节
+        if(get_height(p->right_)-get_height(p->left_)==2){
+            BTreeNode<pair<const K,E>> *r=p->right_;
+            if(get_height(r->left_)>get_height(r->right_)){
+                p=rightLeftRotation_(p);
+            }else{
+                p=rightRightRotation_(p);
+            }
+        }
     }else if(theKey>p->element_.first){
         p->right_=erase_(p->right_,theKey);
+
+        // 删除节点后，若AVL树失去平衡，则进行相应的调节
+        if(get_height(p->left_)-get_height(p->right_)==2){
+            BTreeNode<pair<const K,E>> *l=p->left_;
+            if(get_height(l->left_)<get_height(l->right_)){
+                p=leftRightRotation_(p);
+            }else{
+                p=leftLeftRotation_(p);
+            }
+        }
     }else{
         BTreeNode<pair<const K,E>> *tmp=p;
 
@@ -215,10 +268,8 @@ BTreeNode<pair<const K,E>> * AVLSearchTree<K,E>::erase_(BTreeNode<pair<const K, 
 
                 BTreeNode<pair<const K,E>> *newNode=new BTreeNode<pair<const K,E>>
                         (pre->element_,p->left_,p->right_);
-                BTreeNode<pair<const K,E>> *tmp=p;
                 p=newNode;
                 erase_(p->left_,pre->element_.first);
-                delete tmp;
             }else{
                 // 如果tree的左子树不比右子树高(即它们相等，或右子树比左子树高1)
                 // 则(01)找出tree的右子树中的最小节点
@@ -234,19 +285,16 @@ BTreeNode<pair<const K,E>> * AVLSearchTree<K,E>::erase_(BTreeNode<pair<const K, 
 
                 BTreeNode<pair<const K,E>> *newNode=new BTreeNode<pair<const K,E>>
                         (pre->element_,p->left_,p->right_);
-                BTreeNode<pair<const K,E>> *tmp=p;
                 p=newNode;
                 erase_(p->right_,pre->element_.first);
-                delete tmp;
             }
         }else{
             p=p->left_== nullptr?p->right_:p->left_;
-
         }
 
         delete tmp;
+        --size_;
     }
-
 
     return p;
 }
@@ -254,7 +302,7 @@ BTreeNode<pair<const K,E>> * AVLSearchTree<K,E>::erase_(BTreeNode<pair<const K, 
 template <class K,class E>
 void AVLSearchTree<K,E>::erase(const K &theKey)
 {
-    if(phead_== nullptr || theKey== nullptr){
+    if(phead_== nullptr){
         return ;
     }
 
@@ -262,5 +310,32 @@ void AVLSearchTree<K,E>::erase(const K &theKey)
         erase_(phead_,theKey);
     }
 }
+
+template <class K,class E>
+void AVLSearchTree<K,E>::inorder_(BTreeNode<pair<const K, E>> *p)
+{
+    if(p== nullptr){
+        return ;
+    }
+
+    inorder_(p->left_);
+    cout<<p->element_.first<<"->"<<p->element_.second<<endl;
+    inorder_(p->right_);
+}
+
+template <class K,class E>
+void AVLSearchTree<K,E>::ascend()
+{
+    if(phead_== nullptr){
+        return;
+    }
+
+    inorder_(phead_);
+}
+
+/*******************************************
+*            红-黑平衡二叉搜索树的实现          *
+/*******************************************/
+
 
 #endif //TESK_BALANCED_SEARCH_TREE_H
