@@ -58,10 +58,10 @@ private:
     BTreeNode<pair<const K,E>> *leftRightRotation_(BTreeNode<pair<const K,E>> *);   //左右旋转
     BTreeNode<pair<const K,E>> *rightLeftRotation_(BTreeNode<pair<const K,E>> *);   //右左旋转
 
-    BTreeNode<pair<const K,E>> *insert_(BTreeNode<pair<const K,E>> *,
+    BTreeNode<pair<const K,E>> *insert_(BTreeNode<pair<const K,E>> *&,
                                         const pair<const K,E>&);                    //插入字典
-    BTreeNode<pair<const K,E>> *erase_(BTreeNode<pair<const K,E>> *,const K&);      //删除字典
-    void inorder_(BTreeNode<pair<const K,E>> *p);                                   //中序遍历
+    BTreeNode<pair<const K,E>> *erase_(BTreeNode<pair<const K,E>> *&,const K&);      //删除字典
+    void inOrder_(BTreeNode<pair<const K,E>> *p);                                   //中序遍历
     inline int max(int a,int b){return a>b?a:b;}                                    //比较两个数的大小
 private:
     BTreeNode<pair<const K,E>> *phead_;
@@ -171,7 +171,7 @@ BTreeNode<pair<const K,E>>* AVLSearchTree<K,E>::rightLeftRotation_(BTreeNode<pai
 }
 
 template <class K,class E>
-BTreeNode<pair<const K, E>> *AVLSearchTree<K,E>::insert_(BTreeNode<pair<const K, E>> *p,
+BTreeNode<pair<const K, E>> *AVLSearchTree<K,E>::insert_(BTreeNode<pair<const K, E>> *&p,
                                                          const pair<const K, E> &theValue)
 {
     if(p== nullptr){
@@ -180,7 +180,7 @@ BTreeNode<pair<const K, E>> *AVLSearchTree<K,E>::insert_(BTreeNode<pair<const K,
             cout << "ERROR: create avltree node failed!" << endl;
             return nullptr;
         }
-        cout<<p->element_.first<<endl;
+
         ++size_;
     }else if(theValue.first<p->element_.first){
         p->left_=insert_(p->left_,theValue);
@@ -213,11 +213,11 @@ BTreeNode<pair<const K, E>> *AVLSearchTree<K,E>::insert_(BTreeNode<pair<const K,
 template <class K,class E>
 void AVLSearchTree<K,E>::insert(const pair<const K, E> &theValue)
 {
-    insert_(phead_,theValue);
+    phead_=insert_(phead_,theValue);
 }
 
 template <class K,class E>
-BTreeNode<pair<const K,E>> * AVLSearchTree<K,E>::erase_(BTreeNode<pair<const K, E>> *p, const K &theKey)
+BTreeNode<pair<const K,E>> * AVLSearchTree<K,E>::erase_(BTreeNode<pair<const K, E>> *&p, const K &theKey)
 {
     if(p== nullptr){
         return nullptr;
@@ -293,7 +293,6 @@ BTreeNode<pair<const K,E>> * AVLSearchTree<K,E>::erase_(BTreeNode<pair<const K, 
         }
 
         delete tmp;
-        --size_;
     }
 
     return p;
@@ -308,19 +307,20 @@ void AVLSearchTree<K,E>::erase(const K &theKey)
 
     if(find(theKey)){
         erase_(phead_,theKey);
+        --size_;
     }
 }
 
 template <class K,class E>
-void AVLSearchTree<K,E>::inorder_(BTreeNode<pair<const K, E>> *p)
+void AVLSearchTree<K,E>::inOrder_(BTreeNode<pair<const K, E>> *p)
 {
     if(p== nullptr){
         return ;
     }
 
-    inorder_(p->left_);
+    inOrder_(p->left_);
     cout<<p->element_.first<<"->"<<p->element_.second<<endl;
-    inorder_(p->right_);
+    inOrder_(p->right_);
 }
 
 template <class K,class E>
@@ -330,12 +330,47 @@ void AVLSearchTree<K,E>::ascend()
         return;
     }
 
-    inorder_(phead_);
+    inOrder_(phead_);
 }
 
 /*******************************************
 *            红-黑平衡二叉搜索树的实现          *
 /*******************************************/
+template <class K,class E>
+class RBSearchTree:public BalancedBSTree<K,E>
+{
+public:
+    RBSearchTree():phead_(nullptr),size_(0){}
+    ~RBSearchTree();
+
+    //判断字典是否为空
+    bool empty() const{return size_==0;}
+    //返回字典的大小
+    int size() const{return size_;}
+    //返回树的高度
+    int get_height(BTreeNode<pair<const K,E>> *node)
+    { if(node== nullptr) return 0; else return node->height_;}
+
+    //返回根节点
+    BTreeNode<pair<const K,E>> *get_root(){return phead_;}
+
+    // 搜索字典
+    pair<const K, E>* find(const K&);
+
+    //删除字典
+    void erase(const K&);
+
+    //插入字典
+    void insert(const pair<const K, E>&);
+
+    //关键字按升序输出
+    void ascend();
+
+private:
+    BTreeNode<pair<const K,E>> *phead_;
+    size_t size_;
+};
+
 
 
 #endif //TESK_BALANCED_SEARCH_TREE_H

@@ -3,4 +3,5 @@
 
 assignment5/CMakeFiles/tesk5_5.dir/balanced_search_tree.cpp.o: ../assignment5/balanced_search_tree.cpp
 assignment5/CMakeFiles/tesk5_5.dir/balanced_search_tree.cpp.o: ../assignment5/balanced_search_tree.h
+assignment5/CMakeFiles/tesk5_5.dir/balanced_search_tree.cpp.o: ../assignment5/utils.h
 
