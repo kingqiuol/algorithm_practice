@@ -8,6 +8,9 @@
 #include <iostream>
 using namespace std;
 
+//红-黑平衡搜索树的颜色枚举
+enum RBTColor{RED,BLACK};
+
 //二叉树节点的定义
 template <class T>
 class BTreeNode
@@ -17,25 +20,33 @@ public:
     BTreeNode<T> *left_;    //指向左子树
     BTreeNode<T> *right_;   //指向右子树
     BTreeNode<T> *parent_;  //指向父节点
-    int height_;            //以当前节点为根树的高度
+    int height_;            //以当前节点为根树的高度（用于AVL树的节点）
+    RBTColor color_;        //当前节点的颜色（用于红黑树的节点）
 public:
-    BTreeNode():height_(0){left_=right_=parent_= nullptr;}
+    BTreeNode():height_(0),color_(BLACK){left_=right_=parent_= nullptr;}
 
     BTreeNode(const BTreeNode<T> &theClass)
             :element_(theClass.element_),
              left_(theClass.left_),
              right_(theClass.right_),
              parent_(theClass.parent_),
-             height_(0){}
+             height_(0),
+             color_(BLACK){}
 
     BTreeNode(const T &theElement):element_(theElement),
-                                   left_(nullptr),right_(nullptr),parent_(nullptr),height_(0){}
+                                   left_(nullptr),right_(nullptr),parent_(nullptr),height_(0),color_(BLACK){}
 
     BTreeNode(const T &theElement,BTreeNode<T> *left,BTreeNode<T> *right)
-            :element_(theElement),left_(left),right_(right),parent_(nullptr),height_(0){}
+            :element_(theElement),left_(left),right_(right),parent_(nullptr),height_(0),color_(BLACK){}
 
     BTreeNode(const T &theElement,BTreeNode<T> *left,BTreeNode<T> *right,BTreeNode<T> *parent)
-            :element_(theElement),left_(left),right_(right),parent_(parent),height_(0){}
+            :element_(theElement),left_(left),right_(right),parent_(parent),height_(0),color_(BLACK){}
+
+    BTreeNode(const T &theElement,BTreeNode<T> *left,BTreeNode<T> *right, RBTColor c)
+            :element_(theElement),left_(left),right_(right),parent_(nullptr),height_(0),color_(c){}
+
+    BTreeNode(const T &theElement,BTreeNode<T> *left,BTreeNode<T> *right,BTreeNode<T> *parent,RBTColor c)
+            :element_(theElement),left_(left),right_(right),parent_(parent),height_(0),color_(c){}
 };
 
 //索引二叉搜索树节点

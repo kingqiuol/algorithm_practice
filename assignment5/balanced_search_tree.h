@@ -97,9 +97,8 @@ pair<const K, E>* AVLSearchTree<K,E>::find(const K &theKey)
         return nullptr;
     }
 
-    BTreeNode<pair<const K,E>> *p=phead_,*pp= nullptr;
+    BTreeNode<pair<const K,E>> *p=phead_;
     while(p!= nullptr){
-        pp=p;
         if(theKey<p->element_.first){
             p=p->left_;
         }else if(theKey>p->element_.first){
@@ -371,6 +370,31 @@ private:
     size_t size_;
 };
 
+template <class K,class E>
+pair<const K, E>* RBSearchTree<K,E>::find(const K &theKey)
+{
+    if(phead_== nullptr){
+        return nullptr;
+    }
 
+    BTreeNode<pair<const K,E>> *p=phead_;
+    while(p!= nullptr){
+        if(theKey<p->element_.first){
+            p=p->left_;
+        }else if(theKey>p->element_.first){
+            p=p->right_;
+        }else{
+            return &p->element_;
+        }
+    }
+
+    return nullptr;
+}
+
+template <class K,class E>
+void RBSearchTree<K,E>::insert(const pair<const K, E> &theValue)
+{
+
+}
 
 #endif //TESK_BALANCED_SEARCH_TREE_H
