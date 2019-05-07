@@ -335,6 +335,12 @@ void AVLSearchTree<K,E>::ascend()
 /*******************************************
 *            红-黑平衡二叉搜索树的实现          *
 /*******************************************/
+#define rb_is_red(r) ((r)->color_==RED)
+#define rb_is_black(r) ((r)->color_==BLACK)
+#define rb_set_black(r)  do{ (r)->color_=BLACK;}while(0)
+#define rb_set_red(r)  do{(r)->color_=RED;}while(0)
+#define rb_set_color(r,c)  do{(r)->color_=(c);}while(0)
+
 template <class K,class E>
 class RBSearchTree:public BalancedBSTree<K,E>
 {
@@ -364,11 +370,45 @@ public:
 
     //关键字按升序输出
     void ascend();
+private:
+    void delete_(BTreeNode<pair<const K,E>> *);                 //销毁平衡搜索树
 
+    void insert_(BTreeNode<pair<const K,E>> *&p,
+                 const pair<const K,E> &theValue);              //插入节点
+    void insertFixUp_(BTreeNode<pair<const K,E>> *&p,
+                     BTreeNode<pair<const K,E>> *&node);        //调整红黑搜索树
+    void leftRotate_(BTreeNode<pair<const K,E>> *&,
+                    BTreeNode<pair<const K,E>> *&);             //对当前节点进行左旋
+    void rightRotate_(BTreeNode<pair<const K,E>> *&,
+                      BTreeNode<pair<const K,E>> *&);           //对当前节点进行右旋
+
+    void inOrder_(BTreeNode<pair<const K,E>> *);                //中序遍历
 private:
     BTreeNode<pair<const K,E>> *phead_;
     size_t size_;
 };
+
+template <class K,class E>
+void RBSearchTree<K,E>::delete_(BTreeNode<pair<const K, E>> *p)
+{
+    if(p== nullptr){
+        return ;
+    }
+
+    delete_(p->left_);
+    delete_(p->right_);
+
+    delete p;
+    p= nullptr;
+}
+
+template <class K,class E>
+RBSearchTree<K,E>::~RBSearchTree()
+{
+    if(phead_!= nullptr){
+        delete_(phead_);
+    }
+}
 
 template <class K,class E>
 pair<const K, E>* RBSearchTree<K,E>::find(const K &theKey)
@@ -391,10 +431,235 @@ pair<const K, E>* RBSearchTree<K,E>::find(const K &theKey)
     return nullptr;
 }
 
+/*
+* 对红黑树的节点(x)进行左旋转
+* 左旋示意图(对节点x进行左旋)：
+*      px                              px
+*     /                               /
+*    x                               y
+*   /  \      --(左旋)-->           / \                #
+*  lx   y                          x  ry
+*     /   \                       /  \
+*    ly   ry                     lx  ly
+*/
+template <class K,class E>
+void RBSearchTree<K,E>::leftRotate_(BTreeNode<pair<const K, E>> *&p,
+                                   BTreeNode<pair<const K, E>> *&x)
+{
+    //设置x的右孩子为y
+    BTreeNode<pair<const K, E>> *y=x->right_;
+
+    //将y的左孩子设置为x的右孩子
+    //将y的左孩子的父亲设置为x
+    x->right_=y->left_;
+    if(y->left_!= nullptr){
+        y->left_->parent_=x;
+    }
+
+    //将x的父亲设置为y
+    y->parent_=x->parent_;
+    if(x->parent_== nullptr){//如果 “x的父亲” 是空节点，则将y设为根节点
+        p=y;
+    }else{
+      if(x->parent_->left_==x){
+          x->parent_->left_=y;// 如果 x是它父节点的左孩子，则将y设为“x的父节点的左孩子”
+      } else{
+          x->parent_->right_=y;// 如果 x是它父节点的左孩子，则将y设为“x的父节点的左孩子”
+      }
+    }
+
+    // 将 “x” 设为 “y的左孩子”
+    y->left_=x;
+    // 将 “x的父节点” 设为 “y”
+    x->parent_=y;
+}
+
+/*
+* 对红黑树的节点(y)进行右旋转
+* 右旋示意图(对节点y进行左旋)：
+*            py                               py
+*           /                                /
+*          x                                y
+*         /  \      --(右旋)-->            /  \                     #
+*        y   ry                           lx   x
+*       / \                                   / \                   #
+*      lx  rx                                rx  ry
+*/
+template <class K,class E>
+void RBSearchTree<K,E>::rightRotate_(BTreeNode<pair<const K, E>> *&p,
+                                     BTreeNode<pair<const K, E>> *&x)
+{
+    BTreeNode<pair<const K,E>> *y=x->left_;
+
+    //将x的左孩子设置为y的右孩子
+    x->left_=y->right_;
+    if(y->right_!= nullptr){
+        y->right_->parent_=x;
+    }
+
+    //将x的父节点指向y
+    y->parent_=x->parent_;
+    if(x->parent_== nullptr){
+        p=y;
+    }else{
+        if(x->parent_->left_==x){
+            x->parent_->left_=y;
+        }else{
+            x->parent_->right_=y;
+        }
+    }
+
+    //将y的右孩子设置为x
+    y->right_=x;
+    x->parent_=y;
+}
+
+template <class K,class E>
+void RBSearchTree<K,E>::insertFixUp_(BTreeNode<pair<const K, E>> *&p,
+                                    BTreeNode<pair<const K, E>> *&node)
+{
+    //获取父节点、祖父节点
+    BTreeNode<pair<const K, E>> *parent, *gparent;
+
+    //若父节点存在，且父节点颜色为红色
+    while((parent=node->parent_)!= nullptr && rb_is_red(parent)){
+        gparent=parent->parent_;
+
+        //若父节点为祖父节点的左孩子
+        if(parent==gparent->left_){
+
+            //case1:叔叔节点为红色
+            BTreeNode<pair<const K, E>> *uncle=gparent->right_;
+            if(uncle!= nullptr && rb_is_red(uncle)){
+                rb_set_black(uncle);
+                rb_set_black(parent);
+                rb_is_red(gparent);
+                node=gparent;
+                continue;
+            }
+
+            // Case 2条件：叔叔是黑色，且当前节点是右孩子
+            if(parent->right_==node){
+                leftRotate_(p,parent);
+                BTreeNode<pair<const K, E>> *tmp=parent;
+                parent=node;
+                node=tmp;
+            }
+
+            // Case 3条件：叔叔是黑色，且当前节点是左孩子
+            if(parent->left_==node){
+                rb_set_black(parent);
+                rb_set_red(gparent);
+                rightRotate_(p,gparent);
+            }
+        }else{
+            //case1:叔叔节点为红色
+            BTreeNode<pair<const K,E>> *uncle=gparent->left_;
+            if(uncle!= nullptr && rb_is_red(uncle)){
+                rb_set_black(uncle);
+                rb_set_black(parent);
+                rb_set_red(gparent);
+                node=gparent;
+                continue;
+            }
+
+            //Case 2条件：叔叔是黑色，且当前节点是左孩子
+            if(parent->left_==node){
+                rightRotate_(p,parent);
+                BTreeNode<pair<const K, E>> *tmp=parent;
+                parent=node;
+                node=tmp;
+            }
+
+            // Case 3条件：叔叔是黑色，且当前节点是右孩子
+            if(parent->right_==node){
+                rb_set_black(parent);
+                rb_set_red(gparent);
+                leftRotate_(p,gparent);
+            }
+        }
+    }
+    // 将根节点设为黑色
+    rb_set_black(p);
+}
+
+template <class K,class E>
+void RBSearchTree<K,E>::insert_(BTreeNode<pair<const K, E>> *&p,
+                                const pair<const K, E> &theValue)
+{
+    //搜索关键字
+    BTreeNode<pair<const K,E>> *cur=p,*pre= nullptr;
+    while(cur->element_.first!= theValue.first){
+        pre=cur;
+        if(theValue.first<cur->element_.first){
+            cur=cur->left_;
+        }else{
+            cur=cur->right_;
+        }
+    }
+
+    //创建节点
+    BTreeNode<pair<const K,E>> *newNode=new BTreeNode<pair<const K,E>>(theValue);
+    newNode->color_=RED;//将将节点颜色设置为红色
+
+    //插入节点
+    if(cur != nullptr){//如果已存在该关键字，直接替换键值
+        cur->element_.second=theValue.second;
+        delete newNode;
+        newNode= nullptr;
+        return ;
+    }else{//如果不存在该关键字，插入节点
+        if(pre!= nullptr){//如果插入的节点为叶节点
+            if(pre->element_.first>theValue.first){
+                pre->left_=newNode;
+                newNode->parent_=pre;
+            }else{
+                pre->right_=newNode;
+                newNode->parent_=pre;
+            }
+        }else{//如果根节点为空
+            phead_=newNode;
+        }
+
+        ++size_;
+    }
+
+    //调整搜索二叉树使之重新成为一个红黑二叉搜索树
+    insertFixUp_(phead_,newNode);
+}
+
 template <class K,class E>
 void RBSearchTree<K,E>::insert(const pair<const K, E> &theValue)
 {
+    insert_(phead_,theValue);
+}
 
+template <class K,class E>
+void RBSearchTree<K,E>::erase(const K &heKey)
+{
+
+}
+
+template <class K,class E>
+void RBSearchTree<K,E>::inOrder_(BTreeNode<pair<const K, E>> *p)
+{
+    if(p== nullptr){
+        return ;
+    }
+
+    inOrder_(p->left_);
+    cout<<p->element_.first<<"->"<<p->element_.second<<" ("<<p->color_<<")"<<endl;
+    inOrder_(p->right_);
+}
+
+template <class K,class E>
+void RBSearchTree<K,E>::ascend()
+{
+    if(phead_== nullptr){
+        return ;
+    }
+
+    inOrder_(phead_);
 }
 
 #endif //TESK_BALANCED_SEARCH_TREE_H
