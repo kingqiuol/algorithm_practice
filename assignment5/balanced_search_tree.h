@@ -382,6 +382,9 @@ private:
     void rightRotate_(BTreeNode<pair<const K,E>> *&,
                       BTreeNode<pair<const K,E>> *&);           //对当前节点进行右旋
 
+    void erase_(BTreeNode<pair<const K,E>> *&p,
+                BTreeNode<pair<const K,E>> *&node);             //删除节点
+
     void inOrder_(BTreeNode<pair<const K,E>> *);                //中序遍历
 private:
     BTreeNode<pair<const K,E>> *phead_;
@@ -635,9 +638,33 @@ void RBSearchTree<K,E>::insert(const pair<const K, E> &theValue)
 }
 
 template <class K,class E>
-void RBSearchTree<K,E>::erase(const K &heKey)
+void RBSearchTree<K,E>::erase_(BTreeNode<pair<const K, E>> *&p,
+                               BTreeNode<pair<const K, E>> *&node)
 {
+    if(node->left_!= nullptr && node->right_!= nullptr){
+        BTreeNode<pair<const K,E>> *tmp=node->right_;
+        while(tmp->left_!= nullptr){
+            tmp=tmp->left_;
+        }
 
+        BTreeNode<pair<const K,E>> *newNode=new BTreeNode<pair<const K,E>>
+                (tmp->element_,node->left_,node->right_,node->parent_,tmp->color_);
+        if(node==phead_){
+            phead_=newNode;
+        }else{
+
+        }
+    }
+}
+
+template <class K,class E>
+void RBSearchTree<K,E>::erase(const K &theKey)
+{
+    BTreeNode<pair<const K,E>> *node;
+    if((node=find(theKey))!= nullptr){
+        erase_(phead_,node);
+        --size_;
+    }
 }
 
 template <class K,class E>
