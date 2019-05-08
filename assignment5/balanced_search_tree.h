@@ -642,12 +642,80 @@ void RBSearchTree<K,E>::insert(const pair<const K, E> &theValue)
 
 template <class K,class E>
 void RBSearchTree<K,E>::eraseFixUp_(BTreeNode<pair<const K, E>> *&p,
-                                    BTreeNode<pair<const K, E>> *&child,
+                                    BTreeNode<pair<const K, E>> *&node,
                                     BTreeNode<pair<const K, E>> *&parent)
 {
-    while((!child||rb_is_black(child)) && child != p){
+    BTreeNode<pair<const K,E>> *other;
+    while((node!= nullptr||rb_is_black(node)) && node != p){
+        if(parent->left_==node){
+            other=parent->right_;
+            if(rb_is_red(other)){
+                // Case 1: x的兄弟w是红色的
+                rb_set_black(other);
+                rb_set_red(parent);
+                leftRotate_(p,parent);
+                other=parent->right_;
+            }
 
+            if((other->left_ != nullptr || rb_is_black(other->left_))
+                                           &&(other->right_ != nullptr||rb_is_black(other->right_))){
+                // Case 2: x的兄弟w是黑色，且w的俩个孩子也都是黑色的
+                rb_set_red(other);
+                node=parent;
+                parent=node->parent_;
+            }else{
+                if(other->right_!= nullptr || rb_is_black(other->right_)){
+                    // Case 3: x的兄弟w是黑色的，并且w的左孩子是红色，右孩子为黑色。
+                    rb_set_black(other->left_);
+                    rb_set_red(other);
+                    rightRotate_(p,other);
+                    other=parent->right_;
+                    // Case 4: x的兄弟w是黑色的；并且w的右孩子是红色的，左孩子任意颜色。
+                    rb_set_color(other,parent->color_);
+                    rb_set_black(parent);
+                    rb_set_black(other->right_);
+                    leftRotate_(p,parent);
+                    node=p;
+                    break;
+                }
+            }
+        }else{
+            other=parent->left_;
+            if(rb_is_red(other)){
+                // Case 1: x的兄弟w是红色的
+                rb_set_black(other);
+                rb_set_red(parent);
+                rightRotate_(p,parent);
+                other=parent->left_;
+            }
+            if((other->left_ != nullptr || rb_is_black(other->left_))
+               &&(other->right_ != nullptr||rb_is_black(other->right_))){
+                // Case 2: x的兄弟w是黑色，且w的俩个孩子也都是黑色的
+                rb_set_red(other);
+                node=parent;
+                parent=node->parent_;
+            }else{
+                if(other->left_!= nullptr || rb_is_black(other->left_)){
+                    // Case 3: x的兄弟w是黑色的，并且w的左孩子是红色，右孩子为黑色。
+                    rb_set_black(other->right_);
+                    rb_set_red(other);
+                    leftRotate_(p,other);
+                    other=parent->left_;
+                }
 
+                // Case 4: x的兄弟w是黑色的；并且w的右孩子是红色的，左孩子任意颜色。
+                rb_set_color(other,parent->color_);
+                rb_set_black(parent);
+                rb_set_black(other->left_);
+                rightRotate_(p,parent);
+                node=p;
+                break;
+            }
+        }
+    }
+
+    if(node){
+        rb_set_black(node);
     }
 }
 
@@ -697,30 +765,30 @@ void RBSearchTree<K,E>::erase_(BTreeNode<pair<const K, E>> *&p,
 
         delete node;
         node=tmp;
-    }
-
-    //获取node的子节点
-    if(node->left_!= nullptr){
-        child=node->left_;
     }else{
-        child=node->right_;
-    }
-
-    parent=node->parent_;
-    color=node->color_;
-
-    if(child!= nullptr){
-        node->parent_=parent;
-    }
-
-    if(parent!= nullptr){
-        if(parent->left_==node){
-            parent->left_=child;
+        //获取node的子节点
+        if(node->left_!= nullptr){
+            child=node->left_;
         }else{
-            parent->right_=child;
+            child=node->right_;
         }
-    }else{
-        p=child;
+
+        parent=node->parent_;
+        color=node->color_;
+
+        if(child!= nullptr){
+            node->parent_=parent;
+        }
+
+        if(parent!= nullptr){
+            if(parent->left_==node){
+                parent->left_=child;
+            }else{
+                parent->right_=child;
+            }
+        }else{
+            p=child;
+        }
     }
 
     if(color==BLACK){
@@ -762,5 +830,10 @@ void RBSearchTree<K,E>::ascend()
 
     inOrder_(phead_);
 }
+
+/*******************************************
+*            分裂平衡二叉搜索树的实现          *
+/*******************************************/
+
 
 #endif //TESK_BALANCED_SEARCH_TREE_H
