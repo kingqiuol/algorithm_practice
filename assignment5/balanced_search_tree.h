@@ -802,8 +802,18 @@ void RBSearchTree<K,E>::erase_(BTreeNode<pair<const K, E>> *&p,
 template <class K,class E>
 void RBSearchTree<K,E>::erase(const K &theKey)
 {
-    BTreeNode<pair<const K,E>> *node;
-    if((node=find(theKey))!= nullptr){
+    BTreeNode<pair<const K,E>> *node=phead_;
+    while(node!= nullptr){
+        if(theKey<node->element_.first){
+            node=node->left_;
+        }else if(theKey>node->element_.first){
+            node=node->right_;
+        }else{
+            break;
+        }
+    }
+
+    if(node != nullptr){
         erase_(phead_,node);
         --size_;
     }
