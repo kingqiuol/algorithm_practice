@@ -376,7 +376,7 @@ private:
     void insert_(BTreeNode<pair<const K,E>> *&p,
                  const pair<const K,E> &theValue);              //插入节点
     void insertFixUp_(BTreeNode<pair<const K,E>> *&p,
-                     BTreeNode<pair<const K,E>> *&node);        //调整红黑搜索树
+                     BTreeNode<pair<const K,E>> *&node);        //调整插入后的红黑搜索树
     void leftRotate_(BTreeNode<pair<const K,E>> *&,
                     BTreeNode<pair<const K,E>> *&);             //对当前节点进行左旋
     void rightRotate_(BTreeNode<pair<const K,E>> *&,
@@ -384,6 +384,9 @@ private:
 
     void erase_(BTreeNode<pair<const K,E>> *&p,
                 BTreeNode<pair<const K,E>> *&node);             //删除节点
+    void eraseFixUp_(BTreeNode<pair<const K,E>> *&p,
+                     BTreeNode<pair<const K,E>> *&child,
+                     BTreeNode<pair<const K,E>> *&parent);      //调整删除节点后的红黑搜索树
 
     void inOrder_(BTreeNode<pair<const K,E>> *);                //中序遍历
 private:
@@ -638,9 +641,23 @@ void RBSearchTree<K,E>::insert(const pair<const K, E> &theValue)
 }
 
 template <class K,class E>
+void RBSearchTree<K,E>::eraseFixUp_(BTreeNode<pair<const K, E>> *&p,
+                                    BTreeNode<pair<const K, E>> *&child,
+                                    BTreeNode<pair<const K, E>> *&parent)
+{
+    while((!child||rb_is_black(child)) && child != p){
+
+
+    }
+}
+
+template <class K,class E>
 void RBSearchTree<K,E>::erase_(BTreeNode<pair<const K, E>> *&p,
                                BTreeNode<pair<const K, E>> *&node)
 {
+    BTreeNode<pair<const K,E>> *child,*parent;
+    RBTColor color;
+
     if(node->left_!= nullptr && node->right_!= nullptr){
         BTreeNode<pair<const K,E>> *tmp=node->right_;
         while(tmp->left_!= nullptr){
@@ -648,13 +665,70 @@ void RBSearchTree<K,E>::erase_(BTreeNode<pair<const K, E>> *&p,
         }
 
         BTreeNode<pair<const K,E>> *newNode=new BTreeNode<pair<const K,E>>
-                (tmp->element_,node->left_,node->right_,node->parent_,tmp->color_);
-        if(node==phead_){
-            phead_=newNode;
-        }else{
+                (tmp->element_,node->left_,node->right_,node->parent_,node->color_);
 
+        //将右子树最小节点移动到node处
+        if(node==phead_){
+            p=newNode;
+        }else{
+            if(node->parent_->left_==node){
+                node->parent_->left_=newNode;
+            }else{
+                node->parent_->right_=newNode;
+            }
         }
+
+        //获取取代节点的父节点、右子节点以及颜色
+        child=tmp->right_;
+        parent=tmp->parent_;
+        color=tmp->color_;// 保存"取代节点"的颜色
+
+        // "被删除节点"是"它的后继节点的父节点"
+        if(parent==node){
+            parent=newNode;
+        }else{
+            if(child){
+                child->parent_=parent;
+            }
+            parent->left_=child;
+            node->right_->parent_=newNode;
+        }
+        node->left_->parent_=newNode;
+
+        delete node;
+        node=tmp;
     }
+
+    //获取node的子节点
+    if(node->left_!= nullptr){
+        child=node->left_;
+    }else{
+        child=node->right_;
+    }
+
+    parent=node->parent_;
+    color=node->color_;
+
+    if(child!= nullptr){
+        node->parent_=parent;
+    }
+
+    if(parent!= nullptr){
+        if(parent->left_==node){
+            parent->left_=child;
+        }else{
+            parent->right_=child;
+        }
+    }else{
+        p=child;
+    }
+
+    if(color==BLACK){
+        eraseFixUp_(p,child,parent);
+    }
+
+    delete node;
+    node= nullptr;
 }
 
 template <class K,class E>
