@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tesk5_1.dir/binary_tree.cpp.o"
-  "CMakeFiles/tesk5_1.dir/balanced_search_tree.cpp.o"
   "tesk5_1.pdb"
   "tesk5_1.exe"
   "libtesk5_1.dll.a"

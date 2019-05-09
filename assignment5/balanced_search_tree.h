@@ -6,6 +6,7 @@
 #define TESK_BALANCED_SEARCH_TREE_H
 
 #include "utils.h"
+#include "B_BTreeNode.h"
 
 /*******************************************
 *              平衡二叉搜索树的实现            *
@@ -352,9 +353,6 @@ public:
     bool empty() const{return size_==0;}
     //返回字典的大小
     int size() const{return size_;}
-    //返回树的高度
-    int get_height(BTreeNode<pair<const K,E>> *node)
-    { if(node== nullptr) return 0; else return node->height_;}
 
     //返回根节点
     BTreeNode<pair<const K,E>> *get_root(){return phead_;}
@@ -593,19 +591,28 @@ template <class K,class E>
 void RBSearchTree<K,E>::insert_(BTreeNode<pair<const K, E>> *&p,
                                 const pair<const K, E> &theValue)
 {
+    //创建节点
+    BTreeNode<pair<const K,E>> *newNode=new BTreeNode<pair<const K,E>>(theValue);
+    if(p== nullptr){
+        newNode->color_=BLACK;//将将节点颜色设置为红色
+        p=newNode;
+        ++size_;
+        return;
+    }
+
     //搜索关键字
     BTreeNode<pair<const K,E>> *cur=p,*pre= nullptr;
-    while(cur->element_.first!= theValue.first){
+    while(cur != nullptr){
         pre=cur;
         if(theValue.first<cur->element_.first){
             cur=cur->left_;
-        }else{
+        }else if(theValue.first>cur->element_.first){
             cur=cur->right_;
+        }else{
+            break;
         }
     }
 
-    //创建节点
-    BTreeNode<pair<const K,E>> *newNode=new BTreeNode<pair<const K,E>>(theValue);
     newNode->color_=RED;//将将节点颜色设置为红色
 
     //插入节点
@@ -615,7 +622,7 @@ void RBSearchTree<K,E>::insert_(BTreeNode<pair<const K, E>> *&p,
         newNode= nullptr;
         return ;
     }else{//如果不存在该关键字，插入节点
-        if(pre!= nullptr){//如果插入的节点为叶节点
+        if(pre != nullptr){//如果插入的节点为叶节点
             if(pre->element_.first>theValue.first){
                 pre->left_=newNode;
                 newNode->parent_=pre;
@@ -754,12 +761,15 @@ void RBSearchTree<K,E>::erase_(BTreeNode<pair<const K, E>> *&p,
         // "被删除节点"是"它的后继节点的父节点"
         if(parent==node){
             parent=newNode;
+            parent->right_=child;
+
         }else{
-            if(child){
-                child->parent_=parent;
-            }
             parent->left_=child;
             node->right_->parent_=newNode;
+        }
+
+        if(child){
+            child->parent_=parent;
         }
         node->left_->parent_=newNode;
 
@@ -845,5 +855,45 @@ void RBSearchTree<K,E>::ascend()
 *            分裂平衡二叉搜索树的实现          *
 /*******************************************/
 
+/*******************************************
+*             B树平衡二叉搜索树的实现          *
+/*******************************************/
+template <class K,class E>
+class BSearchTree:public BalancedBSTree
+{
+public:
+    BSearchTree():phead_(nullptr),size_(0){}
+    ~BSearchTree();
+
+    //判断字典是否为空
+    bool empty() const{return size_==0;}
+    //返回字典的大小
+    int size() const{return size_;}
+
+    //返回根节点
+    BTreeNode<pair<const K,E>> *get_root(){return phead_;}
+
+    // 搜索字典
+    pair<const K, E>* find(const K&);
+
+    //删除字典
+    void erase(const K&);
+
+    //插入字典
+    void insert(const pair<const K, E>&);
+
+    //关键字按升序输出
+    void ascend();
+
+private:
+    BBTreeNode<pair<const K,E>> *phead_;
+    size_t size_;
+};
+
+template <class K,class E>
+pair<const K, E>* BSearchTree<K,E>::find(const K &theKey)
+{
+    
+}
 
 #endif //TESK_BALANCED_SEARCH_TREE_H

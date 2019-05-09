@@ -192,7 +192,6 @@ balanced_search_tree.o: balanced_search_tree.cpp.o
 # target to build an object file
 balanced_search_tree.cpp.o:
 	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_5.dir/build.make assignment5/CMakeFiles/tesk5_5.dir/balanced_search_tree.cpp.o
-	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_1.dir/build.make assignment5/CMakeFiles/tesk5_1.dir/balanced_search_tree.cpp.o
 .PHONY : balanced_search_tree.cpp.o
 
 balanced_search_tree.i: balanced_search_tree.cpp.i
@@ -202,7 +201,6 @@ balanced_search_tree.i: balanced_search_tree.cpp.i
 # target to preprocess a source file
 balanced_search_tree.cpp.i:
 	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_5.dir/build.make assignment5/CMakeFiles/tesk5_5.dir/balanced_search_tree.cpp.i
-	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_1.dir/build.make assignment5/CMakeFiles/tesk5_1.dir/balanced_search_tree.cpp.i
 .PHONY : balanced_search_tree.cpp.i
 
 balanced_search_tree.s: balanced_search_tree.cpp.s
@@ -212,7 +210,6 @@ balanced_search_tree.s: balanced_search_tree.cpp.s
 # target to generate assembly for a file
 balanced_search_tree.cpp.s:
 	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_5.dir/build.make assignment5/CMakeFiles/tesk5_5.dir/balanced_search_tree.cpp.s
-	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment5/CMakeFiles/tesk5_1.dir/build.make assignment5/CMakeFiles/tesk5_1.dir/balanced_search_tree.cpp.s
 .PHONY : balanced_search_tree.cpp.s
 
 binary_tree.o: binary_tree.cpp.o
