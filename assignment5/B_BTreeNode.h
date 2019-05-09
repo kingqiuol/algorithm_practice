@@ -23,7 +23,7 @@ public:
     int number_of_key_;                     //关键字的个数
     BBTreeNode<T> *parent_;                 //指向父节点
     BBTreeNode<T> *child_[child_max_];      //存储指向子树的指针
-    T value_[key_max_];                     //存储字典数组
+    T element_[key_max_];                     //存储字典数组
 public:
     BBTreeNode();
 };
@@ -47,7 +47,7 @@ BBTreeNode<T>::BBTreeNode():is_leaf_(0),number_of_key_(0),parent_(nullptr)
     }
 
     for(int j=0;j<key_max_;++j){
-        value_[j]=NULL;
+        element_[j]=NULL;
     }
 }
 

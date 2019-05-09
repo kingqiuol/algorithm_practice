@@ -871,7 +871,7 @@ public:
     int size() const{return size_;}
 
     //返回根节点
-    BTreeNode<pair<const K,E>> *get_root(){return phead_;}
+    BBTreeNode<pair<const K,E>> *get_root(){return phead_;}
 
     // 搜索字典
     pair<const K, E>* find(const K&);
@@ -884,16 +884,66 @@ public:
 
     //关键字按升序输出
     void ascend();
-
+private:
+    pair<const K,E> *find_(BBTreeNode<pair<const K,E>>*&,const K&);//查找关键字
 private:
     BBTreeNode<pair<const K,E>> *phead_;
     size_t size_;
 };
 
 template <class K,class E>
+pair<const K,E>* BSearchTree<K,E>::find_(BBTreeNode<pair<const K, E>> *&p,
+                                                     const K &theKey)
+{
+    BBTreeNode<pair<const K,E>> *cur=p;
+
+    if(cur== nullptr){
+        return nullptr;
+    }else{
+        //在比它小和比它大的中间子节点中寻找相等的
+        int i;
+        for(i=0;i<cur->number_of_key_;++i){
+            if(theKey<=cur->element_[i].first){
+                break;
+            }
+        }
+
+        //校验当前的关键字是否等于查找的关键字
+        if(i<cur->number_of_key_ && theKey==cur->element_[i].first){
+            return &cur->element_[i];
+        }else{
+            //如果之前比查找关键没有相等的关键字并且当前节点是叶子节点的话
+            //那么在B树中没有一样的关键字(因为后面比关键字更大)
+            if(cur->is_leaf_){
+                return nullptr;
+            }else{//如果不是叶子节点则在下面的子节点中寻找
+                return find_(cur->child_[i],theKey);
+            }
+        }
+    }
+}
+
+template <class K,class E>
 pair<const K, E>* BSearchTree<K,E>::find(const K &theKey)
 {
-    
+    if(phead_== nullptr){
+        return nullptr;
+    }
+
+    return find_(phead_,theKey);
+}
+
+template <class K,class E>
+void BSearchTree<K,E>::insert(const pair<const K, E> &theValue)
+{
+    //看树中是否有相同的关键字
+    pair<const K,E> *pair1;
+    if((pair1=find(theValue.first))!= nullptr){
+        pair1->second=theValue.second;
+        return ;
+    }
+
+
 }
 
 #endif //TESK_BALANCED_SEARCH_TREE_H
