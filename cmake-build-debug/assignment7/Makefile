@@ -110,6 +110,48 @@ depend:
 	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+assignment7/CMakeFiles/tesk7_1.dir/rule:
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 assignment7/CMakeFiles/tesk7_1.dir/rule
+.PHONY : assignment7/CMakeFiles/tesk7_1.dir/rule
+
+# Convenience name for target.
+tesk7_1: assignment7/CMakeFiles/tesk7_1.dir/rule
+
+.PHONY : tesk7_1
+
+# fast build rule for target.
+tesk7_1/fast:
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment7/CMakeFiles/tesk7_1.dir/build.make assignment7/CMakeFiles/tesk7_1.dir/build
+.PHONY : tesk7_1/fast
+
+backtracking.o: backtracking.cpp.o
+
+.PHONY : backtracking.o
+
+# target to build an object file
+backtracking.cpp.o:
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment7/CMakeFiles/tesk7_1.dir/build.make assignment7/CMakeFiles/tesk7_1.dir/backtracking.cpp.o
+.PHONY : backtracking.cpp.o
+
+backtracking.i: backtracking.cpp.i
+
+.PHONY : backtracking.i
+
+# target to preprocess a source file
+backtracking.cpp.i:
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment7/CMakeFiles/tesk7_1.dir/build.make assignment7/CMakeFiles/tesk7_1.dir/backtracking.cpp.i
+.PHONY : backtracking.cpp.i
+
+backtracking.s: backtracking.cpp.s
+
+.PHONY : backtracking.s
+
+# target to generate assembly for a file
+backtracking.cpp.s:
+	cd /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug && $(MAKE) -f assignment7/CMakeFiles/tesk7_1.dir/build.make assignment7/CMakeFiles/tesk7_1.dir/backtracking.cpp.s
+.PHONY : backtracking.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -118,6 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... tesk7_1"
+	@echo "... backtracking.o"
+	@echo "... backtracking.i"
+	@echo "... backtracking.s"
 .PHONY : help
 
 

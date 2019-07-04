@@ -78,4 +78,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "assignment6/CMakeFiles/tesk6_2.dir/DependInfo.cmake"
   "assignment6/CMakeFiles/tesk6_3.dir/DependInfo.cmake"
   "assignment6/CMakeFiles/tesk6_1.dir/DependInfo.cmake"
+  "assignment7/CMakeFiles/tesk7_1.dir/DependInfo.cmake"
   )

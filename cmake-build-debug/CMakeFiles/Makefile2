@@ -822,12 +822,12 @@ clean: assignment6/CMakeFiles/tesk6_1.dir/clean
 # Directory level rules for directory assignment7
 
 # Convenience name for "all" pass in the directory.
-assignment7/all:
+assignment7/all: assignment7/CMakeFiles/tesk7_1.dir/all
 
 .PHONY : assignment7/all
 
 # Convenience name for "clean" pass in the directory.
-assignment7/clean:
+assignment7/clean: assignment7/CMakeFiles/tesk7_1.dir/clean
 
 .PHONY : assignment7/clean
 
@@ -835,6 +835,43 @@ assignment7/clean:
 assignment7/preinstall:
 
 .PHONY : assignment7/preinstall
+
+#=============================================================================
+# Target rules for target assignment7/CMakeFiles/tesk7_1.dir
+
+# All Build rule for target.
+assignment7/CMakeFiles/tesk7_1.dir/all:
+	$(MAKE) -f assignment7/CMakeFiles/tesk7_1.dir/build.make assignment7/CMakeFiles/tesk7_1.dir/depend
+	$(MAKE) -f assignment7/CMakeFiles/tesk7_1.dir/build.make assignment7/CMakeFiles/tesk7_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target tesk7_1"
+.PHONY : assignment7/CMakeFiles/tesk7_1.dir/all
+
+# Include target in all.
+all: assignment7/CMakeFiles/tesk7_1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+assignment7/CMakeFiles/tesk7_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 assignment7/CMakeFiles/tesk7_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/CMakeFiles 0
+.PHONY : assignment7/CMakeFiles/tesk7_1.dir/rule
+
+# Convenience name for target.
+tesk7_1: assignment7/CMakeFiles/tesk7_1.dir/rule
+
+.PHONY : tesk7_1
+
+# clean rule for target.
+assignment7/CMakeFiles/tesk7_1.dir/clean:
+	$(MAKE) -f assignment7/CMakeFiles/tesk7_1.dir/build.make assignment7/CMakeFiles/tesk7_1.dir/clean
+.PHONY : assignment7/CMakeFiles/tesk7_1.dir/clean
+
+# clean rule for target.
+clean: assignment7/CMakeFiles/tesk7_1.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

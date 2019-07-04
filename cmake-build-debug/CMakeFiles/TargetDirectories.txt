@@ -31,3 +31,4 @@
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/CMakeFiles/tesk6_1.dir
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/CMakeFiles/edit_cache.dir
 /cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/CMakeFiles/tesk7_1.dir
