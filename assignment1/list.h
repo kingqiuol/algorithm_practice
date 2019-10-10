@@ -8,7 +8,6 @@
 #include <iostream>
 #include <memory>
 #include "list.h"
-#include "../assignment3/list.h"
 
 
 using namespace std;
