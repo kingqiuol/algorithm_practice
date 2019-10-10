@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;CMake Files\assignment1\;CMake Files\assignment2\;CMake Files\assignment3\;CMake Files\assignment4\;CMake Files\assignment5\;CMake Files\assignment6\;CMake Files\assignment7\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk1_2">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/tesk1_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/tesk1_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 tesk1_2"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 tesk1_2"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk1_2/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/tesk1_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/tesk1_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,15 +73,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 tesk1_2/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 tesk1_2/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk1_1">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/tesk1_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/tesk1_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -94,15 +94,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 tesk1_1"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 tesk1_1"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk1_1/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/tesk1_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/tesk1_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -115,15 +115,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 tesk1_1/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 tesk1_1/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk2_3">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/tesk2_3.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/tesk2_3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -136,15 +136,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 tesk2_3"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 tesk2_3"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk2_3/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/tesk2_3.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/tesk2_3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -157,15 +157,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 tesk2_3/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 tesk2_3/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk2_2">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/tesk2_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/tesk2_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -178,15 +178,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 tesk2_2"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 tesk2_2"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk2_2/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/tesk2_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/tesk2_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -199,15 +199,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 tesk2_2/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 tesk2_2/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk2_1">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/tesk2_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/tesk2_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -220,15 +220,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 tesk2_1"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 tesk2_1"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk2_1/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/tesk2_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/tesk2_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -241,15 +241,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 tesk2_1/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 tesk2_1/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk3_2">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/tesk3_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/tesk3_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -262,15 +262,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 tesk3_2"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 tesk3_2"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk3_2/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/tesk3_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/tesk3_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -283,15 +283,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 tesk3_2/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 tesk3_2/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk3_1">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/tesk3_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/tesk3_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -304,15 +304,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 tesk3_1"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 tesk3_1"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk3_1/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/tesk3_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/tesk3_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -325,15 +325,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 tesk3_1/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 tesk3_1/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk4_2">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/tesk4_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/tesk4_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -346,15 +346,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_2"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_2"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk4_2/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/tesk4_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/tesk4_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -367,15 +367,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_2/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_2/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk4_1">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/tesk4_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/tesk4_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -388,15 +388,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_1"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_1"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk4_1/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/tesk4_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/tesk4_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -409,15 +409,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_1/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 tesk4_1/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk5_5">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_5.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_5.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -430,15 +430,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_5"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_5"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk5_5/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_5.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_5.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -451,15 +451,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_5/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_5/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk5_4">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_4.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -472,15 +472,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_4"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_4"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk5_4/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_4.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -493,15 +493,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_4/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_4/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk5_3">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_3.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -514,15 +514,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_3"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_3"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk5_3/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_3.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -535,15 +535,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_3/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_3/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk5_2">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -556,15 +556,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_2"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_2"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk5_2/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -577,15 +577,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_2/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_2/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk5_1">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -598,15 +598,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_1"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_1"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk5_1/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/tesk5_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -619,15 +619,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_1/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 tesk5_1/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk6_2">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/tesk6_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/tesk6_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -640,15 +640,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 tesk6_2"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 tesk6_2"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk6_2/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/tesk6_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/tesk6_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -661,15 +661,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 tesk6_2/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 tesk6_2/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk6_3">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/tesk6_3.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/tesk6_3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -682,15 +682,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 tesk6_3"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 tesk6_3"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk6_3/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/tesk6_3.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/tesk6_3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -703,15 +703,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 tesk6_3/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 tesk6_3/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk6_1">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/tesk6_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/tesk6_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -724,15 +724,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 tesk6_1"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 tesk6_1"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk6_1/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/tesk6_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/tesk6_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -745,15 +745,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 tesk6_1/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 tesk6_1/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk7_1">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/tesk7_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/tesk7_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -766,15 +766,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 tesk7_1"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 tesk7_1"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk7_1/fast">
-				<Option output="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/tesk7_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7"/>
+				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/tesk7_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -787,197 +787,197 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 tesk7_1/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 tesk7_1/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment1/array.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment1/array.cpp">
 			<Option target="tesk1_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment1/array.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment1/array.h">
 			<Option target="tesk1_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.cpp">
 			<Option target="tesk1_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.h">
 			<Option target="tesk1_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment2/list.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment2/list.h">
 			<Option target="tesk2_2"/>
 			<Option target="tesk2_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment2/queue.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment2/queue.cpp">
 			<Option target="tesk2_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment2/queue.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment2/queue.h">
 			<Option target="tesk2_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment2/recursion.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment2/recursion.cpp">
 			<Option target="tesk2_3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment2/stack.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment2/stack.cpp">
 			<Option target="tesk2_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment2/stack.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment2/stack.h">
 			<Option target="tesk2_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment3/binary_chop.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment3/binary_chop.cpp">
 			<Option target="tesk3_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment3/list.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment3/list.h">
 			<Option target="tesk3_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment3/sort.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment3/sort.cpp">
 			<Option target="tesk3_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment3/sort.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment3/sort.h">
 			<Option target="tesk3_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment4/hashing.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment4/hashing.cpp">
 			<Option target="tesk4_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment4/hashing.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment4/hashing.h">
 			<Option target="tesk4_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment4/list.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment4/list.h">
 			<Option target="tesk4_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment4/lru.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment4/lru.h">
 			<Option target="tesk4_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment4/string.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment4/string.cpp">
 			<Option target="tesk4_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment4/string.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment4/string.h">
 			<Option target="tesk4_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/B_BTreeNode.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/B_BTreeNode.h">
 			<Option target="tesk5_5"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/array.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/array.h">
 			<Option target="tesk5_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/balanced_search_tree.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/balanced_search_tree.cpp">
 			<Option target="tesk5_5"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/balanced_search_tree.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/balanced_search_tree.h">
 			<Option target="tesk5_5"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/binary_tree.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/binary_tree.cpp">
 			<Option target="tesk5_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/binary_tree.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/binary_tree.h">
 			<Option target="tesk5_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/list.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/list.h">
 			<Option target="tesk5_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/priority_queue.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/priority_queue.cpp">
 			<Option target="tesk5_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/priority_queue.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/priority_queue.h">
 			<Option target="tesk5_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/queue.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/queue.h">
 			<Option target="tesk5_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/search_tree.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/search_tree.cpp">
 			<Option target="tesk5_4"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/search_tree.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/search_tree.h">
 			<Option target="tesk5_4"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/utils.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/utils.h">
 			<Option target="tesk5_5"/>
 			<Option target="tesk5_4"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/winner_tree.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/winner_tree.cpp">
 			<Option target="tesk5_3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/winner_tree.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/winner_tree.h">
 			<Option target="tesk5_3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/adjacencyWDigraph.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment6/adjacencyWDigraph.cpp">
 			<Option target="tesk6_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/adjacencyWDigraph.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment6/adjacencyWDigraph.h">
 			<Option target="tesk6_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/graph.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment6/graph.h">
 			<Option target="tesk6_2"/>
 			<Option target="tesk6_3"/>
 			<Option target="tesk6_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/listedDigraph.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment6/listedDigraph.cpp">
 			<Option target="tesk6_3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/listedDigraph.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment6/listedDigraph.h">
 			<Option target="tesk6_3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/listedWDigraph.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment6/listedWDigraph.cpp">
 			<Option target="tesk6_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/listedWDigraph.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment6/listedWDigraph.h">
 			<Option target="tesk6_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/utils.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment6/utils.h">
 			<Option target="tesk6_2"/>
 			<Option target="tesk6_3"/>
 			<Option target="tesk6_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment7/backtracking.cpp">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment7/backtracking.cpp">
 			<Option target="tesk7_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment7/backtracking.h">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment7/backtracking.h">
 			<Option target="tesk7_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/CMakeLists.txt">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment1/CMakeLists.txt">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment1\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment1/CMakeLists.txt">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment1\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment2/CMakeLists.txt">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment2\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment2/CMakeLists.txt">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment2\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment3/CMakeLists.txt">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment3\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment3/CMakeLists.txt">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment3\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment4/CMakeLists.txt">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment4\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment4/CMakeLists.txt">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment4\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/CMakeLists.txt">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment5\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment5/CMakeLists.txt">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment5\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/CMakeLists.txt">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment6/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment6\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment6/CMakeLists.txt">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment6/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment6\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment7/CMakeLists.txt">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment7/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment7\"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment7/CMakeLists.txt">
+		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment7/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment7\"/>
 		</Unit>
 	</Project>

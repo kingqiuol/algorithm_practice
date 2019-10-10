@@ -6,17 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.cpp
+/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.cpp
 list.h
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
+/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.h
 
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
+/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.h
 iostream
 -
 memory
 -
 list.h
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
-../assignment1/list.h
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
+/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.h
+../assignment3/list.h
+/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment3/list.h
+
+/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment3/list.h
+iostream
+-
+memory
+-
+list.h
+/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment3/list.h
 

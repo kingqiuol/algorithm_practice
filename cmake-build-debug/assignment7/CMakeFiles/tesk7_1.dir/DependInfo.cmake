@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/assignment7/backtracking.cpp" "/cygdrive/c/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/CMakeFiles/tesk7_1.dir/backtracking.cpp.o"
+  "/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment7/backtracking.cpp" "/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/CMakeFiles/tesk7_1.dir/backtracking.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

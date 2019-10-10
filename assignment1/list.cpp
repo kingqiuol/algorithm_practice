@@ -78,6 +78,27 @@ int main()
     add_ordered_list(list1,list2,list3);
     list3.print();
 
+    cout<<"================>单向循环链表："<<endl;
+    CycSingleList<int> CSlist;
+    CSlist.insert(0,7);
+    CSlist.insert(0,9);
+    CSlist.insert(0,2);
+    CSlist.insert(0,4);
+    CSlist.print();
+    ListNode<int> *p=CSlist.get_head();
+    for(int i=0;i<CSlist.size();++i){
+        p=p->next;
+    }
+    cout<<"==>"<<p->next->value_<<endl;
+    cout<<"===>erase list 0:"<<endl;
+    CSlist.erase(0);
+    CSlist.print();
+    cout<<"===>set list 0: 10"<<endl;
+    CSlist.set(0,10);
+    CSlist.print();
+    cout<<"===>get list 3"<<endl;
+    cout<<CSlist.get(2)<<endl;
+
     cout<<"================>双向链表："<<endl;
     DulList<int> dlist;
     dlist.dul_insert(0,1);
@@ -96,6 +117,44 @@ int main()
     dlist.print();
 
     cout<<dlist.front()<<","<<dlist.back()<<","<<dlist.dul_get(0)<<endl;
+
+    cout<<"================>双向循环链表："<<endl;
+    CycDulList<int> cdlist;
+    cdlist.insert(0,1);
+    cdlist.push_back(3);
+    cdlist.push_front(2);
+    cdlist.push_back(11);
+    cdlist.insert(1,9);
+    cdlist.print();
+
+    cdlist.pop_back();
+    cdlist.pop_front();
+    int v = cdlist.erase(0);
+    cout<<"==>"<<v<<endl;
+    cdlist.print();
+
+    cdlist.set(0,12);
+    cdlist.print();
+    cout<<cdlist.front()<<","<<cdlist.back()<<","<<cdlist.get(0)<<endl;
+
+    cout<<"================>静态链表："<<endl;
+    StaticList<int> staticlist;
+    staticlist.insert(1,2);
+    staticlist.insert(1,3);
+    staticlist.insert(1,8);
+    staticlist.insert(1,1);
+    staticlist.insert(1,0);
+    staticlist.print();
+    cout<<"================>"<<endl;
+    staticlist.erase(3);
+    staticlist.print();
+    cout<<"================>"<<endl;
+    staticlist.set(2,9999);
+    cout<<"==>"<<staticlist.get(2)<<endl;
+    cout<<"==>3 index :"<<staticlist.get_index(3)<<endl;
+    staticlist.print();
+    cout<<"================>"<<endl;
+    staticlist.print_link();
 
     return 0;
 }

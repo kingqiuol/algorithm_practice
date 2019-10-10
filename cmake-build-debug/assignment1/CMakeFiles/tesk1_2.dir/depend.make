@@ -3,4 +3,5 @@
 
 assignment1/CMakeFiles/tesk1_2.dir/list.cpp.o: ../assignment1/list.cpp
 assignment1/CMakeFiles/tesk1_2.dir/list.cpp.o: ../assignment1/list.h
+assignment1/CMakeFiles/tesk1_2.dir/list.cpp.o: ../assignment3/list.h
 
