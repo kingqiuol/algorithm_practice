@@ -2,7 +2,43 @@
 // Created by jinqiu on 19-3-3.
 //
 
+#include <unistd.h>
 #include "queue.h"
+
+BlockQueue<int> g_queue(100);
+void *p(void *args)
+{
+    sleep(2);
+    int data = 0;
+    for(int i = 0; i < 100; i++)
+    {
+        g_queue.push(data++);
+    }
+
+    return NULL;
+}
+
+void *c(void* args)
+{
+    while(true)
+    {
+        int t = 0;
+        if(!g_queue.pop(t))
+        {
+            cout<<"timeout"<<endl;
+            continue;
+        }
+        else
+        {
+            cout<<t<<endl;
+        }
+        g_queue.pop(t);
+        cout<<"block="<<t<<endl;
+    }
+
+    return NULL;
+}
+
 
 int main()
 {
@@ -58,6 +94,14 @@ int main()
     cout<<"size:"<<cyclic_queue1.size()<<endl;
     cyclic_queue1.print();
 
+    cout<<"=========>BlockQueue:"<<endl;
+    pthread_t id;
+    pthread_create(&id, NULL, p, NULL);
+    //pthread_create(&id, NULL, p, NULL);
+    //pthread_create(&id, NULL, c, NULL);
+    pthread_create(&id, NULL, c, NULL);
+    //for(;;)sleep(1);
+    pthread_join(id,0);
 
 
     return 0;

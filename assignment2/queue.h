@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <memory>
+#include <pthread.h>
 
 #include "list.h"
 
@@ -245,7 +246,7 @@ private:
 template <class T>
 CyclicQueue<T>::CyclicQueue(size_t capacity)
 {
-    if(capacity_<=0){
+    if(capacity<=0){
         cout<<"queue capacity must >0"<<endl;
         exit(0);
     }
@@ -349,5 +350,204 @@ void CyclicQueue<T>::print()
 
     cout<<*back_<<endl;
 }
+
+/*******************************************
+*                 阻塞队列                   *
+*******************************************/
+template <class T>
+class BlockQueue
+{
+public:
+    BlockQueue(const size_t &capacity=100);
+    ~BlockQueue();
+
+    //队列是否为空
+    bool empty();
+    //队列的大小
+    size_t size();
+    //队列容量大小
+    size_t max_size();
+
+    //返回队首元素
+    bool front(T &value);
+    //返回队尾元素
+    bool back(T &value);
+    //队首弹出元素
+    bool pop(T &value);
+    //队尾添加元素
+    void push(const T &value);
+
+    //打印队列
+    void print();
+
+private:
+    T *ptr_;
+    T *front_;//队列头指针
+    T *back_;//队列尾指针
+    size_t  size_;//队列中存储元素的个数
+    size_t  capacity_;//队列中最大存储数量
+
+    pthread_mutex_t *mutex_;//互斥锁
+    pthread_cond_t *cond_;//条件变量
+};
+
+template <class T>
+BlockQueue<T>::BlockQueue(const size_t &capacity)
+        :capacity_(capacity),size_(0)
+{
+    ptr_=new T[capacity_];
+    front_=back_=ptr_;
+
+    pthread_mutex_init(mutex_, NULL);
+    pthread_cond_init(cond_,NULL);
+}
+
+template <class T>
+BlockQueue<T>::~BlockQueue()
+{
+    pthread_mutex_lock(mutex_);
+    if(ptr_!= nullptr){
+        delete[] ptr_;
+    }
+    pthread_mutex_unlock(mutex_);
+
+    pthread_mutex_destroy(mutex_);
+    pthread_cond_destroy(cond_);
+
+    delete mutex_;
+    delete cond_;
+}
+
+template <class T>
+bool BlockQueue<T>::empty()
+{
+    pthread_mutex_lock(mutex_);
+    if(0==size_){
+        pthread_mutex_unlock(mutex_);
+        return true;
+    }
+    pthread_mutex_unlock(mutex_);
+    return false;
+}
+
+template <class T>
+size_t BlockQueue<T>::size()
+{
+    size_t size=0;
+    pthread_mutex_lock(mutex_);
+    size=size_;
+    pthread_mutex_unlock(mutex_);
+    return size;
+}
+
+template <class T>
+size_t BlockQueue<T>::max_size()
+{
+    size_t capacity=0;
+    pthread_mutex_lock(mutex_);
+    capacity=capacity_;
+    pthread_mutex_unlock(mutex_);
+    return capacity;
+}
+
+template <class T>
+bool BlockQueue<T>::front(T &value)
+{
+    T front;
+    pthread_mutex_lock(mutex_);
+    if(size_==0){
+        cout<<"BlockQueue is empty!"<<endl;
+        pthread_mutex_unlock(mutex_);
+        return false;
+    }else{
+        value=*front_;
+    }
+    pthread_mutex_unlock(mutex_);
+
+    return true;
+}
+
+template <class T>
+bool BlockQueue<T>::back(T &value)
+{
+    T back;
+    pthread_mutex_lock(mutex_);
+    if(size_==0){
+        cout<<"BlockQueue is empty!"<<endl;
+        return false;
+    }else{
+        value=*back_;
+    }
+    pthread_mutex_unlock(mutex_);
+
+    return true;
+}
+
+template <class T>
+bool BlockQueue<T>::pop(T &value)
+{
+    pthread_mutex_lock(mutex_);
+    while(size_<=0){
+        if(0!=pthread_cond_wait(cond_,mutex_)){
+            cout<<"BlockQueue is empty!"<<endl;
+            pthread_mutex_unlock(mutex_);
+            return false;
+        }
+    }
+    int distance = front_ - ptr_;
+    int offset = (distance + 1) % capacity_;
+    value=*front_;
+    front_=ptr_+offset;
+    --size_;
+    pthread_mutex_unlock(mutex_);
+
+    return true;
+}
+
+template <class T>
+void BlockQueue<T>::push(const T &value)
+{
+    pthread_mutex_lock(mutex_);
+    if(size_>=capacity_){
+        cout<<"BlockQueue is empty!"<<endl;
+
+        pthread_cond_broadcast(cond_);
+        pthread_mutex_unlock(mutex_);
+    }else{
+        if(size_==0){
+            *ptr_=value;
+        }else{
+            int distance = back_ - ptr_;
+            int offset = (distance + 1) % capacity_;
+            ptr_[offset]=value;
+        }
+
+        ++size_;
+        pthread_cond_broadcast(cond_);
+        pthread_mutex_unlock(mutex_);
+    }
+}
+
+template <class T>
+void BlockQueue<T>::print()
+{
+    pthread_mutex_lock(mutex_);
+
+    int i= front_-ptr_;
+    int j= back_-ptr_;
+
+    while(true){
+        int index=i%capacity_;
+        if(index==j){
+            break;
+        }
+        cout<<ptr_[index]<<"==>"<<i<<" ";
+        ++i;
+    }
+    cout<<*back_<<endl;
+
+    pthread_mutex_unlock(mutex_);
+}
+
 
 #endif //TESK_QUEUE_H

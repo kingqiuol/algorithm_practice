@@ -6,35 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
+/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment2/list.h
 iostream
 -
 memory
 -
 list.h
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
-../assignment1/list.h
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
+/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment2/list.h
 
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment2/list.h
-iostream
+/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment2/queue.cpp
+unistd.h
 -
-memory
--
-list.h
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment2/list.h
-../assignment1/list.h
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment1/list.h
-
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment2/queue.cpp
 queue.h
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment2/queue.h
+/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment2/queue.h
 
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment2/queue.h
+/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment2/queue.h
 iostream
 -
 memory
 -
+pthread.h
+-
 list.h
-/cygdrive/c/Users/jinqiu/Desktop/tesk/assignment2/list.h
+/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment2/list.h
 
