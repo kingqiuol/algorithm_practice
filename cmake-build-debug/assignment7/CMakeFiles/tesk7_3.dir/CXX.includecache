@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/github/algorithm_practice/assignment7/dynamic_programming.cpp
+iostream
+-
+string
+-
+dynamic_programming.h
+D:/github/algorithm_practice/assignment7/dynamic_programming.h
+
+D:/github/algorithm_practice/assignment7/dynamic_programming.h
+iostream
+-
+vector
+-
+algorithm
+-
+

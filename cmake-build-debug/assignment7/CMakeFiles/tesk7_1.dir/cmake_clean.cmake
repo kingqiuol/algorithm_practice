@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tesk7_1.dir/backtracking.cpp.o"
+  "CMakeFiles/tesk7_1.dir/backtracking.cpp.obj"
   "tesk7_1.pdb"
   "tesk7_1.exe"
+  "tesk7_1.exe.manifest"
   "libtesk7_1.dll.a"
 )
 

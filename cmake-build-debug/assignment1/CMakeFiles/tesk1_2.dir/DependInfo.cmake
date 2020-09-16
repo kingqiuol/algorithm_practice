@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment1/list.cpp" "/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/CMakeFiles/tesk1_2.dir/list.cpp.o"
+  "D:/github/algorithm_practice/assignment1/list.cpp" "D:/github/algorithm_practice/cmake-build-debug/assignment1/CMakeFiles/tesk1_2.dir/list.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

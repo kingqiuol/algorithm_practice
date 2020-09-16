@@ -8,107 +8,203 @@
 		<Option virtualFolders="CMake Files\;CMake Files\assignment1\;CMake Files\assignment2\;CMake Files\assignment3\;CMake Files\assignment4\;CMake Files\assignment5\;CMake Files\assignment6\;CMake Files\assignment7\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7"/>
+				<Option working_dir="D:/github/algorithm_practice/cmake-build-debug/assignment7"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk7_1">
-				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/tesk7_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7"/>
+				<Option output="D:/github/algorithm_practice/cmake-build-debug/assignment7/tesk7_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/github/algorithm_practice/cmake-build-debug/assignment7"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 tesk7_1"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 tesk7_1"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tesk7_1/fast">
-				<Option output="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/tesk7_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7"/>
+				<Option output="D:/github/algorithm_practice/cmake-build-debug/assignment7/tesk7_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/github/algorithm_practice/cmake-build-debug/assignment7"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 tesk7_1/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 tesk7_1/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tesk7_2">
+				<Option output="D:/github/algorithm_practice/cmake-build-debug/assignment7/tesk7_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/github/algorithm_practice/cmake-build-debug/assignment7"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 tesk7_2"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tesk7_2/fast">
+				<Option output="D:/github/algorithm_practice/cmake-build-debug/assignment7/tesk7_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/github/algorithm_practice/cmake-build-debug/assignment7"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 tesk7_2/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tesk7_3">
+				<Option output="D:/github/algorithm_practice/cmake-build-debug/assignment7/tesk7_3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/github/algorithm_practice/cmake-build-debug/assignment7"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 tesk7_3"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tesk7_3/fast">
+				<Option output="D:/github/algorithm_practice/cmake-build-debug/assignment7/tesk7_3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/github/algorithm_practice/cmake-build-debug/assignment7"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 tesk7_3/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/github/algorithm_practice/cmake-build-debug/assignment7/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment7/backtracking.cpp">
+		<Unit filename="D:/github/algorithm_practice/assignment7/backtracking.cpp">
 			<Option target="tesk7_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment7/backtracking.h">
+		<Unit filename="D:/github/algorithm_practice/assignment7/backtracking.h">
 			<Option target="tesk7_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/CMakeLists.txt">
+		<Unit filename="D:/github/algorithm_practice/assignment7/divide_conquer_algorithm.cpp">
+			<Option target="tesk7_2"/>
+		</Unit>
+		<Unit filename="D:/github/algorithm_practice/assignment7/divide_conquer_algorithm.h">
+			<Option target="tesk7_2"/>
+		</Unit>
+		<Unit filename="D:/github/algorithm_practice/assignment7/dynamic_programming.cpp">
+			<Option target="tesk7_3"/>
+		</Unit>
+		<Unit filename="D:/github/algorithm_practice/assignment7/dynamic_programming.h">
+			<Option target="tesk7_3"/>
+		</Unit>
+		<Unit filename="D:/github/algorithm_practice/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment1/CMakeLists.txt">
+		<Unit filename="D:/github/algorithm_practice/assignment1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment1\"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment1/CMakeLists.txt">
+		<Unit filename="D:/github/algorithm_practice/assignment1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment1\"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment2/CMakeLists.txt">
+		<Unit filename="D:/github/algorithm_practice/assignment2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment2\"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment2/CMakeLists.txt">
+		<Unit filename="D:/github/algorithm_practice/assignment2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment2\"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment3/CMakeLists.txt">
+		<Unit filename="D:/github/algorithm_practice/assignment3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment3\"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment3/CMakeLists.txt">
+		<Unit filename="D:/github/algorithm_practice/assignment3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment3\"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment4/CMakeLists.txt">
+		<Unit filename="D:/github/algorithm_practice/assignment4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment4\"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment4/CMakeLists.txt">
+		<Unit filename="D:/github/algorithm_practice/assignment4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment4\"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/CMakeLists.txt">
+		<Unit filename="D:/github/algorithm_practice/assignment5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment5\"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment5/CMakeLists.txt">
+		<Unit filename="D:/github/algorithm_practice/assignment5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment5\"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment6/CMakeLists.txt">
+		<Unit filename="D:/github/algorithm_practice/assignment6/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment6\"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment6/CMakeLists.txt">
+		<Unit filename="D:/github/algorithm_practice/assignment6/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment6\"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment7/CMakeLists.txt">
+		<Unit filename="D:/github/algorithm_practice/assignment7/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment7\"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/assignment7/CMakeLists.txt">
+		<Unit filename="D:/github/algorithm_practice/assignment7/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment7\"/>
 		</Unit>
 	</Project>

@@ -1,8 +1,8 @@
-# Install script for directory: /cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice
+# Install script for directory: D:/github/algorithm_practice
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/tesk")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,13 +29,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment1/cmake_install.cmake")
-  include("/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment2/cmake_install.cmake")
-  include("/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment3/cmake_install.cmake")
-  include("/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment4/cmake_install.cmake")
-  include("/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment5/cmake_install.cmake")
-  include("/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment6/cmake_install.cmake")
-  include("/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/assignment7/cmake_install.cmake")
+  include("D:/github/algorithm_practice/cmake-build-debug/assignment1/cmake_install.cmake")
+  include("D:/github/algorithm_practice/cmake-build-debug/assignment2/cmake_install.cmake")
+  include("D:/github/algorithm_practice/cmake-build-debug/assignment3/cmake_install.cmake")
+  include("D:/github/algorithm_practice/cmake-build-debug/assignment4/cmake_install.cmake")
+  include("D:/github/algorithm_practice/cmake-build-debug/assignment5/cmake_install.cmake")
+  include("D:/github/algorithm_practice/cmake-build-debug/assignment6/cmake_install.cmake")
+  include("D:/github/algorithm_practice/cmake-build-debug/assignment7/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +47,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/github/algorithm_practice/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

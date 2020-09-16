@@ -1,2 +1,2 @@
-ToolSet: 3.0.7@C:\cygwin64
-CMake: 3.6.3@D:\clion\CLion 2016.3.5\bin\cmake_cygwin\bin\cmake.exe
+ToolSet: 5.3@C:\MinGW
+CMake: 3.6.3@D:\clion\CLion 2016.3.5\bin\cmake\bin\cmake.exe

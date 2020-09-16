@@ -9,6 +9,96 @@
 #include <cmath>
 #include <iostream>
 #include <algorithm>
+#include<vector>
+#include<string>
+
+using namespace std;
+
+/**
+ * 回溯法（back tracking）
+ *
+ * （探索与回溯法）是一种选优搜索法，又称为试探法，按选优条件向前搜索，以达到目标。但当探索到
+ * 某一步时，发现原先选择并不优或达不到目标，就退回一步重新选择，这种走不通就退回再走的技术为
+ * 回溯法，而满足回溯条件的某个状态的点称为“回溯点”。
+ *
+ * 1、解决一个回溯问题，实际上就是一个决策树的遍历过程。你只需要思考 3 个问题：
+ * （1）路径：也就是已经做出的选择。
+ * （2）选择列表：也就是你当前可以做的选择。
+ * （3）结束条件：也就是到达决策树底层，无法再做选择的条件。
+ *
+ * 2、回溯算法的基本框架：
+   result = []
+   def backtrack(路径, 选择列表):
+    if 满足结束条件:
+        result.add(路径)
+        return
+
+    for 选择 in 选择列表:
+        做选择
+        backtrack(路径, 选择列表)
+        撤销选择
+
+ * 3、前序遍历的代码在进入某一个节点之前的那个时间点执行，后序遍历代码在离开某个节点之后的那
+ * 个时间点执行。我们只要在递归之前做出选择，在递归之后撤销刚才的选择，就能正确得到每个节点的
+ * 选择列表和路径。
+*/
+
+/*******************************************
+*                 N 皇后问题                *
+/*******************************************/
+bool isValid(const vector<string> &board,const int &row,const int &col){
+    int c=board[0].length();
+    int r=board.size();
+    for(int i=0;i<r;++i){
+        if(board[i][col]=='Q'){
+            return false;
+        }
+    }
+
+    // 检查右上方是否有皇后互相冲突
+    for (int i = row - 1, j = col + 1;
+         i >= 0 && j < c; i--, j++) {
+        if (board[i][j] == 'Q')
+            return false;
+    }
+    // 检查左上方是否有皇后互相冲突
+    for (int i = row - 1, j = col - 1;
+         i >= 0 && j >= 0; i--, j--) {
+        if (board[i][j] == 'Q')
+            return false;
+    }
+
+    return true;
+}
+
+
+void backtrack(vector<vector<string>> &res,
+               vector<string> &board,const int &row){
+    if(row==board.size()){
+        res.push_back(board);
+        return ;
+    }
+
+    int n=board[0].length();
+    for(int i=0;i<n;++i){
+        if(!isValid(board,row,i)){
+            continue;
+        }
+
+        board[row][i]='Q';
+        backtrack(res,board,row+1);
+        board[row][i]='.';
+    }
+}
+
+
+vector<vector<string>> solveNQueens(int n) {
+    vector<vector<string>> res;
+    vector<string> board(n, string(n, '.'));
+    backtrack(res,board,0);
+
+    return res;
+}
 
 /*******************************************
 *                 0-1背包问题                *

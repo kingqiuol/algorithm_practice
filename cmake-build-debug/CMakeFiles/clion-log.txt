@@ -1,4 +1,4 @@
-C:\Users\jinqiu\.CLion2016.3\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice
+"D:\clion\CLion 2016.3.5\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\github\algorithm_practice
 -- Configuring done
 -- Generating done
--- Build files have been written to: /cygdrive/e/360MoveData/Users/jinqiu/Desktop/algorithm_practice/cmake-build-debug
+-- Build files have been written to: D:/github/algorithm_practice/cmake-build-debug
